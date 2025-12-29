@@ -46,13 +46,13 @@ Data Structure and Algorithm|[Algorithm] How to check if two given line segments
 Data Structure and Algorithm|[Algorithm] Nonzero-rule|https://en.m.wikipedia.org/wiki/Nonzero-rule
 Data Structure and Algorithm|[Algorithm] Point in Polygon|https://geeksforgeeks.org/c/point-in-polygon-in-c
 Data Structure and Algorithm|[Algorithm] The Algorithms|https://github.com/TheAlgorithms
-Data Structure and Algorithm|[Both] Algorithms for Competitive Programming|https://cp-algorithms.com
-Data Structure and Algorithm|[Both] Hello Algo|https://hello-algo.com/en
-Data Structure and Algorithm|[Both] The Arcane Algorithm Archive|https://www.algorithm-archive.org
-Data Structure and Algorithm|[Both] USFCA Data Structure and Algorithm Visualizations|https://www.cs.usfca.edu/~galles/visualization
-Data Structure and Algorithm|[Both] VisuAlgo|https://visualgo.net
 Data Structure and Algorithm|[Data Structure] Data Structures, Explained Simply|https://youtu.be/KwBuV7YZido
 Data Structure and Algorithm|[Data Structure] HashMaps & Dictionaries, Explained Simply|https://youtu.be/y11XNXi9dgs
+Data Structure and Algorithm|[General] Algorithms for Competitive Programming|https://cp-algorithms.com
+Data Structure and Algorithm|[General] Hello Algo|https://hello-algo.com/en
+Data Structure and Algorithm|[General] The Arcane Algorithm Archive|https://www.algorithm-archive.org
+Data Structure and Algorithm|[General] USFCA Data Structure and Algorithm Visualizations|https://www.cs.usfca.edu/~galles/visualization
+Data Structure and Algorithm|[General] VisuAlgo|https://visualgo.net
 Data Structure and Algorithm|[Problems] Advent of Code|https://adventofcode.com
 Data Structure and Algorithm|[Problems] Codeforces|https://codeforces.com
 Data Structure and Algorithm|[Problems] CSES|https://cses.fi
@@ -173,14 +173,15 @@ Network|Beej's Guide to Network Programming|https://beej.us/guide/bgnet/html
 Network|HTTP Made Really Easy|https://jmarshall.com/easy/http
 Operating System|Unix as IDE|https://blog.sanctum.geek.nz/series/unix-as-ide
 Operating System|Writing an OS in Rust|https://os.phil-opp.com
-Programming|0DE5|https://0de5.net
-Programming|30 seconds of code: Coding articles to level up your development skills|https://30secondsofcode.org
-Programming|C3: The Ergonomic, Safe and Familiar Evolution of C|https://c3-lang.org
-Programming|Devhints: Rico's cheatsheets|https://devhints.io
-Programming|Github Ranking: A list of the most github stars and forks repositories|https://evanli.github.io/Github-Ranking
-Programming|Notes on structured concurrency, or: Go statement considered harmful|https://vorpus.org/blog/notes-on-structured-concurrency-or-go-statement-considered-harmful
-Programming|Ranking Programming Languages by Energy Efficiency|https://haslab.github.io/SAFER/scp21.pdf
-Programming|Red: A next-generation programming language strongly inspired by Rebol, but with a broader field of usage thanks to its native-code compiler|https://red-lang.org
+Programming|[Language] C3: The Ergonomic, Safe and Familiar Evolution of C|https://c3-lang.org
+Programming|[Language] Red: A next-generation programming language strongly inspired by Rebol, but with a broader field of usage thanks to its native-code compiler|https://red-lang.org
+Programming|[Learning] 0DE5|https://0de5.net
+Programming|[Learning] 30 seconds of code: Coding articles to level up your development skills|https://30secondsofcode.org
+Programming|[Learning] Devhints: Rico's cheatsheets|https://devhints.io
+Programming|[Learning] Rosetta Code: A programming chrestomathy site|https://rosettacode.org
+Programming|[Reading] Github Ranking: A list of the most github stars and forks repositories|https://evanli.github.io/Github-Ranking
+Programming|[Reading] Notes on structured concurrency, or: Go statement considered harmful|https://vorpus.org/blog/notes-on-structured-concurrency-or-go-statement-considered-harmful
+Programming|[Reading] Ranking Programming Languages by Energy Efficiency|https://haslab.github.io/SAFER/scp21.pdf
 Rust|A Game Boy Emulator|https://github.com/smparsons/retroboy
 Rust|bacon: A background code checker|https://dystroy.org/bacon
 Rust|Generating 1 Million PDFs in 10 Minutes|https://ersteiger.com/posts/rendering-one-million-pdfs
