@@ -72,7 +72,7 @@ vnoremap < <gv
 vnoremap > >gv
 
 " Toggle spelling checker
-map <F12> :setlocal spell! spelllang=en_us<CR>
+map <F12> <Cmd>setlocal spell! spelllang=en_us<CR>
 
 " Replace currently selected text with black hole register without yanking it
 vnoremap <Leader>p "_dP
@@ -185,3 +185,6 @@ let g:loaded_netrwPlugin = 1
 
 " man page
 runtime ftplugin/man.vim
+
+" fzf
+nnoremap <C-P> <Cmd>FZF<CR>
