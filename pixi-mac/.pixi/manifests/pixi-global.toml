@@ -154,3 +154,8 @@ exposed = { r2r = "r2r", clang-format-radare2 = "clang-format-radare2", r2 = "r2
 channels = ["conda-forge"]
 dependencies = { clang-format = "*" }
 exposed = { clang-format = "clang-format" }
+
+[envs.mole]
+channels = ["~/.pixi/forges/nam-forge/packages"]
+dependencies = { mole = "*" }
+exposed = { mo = "mo", mole = "mole" }
