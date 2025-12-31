@@ -160,6 +160,7 @@ augroup END
 
 augroup markdown_ft
   autocmd!
+  autocmd FileType markdown setlocal wrap
   autocmd FileType markdown setlocal textwidth=80
 augroup END
 
