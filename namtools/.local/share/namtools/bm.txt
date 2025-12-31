@@ -58,8 +58,8 @@ Data Structure and Algorithm|[Problems] Codeforces|https://codeforces.com
 Data Structure and Algorithm|[Problems] CSES|https://cses.fi
 Data Structure and Algorithm|[Problems] Kattis Problem|https://open.kattis.com
 Data Structure and Algorithm|[Problems] LeetCode|https://leetcode.com
+Data Structure and Algorithm|[Problems] NeetCode|https://neetcode.io
 Data Structure and Algorithm|[Problems] Project Euler|https://projecteuler.net
-Data Structure and Algorithm|NeetCode|https://neetcode.io
 DevOps|Podman vs. Docker: Containerization Tools Comparison|https://spacelift.io/blog/podman-vs-docker
 English|"only a few" vs. "(very) few"|https://ell.stackexchange.com/questions/280182/only-a-few-vs-very-few
 English|Cambridge Dictionary|https://dictionary.cambridge.org
@@ -212,6 +212,7 @@ Tools|[Docs] Fumadocs: The beautiful & flexible React.js docs framework|https://
 Tools|[Docs] Hugo: The world's fastest framework for building websites|https://gohugo.io
 Tools|[Docs] Island.js: Vite & MDX powered static site generator based on islands architecture|https://islandjs.dev
 Tools|[Docs] VitePress: Markdown to Beautiful Docs in Minutes|https://vitepress.dev
+Tools|[Docs] Zine: Fast, Scalable, and Flexible Static Site Generator|https://zine-ssg.io
 Tools|[Graphics] Blender: A free and open-source 3D computer graphics software|https://blender.org
 Tools|[Graphics] GIMP: A free and open-source image editor|https://gimp.org
 Tools|[Graphics] Inkscape: A free and open-source software vector graphics editor|https://inkscape.org
@@ -270,3 +271,5 @@ Web Front End|RxDB|https://rxdb.info
 Web Front End|Valdi: A cross-platform UI framework that delivers native performance without sacrificing developer velocity|https://github.com/Snapchat/Valdi
 Web Front End|web.dev|https://web.dev
 Web Front End|Why you should test with user-event|https://ph-fritsche.github.io/blog/post/why-userevent
+Zig|[Learning] Learning Zig|https://openmymind.net/learning_zig
+Zig|[Learning] Ziglings: Learn the ⚡Zig programming language by fixing tiny broken programs|https://codeberg.org/ziglings/exercises
