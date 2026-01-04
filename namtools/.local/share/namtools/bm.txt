@@ -6,9 +6,9 @@ Audio|[Tool] Wavacity: A port of the Audacity audio editor to the web browser|ht
 Australia|Aussiecitizenshiptest.com|https://aussiecitizenshiptest.com
 Australia|Certified copies of original documents|https://justice.vic.gov.au/certifiedcopies
 Australia|First home super saver scheme|https://ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/withdrawing-and-using-your-super/early-access-to-super/first-home-super-saver-scheme
-Bash|Bash Boilerplate|https://github.com/xwmx/bash-boilerplate
-Bash|BashGuide|https://mywiki.wooledge.org
-Bash|Bats: A TAP-compliant testing framework for Bash 3.2 or above|https://bats-core.readthedocs.io
+Bash|[Learning] BashGuide|https://mywiki.wooledge.org
+Bash|[Tool] Bash Boilerplate|https://github.com/xwmx/bash-boilerplate
+Bash|[Tool] Bats: A TAP-compliant testing framework for Bash 3.2 or above|https://bats-core.readthedocs.io
 Biomedicine|National Center for Biotechnology Information|https://ncbi.nlm.nih.gov
 Biomedicine|PubMed Central|https://pmc.ncbi.nlm.nih.gov
 Biomedicine|PubMed|https://pubmed.ncbi.nlm.nih.gov
@@ -26,16 +26,16 @@ CSS|CSS Wrapped 2025|https://chrome.dev/css-wrapped-2025
 CSS|Every Layout|https://every-layout.dev
 CSS|The Height Enigma|https://joshwcomeau.com/css/height-enigma
 CSS|Transitioning to Height Auto (Two Ways)|https://keithjgrant.com/posts/2023/04/transitioning-to-height-auto
-C|Awesome C|https://github.com/oz123/awesome-c
-C|Building your own C application|https://opengl-tutorial.org/miscellaneous/building-your-own-c-application
-C|clib: Package manager for the C programming language|https://github.com/clibs/clib
-C|facil.io: A C micro-framework for web applications|https://facil.io
-C|Lwan: A high-performance & scalable web server|https://lwan.ws
-C|Making a simple HTTP webserver in C|https://bruinsslot.jp/post/simple-http-webserver-in-c
-C|musl: C Standard Library|https://musl.libc.org
-C|Sokol: Minimal cross-platform standalone C headers|https://github.com/floooh/sokol
-C|The C programming language|https://c-language.org
-C|zpl: pushing the boundaries of simplicity|https://github.com/zpl-c
+C|[Learning] Building your own C application|https://opengl-tutorial.org/miscellaneous/building-your-own-c-application
+C|[Learning] Making a simple HTTP webserver in C|https://bruinsslot.jp/post/simple-http-webserver-in-c
+C|[Lib] clib: Package manager for the C programming language|https://github.com/clibs/clib
+C|[Lib] facil.io: A C micro-framework for web applications|https://facil.io
+C|[Lib] Lwan: A high-performance & scalable web server|https://lwan.ws
+C|[Lib] musl: C Standard Library|https://musl.libc.org
+C|[Lib] Sokol: Minimal cross-platform standalone C headers|https://github.com/floooh/sokol
+C|[Lib] zpl: pushing the boundaries of simplicity|https://github.com/zpl-c
+C|[Reference] Awesome C|https://github.com/oz123/awesome-c
+C|[Reference] The C programming language|https://c-language.org
 Data Structure and Algorithm|[Algorithm] A Beginner's Journey into the World of Algorithms|https://artofcode.org/algorithms-101
 Data Structure and Algorithm|[Algorithm] Even–odd rule|https://en.wikipedia.org/wiki/Even-odd_rule
 Data Structure and Algorithm|[Algorithm] Floyd's Cycle detection algorithm|https://cs.stackexchange.com/a/45540
@@ -84,16 +84,18 @@ Finance|Passive Investing Australia|https://passiveinvestingaustralia.com
 Fun|A collection of looks in text|https://looks.wtf
 Fun|DiceBear|https://dicebear.com
 Fun|PlayPhrase|https://playphrase.me
-Game Development|[C/C++] SanderMertens/flecs: A fast entity component system (ECS) for C & C++|https://flecs.dev/flecs
-Game Development|[C] raylib: a simple and easy-to-use library to enjoy videogames programming|https://raylib.com
-Game Development|[Haxe] Heaps.io: Heaps.io is a mature cross platform graphics engine designed for high performance games|https://heaps.io
-Game Development|[Lua] LÖVE: An *awesome* framework you can use to make 2D games in Lua|https://love2d.org
-Game Development|[Rust] macroquad: A simple and easy to use game library for Rust programming language|https://github.com/not-fl3/macroquad
-Game Development|A list of Game Development resources to make magic happen|https://github.com/ellisonleao/magictools
-Game Development|Handmade Hero|https://guide.handmadehero.org
-Git|Bring your monorepo down to size with sparse-checkout|https://github.blog/open-source/git/bring-your-monorepo-down-to-size-with-sparse-checkout
-Git|Get up to speed with partial clone and shallow clone|https://github.blog/open-source/git/get-up-to-speed-with-partial-clone-and-shallow-clone
-Git|Pro Git|https://git-scm.com/book
+Game Development|[Learning] DOOM Open Source Release|https://github.com/id-Software/DOOM
+Game Development|[Learning] Game Engine Black Book DOOM|https://fabiensanglard.net/gebbdoom
+Game Development|[Learning] Handmade Hero|https://guide.handmadehero.org
+Game Development|[Lib] Heaps.io: Heaps.io is a mature cross platform graphics engine designed for high performance games|https://heaps.io
+Game Development|[Lib] LÖVE: An *awesome* framework you can use to make 2D games in Lua|https://love2d.org
+Game Development|[Lib] macroquad: A simple and easy to use game library for Rust programming language|https://github.com/not-fl3/macroquad
+Game Development|[Lib] raylib: a simple and easy-to-use library to enjoy videogames programming|https://raylib.com
+Game Development|[Lib] SanderMertens/flecs: A fast entity component system (ECS) for C & C++|https://flecs.dev/flecs
+Game Development|[Tool] A list of Game Development resources to make magic happen|https://github.com/ellisonleao/magictools
+Git|[Learning] Pro Git|https://git-scm.com/book
+Git|[Reading] Bring your monorepo down to size with sparse-checkout|https://github.blog/open-source/git/bring-your-monorepo-down-to-size-with-sparse-checkout
+Git|[Reading] Get up to speed with partial clone and shallow clone|https://github.blog/open-source/git/get-up-to-speed-with-partial-clone-and-shallow-clone
 Go|[Fun] Pure Go minimal Doom implementation|https://github.com/AndreRenaud/Gore
 Go|[Learning] 100 Go Mistakes and How to Avoid Them|https://100go.co
 Go|[Learning] Gist of Go: Concurrency|https://antonz.org/go-concurrency
@@ -108,6 +110,7 @@ Go|[Lib] ro: Reactive Programming paradigm for Go|https://ro.samber.dev
 Go|[Lib] Ultimate Golang Makefile Template|https://github.com/crazywolf132/ultimate-gomake
 Go|[Reading] You probably don't need a DI framework|https://rednafi.com/go/di_frameworks_bleh
 Graphics|[Docs] docs.gl|https://docs.gl
+Graphics|[Learning] 3D wireframe rendered in the terminal|https://github.com/Mr-Robot-err-404/terminal-wireframe
 Graphics|[Learning] Computer Graphics from Scratch|https://gabrielgambetta.com/computer-graphics-from-scratch
 Graphics|[Learning] Graphics Programming Compendium|https://graphicscompendium.com
 Graphics|[Learning] Learn OpenGL|https://learnopengl.com
@@ -123,28 +126,29 @@ Graphics|[Tool] Synfig: A free and open-source vector-based 2D animation softwar
 Graphics|[Tool] The Book of Shaders Editor|http://editor.thebookofshaders.com
 Health|Australian PFAS Chemicals Map|https://pfas.australianmap.net
 Health|Eczema|https://my.clevelandclinic.org/health/diseases/9998-eczema
+JavaScript|[Learning] Jake Archibald on the web browser event loop, setTimeout, micro tasks, requestAnimationFrame, ...|https://youtu.be/cCOL7MC4Pl0
+JavaScript|[Learning] JavaScript Event Loop Visualized – The Ultimate Interactive Guide|https://hromium.com/javascript-visualized-event-loop
+JavaScript|[Learning] JavaScript Visualized - Event Loop, Web APIs, (Micro)task Queue|https://youtu.be/eiC58R16hb8
+JavaScript|[Learning] The 16-Line Pattern That Eliminates Dependency Passing|https://github.com/doeixd/effectively/blob/main/docs/generator-context-pattern.md
+JavaScript|[Learning] What the heck is the event loop anyway? - Philip Roberts|https://youtu.be/8aGhZQkoFbQ
 JavaScript|[Lib] Anime.js: JavaScript animation engine|https://animejs.com
 JavaScript|[Lib] chokidar: Minimal and efficient cross-platform file watching library|https://github.com/paulmillr/chokidar
-JavaScript|An interesting kind of JavaScript memory leak|https://blog.meteor.com/an-interesting-kind-of-javascript-memory-leak-8b47d2e7f156
-JavaScript|Jake Archibald on the web browser event loop, setTimeout, micro tasks, requestAnimationFrame, ...|https://youtu.be/cCOL7MC4Pl0
-JavaScript|JavaScript Event Loop Visualized – The Ultimate Interactive Guide|https://hromium.com/javascript-visualized-event-loop
-JavaScript|JavaScript Visualized - Event Loop, Web APIs, (Micro)task Queue|https://youtu.be/eiC58R16hb8
-JavaScript|Jest: Finding the cause of a memory leak in Jest tests|https://making.close.com/posts/finding-the-cause-of-a-memory-leak-in-jest
-JavaScript|Jest: Jest leaks memory from required modules with closures over imports|https://github.com/jestjs/jest/issues/6814
-JavaScript|Jest: Your Jest Tests are Leaking Memory|https://chanind.github.io/javascript/2019/10/12/jest-tests-memory-leak.html
-JavaScript|RxJS: Reactive Extensions Library for JavaScript|https://rxjs.dev
-JavaScript|Secrets of the act(...) api|https://github.com/threepointone/react-act-examples/blob/master/sync.md
-JavaScript|The 16-Line Pattern That Eliminates Dependency Passing|https://github.com/doeixd/effectively/blob/main/docs/generator-context-pattern.md
-JavaScript|Understanding and Tuning Memory|https://nodejs.org/en/learn/diagnostics/memory/understanding-and-tuning-memory
-JavaScript|What the heck is the event loop anyway? - Philip Roberts|https://youtu.be/8aGhZQkoFbQ
-JavaScript|Why I stopped using snapshot testing with Jest|https://medium.com/@tomgold_48918/why-i-stopped-using-snapshot-testing-with-jest-3279fe41ffb2
-JavaScript|Why would anyone need JavaScript generator functions?|https://jrsinclair.com/articles/2022/why-would-anyone-need-javascript-generator-functions
-JavaScript|You Don't Need Lodash Underscore|https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore
-Java|Java 21 Virtual Threads (Project Loom) vs. Reactive Programming: A Practical Guide for Modern Developers|https://archive.md/x71uq
-Java|Java 21 Virtual Threads - Dude, Where's My Lock?|https://netflixtechblog.com/java-21-virtual-threads-dude-wheres-my-lock-3052540e231d
-Java|Micronaut: A modern, JVM-based, full-stack framework|https://micronaut.io
-Java|Quarkus: Supersonic Subatomic Java|https://quarkus.io
-Java|Virtual Threads|https://docs.oracle.com/en/java/javase/21/core/virtual-threads.html
+JavaScript|[Lib] LZMA-JS: A JavaScript implementation of the Lempel-Ziv-Markov (LZMA) chain compression algorithm|https://github.com/LZMA-JS/LZMA-JS
+JavaScript|[Lib] RxJS: Reactive Extensions Library for JavaScript|https://rxjs.dev
+JavaScript|[Reading] An interesting kind of JavaScript memory leak|https://blog.meteor.com/an-interesting-kind-of-javascript-memory-leak-8b47d2e7f156
+JavaScript|[Reading] Jest: Finding the cause of a memory leak in Jest tests|https://making.close.com/posts/finding-the-cause-of-a-memory-leak-in-jest
+JavaScript|[Reading] Jest: Jest leaks memory from required modules with closures over imports|https://github.com/jestjs/jest/issues/6814
+JavaScript|[Reading] Jest: Your Jest Tests are Leaking Memory|https://chanind.github.io/javascript/2019/10/12/jest-tests-memory-leak.html
+JavaScript|[Reading] Secrets of the act(...) api|https://github.com/threepointone/react-act-examples/blob/master/sync.md
+JavaScript|[Reading] Understanding and Tuning Memory|https://nodejs.org/en/learn/diagnostics/memory/understanding-and-tuning-memory
+JavaScript|[Reading] Why I stopped using snapshot testing with Jest|https://medium.com/@tomgold_48918/why-i-stopped-using-snapshot-testing-with-jest-3279fe41ffb2
+JavaScript|[Reading] Why would anyone need JavaScript generator functions?|https://jrsinclair.com/articles/2022/why-would-anyone-need-javascript-generator-functions
+JavaScript|[Reference] You Don't Need Lodash Underscore|https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore
+Java|[Lib] Micronaut: A modern, JVM-based, full-stack framework|https://micronaut.io
+Java|[Lib] Quarkus: Supersonic Subatomic Java|https://quarkus.io
+Java|[Reading] Java 21 Virtual Threads (Project Loom) vs. Reactive Programming: A Practical Guide for Modern Developers|https://archive.md/x71uq
+Java|[Reading] Java 21 Virtual Threads - Dude, Where's My Lock?|https://netflixtechblog.com/java-21-virtual-threads-dude-wheres-my-lock-3052540e231d
+Java|[Reading] Virtual Threads|https://docs.oracle.com/en/java/javase/21/core/virtual-threads.html
 Job Email|7 Email Templates That'll Help You Say "No" (Without Having to Overthink It)|https://themuse.com/advice/7-email-templates-thatll-help-you-say-no-without-having-to-overthink-it
 Job Email|How to decline a job offer: Email template|https://seek.com.au/career-advice/article/job-not-right-for-you-decline-it-with-this-template
 Job Email|How to Follow Up on a Job Application (With Templates)|https://themuse.com/advice/how-to-follow-up-on-a-job-application-an-email-template
@@ -180,10 +184,10 @@ Learn By Doing|Project Based Learning|https://github.com/practical-tutorials/pro
 Miscellaneous|[Shopping] Moonpig Gift Shop|https://moonpig.com
 Miscellaneous|[Tool] RustDesk: An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer|https://rustdesk.com
 Miscellaneous|[Tool] Syncthing|https://syncthing.net
-Network|Beej's Guide to Network Programming|https://beej.us/guide/bgnet/html
-Network|HTTP Made Really Easy|https://jmarshall.com/easy/http
-Operating System|Unix as IDE|https://blog.sanctum.geek.nz/series/unix-as-ide
-Operating System|Writing an OS in Rust|https://os.phil-opp.com
+Network|[Learning] Beej's Guide to Network Programming|https://beej.us/guide/bgnet/html
+Network|[Learning] HTTP Made Really Easy|https://jmarshall.com/easy/http
+Operating System|[Learning] Writing an OS in Rust|https://os.phil-opp.com
+Operating System|[Reading] Unix as IDE|https://blog.sanctum.geek.nz/series/unix-as-ide
 Programming|[Language] C3: The Ergonomic, Safe and Familiar Evolution of C|https://c3-lang.org
 Programming|[Language] Red: A next-generation programming language strongly inspired by Rebol, but with a broader field of usage thanks to its native-code compiler|https://red-lang.org
 Programming|[Learning] 0DE5|https://0de5.net
@@ -202,17 +206,22 @@ Programming|[Tool] Globster|https://globster.xyz
 Programming|[Tool] Helix: A post-modern text editor|https://helix-editor.com
 Programming|[Tool] Micro: A modern and intuitive terminal-based text editor|https://micro-editor.github.io
 Programming|[Tool] Neovim: A hyperextensible Vim-based text editor|https://neovim.io
+Programming|[Tool] paste: A no-datastore, client-side paste service|https://topaz.github.io/paste
 Programming|[Tool] Vim: A highly configurable text editor built to make creating and changing any kind of text very efficient|https://www.vim.org
 Programming|[Tool] Zstandard: Fast real-time compression algorithm|https://facebook.github.io/zstd
 Reverse Engineering|[Tool] Ghidra: A software reverse engineering (SRE) framework created and maintained by the National Security Agency Research Directorate|https://github.com/NationalSecurityAgency/ghidra
 Reverse Engineering|[Tool] ImHex: A Hex Editor, a tool to display, decode and analyze binary data to reverse engineer their format, extract information or patch values in them|https://imhex.werwolv.net
 Reverse Engineering|[Tool] radare2: A free/libre toolchain for easing several low level tasks like forensics, software reverse engineering, exploiting and debugging|https://radare.org/n/radare2.html
-Rust|A Game Boy Emulator|https://github.com/smparsons/retroboy
-Rust|bacon: A background code checker|https://dystroy.org/bacon
-Rust|Generating 1 Million PDFs in 10 Minutes|https://ersteiger.com/posts/rendering-one-million-pdfs
-Rust|Master hexagonal architecture in Rust|https://howtocodeit.com/articles/master-hexagonal-architecture-rust
-Rust|Rust Embedded Drivers (RED)|https://red.implrust.com
-Rust|Rust Language Cheat Sheet|https://cheats.rs
+Rust|[Fun] A Game Boy Emulator|https://github.com/smparsons/retroboy
+Rust|[Learning] Rust Embedded Drivers (RED)|https://red.implrust.com
+Rust|[Learning] Rust Language Cheat Sheet|https://cheats.rs
+Rust|[Lib] Druid: A data-first Rust-native GUI design toolkit|https://github.com/linebender/druid
+Rust|[Lib] egui: An easy-to-use immediate mode GUI in Rust that runs on both web and native|https://egui.rs
+Rust|[Lib] iced: A cross-platform GUI library for Rust focused on simplicity and type-safety|https://iced.rs
+Rust|[Lib] Xilem: A high-level architecture for writing GUI apps in Rust|https://github.com/linebender/xilem
+Rust|[Reading] Generating 1 Million PDFs in 10 Minutes|https://ersteiger.com/posts/rendering-one-million-pdfs
+Rust|[Reading] Master hexagonal architecture in Rust|https://howtocodeit.com/articles/master-hexagonal-architecture-rust
+Rust|[Tool] bacon: A background code checker|https://dystroy.org/bacon
 Security|Web Security Basics|https://github.com/vasanthk/web-security-basics
 System Design|Atoms, molecules, organisms|https://swizec.com/blog/atoms-molecules-organisms
 System Design|The Laws of Software Evolution|https://swizec.com/blog/the-laws-of-software-evolution
@@ -236,12 +245,12 @@ TypeScript|TypeScript project references|https://moonrepo.dev/docs/guides/javasc
 Video|[Learning] ffmprovisr: Making FFmpeg Easier|https://amiaopensource.github.io/ffmprovisr
 Video|[Tool] DaVinci Resolve: The world's only solution that combines editing, color correction, visual effects, motion graphics and audio post production all in one software tool|https://blackmagicdesign.com/products/davinciresolve
 Video|[Tool] Motion Canvas: A TypeScript library for creating animated videos using the Canvas API|https://motioncanvas.io
-Vim/Neovim|Load launch.json debug configs even for JS based languages|https://reddit.com/r/neovim/s/p5tYkzKJdi
-Vim/Neovim|Remote Neovim for Dummies|https://kraust.github.io/posts/remote-neovim-for-dummies
-Vim/Neovim|Seven habits of effective text editing|https://moolenaar.net/habits.html
-Vim/Neovim|The tools that I love: Vim|https://lervag.github.io/posts/how-i-vim
-Vim/Neovim|Vim Cheat Sheet|https://vim.rtorr.com
-Vim/Neovim|Why I got rid of all my neovim plugins|https://yobibyte.github.io/vim.html
+Vim/Neovim|[Learning] Vim Cheat Sheet|https://vim.rtorr.com
+Vim/Neovim|[Reading] Load launch.json debug configs even for JS based languages|https://reddit.com/r/neovim/s/p5tYkzKJdi
+Vim/Neovim|[Reading] Remote Neovim for Dummies|https://kraust.github.io/posts/remote-neovim-for-dummies
+Vim/Neovim|[Reading] Seven habits of effective text editing|https://moolenaar.net/habits.html
+Vim/Neovim|[Reading] The tools that I love: Vim|https://lervag.github.io/posts/how-i-vim
+Vim/Neovim|[Reading] Why I got rid of all my neovim plugins|https://yobibyte.github.io/vim.html
 Web Back End|PocketBase: Open Source realtime backend in 1 file|https://pocketbase.io
 Web Front End|[Docs] ARIA Authoring Practices Guide|https://w3.org/WAI/ARIA/apg
 Web Front End|[Docs] Bulletproof React|https://github.com/alan2207/bulletproof-react
