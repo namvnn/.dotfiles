@@ -159,3 +159,8 @@ exposed = { clang-format = "clang-format" }
 channels = ["~/.pixi/forges/nam-forge/packages"]
 dependencies = { mole = "*" }
 exposed = { mo = "mo", mole = "mole" }
+
+[envs.chafa]
+channels = ["conda-forge"]
+dependencies = { chafa = "*" }
+exposed = { chafa = "chafa" }
