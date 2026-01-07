@@ -181,7 +181,7 @@ command! DiffOrig vert new | set bt=nofile | r ++edit # | 0d_
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " netrw
-let g:loaded_netrw       = 1
+let g:loaded_netrw = 1
 let g:loaded_netrwPlugin = 1
 
 " man page
@@ -189,3 +189,7 @@ runtime ftplugin/man.vim
 
 " fzf
 nnoremap <C-P> <Cmd>FZF<CR>
+
+" gutentags
+let g:gutentags_enabled = 0
+let g:gutentags_define_advanced_commands = 1
