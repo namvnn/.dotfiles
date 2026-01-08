@@ -1,7 +1,7 @@
 [font]
-size = 18
-offset = { y = 1 }
-normal = { family = "Fixedsys Excelsior", style = "Regular" }
-bold = { family = "Fixedsys Excelsior", style = "Regular" }
-italic = { family = "Fixedsys Excelsior", style = "Regular" }
+size        = 18
+offset      = { y = 1 }
+normal      = { family = "Fixedsys Excelsior", style = "Regular" }
+bold        = { family = "Fixedsys Excelsior", style = "Regular" }
+italic      = { family = "Fixedsys Excelsior", style = "Regular" }
 bold_italic = { family = "Fixedsys Excelsior", style = "Regular" }
