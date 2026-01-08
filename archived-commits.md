@@ -1,5 +1,6 @@
 # Archived Commits
 
+- [Remove ghostty](https://github.com/namvnn/.dotfiles/commit/6819f69f0bfb84c0946eede54469b7cbf7a08cd2)
 - [Remove manson.nvim](https://github.com/namvnngu/.dotfiles/commit/998bc292a97a7d086363051044b3a2a678717c8e)
 - [Remove mason-lspconfig.nvim](https://github.com/namvnngu/dotfiles/commit/bd978f046473d3f24659278af834f2820fa91b82)
 - [Remove nnn](https://github.com/namvnngu/.dotfiles/commit/4e7a8976f85867e417a6fc835566fddbe26c7105)
