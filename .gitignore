@@ -1,3 +1,6 @@
 # vim
 vim/.vim/.netrwhist
 *.swp
+
+# alacritty
+alacritty.local.toml

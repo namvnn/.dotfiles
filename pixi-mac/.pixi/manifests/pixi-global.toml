@@ -164,3 +164,9 @@ exposed = { mo = "mo", mole = "mole" }
 channels = ["conda-forge"]
 dependencies = { chafa = "*" }
 exposed = { chafa = "chafa" }
+
+[envs.alacritty]
+channels = ["conda-forge"]
+dependencies = { alacritty = "*" }
+exposed = { alacritty = "alacritty" }
+shortcuts = ["alacritty"]
