@@ -4,7 +4,7 @@
 # Description: Convert HTML to Markdown
 # License: MIT License
 # Date Created: May 12, 2025
-# Date Modified: December 01, 2025
+# Date Modified: January 11, 2025
 
 input_md="$1"
 input_dir=$(dirname "$input_md")
@@ -13,4 +13,4 @@ input_filename=${input_filename%.*}
 output_html="$input_dir/$input_filename.html"
 
 pandoc -s -f markdown -t html5 -o "$output_html" "$input_md"
-open "$output_html"
+opena "$output_html"
