@@ -22,6 +22,10 @@ Books|Library Genesis|https://libgen.is
 Books|Open Library|https://openlibrary.org
 Books|PDF Books Library|https://pdfbooksworld.com
 Books|The Architecture of Open Source Applications|https://aosabook.org
+C++|[Lib] FTXUI: A simple cross-platform C++ library for terminal based user interfaces|https://arthursonzogni.github.io/FTXUI
+C++|[Lib] RxTerm: A C++ library for functional-reactive terminals. RxTerm is a lean alternative to ncurses for many applications|https://github.com/LoopPerfect/rxterm
+C++|[Lib] SMK: Simple multimedia kit - C++ WebAssembly|https://github.com/ArthurSonzogni/smk
+C++|[Reading] Understanding Smart Pointers in C++|https://thecodinggopher.substack.com/p/understanding-smart-pointers-in-c
 CSS|CSS Wrapped 2025|https://chrome.dev/css-wrapped-2025
 CSS|Every Layout|https://every-layout.dev
 CSS|The Height Enigma|https://joshwcomeau.com/css/height-enigma
@@ -31,11 +35,14 @@ C|[Learning] Making a simple HTTP webserver in C|https://bruinsslot.jp/post/simp
 C|[Lib] clib: Package manager for the C programming language|https://github.com/clibs/clib
 C|[Lib] facil.io: A C micro-framework for web applications|https://facil.io
 C|[Lib] Lwan: A high-performance & scalable web server|https://lwan.ws
+C|[Lib] miniaudio: An audio playback and capture library in a single source file|https://miniaud.io
 C|[Lib] musl: C Standard Library|https://musl.libc.org
 C|[Lib] Sokol: Minimal cross-platform standalone C headers|https://github.com/floooh/sokol
+C|[Lib] stb: single-file public domain (or MIT licensed) libraries|https://github.com/nothings/stb
 C|[Lib] zpl: pushing the boundaries of simplicity|https://github.com/zpl-c
-C|[Reference] Awesome C|https://github.com/oz123/awesome-c
-C|[Reference] The C programming language|https://c-language.org
+C|[Reading] Awesome C|https://github.com/oz123/awesome-c
+C|[Reading] MallocInternals|https://sourceware.org/glibc/wiki/MallocInternals
+C|[Reading] The C programming language|https://c-language.org
 Data Structure and Algorithm|[Algorithm] A Beginner's Journey into the World of Algorithms|https://artofcode.org/algorithms-101
 Data Structure and Algorithm|[Algorithm] Even–odd rule|https://en.wikipedia.org/wiki/Even-odd_rule
 Data Structure and Algorithm|[Algorithm] Floyd's Cycle detection algorithm|https://cs.stackexchange.com/a/45540
@@ -108,6 +115,7 @@ Go|[Lib] mo: Monads and popular FP abstractions|https://pkg.go.dev/github.com/sa
 Go|[Lib] oops: Error handling library with context, assertion, stack trace and source fragments|https://pkg.go.dev/github.com/samber/oops
 Go|[Lib] ro: Reactive Programming paradigm for Go|https://ro.samber.dev
 Go|[Lib] Ultimate Golang Makefile Template|https://github.com/crazywolf132/ultimate-gomake
+Go|[Reading] The Anatomy of a Go Package. Structure, Imports, and Idioms|https://thecodinggopher.substack.com/p/the-anatomy-of-a-go-package-structure
 Go|[Reading] You probably don't need a DI framework|https://rednafi.com/go/di_frameworks_bleh
 Graphics|[Docs] docs.gl|https://docs.gl
 Graphics|[Learning] 3D wireframe rendered in the terminal|https://github.com/Mr-Robot-err-404/terminal-wireframe
@@ -116,6 +124,7 @@ Graphics|[Learning] Graphics Programming Compendium|https://graphicscompendium.c
 Graphics|[Learning] Learn OpenGL|https://learnopengl.com
 Graphics|[Learning] Scratchapixel|https://scratchapixel.com
 Graphics|[Learning] The Book of Shaders|https://thebookofshaders.com
+Graphics|[Learning] The Nature of Code|https://natureofcode.com
 Graphics|[Platform] Shadertoy|https://shadertoy.com
 Graphics|[Tool] Blender: A free and open-source 3D computer graphics software|https://blender.org
 Graphics|[Tool] GIMP: A free and open-source image editor|https://gimp.org
@@ -149,38 +158,35 @@ Java|[Lib] Quarkus: Supersonic Subatomic Java|https://quarkus.io
 Java|[Reading] Java 21 Virtual Threads (Project Loom) vs. Reactive Programming: A Practical Guide for Modern Developers|https://archive.md/x71uq
 Java|[Reading] Java 21 Virtual Threads - Dude, Where's My Lock?|https://netflixtechblog.com/java-21-virtual-threads-dude-wheres-my-lock-3052540e231d
 Java|[Reading] Virtual Threads|https://docs.oracle.com/en/java/javase/21/core/virtual-threads.html
-Job Email|7 Email Templates That'll Help You Say "No" (Without Having to Overthink It)|https://themuse.com/advice/7-email-templates-thatll-help-you-say-no-without-having-to-overthink-it
-Job Email|How to decline a job offer: Email template|https://seek.com.au/career-advice/article/job-not-right-for-you-decline-it-with-this-template
-Job Email|How to Follow Up on a Job Application (With Templates)|https://themuse.com/advice/how-to-follow-up-on-a-job-application-an-email-template
-Job Email|How to reject a job offer by phone or email (with example emails)|https://michaelpage.com.au/advice/career-advice/career-progression/how-to-reject-a-job-offer
-Job Email|How to Reject a Job Offer Politely (Email Samples)|https://thebalancemoney.com/job-rejection-email-message-examples-2063004
-Job Email|How to write a follow-up email after a job interview: Templates and tips|https://seek.com.au/career-advice/article/how-to-follow-up-on-your-application-or-interview-with-email-templates
-Job Interview|A curated awesome list of lists of interview questions|https://github.com/DopplerHQ/awesome-interview-questions
-Job Interview|Developer Roadmaps|https://roadmap.sh
-Job Interview|HiredInTech|https://hiredintech.com
-Job Interview|How to Answer "Why Should We Hire You" in an Interview?|https://geeksforgeeks.org/blogs/interview-question-why-should-we-hire-you
-Job Interview|NeetCode|https://neetcode.io
-Job Interview|Stop saying these 9 things in your interview|https://seek.com.au/career-advice/article/want-to-stand-out-in-an-interview-stop-saying-these-9-words
-Job Interview|Tech Interview Handbook|https://techinterviewhandbook.org
-Job Interview|The 32 smartest questions to ask at the end of every job interview|https://businessinsider.com/questions-to-ask-in-a-job-interview-2016-1
-Job Interview|What Did You Like Most About Your Job?|https://nijobs.com/careeradvice/what-did-you-like-most-about-your-job
-Job Resume|A Guide to Choosing the Right Resume Tense|https://indeed.com/career-advice/resumes-cover-letters/resume-tense
-Job Resume|Getting a Gig: A Guide|https://github.com/cassidoo/getting-a-gig
-Job Resume|How to make a resume: Step-by-step guide with examples|https://seek.com.au/career-advice/article/how-to-make-a-resume
-Job Resume|How to write a resume in Australia: A step-by-step guide with examples|https://seek.com.au/career-advice/article/resume-cv
-Job Resume|Novoresume|https://novoresume.com
-Job Sites|arc()|https://arc.dev
-Job Sites|Australian Companies with Visa Sponsorship|https://github.com/geshan/au-companies-providing-work-visa-sponsorship
-Job Sites|Awesome Remote Job|https://github.com/lukasz-madon/awesome-remote-job
-Job Sites|Forage|https://theforage.com
-Job Sites|Indie Hackers|https://indiehackers.com
-Job Sites|levels.fyi|https://levels.fyi
-Job Sites|We Work Remotely|https://weworkremotely.com
-Job Sites|Wellfound|https://wellfound.com
-Learn By Doing|0DE5|https://0de5.net
-Learn By Doing|Build your own X|https://github.com/codecrafters-io/build-your-own-x
-Learn By Doing|Challenging projects every programmer should try|https://austinhenley.com/blog/challengingprojects.html
-Learn By Doing|Project Based Learning|https://github.com/practical-tutorials/project-based-learning
+Job|[Email] 7 Email Templates That'll Help You Say "No" (Without Having to Overthink It)|https://themuse.com/advice/7-email-templates-thatll-help-you-say-no-without-having-to-overthink-it
+Job|[Email] How to decline a job offer: Email template|https://seek.com.au/career-advice/article/job-not-right-for-you-decline-it-with-this-template
+Job|[Email] How to Follow Up on a Job Application (With Templates)|https://themuse.com/advice/how-to-follow-up-on-a-job-application-an-email-template
+Job|[Email] How to reject a job offer by phone or email (with example emails)|https://michaelpage.com.au/advice/career-advice/career-progression/how-to-reject-a-job-offer
+Job|[Email] How to Reject a Job Offer Politely (Email Samples)|https://thebalancemoney.com/job-rejection-email-message-examples-2063004
+Job|[Email] How to write a follow-up email after a job interview: Templates and tips|https://seek.com.au/career-advice/article/how-to-follow-up-on-your-application-or-interview-with-email-templates
+Job|[Interview] A curated awesome list of lists of interview questions|https://github.com/DopplerHQ/awesome-interview-questions
+Job|[Interview] Developer Roadmaps|https://roadmap.sh
+Job|[Interview] HiredInTech|https://hiredintech.com
+Job|[Interview] How to Answer "Why Should We Hire You" in an Interview?|https://geeksforgeeks.org/blogs/interview-question-why-should-we-hire-you
+Job|[Interview] NeetCode|https://neetcode.io
+Job|[Interview] Stop saying these 9 things in your interview|https://seek.com.au/career-advice/article/want-to-stand-out-in-an-interview-stop-saying-these-9-words
+Job|[Interview] Tech Interview Handbook|https://techinterviewhandbook.org
+Job|[Interview] The 32 smartest questions to ask at the end of every job interview|https://businessinsider.com/questions-to-ask-in-a-job-interview-2016-1
+Job|[Interview] What Did You Like Most About Your Job?|https://nijobs.com/careeradvice/what-did-you-like-most-about-your-job
+Job|[Resume] A Guide to Choosing the Right Resume Tense|https://indeed.com/career-advice/resumes-cover-letters/resume-tense
+Job|[Resume] Getting a Gig: A Guide|https://github.com/cassidoo/getting-a-gig
+Job|[Resume] How to make a resume: Step-by-step guide with examples|https://seek.com.au/career-advice/article/how-to-make-a-resume
+Job|[Resume] How to write a resume in Australia: A step-by-step guide with examples|https://seek.com.au/career-advice/article/resume-cv
+Job|[Resume] Novoresume|https://novoresume.com
+Job|[Site] arc()|https://arc.dev
+Job|[Site] Australian Companies with Visa Sponsorship|https://github.com/geshan/au-companies-providing-work-visa-sponsorship
+Job|[Site] Awesome Remote Job|https://github.com/lukasz-madon/awesome-remote-job
+Job|[Site] Forage|https://theforage.com
+Job|[Site] Grackle HQ: A job site for the game industry|https://gracklehq.com
+Job|[Site] Indie Hackers|https://indiehackers.com
+Job|[Site] levels.fyi|https://levels.fyi
+Job|[Site] We Work Remotely|https://weworkremotely.com
+Job|[Site] Wellfound|https://wellfound.com
 Miscellaneous|[Shopping] Moonpig Gift Shop|https://moonpig.com
 Miscellaneous|[Tool] RustDesk: An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer|https://rustdesk.com
 Miscellaneous|[Tool] Syncthing|https://syncthing.net
@@ -192,7 +198,10 @@ Programming|[Language] C3: The Ergonomic, Safe and Familiar Evolution of C|https
 Programming|[Language] Red: A next-generation programming language strongly inspired by Rebol, but with a broader field of usage thanks to its native-code compiler|https://red-lang.org
 Programming|[Learning] 0DE5|https://0de5.net
 Programming|[Learning] 30 seconds of code: Coding articles to level up your development skills|https://30secondsofcode.org
+Programming|[Learning] Build your own X|https://github.com/codecrafters-io/build-your-own-x
+Programming|[Learning] Challenging projects every programmer should try|https://austinhenley.com/blog/challengingprojects.html
 Programming|[Learning] Devhints: Rico's cheatsheets|https://devhints.io
+Programming|[Learning] Project Based Learning|https://github.com/practical-tutorials/project-based-learning
 Programming|[Learning] Rosetta Code: A programming chrestomathy site|https://rosettacode.org
 Programming|[Reading] Github Ranking: A list of the most github stars and forks repositories|https://evanli.github.io/Github-Ranking
 Programming|[Reading] Notes on structured concurrency, or: Go statement considered harmful|https://vorpus.org/blog/notes-on-structured-concurrency-or-go-statement-considered-harmful
@@ -218,6 +227,7 @@ Rust|[Learning] Rust Language Cheat Sheet|https://cheats.rs
 Rust|[Lib] Druid: A data-first Rust-native GUI design toolkit|https://github.com/linebender/druid
 Rust|[Lib] egui: An easy-to-use immediate mode GUI in Rust that runs on both web and native|https://egui.rs
 Rust|[Lib] iced: A cross-platform GUI library for Rust focused on simplicity and type-safety|https://iced.rs
+Rust|[Lib] Polars: A blazingly fast DataFrame library for manipulating structured data|https://docs.pola.rs
 Rust|[Lib] Xilem: A high-level architecture for writing GUI apps in Rust|https://github.com/linebender/xilem
 Rust|[Reading] Generating 1 Million PDFs in 10 Minutes|https://ersteiger.com/posts/rendering-one-million-pdfs
 Rust|[Reading] Master hexagonal architecture in Rust|https://howtocodeit.com/articles/master-hexagonal-architecture-rust
@@ -272,7 +282,8 @@ Web Front End|[Reading] How Web Works|https://github.com/vasanthk/how-web-works
 Web Front End|[Reading] Why you should test with user-event|https://ph-fritsche.github.io/blog/post/why-userevent
 Web Front End|[Tool] Local-first Software|https://lofi.so
 Writing|[Diagram] D2: Declarative Diagramming|https://d2lang.com
-Writing|[Diagram] markmap|https://markmap.js.org
+Writing|[Diagram] markmap: Visualize your Markdown with mindmaps|https://markmap.js.org
+Writing|[Digaram] Diagon: Interactive ASCII art diagram generators|https://github.com/ArthurSonzogni/Diagon
 Writing|[Docs] Docusaurus: Build optimized websites quickly, focus on your content|https://docusaurus.io
 Writing|[Docs] Eleventy: A simpler static site generator|https://11ty.dev
 Writing|[Docs] Fumadocs: The beautiful & flexible React.js docs framework|https://fumadocs.dev
