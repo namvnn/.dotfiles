@@ -27,6 +27,7 @@ require("conform").setup({
       return vim.fs.root(bufnr, { "biome.json", "biome.jsonc" }) and { "biome" } or { "prettier" }
     end,
     cs = { "csharpier" },
+    rust = { "rustfmt" },
   },
 })
 

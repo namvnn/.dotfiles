@@ -145,7 +145,7 @@ augroup mkdir_on_edit
   endfunction
 augroup END
 
-augroup c_ft
+augroup cc_ft
   autocmd!
   autocmd FileType c,cpp setlocal tags=./tags,tags,~/.tags/c-system
   autocmd FileType c,cpp if executable('clang-format') | setlocal formatprg=clang-format | endif
@@ -153,6 +153,11 @@ augroup c_ft
   autocmd FileType c     let b:start    = 'cc  -o %:p:r % && %:p:r'
   autocmd FileType cpp   let b:dispatch = 'c++ -std=c++11 -o %:p:r % && %:p:r'
   autocmd FileType cpp   let b:start    = 'c++ -std=c++11 -o %:p:r % && %:p:r'
+augroup END
+
+augroup rust_ft
+  autocmd!
+  autocmd FileType rust if executable('rustfmt') | setlocal formatprg=rustfmt | endif
 augroup END
 
 augroup markdown_ft

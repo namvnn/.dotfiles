@@ -167,3 +167,7 @@ end
 if vim.fn.executable("gopls") == 1 then
   vim.lsp.enable("gopls")
 end
+
+if vim.fn.executable("rust-analyzer") == 1 then
+  vim.lsp.enable("rust-analyzer")
+end
