@@ -80,9 +80,6 @@ vnoremap <Leader>p "_dP
 " Replace word under cursor
 nnoremap <Leader>s :%s/\<<C-R><C-W>\>/<C-R><C-W>/gI<Left><Left><Left>
 
-" Make file executable
-nnoremap <silent> <Leader>x <Cmd>!chmod +x %<CR>
-
 " Create or edit file
 nnoremap <Leader>e :e <C-R>=expand('%:p:h') . '/'<CR>
 
