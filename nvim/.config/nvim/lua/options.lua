@@ -7,10 +7,10 @@ vim.g.mapleader = " "
 
 vim.cmd("filetype plugin indent on")
 
-vim.o.shiftwidth = 2
+vim.o.shiftwidth = 4
 vim.o.expandtab = true
 vim.o.smarttab = true
-vim.o.softtabstop = 2
+vim.o.softtabstop = 4
 vim.o.tabstop = 4
 
 vim.o.breakindent = true
@@ -19,7 +19,6 @@ vim.o.colorcolumn = "80"
 vim.o.completeopt = "menu,menuone,popup,noselect"
 vim.o.copyindent = true
 vim.o.cursorline = true
-vim.o.display = "lastline,truncate"
 vim.o.foldlevel = 99
 vim.o.foldlevelstart = 99
 vim.o.grepprg = "rg --vimgrep"

@@ -11,15 +11,19 @@ let mapleader = ' '
 
 filetype plugin indent on
 
-set shiftwidth=2
+set shiftwidth=4
 set expandtab
 set smarttab
-set softtabstop=2
+set softtabstop=4
 set tabstop=4
 
+set autoindent
+set autoread
+set breakindent
 set clipboard=unnamed,unnamedplus
 set colorcolumn=80
 set completeopt=menu,menuone,popup,noselect
+set copyindent
 set cursorline
 set grepformat=%f:%l:%c:%m
 set grepprg=rg\ --vimgrep
