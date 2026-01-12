@@ -64,8 +64,8 @@ vim.opt.wrap = false -- disable wrapping of lines longer than the width of windo
 vim.opt.writebackup = false -- disable making a backup before overwriting a file
 
 if vim.fn.has("nvim-0.9.0") == 1 then
-  vim.opt.splitkeep = "screen" -- maintain code view when splitting
-  vim.opt.shortmess:append({ C = true })
+    vim.opt.splitkeep = "screen" -- maintain code view when splitting
+    vim.opt.shortmess:append({ C = true })
 end
 
 vim.cmd("filetype plugin indent on")

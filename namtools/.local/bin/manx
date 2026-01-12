@@ -4,7 +4,7 @@
 # Description: Create symbolic links for man pages of mise and pixi tools.
 # License: MIT License
 # Date created: November 09, 2025
-# Date modified: December 01, 2025
+# Date modified: January 12, 2026
 
 manx_dir="${HOME}/.local/share/manx"
 
@@ -12,77 +12,77 @@ man_files=()
 man_file_total=0
 
 _setup() {
-  rm -rf "${manx_dir}"
-  echo "Deleted ${manx_dir}!"
+    rm -rf "${manx_dir}"
+    echo "Deleted ${manx_dir}!"
 
-  mkdir -p "${manx_dir}"
-  echo "Created ${manx_dir}!"
+    mkdir -p "${manx_dir}"
+    echo "Created ${manx_dir}!"
 }
 
 _get_man_files() {
-  echo "Finding man files in ${MISE_DATA_DIR}..."
-  while read -r file; do 
-    man_files+=("$file")
-  done < <(find "${MISE_DATA_DIR}" -name '*.[1-9]' \( -type l -or -type f \))
+    echo "Finding man files in ${MISE_DATA_DIR}..."
+    while read -r file; do 
+        man_files+=("$file")
+    done < <(find "${MISE_DATA_DIR}" -name '*.[1-9]' \( -type l -or -type f \))
 
-  echo "Finding man files in ${HOME}/.pixi/envs..."
-  while read -r file; do 
-    man_files+=("$file")
-  done < <(find "${HOME}/.pixi/envs" -path '*share/man/*' -name '*.[1-9]' \( -type l -or -type f \))
+    echo "Finding man files in ${HOME}/.pixi/envs..."
+    while read -r file; do 
+        man_files+=("$file")
+    done < <(find "${HOME}/.pixi/envs" -path '*share/man/*' -name '*.[1-9]' \( -type l -or -type f \))
 
-  man_file_total="${#man_files[@]}"
-  echo "Found ${man_file_total} man files!"
+    man_file_total="${#man_files[@]}"
+        echo "Found ${man_file_total} man files!"
 }
 
 _create_symlink() {
-  local man_file="${1}"
-  local man_type="man${man_file##*.}"
-  local man_dir="${manx_dir}/${man_type}"
-  local man_filename="${man_file##*/}"
-  local source="${man_file}"
-  local target="${man_dir}/${man_filename}"
+    local man_file="${1}"
+    local man_type="man${man_file##*.}"
+    local man_dir="${manx_dir}/${man_type}"
+    local man_filename="${man_file##*/}"
+    local source="${man_file}"
+    local target="${man_dir}/${man_filename}"
 
-  if [[ ! -e "${man_dir}" ]]; then
-    mkdir -p "${man_dir}"
-  fi
-  if [[ ! -e "${target}" ]]; then
-    ln -s "${source}" "${target}"
-  fi
+    if [[ ! -e "${man_dir}" ]]; then
+        mkdir -p "${man_dir}"
+    fi
+    if [[ ! -e "${target}" ]]; then
+        ln -s "${source}" "${target}"
+    fi
 }
 
 _progress_bar() {
-  local count="${1}"
-  local total="${2}"
+    local count="${1}"
+    local total="${2}"
 
-  local percent_done=$((count * 100 / total))
-  local bar_char="|"
-  local bar_total=50
-  local bar_count=$((percent_done * bar_total / 100))
+    local percent_done=$((count * 100 / total))
+    local bar_char="|"
+    local bar_total=50
+    local bar_count=$((percent_done * bar_total / 100))
 
-  local i
-  local bars="["
-  for ((i = 0; i < "${bar_count}"; i += 1)); do
-    bars+="${bar_char}"
-  done
-  for ((i = "${bar_count}"; i < "${bar_total}"; i += 1)); do
-    bars+=" "
-  done
-  bars+="]"
+    local i
+    local bars="["
+    for ((i = 0; i < "${bar_count}"; i += 1)); do
+        bars+="${bar_char}"
+    done
+    for ((i = "${bar_count}"; i < "${bar_total}"; i += 1)); do
+        bars+=" "
+    done
+    bars+="]"
 
-  echo -ne "${bars} ${count}/${total} (${percent_done}%)\r"
+    echo -ne "${bars} ${count}/${total} (${percent_done}%)\r"
 }
 
 main() {
-  _setup
-  _get_man_files
+    _setup
+    _get_man_files
 
-  echo "Creating symlinks..."
-  for ((i = 0; i < "${man_file_total}"; i += 1)); do
-    _progress_bar "$((i+1))" "${man_file_total}"
-    _create_symlink "${man_files[i]}"
-  done
+    echo "Creating symlinks..."
+    for ((i = 0; i < "${man_file_total}"; i += 1)); do
+        _progress_bar "$((i+1))" "${man_file_total}"
+        _create_symlink "${man_files[i]}"
+    done
 
-  echo -e "\nCreated ${man_file_total} symlinks!"
+    echo -e "\nCreated ${man_file_total} symlinks!"
 }
 
 main "$@"

@@ -4,14 +4,14 @@
 # Description: Find and copy something
 # License: MIT License
 # Date created: July 22, 2024
-# Date modified: December 01, 2025
+# Date modified: January 12, 2026
 
 fcp_dir="${NAMTOOLS_DATA_DIR}"
 
 if [[ $1 == "ls" ]]; then
-  find "$fcp_dir" -maxdepth 1 -name "fcp-*.txt" \
-    | sed -e "s/^.*fcp-//" -e "s/.txt$//"
-  exit 0
+    find "$fcp_dir" -maxdepth 1 -name "fcp-*.txt" \
+        | sed -e "s/^.*fcp-//" -e "s/.txt$//"
+    exit 0
 fi
 
 category="$1"
@@ -20,17 +20,17 @@ fcp_file="$fcp_dir/fcp-$category.txt"
 # Fuzzy search
 
 if [[ $# -eq 0 ]]; then
-  files=$(find "$fcp_dir" -maxdepth 1 -name "fcp-*.txt" -exec cat {} '+')
-  selected=$(echo "$files" | fzf)
+    files=$(find "$fcp_dir" -maxdepth 1 -name "fcp-*.txt" -exec cat {} '+')
+    selected=$(echo "$files" | fzf)
 elif [[ -e "$fcp_file" ]]; then
-  selected=$(fzf < "$fcp_file")
+    selected=$(fzf < "$fcp_file")
 else
-  echo "$fcp_file: No such file"
-  exit 1
+    echo "$fcp_file: No such file"
+    exit 1
 fi
 
 if [[ -z "$selected" ]]; then
-  exit 1
+    exit 1
 fi
 
 selected=${selected/%: */}
@@ -39,11 +39,11 @@ selected=${selected/%: */}
 
 os=$(uname -s)
 case "$os" in
-  Darwin*)
-    echo -n "$selected" | pbcopy
-    ;;
-  Linux*)
-    echo -n "$selected" | xclip -selection clipboard
-    ;;
+    Darwin*)
+        echo -n "$selected" | pbcopy
+        ;;
+    Linux*)
+        echo -n "$selected" | xclip -selection clipboard
+        ;;
 esac
 echo "Copied to clipboard: $selected"

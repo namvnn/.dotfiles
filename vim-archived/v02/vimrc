@@ -141,17 +141,17 @@ tnoremap <C-D> <C-\><C-N>:q!<CR>
 
 " Fix the indentation of the entire file
 function s:fix_indent()
-  let l:view = winsaveview()
-  keepjumps keeppatterns silent! norm gg=G
-  call winrestview(l:view)
+    let l:view = winsaveview()
+    keepjumps keeppatterns silent! norm gg=G
+    call winrestview(l:view)
 endfunction
 nnoremap <Leader>= :call <SID>fix_indent()<CR>
 
 " Format the entire file
 function s:format()
-  let l:view = winsaveview()
-  keepjumps keeppatterns silent! norm gggqG
-  call winrestview(l:view)
+    let l:view = winsaveview()
+    keepjumps keeppatterns silent! norm gggqG
+    call winrestview(l:view)
 endfunction
 nnoremap <Leader>gq :call <SID>format()<CR>
 
@@ -186,52 +186,52 @@ ia <expr> me:: strftime('Author: Nam Nguyen <nguyenvietnam2401@gmail.com><CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 augroup mark_postqf
-  autocmd!
-  autocmd QuickFixCmdPost norm mG
+    autocmd!
+    autocmd QuickFixCmdPost norm mG
 augroup END
 
 augroup trim_spaces
-  autocmd!
-  autocmd BufWritePre * call s:trim_spaces()
+    autocmd!
+    autocmd BufWritePre * call s:trim_spaces()
 
-  function s:trim_spaces()
-    let l:view = winsaveview()
-    keepjumps keeppatterns silent! %s/\s\+$//e
-    keepjumps keeppatterns silent! %s/\%^\n\+//
-    keepjumps keeppatterns silent! %s/\(\n\n\)\n\+/\1/
-    keepjumps keeppatterns silent! %s/\($\n\s*\)\+\%$//
-    call winrestview(l:view)
-  endfunction
+    function s:trim_spaces()
+      let l:view = winsaveview()
+      keepjumps keeppatterns silent! %s/\s\+$//e
+      keepjumps keeppatterns silent! %s/\%^\n\+//
+      keepjumps keeppatterns silent! %s/\(\n\n\)\n\+/\1/
+      keepjumps keeppatterns silent! %s/\($\n\s*\)\+\%$//
+      call winrestview(l:view)
+    endfunction
 augroup END
 
 augroup mkdir_on_edit
-  autocmd!
-  autocmd BufWritePre * call s:mkdir_on_edit(expand('<afile>:p:h'))
+    autocmd!
+    autocmd BufWritePre * call s:mkdir_on_edit(expand('<afile>:p:h'))
 
-  function! s:mkdir_on_edit(dir)
-    if a:dir =~ '^/'
-          \ && !isdirectory(a:dir)
-          \ && input("'" . a:dir . "' does not exist. Create? [y/N] ") =~? '^y\%[es]$'
-      call mkdir(a:dir, 'p')
-    endif
-  endfunction
+    function! s:mkdir_on_edit(dir)
+      if a:dir =~ '^/'
+            \ && !isdirectory(a:dir)
+            \ && input("'" . a:dir . "' does not exist. Create? [y/N] ") =~? '^y\%[es]$'
+        call mkdir(a:dir, 'p')
+      endif
+    endfunction
 augroup END
 
 augroup c_ft
-  autocmd!
-  autocmd FileType c,cpp     setlocal tags=./tags,tags,~/.tags/c-system
-  autocmd FileType c,cpp     if executable('clang-format') | setlocal formatprg=clang-format | endif
-  autocmd BufEnter *.c,*.cpp command! Run :vs | term cc -o %:p:r % && %:p:r
+    autocmd!
+    autocmd FileType c,cpp     setlocal tags=./tags,tags,~/.tags/c-system
+    autocmd FileType c,cpp     if executable('clang-format') | setlocal formatprg=clang-format | endif
+    autocmd BufEnter *.c,*.cpp command! Run :vs | term cc -o %:p:r % && %:p:r
 augroup END
 
 augroup markdown_ft
-  autocmd!
-  autocmd FileType markdown setlocal textwidth=80
+    autocmd!
+    autocmd FileType markdown setlocal textwidth=80
 augroup END
 
 augroup typst_ft
-  autocmd!
-  autocmd FileType typst setlocal textwidth=80
+    autocmd!
+    autocmd FileType typst setlocal textwidth=80
 augroup END
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -251,17 +251,17 @@ command! DiffOrig vert new | set bt=nofile | r ++edit # | 0d_
 
 command! SendQf call s:send_qf()
 function s:send_qf()
-  let l:list = []
-  for line in getline(0, '$')
-    let l:match = matchlist(line, '\v^(.+)\|(\d+) col (\d+)\| (.*)$')
-    if len(l:match) != 0 && l:match[1] != ''
-      call add(l:list, {'filename': l:match[1], 'lnum': l:match[2], 'col': l:match[3], 'text': l:match[4]})
-    endif
-  endfor
+    let l:list = []
+    for line in getline(0, '$')
+      let l:match = matchlist(line, '\v^(.+)\|(\d+) col (\d+)\| (.*)$')
+      if len(l:match) != 0 && l:match[1] != ''
+        call add(l:list, {'filename': l:match[1], 'lnum': l:match[2], 'col': l:match[3], 'text': l:match[4]})
+      endif
+    endfor
 
-  call setqflist(l:list, 'r')
-  bdelete!
-  copen
+    call setqflist(l:list, 'r')
+    bdelete!
+    copen
 endfunction
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -277,31 +277,31 @@ let s:plugin_urls = [
       \ ]
 
 function s:install_plugins()
-  let l:install_plugin_urls = ''
-  let l:installing_plugin_msg = ''
-  let l:installed_plugin_msg = ''
+    let l:install_plugin_urls = ''
+    let l:installing_plugin_msg = ''
+    let l:installed_plugin_msg = ''
 
-  for plugin_url in s:plugin_urls
-    let l:plugin_name = fnamemodify(plugin_url, ':t')
-    let l:plugin_path = expand(s:plugin_root_path . '/' . l:plugin_name)
+    for plugin_url in s:plugin_urls
+      let l:plugin_name = fnamemodify(plugin_url, ':t')
+      let l:plugin_path = expand(s:plugin_root_path . '/' . l:plugin_name)
 
-    if !isdirectory(l:plugin_path)
-      let l:install_plugin_urls = l:install_plugin_urls . '\n' . plugin_url
-      let l:installing_plugin_msg = l:installing_plugin_msg . "\nInstalling " . l:plugin_name . '...'
-      let l:installed_plugin_msg = l:installed_plugin_msg . "\nInstalled " . l:plugin_name . '!'
+      if !isdirectory(l:plugin_path)
+        let l:install_plugin_urls = l:install_plugin_urls . '\n' . plugin_url
+        let l:installing_plugin_msg = l:installing_plugin_msg . "\nInstalling " . l:plugin_name . '...'
+        let l:installed_plugin_msg = l:installed_plugin_msg . "\nInstalled " . l:plugin_name . '!'
+      endif
+    endfor
+
+    if !empty(l:install_plugin_urls)
+      echo trim(l:installing_plugin_msg)
+
+      call system("echo -e '" . trim(l:install_plugin_urls) . "' "
+               \. "| xargs -P8 -I{} sh -c "
+               \. "'git clone --depth=1 {} "
+               \. s:plugin_root_path . "/$(basename {})'")
+
+      echo trim(l:installed_plugin_msg)
     endif
-  endfor
-
-  if !empty(l:install_plugin_urls)
-    echo trim(l:installing_plugin_msg)
-
-    call system("echo -e '" . trim(l:install_plugin_urls) . "' "
-             \. "| xargs -P8 -I{} sh -c "
-             \. "'git clone --depth=1 {} "
-             \. s:plugin_root_path . "/$(basename {})'")
-
-    echo trim(l:installed_plugin_msg)
-  endif
 endfunction
 
 command! Pc echo 'Plugin count: ' . len(s:plugin_urls)
@@ -316,12 +316,12 @@ call s:install_plugins()
 
 " matchit.vim
 if !exists('g:loaded_matchit') && findfile('plugin/matchit.vim', &rtp) ==# ''
-  runtime! macros/matchit.vim
+    runtime! macros/matchit.vim
 endif
 
 " man
 if exists(':Man') != 2 && !exists('g:loaded_man') && &filetype !=? 'man' && !has('nvim')
-  runtime ftplugin/man.vim
+    runtime ftplugin/man.vim
 endif
 
 " netrw

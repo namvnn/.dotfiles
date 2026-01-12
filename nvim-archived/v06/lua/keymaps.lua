@@ -42,7 +42,12 @@ vim.keymap.set("n", "<C-J>", ":cnext<CR>zz")
 vim.keymap.set("n", "<C-K>", ":cprev<CR>zz")
 
 -- Toggle spelling checker
-vim.keymap.set("", "<F12>", ":setlocal spell! spelllang=en_us<CR>", { remap = true })
+vim.keymap.set(
+    "",
+    "<F12>",
+    ":setlocal spell! spelllang=en_us<CR>",
+    { remap = true }
+)
 
 -- Replace currently selected text with black hole register without yanking it
 vim.keymap.set("v", "<Leader>p", '"_dP')
@@ -55,7 +60,11 @@ vim.keymap.set("v", "<Leader>d", '"_d')
 vim.keymap.set("i", "<C-C>", "<Esc>")
 
 -- Replace word under cursor
-vim.keymap.set("n", "<Leader>s", [[:%s/\<<C-R><C-W>\>/<C-R><C-W>/gI<Left><Left><Left>]])
+vim.keymap.set(
+    "n",
+    "<Leader>s",
+    [[:%s/\<<C-R><C-W>\>/<C-R><C-W>/gI<Left><Left><Left>]]
+)
 
 -- Make file executable
 vim.keymap.set("n", "<Leader>x", ":!chmod +x %<CR>", { silent = true })
@@ -68,16 +77,16 @@ vim.keymap.set("t", "<C-D>", [[<C-\><C-N>:q!<CR>]])
 
 -- Fix the indentation of the entire file
 vim.keymap.set("n", "<Leader>=", function()
-  local view = vim.fn.winsaveview()
-  vim.cmd("keepjumps keeppatterns silent! norm gg=G")
-  vim.fn.winrestview(view)
+    local view = vim.fn.winsaveview()
+    vim.cmd("keepjumps keeppatterns silent! norm gg=G")
+    vim.fn.winrestview(view)
 end)
 
 -- Format the entire file
 vim.keymap.set("n", "<Leader>gq", function()
-  local view = vim.fn.winsaveview()
-  vim.cmd("keepjumps keeppatterns silent! norm gggqG")
-  vim.fn.winrestview(view)
+    local view = vim.fn.winsaveview()
+    vim.cmd("keepjumps keeppatterns silent! norm gggqG")
+    vim.fn.winrestview(view)
 end)
 
 -- Preview markdown

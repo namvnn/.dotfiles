@@ -1,20 +1,23 @@
 return {
-  {
-    "stevearc/conform.nvim",
-    cmd = "ConformInfo",
-    dependencies = { "williamboman/mason.nvim" },
-    keys = {
-      {
-        "<Leader>F",
-        function()
-          require("conform").format({ async = true, lsp_fallback = true })
-        end,
-        mode = "n",
-        desc = "Format buffer",
-      },
+    {
+        "stevearc/conform.nvim",
+        cmd = "ConformInfo",
+        dependencies = { "williamboman/mason.nvim" },
+        keys = {
+            {
+                "<Leader>F",
+                function()
+                    require("conform").format({
+                        async = true,
+                        lsp_fallback = true,
+                    })
+                end,
+                mode = "n",
+                desc = "Format buffer",
+            },
+        },
+        opts = {
+            formatters_by_ft = {},
+        },
     },
-    opts = {
-      formatters_by_ft = {},
-    },
-  },
 }

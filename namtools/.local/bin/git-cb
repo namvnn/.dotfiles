@@ -4,7 +4,7 @@
 # Description: Better git checkout
 # License: MIT License
 # Date Created: June 27, 2024
-# Date Modified: December 01, 2025
+# Date modified: January 12, 2026
 
 branches=()
 BLACK="\033[0;30m"
@@ -19,18 +19,18 @@ RESET="\033[0m"
 CLEAR="\033c"
 
 get-branch() {
-  branches=()
-  while IFS= read -r line; do
-      branches+=( "$line" )
-  done < <( git branch )
+    branches=()
+    while IFS= read -r line; do
+        branches+=( "$line" )
+    done < <( git branch )
 
-  length=${#branches[@]}
-  for (( i=0; i<${length}; i++ )); do
-    if [[ -n "$i" ]]; then
-      branches[$i]=${branches[$i]:2}
-      echo -e "${PURPLE}$i: ${RESET}${branches[$i]}"
-    fi
-  done
+    length=${#branches[@]}
+    for (( i=0; i<${length}; i++ )); do
+        if [[ -n "$i" ]]; then
+            branches[$i]=${branches[$i]:2}
+            echo -e "${PURPLE}$i: ${RESET}${branches[$i]}"
+        fi
+    done
 }
 
 printf "\n"
@@ -39,9 +39,9 @@ printf "\n${RESET}Enter the number: "
 read number
 
 if (( $number < ${#branches[@]} )); then
-  branch=${branches[$number]}
-  printf "${RESET}"
-  git checkout $branch
+    branch=${branches[$number]}
+    printf "${RESET}"
+    git checkout $branch
 else
-  printf "${RED}The given number is out of limit\n"
+    printf "${RED}The given number is out of limit\n"
 fi

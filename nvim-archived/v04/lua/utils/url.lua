@@ -12,23 +12,28 @@ local open_url
 ---
 --- @param url string
 function M.launch(url)
-  if not open_url then
-    if package.config:sub(1, 1) == "\\" then
-      open_url = function(_url)
-        shell.start_job(string.format('rundll32 url.dll,FileProtocolHandler "%s"', _url))
-      end
-    elseif (io.popen("uname -s"):read("*a")):match("Darwin") then
-      open_url = function(_url)
-        shell.start_job(string.format('open "%s"', _url))
-      end
-    else
-      open_url = function(_url)
-        shell.start_job(string.format('xdg-open "%s"', _url))
-      end
+    if not open_url then
+        if package.config:sub(1, 1) == "\\" then
+            open_url = function(_url)
+                shell.start_job(
+                    string.format(
+                        'rundll32 url.dll,FileProtocolHandler "%s"',
+                        _url
+                    )
+                )
+            end
+        elseif (io.popen("uname -s"):read("*a")):match("Darwin") then
+            open_url = function(_url)
+                shell.start_job(string.format('open "%s"', _url))
+            end
+        else
+            open_url = function(_url)
+                shell.start_job(string.format('xdg-open "%s"', _url))
+            end
+        end
     end
-  end
 
-  open_url(url)
+    open_url(url)
 end
 
 return M

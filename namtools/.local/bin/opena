@@ -4,22 +4,22 @@
 # Description: Open a file, a directory or a URL with the default application across operating systems
 # License: MIT License
 # Date created: June 18, 2025
-# Date modified: December 01, 2025
+# Date modified: January 12, 2026
 
 value="$1"
 
 case "$(uname)" in
-  Darwin)
-    open "$value"
-    ;;
-  Linux)
-    xdg-open "$value"
-    ;;
-  MINGW* | MSYS* | CYGWIN* | Windows_NT)
-    start "" "$value"
-    ;;
-  *)
-    echo "opena: unsupported OS"
-    exit 1
-    ;;
+    Darwin)
+        open "$value"
+        ;;
+    Linux)
+        xdg-open "$value"
+        ;;
+    MINGW* | MSYS* | CYGWIN* | Windows_NT)
+        start "" "$value"
+        ;;
+    *)
+        echo "opena: unsupported OS"
+        exit 1
+        ;;
 esac

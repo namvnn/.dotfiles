@@ -4,31 +4,31 @@
 # Description: Create or switch to a tmux session
 # License: MIT License
 # Date created: Jun 16, 2022
-# Date modified: January 07, 2026
+# Date modified: January 12, 2026
 
 if [[ "$#" -eq "1" ]]; then
-  start_dir="$1"
+    start_dir="$1"
 else
-  start_dir=$(find -L "$HOME/Documents" "$HOME/repos" -mindepth 1 -maxdepth 5 -type d 2>/dev/null | fzf)
+    start_dir=$(find -L "$HOME/Documents" "$HOME/repos" -mindepth 1 -maxdepth 5 -type d 2>/dev/null | fzf)
 fi
 
 if [[ -z "$start_dir" ]]; then
-  exit 0
+    exit 0
 fi
 
 session_name=$(basename "$start_dir" | tr . _)
 
 if tmux has-session -t "$session_name" 2>/dev/null; then
-  if [[ -z "$TMUX" ]]; then
-    tmux attach-session -t "$session_name"
-  else
-    tmux switch-client -t "$session_name"
-  fi
+    if [[ -z "$TMUX" ]]; then
+        tmux attach-session -t "$session_name"
+    else
+        tmux switch-client -t "$session_name"
+    fi
 else
-  if [[ -z "$TMUX" ]]; then
-    tmux new-session -s "$session_name" -c "$start_dir"
-  else
-    tmux new-session -ds "$session_name" -c "$start_dir"
-    tmux switch-client -t "$session_name"
-  fi
+    if [[ -z "$TMUX" ]]; then
+        tmux new-session -s "$session_name" -c "$start_dir"
+    else
+        tmux new-session -ds "$session_name" -c "$start_dir"
+        tmux switch-client -t "$session_name"
+    fi
 fi

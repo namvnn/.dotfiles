@@ -4,7 +4,7 @@
 # Description: Delete git branches
 # License: MIT License
 # Date Created: October 07, 2021
-# Date Modified: December 01, 2025
+# Date modified: January 12, 2026
 
 branches=()
 BLACK="\033[0;30m"
@@ -19,42 +19,42 @@ RESET="\033[0m"
 CLEAR="\033c"
 
 get-branch() {
-  branches=()
-  while IFS= read -r line; do
-      branches+=( "$line" )
-  done < <( git branch )
+    branches=()
+    while IFS= read -r line; do
+        branches+=( "$line" )
+    done < <( git branch )
 
-  length=${#branches[@]}
-  for (( i=0; i<${length}; i++ )); do
-    if [[ -n "$i" ]]; then
-      branches[$i]=${branches[$i]:2}
-      echo -e "${PURPLE}$i: ${RESET}${branches[$i]}"
-    fi
-  done
+    length=${#branches[@]}
+    for (( i=0; i<${length}; i++ )); do
+        if [[ -n "$i" ]]; then
+            branches[$i]=${branches[$i]:2}
+            echo -e "${PURPLE}$i: ${RESET}${branches[$i]}"
+        fi
+    done
 }
 
 while : ; do
 
-  printf "\n${RESET}-------------------------------------------\n\n"
-  get-branch
-  printf "\n${RESET}Enter the number (q for quit): "
-  read number
-  if [[ $number == "q" ]]; then
-    break
-  elif [[ -z $number ]]; then
-    printf "\n${RED}Input required\n"
-    continue
-  elif (( $number < 0 || $number >= ${#branches[@]} )); then
-    printf "\n${RED}The given number is out of limit\n"
-    continue
-  fi
+    printf "\n${RESET}-------------------------------------------\n\n"
+    get-branch
+    printf "\n${RESET}Enter the number (q for quit): "
+    read number
+    if [[ $number == "q" ]]; then
+        break
+    elif [[ -z $number ]]; then
+        printf "\n${RED}Input required\n"
+        continue
+    elif (( $number < 0 || $number >= ${#branches[@]} )); then
+        printf "\n${RED}The given number is out of limit\n"
+        continue
+    fi
 
-  branch=${branches[$number]}
-  git branch -D $branch
-  success=$?
-  if [[ $success -ne 0 ]]; then
-    printf "\n${RED}Cannot delete $branch since it is being checked out\n"
-  else
-    printf "\n${GREEN}Deleted $branch\n"
-  fi
+    branch=${branches[$number]}
+    git branch -D $branch
+    success=$?
+    if [[ $success -ne 0 ]]; then
+        printf "\n${RED}Cannot delete $branch since it is being checked out\n"
+    else
+        printf "\n${GREEN}Deleted $branch\n"
+    fi
 done

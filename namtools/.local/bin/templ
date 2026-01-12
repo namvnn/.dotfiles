@@ -4,7 +4,7 @@
 # Description: Create a file given a template name
 # License: MIT License
 # Date Created: December 01, 2025
-# Date Modified: December 23, 2025
+# Date modified: January 12, 2026
 
 cmd="$(basename "${0}")"
 version="0.2.0"
@@ -17,33 +17,33 @@ template_dir="${NAMTOOLS_DATA_DIR}"
 # Arguments:
 #   [message ...]  Error messages
 exit-1() {
-  {
-    printf "${cmd}: "
-    printf "%s\n" "${@}"
-  } 1>&2
-  exit 1
+    {
+        printf "${cmd}: "
+        printf "%s\n" "${@}"
+    } 1>&2
+    exit 1
 }
 
 # Lists all available templates.
 #
 # Usage: list-templates
 list-templates() {
-  find "${template_dir}" -maxdepth 1 -name "templ-*.txt" \
-    | sed -e "s/^.*templ-//" -e "s/.txt$//"
+    find "${template_dir}" -maxdepth 1 -name "templ-*.txt" \
+        | sed -e "s/^.*templ-//" -e "s/.txt$//"
 }
 
 # Prints the version.
 #
 # Usage: print-version
 print-version() {
-  printf "${cmd} ${version}\n"
+    printf "${cmd} ${version}\n"
 }
 
 # Prints the usage information.
 #
 # Usage: print-help
 print-help() {
-  printf "${cmd} - Create a file given a template name [version ${version}]
+    printf "${cmd} - Create a file given a template name [version ${version}]
 
 Usage: 
   ${cmd} [options]
@@ -61,34 +61,34 @@ Options:
 }
 
 main() {
-  if (( $# <= 1 )); then
-    local option="${1}"
+    if (( $# <= 1 )); then
+        local option="${1}"
 
-    case "${option}" in
-      --list | -l)
-        list-templates
-        ;;
-      --version | -v)
-        print-version
-        ;;
-      *)
-        exit-1 "${option}: No such template"
-        ;;
-    esac
+        case "${option}" in
+            --list | -l)
+                list-templates
+                ;;
+            --version | -v)
+                print-version
+                ;;
+            *)
+                exit-1 "${option}: No such template"
+                ;;
+        esac
 
-    exit
-  fi
+        exit
+    fi
 
-  local template_name="${1}"
-  local file_path="${2}"
-  local template_file="${template_dir}/templ-${template_name}.txt"
+    local template_name="${1}"
+    local file_path="${2}"
+    local template_file="${template_dir}/templ-${template_name}.txt"
 
-  if [[ ! -e "${template_file}" ]]; then
-    exit-1 "${template_file}: No such template"
-  fi
+    if [[ ! -e "${template_file}" ]]; then
+        exit-1 "${template_file}: No such template"
+    fi
 
-  mkdir -p $(dirname "${file_path}")
-  cp "${template_file}" "${file_path}"
+    mkdir -p $(dirname "${file_path}")
+    cp "${template_file}" "${file_path}"
 }
 
 main "$@"

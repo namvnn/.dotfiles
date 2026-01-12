@@ -4,46 +4,52 @@ local shell = require("utils.shell")
 
 --- List all capabilities of the server associated with the current buffer
 vim.api.nvim_create_user_command("LspCapabilities", function()
-  local curBuf = vim.api.nvim_get_current_buf()
-  local clients = vim.lsp.get_active_clients({ bufnr = curBuf })
+    local curBuf = vim.api.nvim_get_current_buf()
+    local clients = vim.lsp.get_active_clients({ bufnr = curBuf })
 
-  for _, client in pairs(clients) do
-    if client.name ~= "null-ls" then
-      local capabilities = {}
-      for capability_name, is_active in pairs(client.server_capabilities) do
-        if is_active and capability_name:find("Provider") then
-          table.insert(capabilities, "- " .. capability_name)
+    for _, client in pairs(clients) do
+        if client.name ~= "null-ls" then
+            local capabilities = {}
+            for capability_name, is_active in pairs(client.server_capabilities) do
+                if is_active and capability_name:find("Provider") then
+                    table.insert(capabilities, "- " .. capability_name)
+                end
+            end
+
+            table.sort(capabilities)
+
+            local msg = "# "
+                .. client.name
+                .. "\n"
+                .. table.concat(capabilities, "\n")
+            vim.notify(msg, vim.log.levels.TRACE)
         end
-      end
-
-      table.sort(capabilities)
-
-      local msg = "# " .. client.name .. "\n" .. table.concat(capabilities, "\n")
-      vim.notify(msg, vim.log.levels.TRACE)
     end
-  end
 end, {})
 
 vim.api.nvim_create_user_command("Template", function(opts)
-  local template_name = opts.args
+    local template_name = opts.args
 
-  if template_name == "cg" then
-    vim.cmd("read $HOME/.config/nvim/templates/CG.cpp")
-  elseif template_name == "ccp" then
-    vim.cmd("read $HOME/.config/nvim/templates/CCP.cpp")
-  elseif template_name == "pg" then
-    vim.cmd("read $HOME/.config/nvim/templates/PG.py")
-  elseif template_name == "pcp" then
-    vim.cmd("read $HOME/.config/nvim/templates/PCP.py")
-  elseif template_name == "html" then
-    vim.cmd("read $HOME/.config/nvim/templates/HTML.html")
-  elseif template_name == "java" then
-    vim.cmd("read $HOME/.config/nvim/templates/Java.java")
-  elseif template_name == "ts" then
-    vim.cmd("read $HOME/.config/nvim/templates/TS.ts")
-  else
-    vim.notify("No template for " .. template_name .. "!", vim.log.levels.WARN)
-  end
+    if template_name == "cg" then
+        vim.cmd("read $HOME/.config/nvim/templates/CG.cpp")
+    elseif template_name == "ccp" then
+        vim.cmd("read $HOME/.config/nvim/templates/CCP.cpp")
+    elseif template_name == "pg" then
+        vim.cmd("read $HOME/.config/nvim/templates/PG.py")
+    elseif template_name == "pcp" then
+        vim.cmd("read $HOME/.config/nvim/templates/PCP.py")
+    elseif template_name == "html" then
+        vim.cmd("read $HOME/.config/nvim/templates/HTML.html")
+    elseif template_name == "java" then
+        vim.cmd("read $HOME/.config/nvim/templates/Java.java")
+    elseif template_name == "ts" then
+        vim.cmd("read $HOME/.config/nvim/templates/TS.ts")
+    else
+        vim.notify(
+            "No template for " .. template_name .. "!",
+            vim.log.levels.WARN
+        )
+    end
 end, { nargs = 1, desc = "Load a template" })
 
 -- stylua: ignore
@@ -68,9 +74,9 @@ vim.api.nvim_create_user_command("Exe", function()
 end, { desc = "Execute code based on filetype" })
 
 vim.api.nvim_create_user_command("OpenGitCommitURL", function()
-  local filetype = file.get_filetype()
+    local filetype = file.get_filetype()
 
-  if filetype == "fugitiveblame" then
-    git.open_commit_in_browser(vim.fn.expand("<cword>"))
-  end
+    if filetype == "fugitiveblame" then
+        git.open_commit_in_browser(vim.fn.expand("<cword>"))
+    end
 end, { desc = "Open Git commit URL" })

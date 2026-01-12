@@ -4,7 +4,7 @@
 # Description: The URL bookmark manager (bm)
 # License: MIT License
 # Date created: July 02, 2025
-# Date modified: December 01, 2025
+# Date modified: January 12, 2026
 
 # BOOKMARK FILE
 #
@@ -26,11 +26,11 @@ bm_separator="|"
 # Arguments:
 #   [message ...]  Error messages
 exit-1() {
-  {
-    printf "${cmd}: "
-    printf "%s\n" "${@}"
-  } 1>&2
-  exit 1
+    {
+        printf "${cmd}: "
+        printf "%s\n" "${@}"
+    } 1>&2
+    exit 1
 }
 
 # Adds a bookmark.
@@ -48,15 +48,15 @@ exit-1() {
 #   -t  Bookmark title
 #   -u  Bookmark URL
 add-bm() {
-  read -r -p "Category: " category
-  read -r -p "Title: " title
-  read -r -p "URL: " url
+    read -r -p "Category: " category
+    read -r -p "Title: " title
+    read -r -p "URL: " url
 
-  local bookmark="${category}${bm_separator}${title}${bm_separator}${url}"
-  local bookmarks=$(cat "${bm_file}")
-  bookmarks="${bookmarks}\n${bookmark}"
+    local bookmark="${category}${bm_separator}${title}${bm_separator}${url}"
+    local bookmarks=$(cat "${bm_file}")
+    bookmarks="${bookmarks}\n${bookmark}"
 
-  printf "${bookmarks}" | sort -f > "${bm_file}"
+    printf "${bookmarks}" | sort -f > "${bm_file}"
 }
 
 # Opens a bookmark in browser.
@@ -72,9 +72,9 @@ add-bm() {
 # Options:
 #   -l Line number
 open-bm() {
-  local bm=$(fzf < "${bm_file}")
-  local url=$(cut -d '|' -f 3 <<< "${bm}")
-  opena "${url}"
+    local bm=$(fzf < "${bm_file}")
+    local url=$(cut -d '|' -f 3 <<< "${bm}")
+    opena "${url}"
 }
 
 # Copies a bookmark into clipboard.
@@ -90,9 +90,9 @@ open-bm() {
 # Options:
 #   -l Line number
 copy-bm() {
-  local bm=$(fzf < "${bm_file}")
-  local url=$(cut -d '|' -f 3 <<< "${bm}")
-  pbcopy <<< "${url}"
+    local bm=$(fzf < "${bm_file}")
+    local url=$(cut -d '|' -f 3 <<< "${bm}")
+    pbcopy <<< "${url}"
 }
 
 # Removes a bookmark.
@@ -108,21 +108,21 @@ copy-bm() {
 # Options:
 #   -l Line number
 rm-bm() {
-  printf "TODO: Remove bookmark\n"
+    printf "TODO: Remove bookmark\n"
 }
 
 # Prints the content of the bookmark file.
 #
 # Usage: view-bm
 view-bm() {
-  cat "${bm_file}"
+    cat "${bm_file}"
 }
 
 # Prints the usage information.
 #
 # Usage: print-help
 print-help() {
-  printf "${cmd} - Manage your bookmarks [version ${version}]
+    printf "${cmd} - Manage your bookmarks [version ${version}]
  
 Usage: ${cmd} [options] [command]
 
@@ -145,38 +145,38 @@ Options:
 #
 # Usage: print-version
 print-version() {
-  printf "${cmd} ${version}\n"
+    printf "${cmd} ${version}\n"
 }
 
 main() {
-  local subcmd="${1:-help}"
-  case "${subcmd}" in
-    add)
-      add-bm
-      ;;
-    open)
-      open-bm
-      ;;
-    copy | cp)
-      copy-bm
-      ;;
-    remove | rm)
-      rm-bm
-      ;;
-    view | list | ls)
-      view-bm
-      ;;
-    help | --help | -h)
-      print-help
-      ;;
-    version | --version | -v)
-      print-version
-      ;;
-    *)
-      exit-1 "Unknown command '${subcmd}'" \
-        "For more information, try '${cmd} help' or '${cmd} -h'"
-      ;;
-  esac
+    local subcmd="${1:-help}"
+    case "${subcmd}" in
+        add)
+            add-bm
+            ;;
+        open)
+            open-bm
+            ;;
+        copy | cp)
+            copy-bm
+            ;;
+        remove | rm)
+            rm-bm
+            ;;
+        view | list | ls)
+            view-bm
+            ;;
+        help | --help | -h)
+            print-help
+            ;;
+        version | --version | -v)
+            print-version
+            ;;
+        *)
+            exit-1 "Unknown command '${subcmd}'" \
+                "For more information, try '${cmd} help' or '${cmd} -h'"
+            ;;
+    esac
 }
 
 main "${@}"

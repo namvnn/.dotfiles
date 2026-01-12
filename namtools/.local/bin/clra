@@ -4,12 +4,12 @@
 # Description: Print 256 terminal colors
 # License: MIT License
 # Date created: October 21, 2024
-# Date modified: December 01, 2025
+# Date modified: January 12, 2026
 
 output=''
 
 for i in {0..255}; do
-  output="${output}\033[38;5;${i}m${i}\n"
+    output="${output}\033[38;5;${i}m${i}\n"
 done
 
 printf "${output}" | column

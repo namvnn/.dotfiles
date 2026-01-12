@@ -5,17 +5,17 @@
 " System
 
 if !exists("g:os")
-  if has("win64") || has("win32") || has("win16")
-    let g:os = "Windows"
-  else
-    let g:os = substitute(system("uname"), "\n", "", "")
-  endif
+    if has("win64") || has("win32") || has("win16")
+      let g:os = "Windows"
+    else
+      let g:os = substitute(system("uname"), "\n", "", "")
+    endif
 endif
 
 " File
 
 function s:count_directories_in_path(path)
-  return len(filter(globpath(a:path, '*', 0, 1), 'isdirectory(v:val)'))
+    return len(filter(globpath(a:path, '*', 0, 1), 'isdirectory(v:val)'))
 endfunction
 
 " Plugin
@@ -26,14 +26,14 @@ command PlugClean call system("rm -rf " . s:PLUGIN_DIR) | echo "Removed all plug
 command PlugCount echo "Plugin count: " . s:count_directories_in_path(s:PLUGIN_DIR)
 
 function s:install_plugin(plugin_source_url, plugin_name)
-  let l:plugin_dest_dir = expand(s:PLUGIN_DIR . "/" . a:plugin_name)
+    let l:plugin_dest_dir = expand(s:PLUGIN_DIR . "/" . a:plugin_name)
 
-  if !isdirectory(l:plugin_dest_dir)
-    echo "Installing " . a:plugin_name . "..."
-    call system("git clone --depth 1 " . a:plugin_source_url . " " . l:plugin_dest_dir)
-    echo "Installed " . a:plugin_name . "!"
-    echo " "
-  endif
+    if !isdirectory(l:plugin_dest_dir)
+      echo "Installing " . a:plugin_name . "..."
+      call system("git clone --depth 1 " . a:plugin_source_url . " " . l:plugin_dest_dir)
+      echo "Installed " . a:plugin_name . "!"
+      echo " "
+    endif
 endfunction
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -214,12 +214,12 @@ inoremap <C-W> <C-G>u<C-W>
 
 autocmd BufWritePre * call s:trim_white_space()
 function s:trim_white_space()
-  let l:save = winsaveview()
-  keepjumps keeppatterns silent! %s/\s\+$//e
-  keepjumps keeppatterns silent! %s/\%^\n\+//
-  keepjumps keeppatterns silent! %s/\(\n\n\)\n\+/\1/
-  keepjumps keeppatterns silent! %s/\($\n\s*\)\+\%$//
-  call winrestview(l:save)
+    let l:save = winsaveview()
+    keepjumps keeppatterns silent! %s/\s\+$//e
+    keepjumps keeppatterns silent! %s/\%^\n\+//
+    keepjumps keeppatterns silent! %s/\(\n\n\)\n\+/\1/
+    keepjumps keeppatterns silent! %s/\($\n\s*\)\+\%$//
+    call winrestview(l:save)
 endfunction
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -228,13 +228,13 @@ endfunction
 
 colorscheme quiet
 if &background == "light"
-  highlight Comment guifg=#949494               ctermfg=246
-  highlight Normal  guifg=#242424 guibg=#FFFFFF ctermfg=black ctermbg=white
-  highlight! link NormalFloat Normal
+    highlight Comment guifg=#949494               ctermfg=246
+    highlight Normal  guifg=#242424 guibg=#FFFFFF ctermfg=black ctermbg=white
+    highlight! link NormalFloat Normal
 else
-  highlight Comment guifg=#585858               ctermfg=240
-  highlight Normal  guifg=#F3F3F3 guibg=#121212 ctermfg=white ctermbg=black
-  highlight! link NormalFloat Normal
+    highlight Comment guifg=#585858               ctermfg=240
+    highlight Normal  guifg=#F3F3F3 guibg=#121212 ctermfg=white ctermbg=black
+    highlight! link NormalFloat Normal
 endif
 
 "call s:install_plugin("https://github.com/rose-pine/vim", "rose-pine")

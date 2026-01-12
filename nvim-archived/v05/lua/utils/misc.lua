@@ -6,17 +6,17 @@ local M = {}
 --- @param original T
 --- @return T
 function M.shallow_copy(original)
-  local orig_type = type(original)
-  local copy
-  if orig_type == "table" then
-    copy = {}
-    for orig_key, orig_value in pairs(original) do
-      copy[orig_key] = orig_value
+    local orig_type = type(original)
+    local copy
+    if orig_type == "table" then
+        copy = {}
+        for orig_key, orig_value in pairs(original) do
+            copy[orig_key] = orig_value
+        end
+    else -- number, string, boolean, etc
+        copy = original
     end
-  else -- number, string, boolean, etc
-    copy = original
-  end
-  return copy
+    return copy
 end
 
 --- Create a debounced function that delays the given function
@@ -27,14 +27,14 @@ end
 --- @param callback fun(...)
 --- @return fun(...)
 function M.debounce(callback, delay_in_ms)
-  local timer = vim.uv.new_timer()
-  return function(...)
-    local argv = { ... }
-    timer:start(delay_in_ms, 0, function()
-      timer:stop()
-      vim.schedule_wrap(callback)(unpack(argv))
-    end)
-  end
+    local timer = vim.uv.new_timer()
+    return function(...)
+        local argv = { ... }
+        timer:start(delay_in_ms, 0, function()
+            timer:stop()
+            vim.schedule_wrap(callback)(unpack(argv))
+        end)
+    end
 end
 
 return M

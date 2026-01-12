@@ -48,7 +48,11 @@ vim.keymap.set("n", "<C-K>", ":cprev<CR>zz")
 vim.keymap.set("v", "<Leader>p", '"_dP')
 
 -- Replace word under cursor
-vim.keymap.set("n", "<Leader>s", [[:%s/\<<C-R><C-W>\>/<C-R><C-W>/gI<Left><Left><Left>]])
+vim.keymap.set(
+    "n",
+    "<Leader>s",
+    [[:%s/\<<C-R><C-W>\>/<C-R><C-W>/gI<Left><Left><Left>]]
+)
 
 -- Create or edit file
 vim.keymap.set("n", "<Leader>e", ":e <C-R>=expand('%:p:h') . '/'<CR>")
@@ -64,15 +68,15 @@ vim.keymap.set("n", "-", ":Ex<CR>")
 --------------------------------------------------------------------------------
 
 vim.keymap.set(
-  "ia",
-  "me::",
-  vim.fn.strftime(
-    "Author: Nam Nguyen <nguyenvietnam2401@gmail.com><CR>"
-      .. "Description:<CR>"
-      .. "License: MIT License<CR>"
-      .. "Date created: %B %d, %Y<CR>"
-      .. "Date modified: %B %d, %Y"
-  )
+    "ia",
+    "me::",
+    vim.fn.strftime(
+        "Author: Nam Nguyen <nguyenvietnam2401@gmail.com><CR>"
+            .. "Description:<CR>"
+            .. "License: MIT License<CR>"
+            .. "Date created: %B %d, %Y<CR>"
+            .. "Date modified: %B %d, %Y"
+    )
 )
 
 --------------------------------------------------------------------------------
@@ -80,43 +84,48 @@ vim.keymap.set(
 --------------------------------------------------------------------------------
 
 local function augroup(name, clear)
-  return vim.api.nvim_create_augroup("namnguyen_" .. name, { clear = clear or true })
+    return vim.api.nvim_create_augroup(
+        "namnguyen_" .. name,
+        { clear = clear or true }
+    )
 end
 
 -- Resize splits if window got resized
 vim.api.nvim_create_autocmd({ "VimResized" }, {
-  group = augroup("resize_splits"),
-  command = "wincmd =",
+    group = augroup("resize_splits"),
+    command = "wincmd =",
 })
 
 -- Highlight on yank
 vim.api.nvim_create_autocmd({ "TextYankPost" }, {
-  group = augroup("highlight_yank"),
-  callback = function()
-    vim.highlight.on_yank()
-  end,
+    group = augroup("highlight_yank"),
+    callback = function()
+        vim.highlight.on_yank()
+    end,
 })
 
 -- Stop treesitter
 vim.api.nvim_create_autocmd({ "FileType" }, {
-  group = augroup("stop_treesitter"),
-  callback = function(event)
-    vim.treesitter.stop(event.buf)
-  end,
+    group = augroup("stop_treesitter"),
+    callback = function(event)
+        vim.treesitter.stop(event.buf)
+    end,
 })
 
 -- Create intermediate directories on edit
 vim.api.nvim_create_autocmd({ "BufWritePre" }, {
-  group = augroup("mkdir_on_edit"),
-  callback = function()
-    local dir = vim.fn.expand("<afile>:p:h")
-    if dir:match("^/") and vim.fn.isdirectory(dir) == 0 then
-      local input = vim.fn.input(("'%s' does not exist. Create? [y/N] "):format(dir))
-      if input:lower():match("^(y)?(ye)?(yes)?$") then
-        vim.fn.mkdir(dir, "p")
-      end
-    end
-  end,
+    group = augroup("mkdir_on_edit"),
+    callback = function()
+        local dir = vim.fn.expand("<afile>:p:h")
+        if dir:match("^/") and vim.fn.isdirectory(dir) == 0 then
+            local input = vim.fn.input(
+                ("'%s' does not exist. Create? [y/N] "):format(dir)
+            )
+            if input:lower():match("^(y)?(ye)?(yes)?$") then
+                vim.fn.mkdir(dir, "p")
+            end
+        end
+    end,
 })
 
 --------------------------------------------------------------------------------
@@ -130,57 +139,57 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
 local plugin_root_path = vim.fn.stdpath("data") .. "/site/pack/plugins/start"
 
 local function extract_plugin_name(plugin_url_or_path)
-  return vim.fn.fnamemodify(plugin_url_or_path, ":t")
+    return vim.fn.fnamemodify(plugin_url_or_path, ":t")
 end
 
 local function create_plugin_path(plugin_name)
-  return vim.fn.expand(("%s/%s"):format(plugin_root_path, plugin_name))
+    return vim.fn.expand(("%s/%s"):format(plugin_root_path, plugin_name))
 end
 
 vim.api.nvim_create_user_command("Pls", function()
-  local plugin_paths = vim.fn.globpath(plugin_root_path, "*", false, true)
-  for _, plugin_path in pairs(plugin_paths) do
-    vim.print(extract_plugin_name(plugin_path))
-  end
+    local plugin_paths = vim.fn.globpath(plugin_root_path, "*", false, true)
+    for _, plugin_path in pairs(plugin_paths) do
+        vim.print(extract_plugin_name(plugin_path))
+    end
 end, { desc = "Uninstall all plugins" })
 
 vim.api.nvim_create_user_command("Pi", function(opts)
-  local force = opts.bang
-  local plugin_url = opts.args
-  local plugin_name = extract_plugin_name(plugin_url)
-  local plugin_path = create_plugin_path(plugin_name)
+    local force = opts.bang
+    local plugin_url = opts.args
+    local plugin_name = extract_plugin_name(plugin_url)
+    local plugin_path = create_plugin_path(plugin_name)
 
-  if force or vim.fn.isdirectory(plugin_path) == 0 then
-    vim.print(("Installing %s..."):format(plugin_name))
-    vim.fn.system({ "rm", "-rf", plugin_path })
-    vim.fn.system({ "git", "clone", "--depth=1", plugin_url, plugin_path })
-    vim.print(("Installed %s!"):format(plugin_name))
-  end
+    if force or vim.fn.isdirectory(plugin_path) == 0 then
+        vim.print(("Installing %s..."):format(plugin_name))
+        vim.fn.system({ "rm", "-rf", plugin_path })
+        vim.fn.system({ "git", "clone", "--depth=1", plugin_url, plugin_path })
+        vim.print(("Installed %s!"):format(plugin_name))
+    end
 end, { nargs = 1, bang = true, desc = "Install a plugin given a URL" })
 
 vim.api.nvim_create_user_command("Pu", function(opts)
-  local plugin_name = opts.args
-  local plugin_path = create_plugin_path(plugin_name)
-  if vim.fn.isdirectory(plugin_path) == 1 then
-    vim.fn.system({ "rm", "-rf", plugin_path })
-    vim.print(("Uninstalled %s!"):format(plugin_name))
-  end
-end, {
-  nargs = 1,
-  complete = function()
-    local plugin_paths = vim.fn.globpath(plugin_root_path, "*", false, true)
-    local plugin_names = {}
-    for _, plugin_path in pairs(plugin_paths) do
-      table.insert(plugin_names, extract_plugin_name(plugin_path))
+    local plugin_name = opts.args
+    local plugin_path = create_plugin_path(plugin_name)
+    if vim.fn.isdirectory(plugin_path) == 1 then
+        vim.fn.system({ "rm", "-rf", plugin_path })
+        vim.print(("Uninstalled %s!"):format(plugin_name))
     end
-    return plugin_names
-  end,
-  desc = "Uninstall a plugin given suggested plugin names",
+end, {
+    nargs = 1,
+    complete = function()
+        local plugin_paths = vim.fn.globpath(plugin_root_path, "*", false, true)
+        local plugin_names = {}
+        for _, plugin_path in pairs(plugin_paths) do
+            table.insert(plugin_names, extract_plugin_name(plugin_path))
+        end
+        return plugin_names
+    end,
+    desc = "Uninstall a plugin given suggested plugin names",
 })
 
 vim.api.nvim_create_user_command("Pua", function()
-  vim.fn.system({ "rm", "-rf", plugin_root_path })
-  vim.print("Uninstalled all plugins!")
+    vim.fn.system({ "rm", "-rf", plugin_root_path })
+    vim.print("Uninstalled all plugins!")
 end, { desc = "Uninstall all plugins" })
 
 vim.cmd([[
