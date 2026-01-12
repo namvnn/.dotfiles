@@ -44,9 +44,6 @@ vim.keymap.set(
 -- Create or edit file
 vim.keymap.set("n", "<Leader>e", ":e <C-R>=expand('%:p:h') . '/'<CR>")
 
--- Preview markdown
-vim.keymap.set("n", "<Leader>mp", "<Cmd>!mdp '%'<CR>")
-
 -- Make the current buffer a scratch buffer
 vim.keymap.set("n", "<Leader>bs", "<Cmd>setlocal bt=nofile bh=wipe noswf<CR>")
 

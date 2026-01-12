@@ -87,9 +87,6 @@ nnoremap <Leader>s :%s/\<<C-R><C-W>\>/<C-R><C-W>/gI<Left><Left><Left>
 " Create or edit file
 nnoremap <Leader>e :e <C-R>=expand('%:p:h') . '/'<CR>
 
-" Preview markdown
-nnoremap <Leader>mp <Cmd>!mdp '%'<CR>
-
 " Make the current buffer a scratch buffer
 nnoremap <Leader>bs <Cmd>setlocal bt=nofile bh=wipe noswf<CR>
 
@@ -168,6 +165,8 @@ augroup markdown_ft
     autocmd!
     autocmd FileType markdown setlocal wrap
     autocmd FileType markdown setlocal textwidth=80
+    autocmd FileType markdown let b:dispatch = "mdp '%'"
+    autocmd FileType markdown let b:start    = "mdp '%'"
 augroup END
 
 augroup typst_ft
