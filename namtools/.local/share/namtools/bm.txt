@@ -195,6 +195,8 @@ Network|[Learning] HTTP Made Really Easy|https://jmarshall.com/easy/http
 Operating System|[Learning] Writing an OS in Rust|https://os.phil-opp.com
 Operating System|[Reading] Unix as IDE|https://blog.sanctum.geek.nz/series/unix-as-ide
 Programming|[Language] C3: The Ergonomic, Safe and Familiar Evolution of C|https://c3-lang.org
+Programming|[Language] Hare: A systems programming language designed to be simple, stable, and robust|https://harelang.org
+Programming|[Language] Odin: A general-purpose programming language with distinct typing built for high performance, modern systems and data-oriented programming|https://odin-lang.org
 Programming|[Language] Red: A next-generation programming language strongly inspired by Rebol, but with a broader field of usage thanks to its native-code compiler|https://red-lang.org
 Programming|[Learning] 0DE5|https://0de5.net
 Programming|[Learning] 30 seconds of code: Coding articles to level up your development skills|https://30secondsofcode.org
@@ -205,8 +207,10 @@ Programming|[Learning] Project Based Learning|https://github.com/practical-tutor
 Programming|[Learning] Rosetta Code: A programming chrestomathy site|https://rosettacode.org
 Programming|[Reading] Github Ranking: A list of the most github stars and forks repositories|https://evanli.github.io/Github-Ranking
 Programming|[Reading] Notes on structured concurrency, or: Go statement considered harmful|https://vorpus.org/blog/notes-on-structured-concurrency-or-go-statement-considered-harmful
+Programming|[Reading] Papers We Love: Papers from the computer science community to read and discuss|https://github.com/papers-we-love/papers-we-love
 Programming|[Reading] Ranking Programming Languages by Energy Efficiency|https://haslab.github.io/SAFER/scp21.pdf
 Programming|[Tool] ANSI Escape Codes|https://ansi.tools
+Programming|[Tool] Codapi: A lightweight sandbox server for interactive documentation and learning|https://codapi.org
 Programming|[Tool] Crontab Guru: Cron Schedule Expression Generator|https://crontab.guru
 Programming|[Tool] Emacs: An extensible, customizable, free/libre text editor — and more|https://gnu.org/software/emacs
 Programming|[Tool] Flow Control: A programmer's text editor|https://flow-control.dev
