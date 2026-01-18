@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+# Source: https://codeberg.org/EvanHahn/dotfiles/src/commit/cf675c7a71ad94b6d3862dce0c883d38b7e650e8/home/bin/bin/straightquote
+# Description: Remove "smart quotes"
+# Date Created: January 18, 2026
+# Date Modified: January 18, 2026
+
+set -e
+set -u
+set -o pipefail
+
+# shellcheck disable=SC1112
+sed 's/[“”]/"/g; s/[‘’]/'"'"'/g'
