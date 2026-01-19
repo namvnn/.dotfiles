@@ -7,7 +7,7 @@ local function get_appearance()
     return "Dark"
 end
 
-local function get_color_scheme_for_appearance(appearance)
+local function get_color_scheme(appearance)
     if appearance:find("Dark") then
         return "Builtin Dark"
     else
@@ -15,8 +15,22 @@ local function get_color_scheme_for_appearance(appearance)
     end
 end
 
+local function get_theme_mode_env(appearance)
+    if appearance:find("Dark") then
+        return "dark"
+    else
+        return "light"
+    end
+end
+
+local appearance = get_appearance()
+
 return {
-    color_scheme = get_color_scheme_for_appearance(get_appearance()),
+    audible_bell = "Disabled",
+    color_scheme = get_color_scheme(appearance),
     enable_tab_bar = false,
     font_size = 13,
+    set_environment_variables = {
+        THEME_MODE = get_theme_mode_env(appearance),
+    },
 }
