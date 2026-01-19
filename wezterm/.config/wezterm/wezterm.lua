@@ -30,7 +30,6 @@ return {
     color_scheme = get_color_scheme(appearance),
     enable_tab_bar = false,
     font_size = 13,
-    set_environment_variables = {
-        THEME_MODE = get_theme_mode_env(appearance),
-    },
+    set_environment_variables = { THEME_MODE = get_theme_mode_env(appearance) },
+    window_close_confirmation = "NeverPrompt",
 }
