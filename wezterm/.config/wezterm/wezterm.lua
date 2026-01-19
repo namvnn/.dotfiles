@@ -30,6 +30,7 @@ return {
     color_scheme = get_color_scheme(appearance),
     enable_tab_bar = false,
     font_size = 13,
+    harfbuzz_features = { "calt=0", "clig=0", "liga=0" },
     set_environment_variables = { THEME_MODE = get_theme_mode_env(appearance) },
     window_close_confirmation = "NeverPrompt",
 }
