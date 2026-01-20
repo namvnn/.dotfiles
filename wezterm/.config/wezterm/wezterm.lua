@@ -11,7 +11,7 @@ local function get_color_scheme(appearance)
     if appearance:find("Dark") then
         return "Builtin Dark"
     else
-        return "Builtin Light"
+        return "Tomorrow"
     end
 end
 
