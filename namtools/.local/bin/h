@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Author: Nam Nguyen <nguyenvietnam2401@gmail.com>
+# Description: Pipe a command's help output into vim
+# License: MIT License
+# Date Created: January 21, 2026
+# Date Modified: January 21, 2026 
+
+vim <("${@}" --help)
