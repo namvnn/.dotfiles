@@ -17,31 +17,39 @@ set smarttab
 set softtabstop=4
 set tabstop=4
 
-set autoindent
-set autoread
 set breakindent
 set clipboard=unnamed,unnamedplus
 set colorcolumn=80
 set completeopt=menu,menuone,popup,noselect
 set copyindent
 set cursorline
+set foldlevel=99
+set foldlevelstart=99
 set grepformat=%f:%l:%c:%m
 set grepprg=rg\ --vimgrep
+set ignorecase
+set number
+set relativenumber
+set scrolloff=8
+set showtabline=0
+set signcolumn=yes
+set smartcase
+set smoothscroll
+set noswapfile
+set virtualedit=block
+set nowrap
+
+set autoindent
+set autoread
 set hidden
 set hlsearch
 set incsearch
 set laststatus=2
-set noswapfile
-set nowrap
-set number
-set relativenumber
 set ruler
-set scrolloff=8
 set ttimeout
 set ttimeoutlen=50
 set wildmenu
 set wildoptions=pum,tagfile
-
 " Avoid using old regexp engine which will incur performance issues in 
 " TypeScript syntax highlighting.
 set regexpengine=0 
