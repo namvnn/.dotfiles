@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# Author: Nam Nguyen <nguyenvietnam2401@gmail.com>
+# Description: Generate a tags file (~/.tags/c-system) on system header files
+# License: MIT License
+# Date Created: January 25, 2026
+# Date Modified: January 25, 2026 
+
+tags_dir="${HOME}/.tags"
+
+mkdir -p "${tags_dir}"
+
+find "${@}" \
+    -type d -name 'include' \
+    -print \
+    -exec ctags -R --kinds-c=+p -o "${tags_dir}/c-system" {} '+'
