@@ -9,7 +9,7 @@ end
 
 vim.api.nvim_create_user_command("Grep", function(opts)
     local keyword = opts.args
-    vim.cmd("grep " .. keyword .. " -g '%:p:.:h/**/*'")
+    vim.cmd("grep -e " .. keyword .. " '%:p:.:h'")
 end, {
     nargs = 1,
     desc = "Grep keyword within the folder containing the current file",
