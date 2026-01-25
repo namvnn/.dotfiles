@@ -22,6 +22,7 @@ Books|Library Genesis|https://libgen.is
 Books|Open Library|https://openlibrary.org
 Books|PDF Books Library|https://pdfbooksworld.com
 Books|The Architecture of Open Source Applications|https://aosabook.org
+Books|Wikibooks|https://wikibooks.org
 C++|[Lib] FTXUI: A simple cross-platform C++ library for terminal based user interfaces|https://arthursonzogni.github.io/FTXUI
 C++|[Lib] RxTerm: A C++ library for functional-reactive terminals. RxTerm is a lean alternative to ncurses for many applications|https://github.com/LoopPerfect/rxterm
 C++|[Lib] SMK: Simple multimedia kit - C++ WebAssembly|https://github.com/ArthurSonzogni/smk
@@ -39,6 +40,7 @@ C|[Lib] miniaudio: An audio playback and capture library in a single source file
 C|[Lib] musl: C Standard Library|https://musl.libc.org
 C|[Lib] Sokol: Minimal cross-platform standalone C headers|https://github.com/floooh/sokol
 C|[Lib] stb: single-file public domain (or MIT licensed) libraries|https://github.com/nothings/stb
+C|[Lib] vaqt: High-precision date/time|https://github.com/nalgeon/vaqt
 C|[Lib] zpl: pushing the boundaries of simplicity|https://github.com/zpl-c
 C|[Reading] Awesome C|https://github.com/oz123/awesome-c
 C|[Reading] MallocInternals|https://sourceware.org/glibc/wiki/MallocInternals
