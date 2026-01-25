@@ -6,4 +6,4 @@
 # Date Created: January 21, 2026
 # Date Modified: January 26, 2026 
 
-vim -c 'set viminfo= noswapfile noundofile nobackup nowritebackup noshelltemp history=0 nomodeline secure' <("${@}" --help)
+vims <("${@}" --help)

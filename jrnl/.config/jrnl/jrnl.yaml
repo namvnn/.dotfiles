@@ -5,7 +5,7 @@ colors:
   title: cyan
 default_hour: 9
 default_minute: 0
-editor: "vim -c 'set viminfo= noswapfile noundofile nobackup nowritebackup noshelltemp history=0 nomodeline secure'"
+editor: "vims"
 encrypt: false
 highlight: true
 indent_character: '|'
