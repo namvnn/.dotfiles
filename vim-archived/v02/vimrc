@@ -175,11 +175,11 @@ nnoremap <F5> :e %:p:s,.h$,.X123X,:s,.c$,.h,:s,.X123X$,.c,<CR>
 " ABBREVIATIONS                                                               "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-ia <expr> me:: strftime('Author: Nam Nguyen <nguyenvietnam2401@gmail.com><CR>
+ia <expr> me:: strftime('Author: Nam Nguyen <vietnam.n@proton.me><CR>
                        \Description:<CR>
                        \License: MIT License<CR>
-                       \Date created: %B %d, %Y<CR>
-                       \Date modified: %B %d, %Y')
+                       \Date Created: %B %d, %Y<CR>
+                       \Date Modified: %B %d, %Y')
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " AUTOCOMMANDS                                                                "

@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-# Author: Nam Nguyen <nguyenvietnam2401@gmail.com>
+# Author: Nam Nguyen <vietnam.n@proton.me>
 # Description: Find and copy/execute a command
 # License: MIT License
-# Date created: January 24, 2024
-# Date modified: January 12, 2026
+# Date Created: January 24, 2024
+# Date Modified: January 26, 2026
 
 cmd_dir="${NAMTOOLS_DATA_DIR}"
 

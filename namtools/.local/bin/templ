@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-# Author: Nam Nguyen <nguyenvietnam2401@gmail.com>
+# Author: Nam Nguyen <vietnam.n@proton.me>
 # Description: Create a file given a template name
 # License: MIT License
 # Date Created: December 01, 2025
-# Date modified: January 12, 2026
+# Date Modified: January 26, 2026
 
 cmd="$(basename "${0}")"
 version="0.2.0"

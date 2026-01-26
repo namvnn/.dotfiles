@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-# Author: Nam Nguyen <nguyenvietnam2401@gmail.com>
+# Author: Nam Nguyen <vietnam.n@proton.me>
 # Description: Create or switch to a tmux session
 # License: MIT License
-# Date created: Jun 16, 2022
-# Date modified: January 12, 2026
+# Date Created: Jun 16, 2022
+# Date Modified: January 26, 2026
 
 if [[ "$#" -eq "1" ]]; then
     start_dir="$1"

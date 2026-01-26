@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-# Author: Nam Nguyen <nguyenvietnam2401@gmail.com>
+# Author: Nam Nguyen <vietnam.n@proton.me>
 # Description: Delete git branches
 # License: MIT License
 # Date Created: October 07, 2021
-# Date modified: January 12, 2026
+# Date Modified: January 26, 2026
 
 branches=()
 BLACK="\033[0;30m"
