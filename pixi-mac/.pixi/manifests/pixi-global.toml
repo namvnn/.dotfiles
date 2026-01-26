@@ -175,3 +175,8 @@ shortcuts = ["alacritty"]
 channels = ["~/.pixi/forges/nam-forge/packages", "conda-forge"]
 dependencies = { clib = "*" }
 exposed = { clib = "clib", clib-build = "clib-build", clib-configure = "clib-configure", clib-init = "clib-init", clib-install = "clib-install", clib-search = "clib-search", clib-uninstall = "clib-uninstall", clib-update = "clib-update", clib-upgrade = "clib-upgrade" }
+
+[envs.ruff]
+channels = ["conda-forge"]
+dependencies = { ruff = "*" }
+exposed = { ruff = "ruff" }

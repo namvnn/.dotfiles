@@ -7,23 +7,23 @@ sys.setrecursionlimit(100000000)
 mod = 1000000007
 
 
-'''
+"""
 #----INPUT-----#
 
 #----OUTPUT----#
 
-'''
+"""
 
 
 def solution():
-    print('Start here')
+    print("Start here")
 
 
 def main():
     case = int(input())
 
-    for i in range(1, case+1):
-        print(f'Case #{i}: ', end='')
+    for i in range(1, case + 1):
+        print(f"Case #{i}: ", end="")
         solution()
 
 

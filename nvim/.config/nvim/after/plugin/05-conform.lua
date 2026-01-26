@@ -1,7 +1,5 @@
 require("conform").setup({
     formatters_by_ft = {
-        lua = { "stylua" },
-        c = { "clang_format" },
         typescript = function(bufnr)
             if vim.fs.root(bufnr, { "deno.json", "deno.jsonc" }) then
                 return {}
@@ -30,8 +28,11 @@ require("conform").setup({
                     and { "biome" }
                 or { "prettier" }
         end,
+        lua = { "stylua" },
+        c = { "clang_format" },
         cs = { "csharpier" },
         rust = { "rustfmt" },
+        python = { "ruff_format" },
     },
 })
 

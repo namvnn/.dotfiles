@@ -7,9 +7,9 @@ sys.setrecursionlimit(100000000)
 mod = 1000000007
 
 
-'''
+"""
 #----INPUT-----#
 
 #----OUTPUT----#
 
-'''
+"""
