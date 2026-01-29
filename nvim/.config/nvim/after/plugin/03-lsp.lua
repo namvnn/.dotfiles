@@ -19,7 +19,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
             local ms = vim.lsp.protocol.Methods
 
             -- DIAGNOSTIC
-            vim.diagnostic.config({ virtual_text = true })
+            vim.diagnostic.config({ severity_sort = true })
 
             -- HOVER
             if client:supports_method(ms.textDocument_documentHighlight) then
