@@ -99,6 +99,7 @@ Game Development|[Learning] Handmade Hero|https://guide.handmadehero.org
 Game Development|[Lib] Heaps.io: Heaps.io is a mature cross platform graphics engine designed for high performance games|https://heaps.io
 Game Development|[Lib] LÖVE: An *awesome* framework you can use to make 2D games in Lua|https://love2d.org
 Game Development|[Lib] macroquad: A simple and easy to use game library for Rust programming language|https://github.com/not-fl3/macroquad
+Game Development|[Lib] PlayCanvas: A web graphics creation platform|https://developer.playcanvas.com
 Game Development|[Lib] raylib: a simple and easy-to-use library to enjoy videogames programming|https://raylib.com
 Game Development|[Lib] SanderMertens/flecs: A fast entity component system (ECS) for C & C++|https://flecs.dev/flecs
 Game Development|[Tool] A list of Game Development resources to make magic happen|https://github.com/ellisonleao/magictools
@@ -132,6 +133,7 @@ Graphics|[Tool] Blender: A free and open-source 3D computer graphics software|ht
 Graphics|[Tool] GIMP: A free and open-source image editor|https://gimp.org
 Graphics|[Tool] Inkscape: A free and open-source software vector graphics editor|https://inkscape.org
 Graphics|[Tool] Krita: A professional FREE and open source painting program|https://krita.org
+Graphics|[Tool] MagicaVoxel: A free lightweight GPU-based voxel art editor and interactive path tracing renderer|https://ephtracy.github.io
 Graphics|[Tool] RawTherapee: A free, cross-platform raw image processing program|https://rawtherapee.com
 Graphics|[Tool] Synfig: A free and open-source vector-based 2D animation software|https://synfig.org
 Graphics|[Tool] The Book of Shaders Editor|http://editor.thebookofshaders.com
@@ -189,6 +191,9 @@ Job|[Site] Indie Hackers|https://indiehackers.com
 Job|[Site] levels.fyi|https://levels.fyi
 Job|[Site] We Work Remotely|https://weworkremotely.com
 Job|[Site] Wellfound|https://wellfound.com
+Miscellaneous|[Game] Krunker|https://krunker.io
+Miscellaneous|[Game] Mini Royale|https://miniroyale.io
+Miscellaneous|[Guide] How to Send Emails Using Gmail SMTP with Cloudflare Email Routing?|https://dev.to/pierre/gmail-with-cloudflare-email-routing-4413
 Miscellaneous|[Shopping] Moonpig Gift Shop|https://moonpig.com
 Miscellaneous|[Tool] RustDesk: An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer|https://rustdesk.com
 Miscellaneous|[Tool] Syncthing|https://syncthing.net
@@ -267,7 +272,8 @@ Vim/Neovim|[Reading] Remote Neovim for Dummies|https://kraust.github.io/posts/re
 Vim/Neovim|[Reading] Seven habits of effective text editing|https://moolenaar.net/habits.html
 Vim/Neovim|[Reading] The tools that I love: Vim|https://lervag.github.io/posts/how-i-vim
 Vim/Neovim|[Reading] Why I got rid of all my neovim plugins|https://yobibyte.github.io/vim.html
-Web Back End|PocketBase: Open Source realtime backend in 1 file|https://pocketbase.io
+Web Back End|[Lib] Hono: A fast, lightweight web application framework ,built on Web Standards|https://hono.dev
+Web Back End|[Lib] PocketBase: Open Source realtime backend in 1 file|https://pocketbase.io
 Web Front End|[Docs] ARIA Authoring Practices Guide|https://w3.org/WAI/ARIA/apg
 Web Front End|[Docs] Bulletproof React|https://github.com/alan2207/bulletproof-react
 Web Front End|[Docs] Open UI|https://open-ui.org

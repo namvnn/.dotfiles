@@ -37,6 +37,7 @@ git push the local branch and reset upstream branch: git push origin -u <newname
 git push the upushed, local branch to remote: git push --set-upstream origin "$(git branch --show-current)"
 git rebase to the root (initial) commit: git rebase -i --root
 git reconstruct the merge commit by replaying the recorded merge strategy and showing the exact changes it introduced: git log --remerge-diff
+git remote remove origin: git remote remove origin
 git remove a worktree: git worktree remove <worktree-path>
 git rename branch given old name: git branch -m <oldname> <newname>
 git rename current branch: git branch -m <newname>
