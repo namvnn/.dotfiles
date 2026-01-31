@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-# Author: Nam Nguyen <vietnam.n@proton.me>
+# Author: Nam Nguyen <hi@namn.me>
 # Description: Better git checkout
 # License: MIT License
 # Date Created: June 27, 2024
-# Date Modified: January 26, 2026
+# Date Modified: January 31, 2026
 
 branches=()
 BLACK="\033[0;30m"

@@ -131,7 +131,7 @@ nnoremap <Leader>cc <Cmd>e %:p:s,.h$,.X123X,:s,.c$,.h,:s,.X123X$,.c,<CR>
 " ABBREVIATIONS                                                                "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-ia <expr> me@ strftime('Author: Nam Nguyen <vietnam.n@proton.me><CR>
+ia <expr> me@ strftime('Author: Nam Nguyen <hi@namn.me><CR>
                        \Description:<CR>
                        \License: MIT License<CR>
                        \Date Created: %B %d, %Y<CR>

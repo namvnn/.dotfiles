@@ -1,9 +1,9 @@
 " Name:          Memono
 " Description:   Simple and less colorful, forked from 'wildcharm'.
-" Author:        Nam Nguyen <vietnam.n@proton.me>
+" Author:        Nam Nguyen <hi@namn.me>
 " License:       MIT License
 " Date Created:  November 02, 2025
-" Date Modified: January 26, 2026
+" Date Modified: January 31, 2026
 
 hi clear
 let g:colors_name = 'memono'

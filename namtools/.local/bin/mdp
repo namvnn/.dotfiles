@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-# Author: Nam Nguyen <vietnam.n@proton.me>
+# Author: Nam Nguyen <hi@namn.me>
 # Description: Convert HTML to Markdown
 # License: MIT License
 # Date Created: May 12, 2025
-# Date Modified: January 26, 2026
+# Date Modified: January 31, 2026
 
 input_md="$1"
 input_dir=$(dirname "$input_md")

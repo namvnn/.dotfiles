@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-# Author: Nam Nguyen <vietnam.n@proton.me>
+# Author: Nam Nguyen <hi@namn.me>
 # Description: Pull the current branch
 # License: MIT License
 # Date Created: June 30, 2022
-# Date Modified: January 26, 2026
+# Date Modified: January 31, 2026
 
 git pull origin "$(git branch --show-current)"

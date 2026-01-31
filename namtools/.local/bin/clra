@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-# Author: Nam Nguyen <vietnam.n@proton.me>
+# Author: Nam Nguyen <hi@namn.me>
 # Description: Print 256 terminal colors
 # License: MIT License
 # Date Created: October 21, 2024
-# Date Modified: January 26, 2026
+# Date Modified: January 31, 2026
 
 output=''
 
