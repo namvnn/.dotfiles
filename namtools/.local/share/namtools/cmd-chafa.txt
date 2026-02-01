@@ -1,0 +1,2 @@
+chafa display image in block symbol format in middle screen with scale max: chafa --format symbols --symbols block --clear --align mid,mid --scale max <img-path>
+chafa display image in block symbol format: chafa --format symbols --symbols block <img-path>
