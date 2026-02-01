@@ -138,6 +138,27 @@ if vim.fn.executable("typos-lsp") == 1 then
     vim.lsp.enable("typos_lsp")
 end
 
+if vim.fn.executable("csharp-ls") == 1 then
+    vim.lsp.enable("csharp_ls")
+    local status, csharpls_extended = pcall(require, "csharpls_extended")
+    if status then
+        csharpls_extended.buf_read_cmd_bind()
+    end
+end
+
+if vim.fn.executable("typescript-language-server") == 1 then
+    vim.lsp.config("ts_ls", { single_file_support = true })
+    vim.lsp.enable("ts_ls")
+end
+
+if vim.fn.executable("tsgo") == 1 then
+    vim.lsp.enable("tsgo")
+end
+
+if vim.fn.executable("deno") == 1 then
+    vim.lsp.enable("denols")
+end
+
 if vim.fn.executable("vscode-eslint-language-server") == 1 then
     vim.lsp.enable("eslint")
 end
@@ -155,27 +176,6 @@ if vim.fn.executable("biome") == 1 then
     vim.lsp.enable("biome")
 end
 
-if vim.fn.executable("typescript-language-server") == 1 then
-    vim.lsp.config("ts_ls", { single_file_support = true })
-    vim.lsp.enable("ts_ls")
-end
-
-if vim.fn.executable("tsgo") == 1 then
-    vim.lsp.enable("tsgo")
-end
-
-if vim.fn.executable("deno") == 1 then
-    vim.lsp.enable("denols")
-end
-
-if vim.fn.executable("csharp-ls") == 1 then
-    vim.lsp.enable("csharp_ls")
-    local status, csharpls_extended = pcall(require, "csharpls_extended")
-    if status then
-        csharpls_extended.buf_read_cmd_bind()
-    end
-end
-
 if vim.fn.executable("tinymist") == 1 then
     vim.lsp.enable("tinymist")
 end
@@ -185,5 +185,5 @@ if vim.fn.executable("gopls") == 1 then
 end
 
 if vim.fn.executable("rust-analyzer") == 1 then
-    vim.lsp.enable("rust-analyzer")
+    vim.lsp.enable("rust_analyzer")
 end
