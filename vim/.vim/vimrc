@@ -96,7 +96,7 @@ nnoremap <Leader>s :%s/\<<C-R><C-W>\>/<C-R><C-W>/gI<Left><Left><Left>
 nnoremap <Leader>e :e <C-R>=expand('%:p:h') . '/'<CR>
 
 " Make the current buffer a scratch buffer
-nnoremap <Leader>bs <Cmd>setlocal bt=nofile bh=wipe noswf<CR>
+nnoremap <Leader>bs <Cmd>setlocal bt=nofile bh=wipe noswf nobl<CR>
 
 " Fix the indentation of the entire file
 function! s:indent()

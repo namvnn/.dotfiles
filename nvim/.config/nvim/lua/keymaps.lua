@@ -45,7 +45,7 @@ vim.keymap.set(
 vim.keymap.set("n", "<Leader>e", ":e <C-R>=expand('%:p:h') . '/'<CR>")
 
 -- Make the current buffer a scratch buffer
-vim.keymap.set("n", "<Leader>bs", "<Cmd>setlocal bt=nofile bh=wipe noswf<CR>")
+vim.keymap.set("n", "<Leader>bs", "<Cmd>setlocal bt=nofile bh=wipe noswf nobl<CR>")
 
 -- Fix the indentation of the entire file
 vim.keymap.set("n", "<Leader>=", function()
