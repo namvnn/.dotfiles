@@ -125,6 +125,7 @@ Graphics|[Learning] 3D wireframe rendered in the terminal|https://github.com/Mr-
 Graphics|[Learning] Computer Graphics from Scratch|https://gabrielgambetta.com/computer-graphics-from-scratch
 Graphics|[Learning] Graphics Programming Compendium|https://graphicscompendium.com
 Graphics|[Learning] Learn OpenGL|https://learnopengl.com
+Graphics|[Learning] Ray Tracing in One Weekend|https://raytracing.github.io/books/RayTracingInOneWeekend
 Graphics|[Learning] Scratchapixel|https://scratchapixel.com
 Graphics|[Learning] The Book of Shaders|https://thebookofshaders.com
 Graphics|[Learning] The Nature of Code|https://natureofcode.com
@@ -201,6 +202,7 @@ Network|[Learning] Beej's Guide to Network Programming|https://beej.us/guide/bgn
 Network|[Learning] HTTP Made Really Easy|https://jmarshall.com/easy/http
 Operating System|[Learning] Writing an OS in Rust|https://os.phil-opp.com
 Operating System|[Reading] Unix as IDE|https://blog.sanctum.geek.nz/series/unix-as-ide
+Programming|[Language] Amber: A programming language compiled into Bash Script|https://docs.amber-lang.com
 Programming|[Language] C3: The Ergonomic, Safe and Familiar Evolution of C|https://c3-lang.org
 Programming|[Language] Hare: A systems programming language designed to be simple, stable, and robust|https://harelang.org
 Programming|[Language] Odin: A general-purpose programming language with distinct typing built for high performance, modern systems and data-oriented programming|https://odin-lang.org
@@ -308,3 +310,4 @@ Writing|[Slide] Slides: Terminal based presentation tool|https://maaslalani.com/
 Writing|[Slide] Slidev: Presentation Slides for Developers|https://sli.dev
 Zig|[Learning] Learning Zig|https://openmymind.net/learning_zig
 Zig|[Learning] Ziglings: Learn the ⚡Zig programming language by fixing tiny broken programs|https://codeberg.org/ziglings/exercises
+Zig|[Reading] Learning Zig's Build System using raylib|https://tung.github.io/posts/learning-zigs-build-system-using-raylib
