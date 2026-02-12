@@ -218,6 +218,7 @@ Programming|[Reading] Github Ranking: A list of the most github stars and forks 
 Programming|[Reading] Notes on structured concurrency, or: Go statement considered harmful|https://vorpus.org/blog/notes-on-structured-concurrency-or-go-statement-considered-harmful
 Programming|[Reading] Papers We Love: Papers from the computer science community to read and discuss|https://github.com/papers-we-love/papers-we-love
 Programming|[Reading] Ranking Programming Languages by Energy Efficiency|https://haslab.github.io/SAFER/scp21.pdf
+Programming|[Reading] Why Reproductions are Required|https://antfu.me/posts/why-reproductions-are-required
 Programming|[Tool] ANSI Escape Codes|https://ansi.tools
 Programming|[Tool] Codapi: A lightweight sandbox server for interactive documentation and learning|https://codapi.org
 Programming|[Tool] Crontab Guru: Cron Schedule Expression Generator|https://crontab.guru
@@ -257,10 +258,12 @@ TypeScript|[Lib] fp-ts: Functional programming in TypeScript|https://gcanti.gith
 TypeScript|[Lib] neverthrow: Type-safe errors for TypeScript|https://github.com/supermacro/neverthrow
 TypeScript|[Lib] pkgroll: Zero-config package bundler for Node.js + TypeScript|https://github.com/privatenumber/pkgroll
 TypeScript|[Lib] radashi: The modern, community-first TypeScript toolkit with all of the fast, readable, and minimal utility functions|https://radashi.js.org
+TypeScript|[Lib] ts-essentials: All essential TypeScript types in one place 🤙|https://github.com/ts-essentials/ts-essentials
 TypeScript|[Lib] ts-pattern: The exhaustive Pattern Matching library for TypeScript, with smart type inference|https://github.com/gvergnaud/ts-pattern
 TypeScript|[Lib] ts-toolbelt: TypeScript's largest type utility library|https://millsp.github.io/ts-toolbelt
 TypeScript|[Lib] tsdown: The elegant bundler for libraries powered by Rolldown|https://tsdown.dev
 TypeScript|[Lib] tsup: The simplest and fastest way to bundle your TypeScript libraries|https://tsup.egoist.dev
+TypeScript|[Lib] utility-types: Collection of utility types, complementing TypeScript built-in mapped types and aliases (think "lodash" for static types)|https://github.com/piotrwitek/utility-types
 TypeScript|[Lib] Valibot: The modular and type safe schema library for validating structural data|https://valibot.dev
 TypeScript|[Lib] Zod: TypeScript-first schema validation with static type inference|https://zod.dev
 TypeScript|TypeScript Deep Dive|https://basarat.gitbook.io/typescript
@@ -285,6 +288,7 @@ Web Front End|[Learning] Atomic Design|https://bradfrost.com/blog/post/atomic-we
 Web Front End|[Learning] Fine-Grained Reactivity Fundamentals Series' Articles|https://dev.to/ryansolid/series/13735
 Web Front End|[Learning] web.dev|https://web.dev
 Web Front End|[Lib] Dioxus: The Rust framework for building fullstack web, desktop, and mobile apps|https://dioxuslabs.com
+Web Front End|[Lib] elm: A delightful language for reliable web applications|https://elm-lang.org
 Web Front End|[Lib] Legend State|https://legendapp.com/open-source/state
 Web Front End|[Lib] Leptos: A cutting-edge Rust framework for the modern web|https://dioxuslabs.com
 Web Front End|[Lib] nuqs: Type-safe search params state manager for React|https://nuqs.dev
