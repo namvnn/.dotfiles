@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-# Author: Nam Nguyen <hi@namn.me>
+# Author: Nam Nguyen <nam@namn.me>
 # Description: Secured Vim to avoid storing progress data
 # License: MIT License
 # Reference: https://jrnl.sh/en/stable/privacy-and-security
 # Date Created: January 26, 2026
-# Date Modified: January 31, 2026 
+# Date Modified: February 13, 2026 
 
 vim -c 'set viminfo= noswapfile noundofile nobackup nowritebackup noshelltemp history=0 nomodeline secure' "${@}"

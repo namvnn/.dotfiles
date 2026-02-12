@@ -2,7 +2,7 @@ vim.keymap.set(
     "ia",
     "me@",
     vim.fn.strftime(
-        "Author: Nam Nguyen <hi@namn.me><CR>"
+        "Author: Nam Nguyen <nam@namn.me><CR>"
             .. "Description:<CR>"
             .. "License: MIT License<CR>"
             .. "Date Created: %B %d, %Y<CR>"

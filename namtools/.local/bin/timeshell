@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-# Author: Nam Nguyen <hi@namn.me>
+# Author: Nam Nguyen <nam@namn.me>
 # Description: Get shell startup time
 # License: MIT License
 # Date Created: January 25, 2025
-# Date Modified: January 31, 2026
+# Date Modified: February 13, 2026
 
 shell=${1-$SHELL}
 for i in $(seq 1 10); do /usr/bin/time $shell -i -c exit; done
