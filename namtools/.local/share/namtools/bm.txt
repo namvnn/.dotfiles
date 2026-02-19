@@ -117,6 +117,7 @@ Go|[Lib] lo: A Lodash-style Go library|https://lo.samber.dev
 Go|[Lib] mo: Monads and popular FP abstractions|https://pkg.go.dev/github.com/samber/mo
 Go|[Lib] oops: Error handling library with context, assertion, stack trace and source fragments|https://pkg.go.dev/github.com/samber/oops
 Go|[Lib] ro: Reactive Programming paradigm for Go|https://ro.samber.dev
+Go|[Lib] Standard Go Project Layout|https://github.com/golang-standards/project-layout
 Go|[Lib] Ultimate Golang Makefile Template|https://github.com/crazywolf132/ultimate-gomake
 Go|[Reading] The Anatomy of a Go Package. Structure, Imports, and Idioms|https://thecodinggopher.substack.com/p/the-anatomy-of-a-go-package-structure
 Go|[Reading] You probably don't need a DI framework|https://rednafi.com/go/di_frameworks_bleh
@@ -192,6 +193,7 @@ Job|[Site] Indie Hackers|https://indiehackers.com
 Job|[Site] levels.fyi|https://levels.fyi
 Job|[Site] We Work Remotely|https://weworkremotely.com
 Job|[Site] Wellfound|https://wellfound.com
+Miscellaneous|[Cleaning] How to Read Laundry Symbols|https://tide.com/en-us/how-to-wash-clothes/how-to-do-laundry/how-to-read-laundry-symbols
 Miscellaneous|[Game] Krunker|https://krunker.io
 Miscellaneous|[Game] Mini Royale|https://miniroyale.io
 Miscellaneous|[Guide] How to Send Emails Using Gmail SMTP with Cloudflare Email Routing?|https://dev.to/pierre/gmail-with-cloudflare-email-routing-4413
@@ -236,8 +238,14 @@ Reverse Engineering|[Tool] Ghidra: A software reverse engineering (SRE) framewor
 Reverse Engineering|[Tool] ImHex: A Hex Editor, a tool to display, decode and analyze binary data to reverse engineer their format, extract information or patch values in them|https://imhex.werwolv.net
 Reverse Engineering|[Tool] radare2: A free/libre toolchain for easing several low level tasks like forensics, software reverse engineering, exploiting and debugging|https://radare.org/n/radare2.html
 Rust|[Fun] A Game Boy Emulator|https://github.com/smparsons/retroboy
+Rust|[Learning] 100 Exercises To Learn Rust|https://rust-exercises.com/100-exercises
+Rust|[Learning] Learn Rust With Entirely Too Many Linked Lists|https://rust-unofficial.github.io/too-many-lists
+Rust|[Learning] Rust By Practice|https://practice.course.rs
+Rust|[Learning] Rust Design Patterns|https://rust-unofficial.github.io/patterns
 Rust|[Learning] Rust Embedded Drivers (RED)|https://red.implrust.com
 Rust|[Learning] Rust Language Cheat Sheet|https://cheats.rs
+Rust|[Learning] Rust Practise Questions|https://rust-unofficial.github.io/rust-practise-questions
+Rust|[Learning] Rust 🦀 and WebAssembly 🕸|https://rustwasm.github.io/docs/book
 Rust|[Lib] Druid: A data-first Rust-native GUI design toolkit|https://github.com/linebender/druid
 Rust|[Lib] egui: An easy-to-use immediate mode GUI in Rust that runs on both web and native|https://egui.rs
 Rust|[Lib] iced: A cross-platform GUI library for Rust focused on simplicity and type-safety|https://iced.rs
@@ -260,9 +268,10 @@ TypeScript|[Lib] pkgroll: Zero-config package bundler for Node.js + TypeScript|h
 TypeScript|[Lib] radashi: The modern, community-first TypeScript toolkit with all of the fast, readable, and minimal utility functions|https://radashi.js.org
 TypeScript|[Lib] ts-essentials: All essential TypeScript types in one place 🤙|https://github.com/ts-essentials/ts-essentials
 TypeScript|[Lib] ts-pattern: The exhaustive Pattern Matching library for TypeScript, with smart type inference|https://github.com/gvergnaud/ts-pattern
-TypeScript|[Lib] ts-toolbelt: TypeScript's largest type utility library|https://millsp.github.io/ts-toolbelt
+TypeScript|[Lib] ts-toolbelt: TypeScript's largest type utility library|https://github.com/millsp/ts-toolbelt
 TypeScript|[Lib] tsdown: The elegant bundler for libraries powered by Rolldown|https://tsdown.dev
 TypeScript|[Lib] tsup: The simplest and fastest way to bundle your TypeScript libraries|https://tsup.egoist.dev
+TypeScript|[Lib] type-fest: A collection of essential TypeScript types|https://github.com/sindresorhus/type-fest
 TypeScript|[Lib] utility-types: Collection of utility types, complementing TypeScript built-in mapped types and aliases (think "lodash" for static types)|https://github.com/piotrwitek/utility-types
 TypeScript|[Lib] Valibot: The modular and type safe schema library for validating structural data|https://valibot.dev
 TypeScript|[Lib] Zod: TypeScript-first schema validation with static type inference|https://zod.dev
@@ -279,6 +288,7 @@ Vim/Neovim|[Reading] The tools that I love: Vim|https://lervag.github.io/posts/h
 Vim/Neovim|[Reading] Why I got rid of all my neovim plugins|https://yobibyte.github.io/vim.html
 Web Back End|[Lib] Hono: A fast, lightweight web application framework ,built on Web Standards|https://hono.dev
 Web Back End|[Lib] PocketBase: Open Source realtime backend in 1 file|https://pocketbase.io
+Web Back End|[Tool] Bombardier: Fast cross-platform HTTP benchmarking tool written in Go|https://github.com/codesenberg/bombardier
 Web Front End|[Docs] ARIA Authoring Practices Guide|https://w3.org/WAI/ARIA/apg
 Web Front End|[Docs] Bulletproof React|https://github.com/alan2207/bulletproof-react
 Web Front End|[Docs] Open UI|https://open-ui.org
@@ -289,9 +299,11 @@ Web Front End|[Learning] Fine-Grained Reactivity Fundamentals Series' Articles|h
 Web Front End|[Learning] web.dev|https://web.dev
 Web Front End|[Lib] Dioxus: The Rust framework for building fullstack web, desktop, and mobile apps|https://dioxuslabs.com
 Web Front End|[Lib] elm: A delightful language for reliable web applications|https://elm-lang.org
-Web Front End|[Lib] Legend State|https://legendapp.com/open-source/state
+Web Front End|[Lib] Extension.js: Build browser extensions for Chrome, Edge, and Firefox with one modern workflow|https://extension.js.org
+Web Front End|[Lib] Legend-State: An extremely fast signal-based state library with fine-grained reactivity and a powerful sync system|https://legendapp.com/open-source/state
 Web Front End|[Lib] Leptos: A cutting-edge Rust framework for the modern web|https://dioxuslabs.com
 Web Front End|[Lib] nuqs: Type-safe search params state manager for React|https://nuqs.dev
+Web Front End|[Lib] oxichrome: Write type-safe browser extensions with proc macros and Leptos entirely in Rust|https://oxichrome.dev
 Web Front End|[Lib] RxDB|https://rxdb.info
 Web Front End|[Lib] Servo: A web browser rendering engine written in Rust|https://servo.org
 Web Front End|[Lib] Valdi: A cross-platform UI framework that delivers native performance without sacrificing developer velocity|https://github.com/Snapchat/Valdi
