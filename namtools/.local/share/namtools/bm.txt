@@ -202,8 +202,6 @@ Miscellaneous|[Tool] RustDesk: An open-source remote desktop application designe
 Miscellaneous|[Tool] Syncthing|https://syncthing.net
 Network|[Learning] Beej's Guide to Network Programming|https://beej.us/guide/bgnet/html
 Network|[Learning] HTTP Made Really Easy|https://jmarshall.com/easy/http
-Operating System|[Learning] Writing an OS in Rust|https://os.phil-opp.com
-Operating System|[Reading] Unix as IDE|https://blog.sanctum.geek.nz/series/unix-as-ide
 Programming|[Language] Amber: A programming language compiled into Bash Script|https://docs.amber-lang.com
 Programming|[Language] C3: The Ergonomic, Safe and Familiar Evolution of C|https://c3-lang.org
 Programming|[Language] Hare: A systems programming language designed to be simple, stable, and robust|https://harelang.org
@@ -259,6 +257,9 @@ System Design|Atoms, molecules, organisms|https://swizec.com/blog/atoms-molecule
 System Design|The Laws of Software Evolution|https://swizec.com/blog/the-laws-of-software-evolution
 System Design|The System Design Primer|https://github.com/donnemartin/system-design-primer
 System Design|Why utils are bad, an example|https://swizec.com/blog/why-utils-are-bad-an-example
+System Programming|[Learning] Writing an OS in Rust|https://os.phil-opp.com
+System Programming|[Reading] Putting the "You" in CPU|https://cpu.land
+System Programming|[Reading] Unix as IDE|https://blog.sanctum.geek.nz/series/unix-as-ide
 TypeScript|[Lib] Effect: An ecosystem of tools to build robust applications in TypeScript|https://effect.website
 TypeScript|[Lib] es-toolkit: A modern JavaScript utility library that's 2-3 times faster and up to 97maller—a major upgrade to lodash|https://es-toolkit.dev
 TypeScript|[Lib] esbuild issue: no matching export for types|https://github.com/evanw/esbuild/issues/1941#issuecomment-1014041320
@@ -309,6 +310,7 @@ Web Front End|[Lib] Servo: A web browser rendering engine written in Rust|https:
 Web Front End|[Lib] Valdi: A cross-platform UI framework that delivers native performance without sacrificing developer velocity|https://github.com/Snapchat/Valdi
 Web Front End|[Reading] Component testing|https://storybook.js.org/blog/component-testing
 Web Front End|[Reading] How Web Works|https://github.com/vasanthk/how-web-works
+Web Front End|[Reading] Modern CSS Fundametals|https://css-fundamentals.kevinpowell.co
 Web Front End|[Reading] Why you should test with user-event|https://ph-fritsche.github.io/blog/post/why-userevent
 Web Front End|[Tool] Local-first Software|https://lofi.so
 Writing|[Diagram] D2: Declarative Diagramming|https://d2lang.com
