@@ -27,10 +27,14 @@ C++|[Lib] FTXUI: A simple cross-platform C++ library for terminal based user int
 C++|[Lib] RxTerm: A C++ library for functional-reactive terminals. RxTerm is a lean alternative to ncurses for many applications|https://github.com/LoopPerfect/rxterm
 C++|[Lib] SMK: Simple multimedia kit - C++ WebAssembly|https://github.com/ArthurSonzogni/smk
 C++|[Reading] Understanding Smart Pointers in C++|https://thecodinggopher.substack.com/p/understanding-smart-pointers-in-c
-CSS|CSS Wrapped 2025|https://chrome.dev/css-wrapped-2025
-CSS|Every Layout|https://every-layout.dev
-CSS|The Height Enigma|https://joshwcomeau.com/css/height-enigma
-CSS|Transitioning to Height Auto (Two Ways)|https://keithjgrant.com/posts/2023/04/transitioning-to-height-auto
+CSS|[Learning] Every Layout|https://every-layout.dev
+CSS|[Learning] The Height Enigma|https://joshwcomeau.com/css/height-enigma
+CSS|[Reading] CSS Wrapped 2025|https://chrome.dev/css-wrapped-2025
+CSS|[Reading] Modern CSS Fundamentals|https://css-fundamentals.kevinpowell.co
+CSS|[Tip] Transitioning to Height Auto (Two Ways)|https://keithjgrant.com/posts/2023/04/transitioning-to-height-auto
+CSS|[Tool] CSS Spring Easing Generator|https://kvin.me/css-springs
+C|[Learning] Beej's Guide to C Programming - Library Reference|https://beej.us/guide/bgclr
+C|[Learning] Beej's Guide to C Programming|https://beej.us/guide/bgc
 C|[Learning] Building your own C application|https://opengl-tutorial.org/miscellaneous/building-your-own-c-application
 C|[Learning] Making a simple HTTP webserver in C|https://bruinsslot.jp/post/simple-http-webserver-in-c
 C|[Lib] clib: Package manager for the C programming language|https://github.com/clibs/clib
@@ -146,7 +150,6 @@ JavaScript|[Learning] JavaScript Event Loop Visualized – The Ultimate Interact
 JavaScript|[Learning] JavaScript Visualized - Event Loop, Web APIs, (Micro)task Queue|https://youtu.be/eiC58R16hb8
 JavaScript|[Learning] The 16-Line Pattern That Eliminates Dependency Passing|https://github.com/doeixd/effectively/blob/main/docs/generator-context-pattern.md
 JavaScript|[Learning] What the heck is the event loop anyway? - Philip Roberts|https://youtu.be/8aGhZQkoFbQ
-JavaScript|[Lib] Anime.js: JavaScript animation engine|https://animejs.com
 JavaScript|[Lib] chokidar: Minimal and efficient cross-platform file watching library|https://github.com/paulmillr/chokidar
 JavaScript|[Lib] LZMA-JS: A JavaScript implementation of the Lempel-Ziv-Markov (LZMA) chain compression algorithm|https://github.com/LZMA-JS/LZMA-JS
 JavaScript|[Lib] RxJS: Reactive Extensions Library for JavaScript|https://rxjs.dev
@@ -200,7 +203,9 @@ Miscellaneous|[Guide] How to Send Emails Using Gmail SMTP with Cloudflare Email 
 Miscellaneous|[Shopping] Moonpig Gift Shop|https://moonpig.com
 Miscellaneous|[Tool] RustDesk: An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer|https://rustdesk.com
 Miscellaneous|[Tool] Syncthing|https://syncthing.net
-Network|[Learning] Beej's Guide to Network Programming|https://beej.us/guide/bgnet/html
+Mobile Development|[Learning] How to Implement iOS Deep Linking Using Universal Links: Step-by-Step Deep Dive Guide — 2025|https://medium.com/@sonerkaraevli/how-to-implement-ios-deep-linking-using-universal-links-step-by-step-deep-dive-guide-2024-fe3882b3017c
+Network|[Learning] Beej's Guide to Network Programming|https://beej.us/guide/bgnet
+Network|[Learning] Beej's Guide to Networking Concepts|https://beej.us/guide/bgnet0
 Network|[Learning] HTTP Made Really Easy|https://jmarshall.com/easy/http
 Programming|[Language] Amber: A programming language compiled into Bash Script|https://docs.amber-lang.com
 Programming|[Language] C3: The Ergonomic, Safe and Familiar Evolution of C|https://c3-lang.org
@@ -209,6 +214,7 @@ Programming|[Language] Odin: A general-purpose programming language with distinc
 Programming|[Language] Red: A next-generation programming language strongly inspired by Rebol, but with a broader field of usage thanks to its native-code compiler|https://red-lang.org
 Programming|[Learning] 0DE5|https://0de5.net
 Programming|[Learning] 30 seconds of code: Coding articles to level up your development skills|https://30secondsofcode.org
+Programming|[Learning] Beej's Guides|https://beej.us/guide
 Programming|[Learning] Build your own X|https://github.com/codecrafters-io/build-your-own-x
 Programming|[Learning] Challenging projects every programmer should try|https://austinhenley.com/blog/challengingprojects.html
 Programming|[Learning] Devhints: Rico's cheatsheets|https://devhints.io
@@ -260,6 +266,7 @@ System Design|Why utils are bad, an example|https://swizec.com/blog/why-utils-ar
 System Programming|[Learning] Writing an OS in Rust|https://os.phil-opp.com
 System Programming|[Reading] Putting the "You" in CPU|https://cpu.land
 System Programming|[Reading] Unix as IDE|https://blog.sanctum.geek.nz/series/unix-as-ide
+System Programming|[Reading] What Every Programmer Should Know About Memory|https://people.freebsd.org/~lstewart/articles/cpumemory.pdf
 TypeScript|[Lib] Effect: An ecosystem of tools to build robust applications in TypeScript|https://effect.website
 TypeScript|[Lib] es-toolkit: A modern JavaScript utility library that's 2-3 times faster and up to 97maller—a major upgrade to lodash|https://es-toolkit.dev
 TypeScript|[Lib] esbuild issue: no matching export for types|https://github.com/evanw/esbuild/issues/1941#issuecomment-1014041320
@@ -298,19 +305,23 @@ Web Front End|[Learning] A Friendly Introduction to SVG|https://joshwcomeau.com/
 Web Front End|[Learning] Atomic Design|https://bradfrost.com/blog/post/atomic-web-design
 Web Front End|[Learning] Fine-Grained Reactivity Fundamentals Series' Articles|https://dev.to/ryansolid/series/13735
 Web Front End|[Learning] web.dev|https://web.dev
+Web Front End|[Lib] Anime.js: JavaScript animation engine|https://animejs.com
 Web Front End|[Lib] Dioxus: The Rust framework for building fullstack web, desktop, and mobile apps|https://dioxuslabs.com
 Web Front End|[Lib] elm: A delightful language for reliable web applications|https://elm-lang.org
 Web Front End|[Lib] Extension.js: Build browser extensions for Chrome, Edge, and Firefox with one modern workflow|https://extension.js.org
+Web Front End|[Lib] GSAP: A wildly robust JavaScript animation library built for professionals|https://gsap.com
 Web Front End|[Lib] Legend-State: An extremely fast signal-based state library with fine-grained reactivity and a powerful sync system|https://legendapp.com/open-source/state
 Web Front End|[Lib] Leptos: A cutting-edge Rust framework for the modern web|https://dioxuslabs.com
+Web Front End|[Lib] Motion: A production-grade animation library for the web|https://motion.dev
 Web Front End|[Lib] nuqs: Type-safe search params state manager for React|https://nuqs.dev
 Web Front End|[Lib] oxichrome: Write type-safe browser extensions with proc macros and Leptos entirely in Rust|https://oxichrome.dev
+Web Front End|[Lib] react-spring: A spring physics based React animation library|https://react-spring.dev
 Web Front End|[Lib] RxDB|https://rxdb.info
 Web Front End|[Lib] Servo: A web browser rendering engine written in Rust|https://servo.org
 Web Front End|[Lib] Valdi: A cross-platform UI framework that delivers native performance without sacrificing developer velocity|https://github.com/Snapchat/Valdi
+Web Front End|[Lib] xyflow: Powerful open source libraries for building node-based UIs|https://xyflow.com
 Web Front End|[Reading] Component testing|https://storybook.js.org/blog/component-testing
 Web Front End|[Reading] How Web Works|https://github.com/vasanthk/how-web-works
-Web Front End|[Reading] Modern CSS Fundametals|https://css-fundamentals.kevinpowell.co
 Web Front End|[Reading] Why you should test with user-event|https://ph-fritsche.github.io/blog/post/why-userevent
 Web Front End|[Tool] Local-first Software|https://lofi.so
 Writing|[Diagram] D2: Declarative Diagramming|https://d2lang.com
