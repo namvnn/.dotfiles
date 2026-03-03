@@ -1,3 +1,4 @@
+AI|[Reading] The Bitter Lesson|http://incompleteideas.net/IncIdeas/BitterLesson.html
 Audio|[Tool] Ambiphone: Ambient music + sounds for work, study and relaxation|https://ambiph.one
 Audio|[Tool] Audacity: A free and open-source digital audio editor and recording application software|https://audacityteam.org
 Audio|[Tool] Bosca Ceoil Blue: A simple and beginner-friendly app for making music|https://yurisizov.itch.io/boscaceoil-blue
