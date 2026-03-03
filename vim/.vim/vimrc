@@ -207,6 +207,9 @@ let g:loaded_netrwPlugin = 1
 " man page
 runtime ftplugin/man.vim
 
+" editorconfig
+packadd! editorconfig
+
 " fzf
 nnoremap <C-P> <Cmd>FZF<CR>
 
