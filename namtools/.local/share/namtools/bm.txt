@@ -320,6 +320,7 @@ Web Front End|[Lib] react-spring: A spring physics based React animation library
 Web Front End|[Lib] RxDB|https://rxdb.info
 Web Front End|[Lib] Servo: A web browser rendering engine written in Rust|https://servo.org
 Web Front End|[Lib] Valdi: A cross-platform UI framework that delivers native performance without sacrificing developer velocity|https://github.com/Snapchat/Valdi
+Web Front End|[Lib] Vaul: Drawer component for React|https://vaul.emilkowal.ski
 Web Front End|[Lib] xyflow: Powerful open source libraries for building node-based UIs|https://xyflow.com
 Web Front End|[Reading] Component testing|https://storybook.js.org/blog/component-testing
 Web Front End|[Reading] How Web Works|https://github.com/vasanthk/how-web-works
@@ -338,6 +339,7 @@ Writing|[Docs] Zine: Fast, Scalable, and Flexible Static Site Generator|https://
 Writing|[Slide] presenterm: A markdown terminal slideshow tool|https://mfontanini.github.io/presenterm
 Writing|[Slide] Slides: Terminal based presentation tool|https://maaslalani.com/slides/
 Writing|[Slide] Slidev: Presentation Slides for Developers|https://sli.dev
+Writing|[Tool] Vale: An open-source, command-line tool that brings your editorial style guide to life|https://vale.sh
 Zig|[Learning] Learning Zig|https://openmymind.net/learning_zig
 Zig|[Learning] Ziglings: Learn the ⚡Zig programming language by fixing tiny broken programs|https://codeberg.org/ziglings/exercises
 Zig|[Reading] Learning Zig's Build System using raylib|https://tung.github.io/posts/learning-zigs-build-system-using-raylib
