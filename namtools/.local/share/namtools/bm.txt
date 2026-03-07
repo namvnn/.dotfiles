@@ -316,6 +316,7 @@ Web Front End|[Lib] Leptos: A cutting-edge Rust framework for the modern web|htt
 Web Front End|[Lib] Motion: A production-grade animation library for the web|https://motion.dev
 Web Front End|[Lib] nuqs: Type-safe search params state manager for React|https://nuqs.dev
 Web Front End|[Lib] oxichrome: Write type-safe browser extensions with proc macros and Leptos entirely in Rust|https://oxichrome.dev
+Web Front End|[Lib] react-admin: The best developer experience, lets you focus on business needs, and build delightful user interfaces|https://marmelab.com/react-admin
 Web Front End|[Lib] react-spring: A spring physics based React animation library|https://react-spring.dev
 Web Front End|[Lib] RxDB|https://rxdb.info
 Web Front End|[Lib] Servo: A web browser rendering engine written in Rust|https://servo.org
