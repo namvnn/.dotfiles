@@ -35,4 +35,3 @@ source <(fzf --zsh)
 
 # go
 export GOPATH="${HOME}/.go"
-
