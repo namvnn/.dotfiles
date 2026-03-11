@@ -187,3 +187,11 @@ end
 if vim.fn.executable("rust-analyzer") == 1 then
     vim.lsp.enable("rust_analyzer")
 end
+
+if vim.fn.executable("oxlint") == 1 then
+    vim.lsp.enable("oxlint")
+end
+
+if vim.fn.executable("oxfmt") == 1 then
+    vim.lsp.enable("oxfmt")
+end
