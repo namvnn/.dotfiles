@@ -5,13 +5,27 @@ require("conform").setup({
         cs = { "csharpier" },
         rust = { "rustfmt" },
         python = { "ruff_format" },
+        json = function(bufnr)
+            if vim.fs.root(bufnr, { ".oxfmtrc.json", ".oxfmtrc.jsonc" }) then
+                return { "oxfmt" }
+            end
+
+            return { "prettier" }
+        end,
+        jsonc = function(bufnr)
+            if vim.fs.root(bufnr, { ".oxfmtrc.json", ".oxfmtrc.jsonc" }) then
+                return { "oxfmt" }
+            end
+
+            return { "prettier" }
+        end,
         typescript = function(bufnr)
             if vim.fs.root(bufnr, { ".oxfmtrc.json", ".oxfmtrc.jsonc" }) then
                 return { "oxfmt" }
             end
 
             if vim.fs.root(bufnr, { "deno.json", "deno.jsonc" }) then
-                return {}
+                return { "deno_fmt" }
             end
 
             if vim.fs.root(bufnr, { "biome.json", "biome.jsonc" }) then
@@ -26,7 +40,7 @@ require("conform").setup({
             end
 
             if vim.fs.root(bufnr, { "deno.json", "deno.jsonc" }) then
-                return {}
+                return { "deno_fmt" }
             end
 
             if vim.fs.root(bufnr, { "biome.json", "biome.jsonc" }) then
@@ -45,7 +59,7 @@ require("conform").setup({
             end
 
             if vim.fs.root(bufnr, { "biome.json", "biome.jsonc" }) then
-                return { "biome" }
+                return { "deno_fmt" }
             end
 
             return { "prettier" }
@@ -56,18 +70,11 @@ require("conform").setup({
             end
 
             if vim.fs.root(bufnr, { "deno.json", "deno.jsonc" }) then
-                return {}
+                return { "deno_fmt" }
             end
 
             if vim.fs.root(bufnr, { "biome.json", "biome.jsonc" }) then
                 return { "biome" }
-            end
-
-            return { "prettier" }
-        end,
-        json = function(bufnr)
-            if vim.fs.root(bufnr, { ".oxfmtrc.json", ".oxfmtrc.jsonc" }) then
-                return { "oxfmt" }
             end
 
             return { "prettier" }
