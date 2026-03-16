@@ -268,6 +268,7 @@ System Programming|[Learning] Writing an OS in Rust|https://os.phil-opp.com
 System Programming|[Reading] Putting the "You" in CPU|https://cpu.land
 System Programming|[Reading] Unix as IDE|https://blog.sanctum.geek.nz/series/unix-as-ide
 System Programming|[Reading] What Every Programmer Should Know About Memory|https://people.freebsd.org/~lstewart/articles/cpumemory.pdf
+TypeScript|[Lib] ArkType: TypeScript's 1:1 validator, optimized from editor to runtime|https://arktype.io
 TypeScript|[Lib] Effect: An ecosystem of tools to build robust applications in TypeScript|https://effect.website
 TypeScript|[Lib] es-toolkit: A modern JavaScript utility library that's 2-3 times faster and up to 97maller—a major upgrade to lodash|https://es-toolkit.dev
 TypeScript|[Lib] esbuild issue: no matching export for types|https://github.com/evanw/esbuild/issues/1941#issuecomment-1014041320
