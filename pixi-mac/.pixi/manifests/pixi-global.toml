@@ -190,3 +190,8 @@ exposed = { docker = "docker" }
 channels = ["conda-forge"]
 dependencies = { colima = "*" }
 exposed = { colima = "colima" }
+
+[envs.vim]
+channels = ["conda-forge"]
+dependencies = { vim = "*" }
+exposed = { ex = "ex", rview = "rview", rvim = "rvim", view = "view", vim = "vim", vimdiff = "vimdiff", vimtutor = "vimtutor", xxd = "xxd" }
