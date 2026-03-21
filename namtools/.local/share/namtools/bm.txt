@@ -71,7 +71,9 @@ Data Structure and Algorithm|[Problems] Kattis Problem|https://open.kattis.com
 Data Structure and Algorithm|[Problems] LeetCode|https://leetcode.com
 Data Structure and Algorithm|[Problems] NeetCode|https://neetcode.io
 Data Structure and Algorithm|[Problems] Project Euler|https://projecteuler.net
-DevOps|Podman vs. Docker: Containerization Tools Comparison|https://spacelift.io/blog/podman-vs-docker
+DevOps|[Reading] Podman vs. Docker: Containerization Tools Comparison|https://spacelift.io/blog/podman-vs-docker
+DevOps|[Tool] Colima: Container runtimes on macOS (and Linux) with minimal setup|https://colima.run
+DevOps|[Tool] Lima: Linux virtual machines, with a focus on running containers|https://lima-vm.io
 English|"only a few" vs. "(very) few"|https://ell.stackexchange.com/questions/280182/only-a-few-vs-very-few
 English|Cambridge Dictionary|https://dictionary.cambridge.org
 English|Come|https://dictionary.cambridge.org/grammar/british-grammar/arrive
