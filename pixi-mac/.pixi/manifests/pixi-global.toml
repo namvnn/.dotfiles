@@ -180,3 +180,13 @@ exposed = { clib = "clib", clib-build = "clib-build", clib-configure = "clib-con
 channels = ["conda-forge"]
 dependencies = { ruff = "*" }
 exposed = { ruff = "ruff" }
+
+[envs.docker-cli]
+channels = ["conda-forge"]
+dependencies = { docker-cli = "*" }
+exposed = { docker = "docker" }
+
+[envs.colima]
+channels = ["conda-forge"]
+dependencies = { colima = "*" }
+exposed = { colima = "colima" }
