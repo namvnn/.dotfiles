@@ -120,6 +120,8 @@ Go|[Learning] Go Scheduler|https://nghiant3223.github.io/2025/04/15/go-scheduler
 Go|[Learning] Practical Go Lessons|https://practical-go-lessons.com
 Go|[Lib] asciigraph: Go package to make lightweight ASCII line graph ╭┈╯ in command line apps with no other dependencies|https://pkg.go.dev/github.com/guptarohit/asciigraph
 Go|[Lib] do: A dependency injection toolkit|https://do.samber.dev
+Go|[Lib] Folio: A modern PDF library|https://github.com/carlos7ags/folio
+Go|[Lib] gpdf: A pure Go, zero-dependency PDF generation library|https://github.com/gpdf-dev/gpdf
 Go|[Lib] lo: A Lodash-style Go library|https://lo.samber.dev
 Go|[Lib] mo: Monads and popular FP abstractions|https://pkg.go.dev/github.com/samber/mo
 Go|[Lib] oops: Error handling library with context, assertion, stack trace and source fragments|https://pkg.go.dev/github.com/samber/oops
