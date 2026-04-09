@@ -1,0 +1,39 @@
+vim.cmd("syntax on")
+vim.o.background = vim.env.THEME_MODE
+vim.o.termguicolors = false
+vim.cmd("colorscheme memono")
+
+vim.g.mapleader = " "
+
+vim.cmd("filetype plugin indent on")
+
+vim.o.shiftwidth = 4
+vim.o.expandtab = true
+vim.o.smarttab = true
+vim.o.softtabstop = 4
+vim.o.tabstop = 4
+
+vim.o.breakindent = true
+vim.o.clipboard = "unnamed,unnamedplus"
+vim.o.colorcolumn = "80"
+vim.o.completeopt = "menu,menuone,popup,noselect"
+vim.o.copyindent = true
+vim.o.cursorline = true
+vim.o.foldlevel = 99
+vim.o.foldlevelstart = 99
+vim.o.grepformat = "%f:%l:%c:%m"
+vim.o.grepprg = "rg --vimgrep"
+vim.o.ignorecase = true
+vim.o.number = true
+vim.o.relativenumber = true
+vim.o.scrolloff = 8
+vim.o.showtabline = 0
+vim.o.signcolumn = "yes"
+vim.o.smartcase = true
+vim.o.smoothscroll = true
+vim.o.swapfile = false
+vim.o.virtualedit = "block"
+vim.o.wrap = false
+
+vim.o.guicursor = ""
+vim.o.winborder = "single"
