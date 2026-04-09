@@ -210,6 +210,12 @@ runtime ftplugin/man.vim
 " editorconfig
 packadd! editorconfig
 
+" Highlight on yank
+packadd! hlyank
+
+" Comment 
+packadd! comment
+
 " fzf
 nnoremap <C-P> <Cmd>FZF<CR>
 
