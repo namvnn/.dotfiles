@@ -12,6 +12,7 @@ set softtabstop=4
 set tabstop=4
 
 " Options
+set autoindent
 set autoread
 set clipboard=unnamed,unnamedplus
 set colorcolumn=80
