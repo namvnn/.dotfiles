@@ -4,6 +4,9 @@ let &background = $THEME_MODE
 set notermguicolors
 colorscheme memono
 
+" Enable loading plugin and indent for file types
+filetype plugin indent on
+
 " Indentation
 set shiftwidth=4
 set expandtab
