@@ -1,0 +1,224 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" OPTIONS                                                                     "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+syntax on
+let &background = $THEME_MODE
+set notermguicolors
+colorscheme memono
+
+let mapleader = ' '
+
+filetype plugin indent on
+
+set shiftwidth=4
+set expandtab
+set smarttab
+set softtabstop=4
+set tabstop=4
+
+set breakindent
+set clipboard=unnamed,unnamedplus
+set colorcolumn=80
+set completeopt=menu,menuone,popup,noselect
+set copyindent
+set cursorline
+set foldlevel=99
+set foldlevelstart=99
+set grepformat=%f:%l:%c:%m
+set grepprg=rg\ --vimgrep
+set ignorecase
+set number
+set relativenumber
+set scrolloff=8
+set showtabline=0
+set signcolumn=yes
+set smartcase
+set smoothscroll
+set noswapfile
+set virtualedit=block
+set nowrap
+
+set autoindent
+set autoread
+set hidden
+set hlsearch
+set incsearch
+set laststatus=2
+set ruler
+set ttimeout
+set ttimeoutlen=50
+set wildmenu
+set wildoptions=pum,tagfile
+" Avoid using old regexp engine which will incur performance issues in 
+" TypeScript syntax highlighting.
+set regexpengine=0 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" KEY MAPPINGS                                                                 "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Move to window
+nnoremap <Leader>h <C-W>h
+nnoremap <Leader>j <C-W>j
+nnoremap <Leader>k <C-W>k
+nnoremap <Leader>l <C-W>l
+
+" Yank the current file path
+nnoremap yp <Cmd>call setreg('+', expand('%:p'))<CR>
+
+" Keep searching centered
+nnoremap n nzz
+nnoremap N Nzz
+
+" Keep half-window scrolling centered
+nnoremap <C-D> <C-D>zz
+nnoremap <C-U> <C-U>zz
+
+" Navigate quickfix list and keep it centered
+nnoremap <C-K> <Cmd>cprev<CR>zz
+nnoremap <C-J> <Cmd>cnext<CR>zz
+
+" Better indenting
+vnoremap < <gv
+vnoremap > >gv
+
+" Toggle spelling checker
+map <F12> <Cmd>setlocal spell! spelllang=en_us<CR>
+
+" Replace currently selected text with black hole register without yanking it
+vnoremap <Leader>p "_dP
+
+" Replace word under cursor
+nnoremap <Leader>s :%s/\<<C-R><C-W>\>/<C-R><C-W>/gI<Left><Left><Left>
+
+" Create or edit file
+nnoremap <Leader>e :e <C-R>=expand('%:p:h') . '/'<CR>
+
+" Make the current buffer a scratch buffer
+nnoremap <Leader>bs <Cmd>setlocal bt=nofile bh=wipe noswf nobl<CR>
+
+" Fix the indentation of the entire file
+function! s:indent()
+    let l:view = winsaveview()
+    keepjumps keeppatterns silent! norm gg=G
+    call winrestview(l:view)
+endfunction
+nnoremap <Leader>= <Cmd>call <SID>indent()<CR>
+
+" Format the entire file
+function! s:format()
+    let l:view = winsaveview()
+    keepjumps keeppatterns silent! norm gggqG
+    call winrestview(l:view)
+endfunction
+nnoremap <Leader>gq <Cmd>call <SID>format()<CR>
+
+" Yank til the end
+nnoremap Y y$
+
+" Clear highlighting search
+nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
+
+" Set a new undo point before deleting text in insert mode
+inoremap <C-U> <C-G>u<C-U>
+inoremap <C-W> <C-G>u<C-W>
+
+" Switch between C source and header file
+nnoremap <Leader>cc <Cmd>e %:p:s,.h$,.X123X,:s,.c$,.h,:s,.X123X$,.c,<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ABBREVIATIONS                                                                "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+ia <expr> me@ strftime('Author: Nam Nguyen <nam@namn.me><CR>
+                       \Description:<CR>
+                       \License: MIT License<CR>
+                       \Date Created: %B %d, %Y<CR>
+                       \Date Modified: %B %d, %Y')
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" AUTOCOMMANDS                                                                 "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+augroup mkdir_on_edit
+    autocmd!
+    autocmd BufWritePre * call s:mkdir_on_edit(expand('<afile>:p:h'))
+
+    function! s:mkdir_on_edit(dir)
+      if a:dir =~ '^/'
+            \ && !isdirectory(a:dir)
+            \ && input("'" . a:dir . "' does not exist. Create? [y/N] ") =~? '^y\%[es]$'
+        call mkdir(a:dir, 'p')
+      endif
+    endfunction
+augroup END
+
+augroup cc_ft
+    autocmd!
+    autocmd FileType c,cpp setlocal tags=./tags,tags,~/.tags/c-system
+    autocmd FileType c,cpp if executable('clang-format') | setlocal formatprg=clang-format | endif
+    autocmd FileType c     let b:dispatch = 'cc  -o %:p:r % && %:p:r'
+    autocmd FileType c     let b:start    = 'cc  -o %:p:r % && %:p:r'
+    autocmd FileType cpp   let b:dispatch = 'c++ -std=c++11 -o %:p:r % && %:p:r'
+    autocmd FileType cpp   let b:start    = 'c++ -std=c++11 -o %:p:r % && %:p:r'
+augroup END
+
+augroup rust_ft
+    autocmd!
+    autocmd FileType rust if executable('rustfmt') | setlocal formatprg=rustfmt | endif
+augroup END
+
+augroup rust_ft
+    autocmd!
+    autocmd FileType python if executable('ruff') | setlocal formatprg=ruff\ format\ - | endif
+    autocmd FileType python let b:dispatch = 'python3 %'
+    autocmd FileType python let b:start    = 'python3 %'
+augroup END
+
+augroup markdown_ft
+    autocmd!
+    autocmd FileType markdown setlocal wrap
+    autocmd FileType markdown setlocal textwidth=80
+    autocmd FileType markdown let b:dispatch = "mdp '%'"
+    autocmd FileType markdown let b:start    = "mdp '%'"
+augroup END
+
+augroup typst_ft
+    autocmd!
+    autocmd FileType typst setlocal textwidth=80
+augroup END
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" COMMANDS                                                                     "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+command! DiffOrig vert new | set bt=nofile | r ++edit # | 0d_
+        \ | diffthis | wincmd p | diffthis
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" PLUGINS                                                                      "
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" netrw
+let g:loaded_netrw = 1
+let g:loaded_netrwPlugin = 1
+
+" man page
+runtime ftplugin/man.vim
+
+" editorconfig
+packadd! editorconfig
+
+" Highlight on yank
+packadd! hlyank
+
+" Comment 
+packadd! comment
+
+" fzf
+nnoremap <C-P> <Cmd>FZF<CR>
+
+" gutentags
+let g:gutentags_enabled = 0
+let g:gutentags_define_advanced_commands = 1
