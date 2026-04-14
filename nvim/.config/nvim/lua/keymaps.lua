@@ -1,8 +1,8 @@
 -- Move to window
-vim.keymap.set("n", "<Leader>h", "<C-W>h", { remap = true })
-vim.keymap.set("n", "<Leader>j", "<C-W>j", { remap = true })
-vim.keymap.set("n", "<Leader>k", "<C-W>k", { remap = true })
-vim.keymap.set("n", "<Leader>l", "<C-W>l", { remap = true })
+-- vim.keymap.set("n", "<Leader>h", "<C-W>h", { remap = true })
+-- vim.keymap.set("n", "<Leader>j", "<C-W>j", { remap = true })
+-- vim.keymap.set("n", "<Leader>k", "<C-W>k", { remap = true })
+-- vim.keymap.set("n", "<Leader>l", "<C-W>l", { remap = true })
 
 -- Yank the current file path
 vim.keymap.set("n", "yp", "<Cmd>call setreg('+', expand('%:p'))<CR>")
