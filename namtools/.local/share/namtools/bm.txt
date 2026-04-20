@@ -7,6 +7,7 @@ Audio|[Tool] Wavacity: A port of the Audacity audio editor to the web browser|ht
 Australia|Aussiecitizenshiptest.com|https://aussiecitizenshiptest.com
 Australia|Certified copies of original documents|https://justice.vic.gov.au/certifiedcopies
 Australia|First home super saver scheme|https://ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/withdrawing-and-using-your-super/early-access-to-super/first-home-super-saver-scheme
+Australia|Weather in Melbourne|https://www.australia.com/en/facts-and-planning/weather-in-australia/melbourne-weather.html
 Bash|[Learning] BashGuide|https://mywiki.wooledge.org
 Bash|[Tool] Bash Boilerplate|https://github.com/xwmx/bash-boilerplate
 Bash|[Tool] Bats: A TAP-compliant testing framework for Bash 3.2 or above|https://bats-core.readthedocs.io
@@ -137,6 +138,7 @@ Graphics|[Learning] Graphics Programming Compendium|https://graphicscompendium.c
 Graphics|[Learning] Learn OpenGL|https://learnopengl.com
 Graphics|[Learning] Ray Tracing in One Weekend|https://raytracing.github.io/books/RayTracingInOneWeekend
 Graphics|[Learning] Scratchapixel|https://scratchapixel.com
+Graphics|[Learning] Software Renderer in Odin from Scratch|https://marianpekar.com/blog/software-renderer-in-odin-from-scratch-part-i
 Graphics|[Learning] The Book of Shaders|https://thebookofshaders.com
 Graphics|[Learning] The Nature of Code|https://natureofcode.com
 Graphics|[Platform] Shadertoy|https://shadertoy.com
@@ -201,10 +203,12 @@ Job|[Site] Indie Hackers|https://indiehackers.com
 Job|[Site] levels.fyi|https://levels.fyi
 Job|[Site] We Work Remotely|https://weworkremotely.com
 Job|[Site] Wellfound|https://wellfound.com
-Miscellaneous|[Cleaning] How to Read Laundry Symbols|https://tide.com/en-us/how-to-wash-clothes/how-to-do-laundry/how-to-read-laundry-symbols
+Miscellaneous|[Academic] How to Read an Academic Article|https://organizationsandmarkets.com/2010/08/31/how-to-read-an-academic-article
 Miscellaneous|[Game] Krunker|https://krunker.io
 Miscellaneous|[Game] Mini Royale|https://miniroyale.io
 Miscellaneous|[Guide] How to Send Emails Using Gmail SMTP with Cloudflare Email Routing?|https://dev.to/pierre/gmail-with-cloudflare-email-routing-4413
+Miscellaneous|[Home] How to Read Laundry Symbols|https://tide.com/en-us/how-to-wash-clothes/how-to-do-laundry/how-to-read-laundry-symbols
+Miscellaneous|[Home] The Free Repair Guide|https://ifixit.com
 Miscellaneous|[Shopping] Moonpig Gift Shop|https://moonpig.com
 Miscellaneous|[Tool] RustDesk: An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer|https://rustdesk.com
 Miscellaneous|[Tool] Syncthing|https://syncthing.net
@@ -320,7 +324,9 @@ Web Front End|[Lib] Legend-State: An extremely fast signal-based state library w
 Web Front End|[Lib] Leptos: A cutting-edge Rust framework for the modern web|https://dioxuslabs.com
 Web Front End|[Lib] Motion: A production-grade animation library for the web|https://motion.dev
 Web Front End|[Lib] nuqs: Type-safe search params state manager for React|https://nuqs.dev
+Web Front End|[Lib] Ocsigen: A complete framework for developing Web and mobile apps using cutting edge techniques|https://ocsigen.org
 Web Front End|[Lib] oxichrome: Write type-safe browser extensions with proc macros and Leptos entirely in Rust|https://oxichrome.dev
+Web Front End|[Lib] Pretext: Fast, accurate & comprehensive text measurement & layout|https://pretextjs.net
 Web Front End|[Lib] react-admin: The best developer experience, lets you focus on business needs, and build delightful user interfaces|https://marmelab.com/react-admin
 Web Front End|[Lib] react-spring: A spring physics based React animation library|https://react-spring.dev
 Web Front End|[Lib] RxDB|https://rxdb.info
@@ -330,6 +336,7 @@ Web Front End|[Lib] Vaul: Drawer component for React|https://vaul.emilkowal.ski
 Web Front End|[Lib] xyflow: Powerful open source libraries for building node-based UIs|https://xyflow.com
 Web Front End|[Reading] Component testing|https://storybook.js.org/blog/component-testing
 Web Front End|[Reading] How Web Works|https://github.com/vasanthk/how-web-works
+Web Front End|[Reading] pretext - under the hood|https://tools.simonwillison.net/pretext-explainer
 Web Front End|[Reading] Why you should test with user-event|https://ph-fritsche.github.io/blog/post/why-userevent
 Web Front End|[Tool] Local-first Software|https://lofi.so
 Writing|[Diagram] D2: Declarative Diagramming|https://d2lang.com
