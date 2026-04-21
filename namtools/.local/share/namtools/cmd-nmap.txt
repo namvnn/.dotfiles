@@ -1,0 +1,72 @@
+nmap a SYN scan combined with OS detection for more accurate results: nmap -sS -O <target>
+nmap a simplistic output format often used for quick scans: nmap -oS output.nmap <target>
+nmap adds a 1-second delay between probe packets to reduce the likelihood of detection: nmap --scan-delay 1s <target>
+nmap allows you to specify a particular Nmap script for more targeted information gathering: nmap --script <script_name> <target>
+nmap attempts to determine the target's operating system based on its network responses: nmap -O <target>
+nmap attempts to identify the version of services running on open ports by sending probes and analyzing the responses: nmap -sV <target>
+nmap automates Nmap scanning and saves results in XML format for further processing: nmap -oX results.xml <target>
+nmap combines multiple scan results into one file for easier management: nmap -oA combined_scan <target1> <target2>
+nmap detects the operating system of the target by analyzing its responses and fingerprinting techniques: nmap -O <target>
+nmap detects the version of services running on open ports by attempting to match them to known service banners: nmap -sV <target>
+nmap disables host discovery (assuming the target is up) and scans even if the target does not respond to pings: nmap -Pn <target>
+nmap enables debugging mode for deeper insight into the scan process: nmap -d <target>
+nmap example of using Nmap within a shell script to automate scanning: #!/bin/bash\n nmap -T4 <target>
+nmap exports the results in a grepable format for later parsing: nmap -oG output.gnmap <target>
+nmap FIN scan, used to evade some firewalls. It sends a FIN flag to a closed port, which may confuse firewalls into not detecting the scan: nmap -sF <target>
+nmap forces Nmap to attempt version detection on all services, even those on uncommon ports: nmap -p <port> --version-all <target>
+nmap fragments packets into smaller pieces to avoid detection by firewalls: nmap -f <target>
+nmap generates HTML output for visual representation of the scan results: nmap -oA output.html <target>
+nmap increases verbosity to show more detailed information during the scan: nmap -v <target>
+nmap OS detection, version detection, script scanning, and traceroute together in one scan: nmap -A -sV <target>
+nmap outputs scan results in XML format, useful for parsing by scripts: nmap -oX output.xml <target>
+nmap outputs scan results in a grepable format, which is useful for filtering specific results: nmap -oG output.gnmap <target>
+nmap passes custom arguments to a script: nmap --script-args <argument> <target>
+nmap performs OS detection, version detection, script scanning, and traceroute all in one: nmap -A <target>
+nmap performs a TCP SYN scan, also known as a stealth scan. It only sends SYN packets to ports, not completing the handshake, which helps evade detection by some firewalls: nmap -sS <target>
+nmap performs a ping scan to see if a host is up without performing a full port scan: nmap -sn <target>
+nmap performs an ARP ping to find hosts on the local network: nmap -sn -PR <target>
+nmap performs both OS detection and service version detection: nmap -A -sV <target>
+nmap routes the scan through a proxy server: nmap --proxy socks5://127.0.0.1:1080 <target>
+nmap routes the scan through a specified proxy server: nmap --proxy http://proxy_address:8080 <target>
+nmap runs Nmap’s vulnerability scripts to check for known vulnerabilities: nmap --script vuln <target>
+nmap runs a script that retrieves HTTP headers from the target: nmap --script=http-headers <target>
+nmap runs a specific Nmap script: nmap --script=<script_name> <target>
+nmap runs a user-defined script on the target: nmap --script <my-custom-script-nse> <target>
+nmap runs scripts from a specific category, like "auth" or "vuln": nmap --script-args <category> <target>
+nmap runs the default set of Nmap scripts to gather more detailed information about the target: nmap -sC <target>
+nmap same as above, this is the default stealth scan and is often used to avoid detection: nmap -sS <target>
+nmap saves the scan in both normal and XML output formats: nmap -oN output.txt -oX output.xml <target>
+nmap saves the scan results in a human-readable format: nmap -oN output.txt <target>
+nmap saves the scan results in all formats (normal, XML, and grepable): nmap -oA combined_scan <target1> <target2>
+nmap scans IPs from `192.168.1.1` to `192.168.1.10`: nmap 192.168.1.1-10
+nmap scans TCP ports `80` and `443` for web traffic: nmap -p 80,443 <target>
+nmap scans UDP ports `161` and `162` for SNMP traffic: nmap -p U:161,162 <target>
+nmap scans a random selection of ports within the range `1024-2048`: nmap -p R:1024-2048 <target>
+nmap scans a single host at IP address: nmap <target>
+nmap scans all hosts in the target subnet (with a subnet mask of `255.255.255.0`): nmap <target>/24
+nmap scans multiple targets from a file (`targets.txt`): nmap -iL targets.txt
+nmap scans ports `22` (SSH) and `80` (HTTP) on the target: nmap -p 22,80 <target>
+nmap scans the first 1000 TCP ports on the target: nmap -p 1-1000 <target>
+nmap scans the target using default settings, including the most common 1000 TCP ports: nmap <target>
+nmap scans the top 100 most commonly open ports: nmap --top-ports 100 <target>
+nmap scans two specific hosts: nmap <target-1> <target-2>
+nmap sends fragmented packets to evade packet filters and firewalls: nmap -f <target>
+nmap sends packets with a custom data length to evade some IDS/IPS systems: nmap --data-length 400 <target>
+nmap sends packets with bad checksums to evade intrusion detection systems (IDS): nmap --badsum <target>
+nmap sends scans from port `53` (DNS) to bypass firewalls: nmap --source-port 53 -p 80 <target>
+nmap sets a maximum timeout of 10 minutes for the entire host scan: nmap --host-timeout 10m <target>
+nmap sets the TTL value for the scan packets to `64`, which may help avoid detection: nmap --ttl 64 <target>
+nmap sets the minimum packet send rate to `1000` packets per second for faster scans: nmap --min-rate 1000 <target>
+nmap sets the scan speed to "Aggressive", reducing scan time while balancing accuracy: nmap -T4 <target>
+nmap sets the source port to `53` (DNS), often used to bypass filtering mechanisms: nmap --source-port 53 <target>
+nmap shows only open ports in the output, filtering out closed or filtered ports: nmap --open <target>
+nmap skips host discovery (pings) and directly scans port `80` to save time: nmap -P0 -p 80 <target>
+nmap spoofs the MAC address of the source machine to avoid detection: nmap --spoof-mac <mac_address> <target>
+nmap traces the route packets take to reach the target, displaying each hop along the way: nmap --traceroute <target>
+nmap uses 10 random decoys to disguise the source of the scan: nmap -D RND:10 <target>
+nmap uses ICMP echo requests to check if the target is alive: nmap -sn -PE <target>
+nmap uses TCP SYN packets to determine if a host is online: nmap -sn -PS <target>
+nmap uses UDP packets to check for a host: nmap -sn -PU <target>
+nmap uses the default timing template, which is balanced in terms of speed and stealth: nmap -T3 <target>
+nmap uses the highest scan speed, but this can trigger alerts on most networks: nmap -T5 <target>
+nmap xmas scan, which sets the FIN, URG, and PSH flags. This can sometimes bypass firewalls or filters that ignore unusual packets: nmap -sX <target>
