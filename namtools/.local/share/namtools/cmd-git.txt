@@ -14,7 +14,9 @@ git count files in a commit: git show --pretty="" --name-only <commit> | wc -l
 git create a new branch with no history: git checkout --orphan <branch-name>
 git create and switch to a new branch: git switch -c <branch-name>
 git delete ignored folders and files: git clean -fdX
-git delete remote branch: git push origin --delete <oldname>
+git delete local branch irrespective of its merged status: git branch -D <branch-name>
+git delete local branch which is fully merged in its upstream branch: git branch -d <branch-name>
+git delete remote branch: git push origin --delete <branch-name>
 git diff changes against HEAD: git diff HEAD <path-to-file>
 git diff unstaged changes against the latest commit: git diff <path-to-file>
 git discard all unstaged changes: git checkout -- .
