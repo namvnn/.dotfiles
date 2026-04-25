@@ -210,6 +210,7 @@ Miscellaneous|[Guide] How to Send Emails Using Gmail SMTP with Cloudflare Email 
 Miscellaneous|[Home] How to Read Laundry Symbols|https://tide.com/en-us/how-to-wash-clothes/how-to-do-laundry/how-to-read-laundry-symbols
 Miscellaneous|[Home] The Free Repair Guide|https://ifixit.com
 Miscellaneous|[Shopping] Moonpig Gift Shop|https://moonpig.com
+Miscellaneous|[Tool] PlayPhrase.me: Site for cinema archaeologists|https://playphrase.me
 Miscellaneous|[Tool] RustDesk: An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer|https://rustdesk.com
 Miscellaneous|[Tool] Syncthing|https://syncthing.net
 Mobile Development|[Learning] How to Implement iOS Deep Linking Using Universal Links: Step-by-Step Deep Dive Guide — 2025|https://medium.com/@sonerkaraevli/how-to-implement-ios-deep-linking-using-universal-links-step-by-step-deep-dive-guide-2024-fe3882b3017c
