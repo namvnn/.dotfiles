@@ -230,6 +230,7 @@ Programming|[Learning] Challenging projects every programmer should try|https://
 Programming|[Learning] Devhints: Rico's cheatsheets|https://devhints.io
 Programming|[Learning] Project Based Learning|https://github.com/practical-tutorials/project-based-learning
 Programming|[Learning] Rosetta Code: A programming chrestomathy site|https://rosettacode.org
+Programming|[Learning] Software Patterns Lexicon: Design Patterns, Architectures & Idioms|https://softwarepatternslexicon.com
 Programming|[Reading] Github Ranking: A list of the most github stars and forks repositories|https://evanli.github.io/Github-Ranking
 Programming|[Reading] Notes on structured concurrency, or: Go statement considered harmful|https://vorpus.org/blog/notes-on-structured-concurrency-or-go-statement-considered-harmful
 Programming|[Reading] Papers We Love: Papers from the computer science community to read and discuss|https://github.com/papers-we-love/papers-we-love
