@@ -1,5 +1,7 @@
 [tools]
 go = "latest"
+java = "latest"
 node = "latest"
 rust = "latest"
 zig = "latest"
+clojure = "latest"
