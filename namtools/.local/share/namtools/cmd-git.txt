@@ -46,8 +46,8 @@ git rename current branch: git branch -m <newname>
 git run cleanup tasks immediately: git maintenance run
 git search commits with full log format: git log -g --grep=<search>
 git search commits with one-line log format: git log --all --oneline | grep <search>
-git see who contributed most often to the specific folder since X time: git log --format='%an' --since='<since>' <folder-path> | sort | uniq -c | sort -rn | head
-git see who contributed most often to the specific folder: git log --format='%an' <folder-path> | sort | uniq -c | sort -rn | head
+git see who contributed most often to the specific folder since X time: git log --format='%aN <%aE>' --since='<since>' <folder-path> | sort | uniq -c | sort -rn | head
+git see who contributed most often to the specific folder: git log --format='%aN <%aE>' <folder-path> | sort | uniq -c | sort -rn | head
 git sparse-checkout to include only the directories or files in the working directory: git sparse-checkout init --cone && git sparse-checkout set <dirs>
 git switch branch: git switch <branch-name>
 git unset upstream: git branch --unset-upstream && git remote prune origin
