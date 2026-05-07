@@ -14,17 +14,6 @@ Bash|[Tool] Bats: A TAP-compliant testing framework for Bash 3.2 or above|https:
 Biomedicine|National Center for Biotechnology Information|https://ncbi.nlm.nih.gov
 Biomedicine|PubMed Central|https://pmc.ncbi.nlm.nih.gov
 Biomedicine|PubMed|https://pubmed.ncbi.nlm.nih.gov
-Books|Awesome Books|https://github.com/learn-anything/books
-Books|Build Your Own X From Scratch Books|https://build-your-own.org
-Books|Crafting Interpreters|https://craftinginterpreters.com
-Books|Digitale Bibliothek Book|https://dokumen.pub
-Books|Free eBooks - Project Gutenberg|https://gutenberg.org
-Books|Freely available programming books|https://ebookfoundation.github.io/free-programming-books
-Books|Library Genesis|https://libgen.is
-Books|Open Library|https://openlibrary.org
-Books|PDF Books Library|https://pdfbooksworld.com
-Books|The Architecture of Open Source Applications|https://aosabook.org
-Books|Wikibooks|https://wikibooks.org
 C++|[Lib] FTXUI: A simple cross-platform C++ library for terminal based user interfaces|https://arthursonzogni.github.io/FTXUI
 C++|[Lib] RxTerm: A C++ library for functional-reactive terminals. RxTerm is a lean alternative to ncurses for many applications|https://github.com/LoopPerfect/rxterm
 C++|[Lib] SMK: Simple multimedia kit - C++ WebAssembly|https://github.com/ArthurSonzogni/smk
@@ -190,6 +179,7 @@ Job|[Interview] Tech Interview Handbook|https://techinterviewhandbook.org
 Job|[Interview] The 32 smartest questions to ask at the end of every job interview|https://businessinsider.com/questions-to-ask-in-a-job-interview-2016-1
 Job|[Interview] What Did You Like Most About Your Job?|https://nijobs.com/careeradvice/what-did-you-like-most-about-your-job
 Job|[Resume] A Guide to Choosing the Right Resume Tense|https://indeed.com/career-advice/resumes-cover-letters/resume-tense
+Job|[Resume] Bolstering your CV: Key skills for your resumé|https://au.seek.com/career-advice/article/bolstering-your-cv-key-skills-for-your-resume
 Job|[Resume] Getting a Gig: A Guide|https://github.com/cassidoo/getting-a-gig
 Job|[Resume] How to make a resume: Step-by-step guide with examples|https://seek.com.au/career-advice/article/how-to-make-a-resume
 Job|[Resume] How to write a resume in Australia: A step-by-step guide with examples|https://seek.com.au/career-advice/article/resume-cv
@@ -204,6 +194,13 @@ Job|[Site] levels.fyi|https://levels.fyi
 Job|[Site] We Work Remotely|https://weworkremotely.com
 Job|[Site] Wellfound|https://wellfound.com
 Miscellaneous|[Academic] How to Read an Academic Article|https://organizationsandmarkets.com/2010/08/31/how-to-read-an-academic-article
+Miscellaneous|[Book] Awesome Books|https://github.com/learn-anything/books
+Miscellaneous|[Book] Digitale Bibliothek Book|https://dokumen.pub
+Miscellaneous|[Book] Free eBooks - Project Gutenberg|https://gutenberg.org
+Miscellaneous|[Book] Library Genesis|https://libgen.is
+Miscellaneous|[Book] Open Library|https://openlibrary.org
+Miscellaneous|[Book] PDF Books Library|https://pdfbooksworld.com
+Miscellaneous|[Book] Wikibooks|https://wikibooks.org
 Miscellaneous|[Game] Krunker|https://krunker.io
 Miscellaneous|[Game] Mini Royale|https://miniroyale.io
 Miscellaneous|[Guide] How to Send Emails Using Gmail SMTP with Cloudflare Email Routing?|https://dev.to/pierre/gmail-with-cloudflare-email-routing-4413
@@ -217,6 +214,11 @@ Mobile Development|[Learning] How to Implement iOS Deep Linking Using Universal 
 Network|[Learning] Beej's Guide to Network Programming|https://beej.us/guide/bgnet
 Network|[Learning] Beej's Guide to Networking Concepts|https://beej.us/guide/bgnet0
 Network|[Learning] HTTP Made Really Easy|https://jmarshall.com/easy/http
+Programming|[Book] Build Your Own X From Scratch Books|https://build-your-own.org
+Programming|[Book] Crafting Interpreters|https://craftinginterpreters.com
+Programming|[Book] Freely available programming books|https://ebookfoundation.github.io/free-programming-books
+Programming|[Book] Structure and Interpretation of Computer Programs|https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/index.html
+Programming|[Book] The Architecture of Open Source Applications|https://aosabook.org
 Programming|[Language] Amber: A programming language compiled into Bash Script|https://docs.amber-lang.com
 Programming|[Language] C3: The Ergonomic, Safe and Familiar Evolution of C|https://c3-lang.org
 Programming|[Language] Hare: A systems programming language designed to be simple, stable, and robust|https://harelang.org
@@ -337,6 +339,7 @@ Web Front End|[Lib] Valdi: A cross-platform UI framework that delivers native pe
 Web Front End|[Lib] Vaul: Drawer component for React|https://vaul.emilkowal.ski
 Web Front End|[Lib] xyflow: Powerful open source libraries for building node-based UIs|https://xyflow.com
 Web Front End|[Reading] Component testing|https://storybook.js.org/blog/component-testing
+Web Front End|[Reading] How to useMemo and useCallback: you can remove most of them|https://developerway.com/posts/how-to-use-memo-use-callback
 Web Front End|[Reading] How Web Works|https://github.com/vasanthk/how-web-works
 Web Front End|[Reading] pretext - under the hood|https://tools.simonwillison.net/pretext-explainer
 Web Front End|[Reading] Why you should test with user-event|https://ph-fritsche.github.io/blog/post/why-userevent
