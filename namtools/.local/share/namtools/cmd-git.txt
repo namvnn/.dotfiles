@@ -33,6 +33,8 @@ git log all, decorate and oneline in graph: git log --all --decorate --oneline -
 git log all, decorate and oneline: git log --all --decorate --oneline
 git log decorate and oneline in graph: git log --decorate --oneline --graph
 git log decorate and oneline: git log --decorate --oneline
+git log who contributed most often to the specific directory since X time: git log --format='%aN <%aE>' --since='<since>' <directory-path> | sort | uniq -c | sort -rn | head -10
+git log who contributed most often to the specific directory: git log --format='%aN <%aE>' <directory-path> | sort | uniq -c | sort -rn | head -10
 git prune origin branches: git remote prune origin
 git pull the current branch: git pull origin "$(git branch --show-current)"
 git push the local branch and reset upstream branch: git push origin -u <newname>
@@ -46,8 +48,8 @@ git rename current branch: git branch -m <newname>
 git run cleanup tasks immediately: git maintenance run
 git search commits with full log format: git log -g --grep=<search>
 git search commits with one-line log format: git log --all --oneline | grep <search>
-git see who contributed most often to the specific folder since X time: git log --format='%aN <%aE>' --since='<since>' <folder-path> | sort | uniq -c | sort -rn | head
-git see who contributed most often to the specific folder: git log --format='%aN <%aE>' <folder-path> | sort | uniq -c | sort -rn | head
+git shortlog who contributed most often to the specific directory since X time: git shortlog -sne --since='<since>' <directory-path> | head -10
+git shortlog who contributed most often to the specific directory: git shortlog -sne <directory-path> | head -10
 git sparse-checkout to include only the directories or files in the working directory: git sparse-checkout init --cone && git sparse-checkout set <dirs>
 git switch branch: git switch <branch-name>
 git unset upstream: git branch --unset-upstream && git remote prune origin
