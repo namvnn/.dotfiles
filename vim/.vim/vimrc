@@ -1,3 +1,5 @@
+let mapleader = ' '
+
 " Colorscheme
 syntax on
 let &background = $THEME_MODE
@@ -36,3 +38,9 @@ set ttimeout
 set ttimeoutlen=50
 set wildmenu
 set wildoptions=pum,tagfile
+
+" Move to window
+nnoremap <Leader>h <C-W>h
+nnoremap <Leader>j <C-W>j
+nnoremap <Leader>k <C-W>k
+nnoremap <Leader>l <C-W>l
