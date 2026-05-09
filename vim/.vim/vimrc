@@ -1,22 +1,5 @@
 let mapleader = ' '
 
-" Colorscheme
-syntax on
-let &background = $THEME_MODE
-set notermguicolors
-colorscheme memono
-
-" Plugin and indent for file types
-filetype plugin indent on
-
-" Indentation
-set shiftwidth=4
-set expandtab
-set smarttab
-set softtabstop=4
-set tabstop=4
-
-" Other options
 set autoindent
 set autoread
 set clipboard=unnamed,unnamedplus
@@ -39,8 +22,65 @@ set ttimeoutlen=50
 set wildmenu
 set wildoptions=pum,tagfile
 
+" Plugin and indent for file types
+filetype plugin indent on
+
+" Colorscheme
+syntax on
+let &background = $THEME_MODE
+set notermguicolors
+colorscheme memono
+
+" Indentation
+set shiftwidth=4
+set expandtab
+set smarttab
+set softtabstop=4
+set tabstop=4
+
 " Move to window
 nnoremap <Leader>h <C-W>h
 nnoremap <Leader>j <C-W>j
 nnoremap <Leader>k <C-W>k
 nnoremap <Leader>l <C-W>l
+
+" Yank the current file path
+nnoremap yp <Cmd>call setreg('+', expand('%:p'))<CR>
+
+" Keep searching centered
+nnoremap n nzz
+nnoremap N Nzz
+
+" Keep half-window scrolling centered
+nnoremap <C-D> <C-D>zz
+nnoremap <C-U> <C-U>zz
+
+" Navigate quickfix list and keep it centered
+nnoremap <C-K> <Cmd>cprev<CR>zz
+nnoremap <C-J> <Cmd>cnext<CR>zz
+
+" Better indenting
+vnoremap < <gv
+vnoremap > >gv
+
+" Replace currently selected text with black hole register without yanking it
+vnoremap <Leader>p "_dP
+
+" Replace word under cursor
+nnoremap <Leader>s :%s/\<<C-R><C-W>\>/<C-R><C-W>/gI<Left><Left><Left>
+
+" Make the current buffer a scratch buffer
+nnoremap <Leader>bs <Cmd>setlocal bt=nofile bh=wipe noswf nobl<CR>
+
+" Yank til the end
+nnoremap Y y$
+
+" Clear highlighting search
+nnoremap <silent> <C-L> :nohlsearch<C-R>=has('diff')?'<Bar>diffupdate':''<CR><CR><C-L>
+
+" Set a new undo point before deleting text in insert mode
+inoremap <C-U> <C-G>u<C-U>
+inoremap <C-W> <C-G>u<C-W>
+
+" Switch between C source and header file
+nnoremap <Leader>cc <Cmd>e %:p:s,.h$,.X123X,:s,.c$,.h,:s,.X123X$,.c,<CR>
