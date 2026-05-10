@@ -20,7 +20,7 @@ set tabstop=4
 set breakindent
 set clipboard=unnamed,unnamedplus
 set colorcolumn=80
-set completeopt=fuzzy,menu,menuone,popup,noselect
+set completeopt=menu,menuone,popup,noselect
 set copyindent
 set cursorline
 set foldlevel=99
