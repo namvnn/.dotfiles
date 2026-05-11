@@ -1,4 +1,4 @@
-1. Generating a new SSH key
+1. Generating new SSH keys
 
 ```sh
 ssh-keygen -t ed25519 -C 'work@example.com' -f 'id_ed25519_work'
