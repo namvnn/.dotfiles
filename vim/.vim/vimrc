@@ -4,7 +4,7 @@ set autoindent
 set autoread
 set clipboard=unnamed,unnamedplus
 set colorcolumn=80
-set completeopt=menu,menuone,popup,noselect
+set completeopt=fuzzy,menu,menuone,popup,noselect
 set cursorline
 set grepformat=%f:%l:%c:%m
 set grepprg=rg\ --vimgrep
@@ -22,14 +22,14 @@ set ttimeoutlen=50
 set wildmenu
 set wildoptions=pum,tagfile
 
-" Plugin and indent for file types
-filetype plugin indent on
-
 " Colorscheme
 syntax on
 let &background = $THEME_MODE
 set notermguicolors
-colorscheme memono
+colorscheme wildcharm
+
+" Plugin and indent for file types
+filetype plugin indent on
 
 " Indentation
 set shiftwidth=4
@@ -48,8 +48,8 @@ nnoremap <Leader>l <C-W>l
 nnoremap yp <Cmd>call setreg('+', expand('%:p'))<CR>
 
 " Keep searching centered
-nnoremap n nzz
-nnoremap N Nzz
+nnoremap n nzzzv
+nnoremap N Nzzzv
 
 " Keep half-window scrolling centered
 nnoremap <C-D> <C-D>zz
@@ -69,6 +69,9 @@ vnoremap <Leader>p "_dP
 " Replace word under cursor
 nnoremap <Leader>s :%s/\<<C-R><C-W>\>/<C-R><C-W>/gI<Left><Left><Left>
 
+" Create or edit file
+nnoremap <Leader>e :e <C-R>=expand('%:p:h') . '/'<CR>
+
 " Make the current buffer a scratch buffer
 nnoremap <Leader>bs <Cmd>setlocal bt=nofile bh=wipe noswf nobl<CR>
 
@@ -84,3 +87,6 @@ inoremap <C-W> <C-G>u<C-W>
 
 " Switch between C source and header file
 nnoremap <Leader>cc <Cmd>e %:p:s,.h$,.X123X,:s,.c$,.h,:s,.X123X$,.c,<CR>
+
+" Open file explorer
+nnoremap - :Ex<CR>

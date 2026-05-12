@@ -20,7 +20,7 @@ set tabstop=4
 set breakindent
 set clipboard=unnamed,unnamedplus
 set colorcolumn=80
-set completeopt=menu,menuone,popup,noselect
+set completeopt=fuzzy,menu,menuone,popup,noselect
 set copyindent
 set cursorline
 set foldlevel=99
@@ -68,8 +68,8 @@ nnoremap <Leader>l <C-W>l
 nnoremap yp <Cmd>call setreg('+', expand('%:p'))<CR>
 
 " Keep searching centered
-nnoremap n nzz
-nnoremap N Nzz
+nnoremap n nzzzv
+nnoremap N Nzzzv
 
 " Keep half-window scrolling centered
 nnoremap <C-D> <C-D>zz
@@ -82,9 +82,6 @@ nnoremap <C-J> <Cmd>cnext<CR>zz
 " Better indenting
 vnoremap < <gv
 vnoremap > >gv
-
-" Toggle spelling checker
-map <F12> <Cmd>setlocal spell! spelllang=en_us<CR>
 
 " Replace currently selected text with black hole register without yanking it
 vnoremap <Leader>p "_dP
@@ -113,6 +110,9 @@ function! s:format()
     call winrestview(l:view)
 endfunction
 nnoremap <Leader>gq <Cmd>call <SID>format()<CR>
+
+" Toggle spelling checker
+map <F12> <Cmd>setlocal spell! spelllang=en_us<CR>
 
 " Yank til the end
 nnoremap Y y$

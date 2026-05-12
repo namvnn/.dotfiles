@@ -8,8 +8,8 @@ vim.keymap.set("n", "<Leader>l", "<C-W>l", { remap = true })
 vim.keymap.set("n", "yp", "<Cmd>call setreg('+', expand('%:p'))<CR>")
 
 -- Keep searching centered
-vim.keymap.set("n", "n", "nzz")
-vim.keymap.set("n", "N", "Nzz")
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
 
 -- Keep half-window scrolling centered
 vim.keymap.set("n", "<C-D>", "<C-D>zz")
@@ -22,14 +22,6 @@ vim.keymap.set("n", "<C-K>", "<Cmd>cprev<CR>zz")
 -- Better indenting
 vim.keymap.set("v", "<", "<gv")
 vim.keymap.set("v", ">", ">gv")
-
--- Toggle spelling checker
-vim.keymap.set(
-    "",
-    "<F12>",
-    "<Cmd>setlocal spell! spelllang=en_us<CR>",
-    { remap = true }
-)
 
 -- Replace currently selected text with black hole register without yanking it
 vim.keymap.set("v", "<Leader>p", '"_dP')
@@ -60,3 +52,11 @@ vim.keymap.set("n", "<Leader>gq", function()
     vim.cmd("keepjumps keeppatterns silent! norm gggqG")
     vim.fn.winrestview(view)
 end)
+
+-- Toggle spelling checker
+vim.keymap.set(
+    "",
+    "<F12>",
+    "<Cmd>setlocal spell! spelllang=en_us<CR>",
+    { remap = true }
+)
