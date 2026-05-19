@@ -94,6 +94,7 @@ Game Development|[Learning] DOOM Open Source Release|https://github.com/id-Softw
 Game Development|[Learning] Game Engine Black Book DOOM|https://fabiensanglard.net/gebbdoom
 Game Development|[Learning] Handmade Hero|https://guide.handmadehero.org
 Game Development|[Lib] Heaps.io: Heaps.io is a mature cross platform graphics engine designed for high performance games|https://heaps.io
+Game Development|[Lib] libGDX: libGDX is a cross-platform Java game development framework based on OpenGL (ES)|https://libgdx.com
 Game Development|[Lib] LÖVE: An *awesome* framework you can use to make 2D games in Lua|https://love2d.org
 Game Development|[Lib] macroquad: A simple and easy to use game library for Rust programming language|https://github.com/not-fl3/macroquad
 Game Development|[Lib] PlayCanvas: A web graphics creation platform|https://developer.playcanvas.com
@@ -310,6 +311,7 @@ Vim/Neovim|[Reading] The tools that I love: Vim|https://lervag.github.io/posts/h
 Vim/Neovim|[Reading] Why I got rid of all my neovim plugins|https://yobibyte.github.io/vim.html
 Web Back End|[Lib] Hono: A fast, lightweight web application framework ,built on Web Standards|https://hono.dev
 Web Back End|[Lib] PocketBase: Open Source realtime backend in 1 file|https://pocketbase.io
+Web Back End|[Reading] Debugging WebSocket Hibernation with Cloudflare Durable Objects (and What I Learned)|https://thomasgauvin.com/writing/how-cloudflare-durable-objects-websocket-hibernation-works
 Web Back End|[Tool] Bombardier: Fast cross-platform HTTP benchmarking tool written in Go|https://github.com/codesenberg/bombardier
 Web Front End|[Docs] ARIA Authoring Practices Guide|https://w3.org/WAI/ARIA/apg
 Web Front End|[Docs] Bulletproof React|https://github.com/alan2207/bulletproof-react
