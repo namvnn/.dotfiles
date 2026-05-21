@@ -23,7 +23,7 @@ git discard all unstaged changes: git checkout -- .
 git discard unstaged changes on a specific file: git checkout -- <path-to-file>
 git discard working directory changes: git restore <path-to-file>
 git enable automatic maintenance: git maintenance start
-git filters logs with the specific keyword added or deleted in a file: git log -S <keyword> -p
+git fetch all branches: git branch -r | grep -v '\->' | sed "s,\x1B\[[0-9;]*[a-zA-Z],,g" | while read remote; do git branch --track "${remote#origin/}" "$remote"; done && git fetch --all && git pull --all
 git go back n commit(s) from HEAD: git reset --<mode> HEAD~<n>
 git list all files in a commit: git show --pretty="" --name-only <commit>
 git list all remote tags: git ls-remote --tags origin
@@ -33,12 +33,15 @@ git log all, decorate and oneline in graph: git log --all --decorate --oneline -
 git log all, decorate and oneline: git log --all --decorate --oneline
 git log decorate and oneline in graph: git log --decorate --oneline --graph
 git log decorate and oneline: git log --decorate --oneline
+git log filter with the specific keyword added or deleted in a file: git log -S <keyword> -p
 git log who contributed most often to the specific directory since X time: git log --format='%aN <%aE>' --since='<since>' <directory-path> | sort | uniq -c | sort -rn | head -10
 git log who contributed most often to the specific directory: git log --format='%aN <%aE>' <directory-path> | sort | uniq -c | sort -rn | head -10
 git prune origin branches: git remote prune origin
 git pull the current branch: git pull origin "$(git branch --show-current)"
 git push the local branch and reset upstream branch: git push origin -u <newname>
 git push the upushed, local branch to remote: git push --set-upstream origin "$(git branch --show-current)"
+git rebase change the current parent <oldparent> to new one <newparent> on the current branch: git rebase --onto <new-parent> <old-parent>
+git rebase change the old parent <oldparent> to new one <newparent>, but we will take commits only until <until> commit, and <until> will become the new HEAD after rebase is completed: git rebase --onto <new-parent> <old-parent> <until>
 git rebase to the root (initial) commit: git rebase -i --root
 git reconstruct the merge commit by replaying the recorded merge strategy and showing the exact changes it introduced: git log --remerge-diff
 git remote remove origin: git remote remove origin
