@@ -104,6 +104,9 @@ Game Development|[Tool] A list of Game Development resources to make magic happe
 Git|[Learning] Pro Git|https://git-scm.com/book
 Git|[Reading] Bring your monorepo down to size with sparse-checkout|https://github.blog/open-source/git/bring-your-monorepo-down-to-size-with-sparse-checkout
 Git|[Reading] Get up to speed with partial clone and shallow clone|https://github.blog/open-source/git/get-up-to-speed-with-partial-clone-and-shallow-clone
+Git|[Reading] Git rebase --onto an overview|https://womanonrails.com/git-rebase-onto
+Git|[Reading] How do I fetch all Git branches?|https://stackoverflow.com/a/10312587
+Git|[Snippet] Script to remove a range of commits from all branches in a given remote|https://gist.github.com/pfrenssen/1010a92ffa3e2abfdaec
 Go|[Fun] Pure Go minimal Doom implementation|https://github.com/AndreRenaud/Gore
 Go|[Learning] 100 Go Mistakes and How to Avoid Them|https://100go.co
 Go|[Learning] Gist of Go: Concurrency|https://antonz.org/go-concurrency
