@@ -90,3 +90,6 @@ nnoremap <Leader>cc <Cmd>e %:p:s,.h$,.X123X,:s,.c$,.h,:s,.X123X$,.c,<CR>
 
 " Open file explorer
 nnoremap - :Ex<CR>
+
+" Manpage
+runtime ftplugin/man.vim
