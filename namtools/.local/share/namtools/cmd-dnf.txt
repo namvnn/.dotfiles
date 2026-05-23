@@ -1,0 +1,4 @@
+dnf remove all cached files: sudo dnf clean all
+dnf remove cached packages: sudo dnf clean packages
+dnf remove unnecessary packages/dependencies: sudo dnf autoremove
+dnf upgrade all packages: sudo dnf upgrade --refresh
