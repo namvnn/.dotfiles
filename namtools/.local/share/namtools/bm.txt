@@ -100,6 +100,8 @@ Game Development|[Lib] macroquad: A simple and easy to use game library for Rust
 Game Development|[Lib] PlayCanvas: A web graphics creation platform|https://developer.playcanvas.com
 Game Development|[Lib] raylib: a simple and easy-to-use library to enjoy videogames programming|https://raylib.com
 Game Development|[Lib] SanderMertens/flecs: A fast entity component system (ECS) for C & C++|https://flecs.dev/flecs
+Game Development|[Lib] SDL: A cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D|https://libsdl.org
+Game Development|[Lib] SFML: SFML provides a simple interface to the various components of your PC, to ease the development of games and multimedia applications|https://sfml-dev.org
 Game Development|[Tool] A list of Game Development resources to make magic happen|https://github.com/ellisonleao/magictools
 Git|[Learning] Pro Git|https://git-scm.com/book
 Git|[Reading] Bring your monorepo down to size with sparse-checkout|https://github.blog/open-source/git/bring-your-monorepo-down-to-size-with-sparse-checkout
@@ -267,9 +269,11 @@ Rust|[Learning] Rust Embedded Drivers (RED)|https://red.implrust.com
 Rust|[Learning] Rust Language Cheat Sheet|https://cheats.rs
 Rust|[Learning] Rust Practise Questions|https://rust-unofficial.github.io/rust-practise-questions
 Rust|[Learning] Rust 🦀 and WebAssembly 🕸|https://rustwasm.github.io/docs/book
+Rust|[Lib] Blessed.rs: Very commonly used crates that everyone should know about|https://blessed.rs
 Rust|[Lib] Druid: A data-first Rust-native GUI design toolkit|https://github.com/linebender/druid
 Rust|[Lib] egui: An easy-to-use immediate mode GUI in Rust that runs on both web and native|https://egui.rs
 Rust|[Lib] iced: A cross-platform GUI library for Rust focused on simplicity and type-safety|https://iced.rs
+Rust|[Lib] Lib.rs: A catalog of programs and libraries written in the Rust programming language|https://lib.rs
 Rust|[Lib] Polars: A blazingly fast DataFrame library for manipulating structured data|https://docs.pola.rs
 Rust|[Lib] Xilem: A high-level architecture for writing GUI apps in Rust|https://github.com/linebender/xilem
 Rust|[Reading] Generating 1 Million PDFs in 10 Minutes|https://ersteiger.com/posts/rendering-one-million-pdfs
