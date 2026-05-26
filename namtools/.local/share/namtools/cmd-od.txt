@@ -1,0 +1,1 @@
+od convert string to hexadecimal: echo -n "<string>" | od -A n -t x1
