@@ -1,27 +1,27 @@
 {
   "plugins": {
     "conform.nvim": {
-      "rev": "086a40dc7ed8242c03be9f47fbcee68699cc2395",
+      "rev": "619363c30309d29ffa631e67c8183f2a72caa373",
       "src": "https://github.com/stevearc/conform.nvim"
     },
     "csharpls-extended-lsp.nvim": {
-      "rev": "1480abcafab446a3f66eb026faabe25b8412fc5f",
+      "rev": "be8093d19af1538aad9ee77dc5589e55b083967a",
       "src": "https://github.com/Decodetalkers/csharpls-extended-lsp.nvim"
     },
     "fidget.nvim": {
-      "rev": "889e2e96edef4e144965571d46f7a77bcc4d0ddf",
+      "rev": "82404b196e73a00b1727a91903beef5ddc319d22",
       "src": "https://github.com/j-hui/fidget.nvim"
     },
     "fzf": {
-      "rev": "0eb2ae9f8bd57fed6242d76d2273df4a1be31cc8",
+      "rev": "845752f3055a5c10b65adc1d4c7c7734b7c2dd56",
       "src": "https://github.com/junegunn/fzf"
     },
     "nvim-lspconfig": {
-      "rev": "c588db330592fa477a70d2fee6ba20a57194bdc3",
+      "rev": "a4ed4e761c400849e8c9f8bda33e5083f890268c",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "oil.nvim": {
-      "rev": "0fcc83805ad11cf714a949c98c605ed717e0b83e",
+      "rev": "b91ee5a77a6a9605d9c1aaf4fda74b66082c8297",
       "src": "https://github.com/stevearc/oil.nvim"
     },
     "vim-dadbod": {
