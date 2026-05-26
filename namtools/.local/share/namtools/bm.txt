@@ -6,7 +6,6 @@ Audio|[Tool] strudel: Web-based environment for live coding algorithmic patterns
 Audio|[Tool] Wavacity: A port of the Audacity audio editor to the web browser|https://wavacity.com
 Australia|Aussiecitizenshiptest.com|https://aussiecitizenshiptest.com
 Australia|Certified copies of original documents|https://justice.vic.gov.au/certifiedcopies
-Australia|First home super saver scheme|https://ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/withdrawing-and-using-your-super/early-access-to-super/first-home-super-saver-scheme
 Australia|Weather in Melbourne|https://www.australia.com/en/facts-and-planning/weather-in-australia/melbourne-weather.html
 Bash|[Learning] BashGuide|https://mywiki.wooledge.org
 Bash|[Tool] Bash Boilerplate|https://github.com/xwmx/bash-boilerplate
@@ -84,12 +83,15 @@ English|Verbs in time clauses and 'if' clauses|https://learnenglish.britishcounc
 English|Why is it "arrived in" and not "arrived to" or "arrived at" in the following sentence?|https://ell.stackexchange.com/a/168170
 Finance|Contracts for difference (CFDs)|https://moneysmart.gov.au/investment-warnings/contracts-for-difference-cfds
 Finance|Debit cards vs eftpos: what's the difference?|https://mobiletransaction.org/au/debit-cards-vs-eftpos
+Finance|First home super saver scheme|https://ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/withdrawing-and-using-your-super/early-access-to-super/first-home-super-saver-scheme
 Finance|Income-based investing strategies|https://fool.com.au/investing-education/strategies/income
 Finance|Lazy Koala Investing|https://lazykoalainvesting.com
 Finance|Passive Investing Australia|https://passiveinvestingaustralia.com
 Fun|A collection of looks in text|https://looks.wtf
 Fun|DiceBear|https://dicebear.com
 Fun|PlayPhrase|https://playphrase.me
+Game Development|[Game] Krunker|https://krunker.io
+Game Development|[Game] Mini Royale|https://miniroyale.io
 Game Development|[Learning] DOOM Open Source Release|https://github.com/id-Software/DOOM
 Game Development|[Learning] Game Engine Black Book DOOM|https://fabiensanglard.net/gebbdoom
 Game Development|[Learning] Handmade Hero|https://guide.handmadehero.org
@@ -147,6 +149,8 @@ Graphics|[Tool] Synfig: A free and open-source vector-based 2D animation softwar
 Graphics|[Tool] The Book of Shaders Editor|http://editor.thebookofshaders.com
 Health|Australian PFAS Chemicals Map|https://pfas.australianmap.net
 Health|Eczema|https://my.clevelandclinic.org/health/diseases/9998-eczema
+Home|How to Read Laundry Symbols|https://tide.com/en-us/how-to-wash-clothes/how-to-do-laundry/how-to-read-laundry-symbols
+Home|The Free Repair Guide|https://ifixit.com
 JavaScript|[Learning] Jake Archibald on the web browser event loop, setTimeout, micro tasks, requestAnimationFrame, ...|https://youtu.be/cCOL7MC4Pl0
 JavaScript|[Learning] JavaScript Event Loop Visualized – The Ultimate Interactive Guide|https://hromium.com/javascript-visualized-event-loop
 JavaScript|[Learning] JavaScript Visualized - Event Loop, Web APIs, (Micro)task Queue|https://youtu.be/eiC58R16hb8
@@ -199,24 +203,21 @@ Job|[Site] Indie Hackers|https://indiehackers.com
 Job|[Site] levels.fyi|https://levels.fyi
 Job|[Site] We Work Remotely|https://weworkremotely.com
 Job|[Site] Wellfound|https://wellfound.com
-Miscellaneous|[Academic] How to Read an Academic Article|https://organizationsandmarkets.com/2010/08/31/how-to-read-an-academic-article
-Miscellaneous|[Book] Awesome Books|https://github.com/learn-anything/books
-Miscellaneous|[Book] Digitale Bibliothek Book|https://dokumen.pub
-Miscellaneous|[Book] Free eBooks - Project Gutenberg|https://gutenberg.org
-Miscellaneous|[Book] Library Genesis|https://libgen.is
-Miscellaneous|[Book] Open Library|https://openlibrary.org
-Miscellaneous|[Book] PDF Books Library|https://pdfbooksworld.com
-Miscellaneous|[Book] Wikibooks|https://wikibooks.org
-Miscellaneous|[Game] Krunker|https://krunker.io
-Miscellaneous|[Game] Mini Royale|https://miniroyale.io
-Miscellaneous|[Guide] How to Send Emails Using Gmail SMTP with Cloudflare Email Routing?|https://dev.to/pierre/gmail-with-cloudflare-email-routing-4413
-Miscellaneous|[Home] How to Read Laundry Symbols|https://tide.com/en-us/how-to-wash-clothes/how-to-do-laundry/how-to-read-laundry-symbols
-Miscellaneous|[Home] The Free Repair Guide|https://ifixit.com
+Library|Awesome Books|https://github.com/learn-anything/books
+Library|Digitale Bibliothek Book|https://dokumen.pub
+Library|Free eBooks - Project Gutenberg|https://gutenberg.org
+Library|Library Genesis|https://libgen.is
+Library|Open Library|https://openlibrary.org
+Library|PDF Books Library|https://pdfbooksworld.com
+Library|Wikibooks|https://wikibooks.org
 Miscellaneous|[Shopping] Moonpig Gift Shop|https://moonpig.com
+Miscellaneous|[Tool] Flameshot: Powerful, yet simple to use open-source screenshot software|https://flameshot.org
 Miscellaneous|[Tool] PlayPhrase.me: Site for cinema archaeologists|https://playphrase.me
+Miscellaneous|[Tool] PureMac: Free, open-source uninstaller and cleaner for macOS|https://github.com/momenbasel/PureMac
 Miscellaneous|[Tool] RustDesk: An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer|https://rustdesk.com
-Miscellaneous|[Tool] Syncthing|https://syncthing.net
+Miscellaneous|[Tool] Syncthing: A continuous file synchronization program|https://syncthing.net
 Mobile Development|[Learning] How to Implement iOS Deep Linking Using Universal Links: Step-by-Step Deep Dive Guide — 2025|https://medium.com/@sonerkaraevli/how-to-implement-ios-deep-linking-using-universal-links-step-by-step-deep-dive-guide-2024-fe3882b3017c
+Network|[Guide] How to Send Emails Using Gmail SMTP with Cloudflare Email Routing?|https://dev.to/pierre/gmail-with-cloudflare-email-routing-4413
 Network|[Learning] Beej's Guide to Network Programming|https://beej.us/guide/bgnet
 Network|[Learning] Beej's Guide to Networking Concepts|https://beej.us/guide/bgnet0
 Network|[Learning] HTTP Made Really Easy|https://jmarshall.com/easy/http
@@ -257,6 +258,7 @@ Programming|[Tool] Neovim: A hyperextensible Vim-based text editor|https://neovi
 Programming|[Tool] paste: A no-datastore, client-side paste service|https://topaz.github.io/paste
 Programming|[Tool] Vim: A highly configurable text editor built to make creating and changing any kind of text very efficient|https://www.vim.org
 Programming|[Tool] Zstandard: Fast real-time compression algorithm|https://facebook.github.io/zstd
+Research|How to Read an Academic Article|https://organizationsandmarkets.com/2010/08/31/how-to-read-an-academic-article
 Reverse Engineering|[Tool] Ghidra: A software reverse engineering (SRE) framework created and maintained by the National Security Agency Research Directorate|https://github.com/NationalSecurityAgency/ghidra
 Reverse Engineering|[Tool] ImHex: A Hex Editor, a tool to display, decode and analyze binary data to reverse engineer their format, extract information or patch values in them|https://imhex.werwolv.net
 Reverse Engineering|[Tool] radare2: A free/libre toolchain for easing several low level tasks like forensics, software reverse engineering, exploiting and debugging|https://radare.org/n/radare2.html
