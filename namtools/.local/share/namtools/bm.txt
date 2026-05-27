@@ -211,7 +211,11 @@ Library|Open Library|https://openlibrary.org
 Library|PDF Books Library|https://pdfbooksworld.com
 Library|Wikibooks|https://wikibooks.org
 Miscellaneous|[Shopping] Moonpig Gift Shop|https://moonpig.com
+Miscellaneous|[Tool] AeroSpace: An i3-like tiling window manager for macOS|https://github.com/nikitabobko/AeroSpace
+Miscellaneous|[Tool] AppCleaner: A small application which allows you to thoroughly uninstall unwanted apps|https://freemacsoft.net/appcleaner
 Miscellaneous|[Tool] Flameshot: Powerful, yet simple to use open-source screenshot software|https://flameshot.org
+Miscellaneous|[Tool] KeyboardCleanTool: A super simple little tool which blocks all Keyboard and TouchBar input|https://folivora.ai/keyboardcleantool
+Miscellaneous|[Tool] Maccy: Clipboard manager for macOS which does one job - keep your copy history at hand|https://maccy.app/
 Miscellaneous|[Tool] PlayPhrase.me: Site for cinema archaeologists|https://playphrase.me
 Miscellaneous|[Tool] PureMac: Free, open-source uninstaller and cleaner for macOS|https://github.com/momenbasel/PureMac
 Miscellaneous|[Tool] RustDesk: An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer|https://rustdesk.com
