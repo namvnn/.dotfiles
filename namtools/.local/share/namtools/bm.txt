@@ -26,19 +26,17 @@ CSS|[Tool] CSS Spring Easing Generator|https://kvin.me/css-springs
 C|[Learning] Beej's Guide to C Programming - Library Reference|https://beej.us/guide/bgclr
 C|[Learning] Beej's Guide to C Programming|https://beej.us/guide/bgc
 C|[Learning] Building your own C application|https://opengl-tutorial.org/miscellaneous/building-your-own-c-application
-C|[Learning] Making a simple HTTP webserver in C|https://bruinsslot.jp/post/simple-http-webserver-in-c
-C|[Lib] clib: Package manager for the C programming language|https://github.com/clibs/clib
-C|[Lib] facil.io: A C micro-framework for web applications|https://facil.io
-C|[Lib] Lwan: A high-performance & scalable web server|https://lwan.ws
+C|[Lib] microui: A tiny immediate-mode UI library|https://github.com/rxi/microui
 C|[Lib] miniaudio: An audio playback and capture library in a single source file|https://miniaud.io
 C|[Lib] musl: C Standard Library|https://musl.libc.org
-C|[Lib] Sokol: Minimal cross-platform standalone C headers|https://github.com/floooh/sokol
+C|[Lib] sokol: Minimal cross-platform standalone C headers|https://github.com/floooh/sokol
 C|[Lib] stb: single-file public domain (or MIT licensed) libraries|https://github.com/nothings/stb
 C|[Lib] vaqt: High-precision date/time|https://github.com/nalgeon/vaqt
 C|[Lib] zpl: pushing the boundaries of simplicity|https://github.com/zpl-c
 C|[Reading] Awesome C|https://github.com/oz123/awesome-c
 C|[Reading] MallocInternals|https://sourceware.org/glibc/wiki/MallocInternals
 C|[Reading] The C programming language|https://c-language.org
+C|[Tool] clib: Package manager for the C programming language|https://github.com/clibs/clib
 Data Structure and Algorithm|[Algorithm] A Beginner's Journey into the World of Algorithms|https://artofcode.org/algorithms-101
 Data Structure and Algorithm|[Algorithm] Even–odd rule|https://en.wikipedia.org/wiki/Even-odd_rule
 Data Structure and Algorithm|[Algorithm] Floyd's Cycle detection algorithm|https://cs.stackexchange.com/a/45540
@@ -48,11 +46,11 @@ Data Structure and Algorithm|[Algorithm] Point in Polygon|https://geeksforgeeks.
 Data Structure and Algorithm|[Algorithm] The Algorithms|https://github.com/TheAlgorithms
 Data Structure and Algorithm|[Data Structure] Data Structures, Explained Simply|https://youtu.be/KwBuV7YZido
 Data Structure and Algorithm|[Data Structure] HashMaps & Dictionaries, Explained Simply|https://youtu.be/y11XNXi9dgs
-Data Structure and Algorithm|[General] Algorithms for Competitive Programming|https://cp-algorithms.com
-Data Structure and Algorithm|[General] Hello Algo|https://hello-algo.com/en
-Data Structure and Algorithm|[General] The Arcane Algorithm Archive|https://www.algorithm-archive.org
-Data Structure and Algorithm|[General] USFCA Data Structure and Algorithm Visualizations|https://www.cs.usfca.edu/~galles/visualization
-Data Structure and Algorithm|[General] VisuAlgo|https://visualgo.net
+Data Structure and Algorithm|[Learning] Algorithms for Competitive Programming|https://cp-algorithms.com
+Data Structure and Algorithm|[Learning] Hello Algo|https://hello-algo.com/en
+Data Structure and Algorithm|[Learning] The Arcane Algorithm Archive|https://www.algorithm-archive.org
+Data Structure and Algorithm|[Learning] USFCA Data Structure and Algorithm Visualizations|https://www.cs.usfca.edu/~galles/visualization
+Data Structure and Algorithm|[Learning] VisuAlgo|https://visualgo.net
 Data Structure and Algorithm|[Problems] Advent of Code|https://adventofcode.com
 Data Structure and Algorithm|[Problems] Codeforces|https://codeforces.com
 Data Structure and Algorithm|[Problems] CSES|https://cses.fi
@@ -60,9 +58,8 @@ Data Structure and Algorithm|[Problems] Kattis Problem|https://open.kattis.com
 Data Structure and Algorithm|[Problems] LeetCode|https://leetcode.com
 Data Structure and Algorithm|[Problems] NeetCode|https://neetcode.io
 Data Structure and Algorithm|[Problems] Project Euler|https://projecteuler.net
-DevOps|[Reading] Podman vs. Docker: Containerization Tools Comparison|https://spacelift.io/blog/podman-vs-docker
-DevOps|[Tool] Colima: Container runtimes on macOS (and Linux) with minimal setup|https://colima.run
-DevOps|[Tool] Lima: Linux virtual machines, with a focus on running containers|https://lima-vm.io
+Database|[Learning] Let's Build a Simple Database|https://cstack.github.io/db_tutorial
+Database|[Lib] Honker: Durable queues, streams, pub/sub, and time-trigger scheduling — inside your SQLite file|https://honker.dev
 English|"only a few" vs. "(very) few"|https://ell.stackexchange.com/questions/280182/only-a-few-vs-very-few
 English|Cambridge Dictionary|https://dictionary.cambridge.org
 English|Come|https://dictionary.cambridge.org/grammar/british-grammar/arrive
@@ -276,6 +273,7 @@ Rust|[Learning] Rust Language Cheat Sheet|https://cheats.rs
 Rust|[Learning] Rust Practise Questions|https://rust-unofficial.github.io/rust-practise-questions
 Rust|[Learning] Rust 🦀 and WebAssembly 🕸|https://rustwasm.github.io/docs/book
 Rust|[Lib] Blessed.rs: Very commonly used crates that everyone should know about|https://blessed.rs
+Rust|[Lib] cuda-oxide: A custom rustc backend for compiling GPU kernels in pure Rust|https://github.com/NVlabs/cuda-oxide
 Rust|[Lib] Druid: A data-first Rust-native GUI design toolkit|https://github.com/linebender/druid
 Rust|[Lib] egui: An easy-to-use immediate mode GUI in Rust that runs on both web and native|https://egui.rs
 Rust|[Lib] iced: A cross-platform GUI library for Rust focused on simplicity and type-safety|https://iced.rs
@@ -296,12 +294,13 @@ System Programming|[Reading] Unix as IDE|https://blog.sanctum.geek.nz/series/uni
 System Programming|[Reading] What Every Programmer Should Know About Memory|https://people.freebsd.org/~lstewart/articles/cpumemory.pdf
 TypeScript|[Lib] ArkType: TypeScript's 1:1 validator, optimized from editor to runtime|https://arktype.io
 TypeScript|[Lib] Effect: An ecosystem of tools to build robust applications in TypeScript|https://effect.website
-TypeScript|[Lib] es-toolkit: A modern JavaScript utility library that's 2-3 times faster and up to 97maller—a major upgrade to lodash|https://es-toolkit.dev
+TypeScript|[Lib] es-toolkit: A modern JavaScript utility library that's 2-3 times faster and up to 97% smaller — a major upgrade to lodash|https://es-toolkit.dev
 TypeScript|[Lib] esbuild issue: no matching export for types|https://github.com/evanw/esbuild/issues/1941#issuecomment-1014041320
 TypeScript|[Lib] fp-ts: Functional programming in TypeScript|https://gcanti.github.io/fp-ts
 TypeScript|[Lib] neverthrow: Type-safe errors for TypeScript|https://github.com/supermacro/neverthrow
 TypeScript|[Lib] pkgroll: Zero-config package bundler for Node.js + TypeScript|https://github.com/privatenumber/pkgroll
 TypeScript|[Lib] radashi: The modern, community-first TypeScript toolkit with all of the fast, readable, and minimal utility functions|https://radashi.js.org
+TypeScript|[Lib] Remeda: Fully written in TypeScript for powerful, type-safe, and functional utilities|https://remedajs.com
 TypeScript|[Lib] ts-essentials: All essential TypeScript types in one place 🤙|https://github.com/ts-essentials/ts-essentials
 TypeScript|[Lib] ts-pattern: The exhaustive Pattern Matching library for TypeScript, with smart type inference|https://github.com/gvergnaud/ts-pattern
 TypeScript|[Lib] ts-toolbelt: TypeScript's largest type utility library|https://github.com/millsp/ts-toolbelt
@@ -322,10 +321,19 @@ Vim/Neovim|[Reading] Remote Neovim for Dummies|https://kraust.github.io/posts/re
 Vim/Neovim|[Reading] Seven habits of effective text editing|https://moolenaar.net/habits.html
 Vim/Neovim|[Reading] The tools that I love: Vim|https://lervag.github.io/posts/how-i-vim
 Vim/Neovim|[Reading] Why I got rid of all my neovim plugins|https://yobibyte.github.io/vim.html
-Web Back End|[Lib] Hono: A fast, lightweight web application framework ,built on Web Standards|https://hono.dev
+Web Back End|[Learning] Making a simple HTTP webserver in C|https://bruinsslot.jp/post/simple-http-webserver-in-c
+Web Back End|[Lib] facil.io: A C micro-framework for web applications|https://facil.io
+Web Back End|[Lib] Hono: A fast, lightweight web application framework, built on Web Standards|https://hono.dev
+Web Back End|[Lib] httpz: An HTTP/1.1 server for Zig|https://github.com/karlseguin/http.zig
+Web Back End|[Lib] Jetzig: An MIT licensed web framework written in Zig|https://jetzig.dev
+Web Back End|[Lib] Lwan: A high-performance & scalable web server in C|https://lwan.ws
 Web Back End|[Lib] PocketBase: Open Source realtime backend in 1 file|https://pocketbase.io
+Web Back End|[Lib] Zap: A blazingly fast backends in zig|https://github.com/zigzap/zap
 Web Back End|[Reading] Debugging WebSocket Hibernation with Cloudflare Durable Objects (and What I Learned)|https://thomasgauvin.com/writing/how-cloudflare-durable-objects-websocket-hibernation-works
+Web Back End|[Reading] Podman vs. Docker: Containerization Tools Comparison|https://spacelift.io/blog/podman-vs-docker
 Web Back End|[Tool] Bombardier: Fast cross-platform HTTP benchmarking tool written in Go|https://github.com/codesenberg/bombardier
+Web Back End|[Tool] Colima: Container runtimes on macOS (and Linux) with minimal setup|https://colima.run
+Web Back End|[Tool] Lima: Linux virtual machines, with a focus on running containers|https://lima-vm.io
 Web Front End|[Docs] ARIA Authoring Practices Guide|https://w3.org/WAI/ARIA/apg
 Web Front End|[Docs] Bulletproof React|https://github.com/alan2207/bulletproof-react
 Web Front End|[Docs] Open UI|https://open-ui.org
@@ -367,6 +375,7 @@ Writing|[Docs] Eleventy: A simpler static site generator|https://11ty.dev
 Writing|[Docs] Fumadocs: The beautiful & flexible React.js docs framework|https://fumadocs.dev
 Writing|[Docs] Hugo: The world's fastest framework for building websites|https://gohugo.io
 Writing|[Docs] Island.js: Vite & MDX powered static site generator based on islands architecture|https://islandjs.dev
+Writing|[Docs] Starlight: Everything you need to build a stellar documentation website|https://starlight.astro.build
 Writing|[Docs] VitePress: Markdown to Beautiful Docs in Minutes|https://vitepress.dev
 Writing|[Docs] Zine: Fast, Scalable, and Flexible Static Site Generator|https://zine-ssg.io
 Writing|[Slide] presenterm: A markdown terminal slideshow tool|https://mfontanini.github.io/presenterm
