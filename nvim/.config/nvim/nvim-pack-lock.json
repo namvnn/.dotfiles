@@ -5,7 +5,7 @@
       "src": "https://github.com/stevearc/conform.nvim"
     },
     "csharpls-extended-lsp.nvim": {
-      "rev": "be8093d19af1538aad9ee77dc5589e55b083967a",
+      "rev": "ed20a88af5774319c7eafc7faa45c9fde7314b4e",
       "src": "https://github.com/Decodetalkers/csharpls-extended-lsp.nvim"
     },
     "fidget.nvim": {
@@ -13,11 +13,11 @@
       "src": "https://github.com/j-hui/fidget.nvim"
     },
     "fzf": {
-      "rev": "845752f3055a5c10b65adc1d4c7c7734b7c2dd56",
+      "rev": "a50619388d76832a18b4fc0db9d61f8dd5e3b518",
       "src": "https://github.com/junegunn/fzf"
     },
     "nvim-lspconfig": {
-      "rev": "a4ed4e761c400849e8c9f8bda33e5083f890268c",
+      "rev": "9573948c38bfabeec353ae7dd7d3ffec4c506a6b",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "oil.nvim": {
