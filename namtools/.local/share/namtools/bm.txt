@@ -288,6 +288,7 @@ System Design|Atoms, molecules, organisms|https://swizec.com/blog/atoms-molecule
 System Design|The Laws of Software Evolution|https://swizec.com/blog/the-laws-of-software-evolution
 System Design|The System Design Primer|https://github.com/donnemartin/system-design-primer
 System Design|Why utils are bad, an example|https://swizec.com/blog/why-utils-are-bad-an-example
+System Programming|[Learning] CS 341: System Programming|https://cs341.cs.illinois.edu/coursebook
 System Programming|[Learning] Writing an OS in Rust|https://os.phil-opp.com
 System Programming|[Reading] Putting the "You" in CPU|https://cpu.land
 System Programming|[Reading] Unix as IDE|https://blog.sanctum.geek.nz/series/unix-as-ide
