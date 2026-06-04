@@ -6,21 +6,36 @@ require("conform").setup({
         rust = { "rustfmt" },
         python = { "ruff_format" },
         json = function(bufnr)
-            if vim.fs.root(bufnr, { ".oxfmtrc.json", ".oxfmtrc.jsonc" }) then
+            if
+                vim.fs.root(
+                    bufnr,
+                    { ".oxfmtrc.json", ".oxfmtrc.jsonc", "oxfmt.config.ts" }
+                )
+            then
                 return { "oxfmt" }
             end
 
             return { "prettier" }
         end,
         jsonc = function(bufnr)
-            if vim.fs.root(bufnr, { ".oxfmtrc.json", ".oxfmtrc.jsonc" }) then
+            if
+                vim.fs.root(
+                    bufnr,
+                    { ".oxfmtrc.json", ".oxfmtrc.jsonc", "oxfmt.config.ts" }
+                )
+            then
                 return { "oxfmt" }
             end
 
             return { "prettier" }
         end,
         typescript = function(bufnr)
-            if vim.fs.root(bufnr, { ".oxfmtrc.json", ".oxfmtrc.jsonc" }) then
+            if
+                vim.fs.root(
+                    bufnr,
+                    { ".oxfmtrc.json", ".oxfmtrc.jsonc", "oxfmt.config.ts" }
+                )
+            then
                 return { "oxfmt" }
             end
 
@@ -35,7 +50,12 @@ require("conform").setup({
             return { "prettier" }
         end,
         typescriptreact = function(bufnr)
-            if vim.fs.root(bufnr, { ".oxfmtrc.json", ".oxfmtrc.jsonc" }) then
+            if
+                vim.fs.root(
+                    bufnr,
+                    { ".oxfmtrc.json", ".oxfmtrc.jsonc", "oxfmt.config.ts" }
+                )
+            then
                 return { "oxfmt" }
             end
 
@@ -50,7 +70,12 @@ require("conform").setup({
             return { "prettier" }
         end,
         javascript = function(bufnr)
-            if vim.fs.root(bufnr, { ".oxfmtrc.json", ".oxfmtrc.jsonc" }) then
+            if
+                vim.fs.root(
+                    bufnr,
+                    { ".oxfmtrc.json", ".oxfmtrc.jsonc", "oxfmt.config.ts" }
+                )
+            then
                 return { "oxfmt" }
             end
 
@@ -65,7 +90,12 @@ require("conform").setup({
             return { "prettier" }
         end,
         javascriptreact = function(bufnr)
-            if vim.fs.root(bufnr, { ".oxfmtrc.json", ".oxfmtrc.jsonc" }) then
+            if
+                vim.fs.root(
+                    bufnr,
+                    { ".oxfmtrc.json", ".oxfmtrc.jsonc", "oxfmt.config.ts" }
+                )
+            then
                 return { "oxfmt" }
             end
 
