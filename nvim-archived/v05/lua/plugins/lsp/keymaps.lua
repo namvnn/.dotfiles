@@ -5,7 +5,7 @@ function M.on_attach()
     -- NOTE: Inspect require("vim._defaults") to check if the below mappings are
     -- included in the stable Neovim. If yes, then remove the below mappings.
 
-    --- Reference: https://github.com/neovim/neovim/blob/master/runtime/lua/vim/_defaults.lua#L154
+    --- Reference: https://github.com/neovim/neovim/blob/104ea896375577a0ddae60fcb7e6ea28e4fcaadf/runtime/lua/vim/_defaults.lua#L195
     do
         vim.keymap.set("n", "grn", function()
             vim.lsp.buf.rename()

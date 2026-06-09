@@ -71,11 +71,61 @@ vim.api.nvim_create_autocmd("LspAttach", {
     end,
 })
 
+-- Reference: https://github.com/stevearc/conform.nvim/blob/619363c30309d29ffa631e67c8183f2a72caa373/lua/conform/util.lua#L16
+local function is_executable(cmdOrPaths, default)
+    local cmd = type(cmdOrPaths) == "string" and cmdOrPaths or nil
+    if cmd and vim.fn.executable(cmd) == 1 then
+        return true
+    end
+
+    local paths = type(cmdOrPaths) == "table" and cmdOrPaths or nil
+    if paths then
+        for _, path in ipairs(paths) do
+            local normpath = vim.fs.normalize(path)
+            local is_absolute = vim.startswith(normpath, "/")
+
+            if is_absolute and vim.fn.executable(normpath) == 1 then
+                return true
+            end
+
+            local idx = normpath:find("/", 1, true)
+            local dir, subpath
+
+            if idx then
+                dir = normpath:sub(1, idx - 1)
+                subpath = normpath:sub(idx)
+            else
+                -- This is a bare relative-path executable
+                dir = normpath
+                subpath = ""
+            end
+
+            local results = vim.fs.find(
+                dir,
+                { upward = true, path = vim.fn.getcwd(), limit = math.huge }
+            )
+            for _, result in ipairs(results) do
+                local fullpath = result .. subpath
+
+                if vim.fn.executable(fullpath) == 1 then
+                    return true
+                end
+            end
+        end
+    end
+
+    if default and vim.fn.executable(default) == 1 then
+        return true
+    end
+
+    return false
+end
+
 vim.lsp.config("*", {
     capabilities = vim.lsp.protocol.make_client_capabilities(),
 })
 
-if vim.fn.executable("lua-language-server") == 1 then
+if is_executable("lua-language-server") then
     vim.lsp.config("lua_ls", {
         on_init = function(client)
             if client.workspace_folders then
@@ -91,7 +141,6 @@ if vim.fn.executable("lua-language-server") == 1 then
                 end
             end
 
-            ---@diagnostic disable-next-line: param-type-mismatch
             client.config.settings.Lua =
                 vim.tbl_deep_extend("force", client.config.settings.Lua, {
                     runtime = {
@@ -120,7 +169,7 @@ if vim.fn.executable("lua-language-server") == 1 then
     vim.lsp.enable("lua_ls")
 end
 
-if vim.fn.executable("clangd") == 1 then
+if is_executable("clangd") then
     vim.lsp.config("clangd", {
         capabilities = { offsetEncoding = { "utf-16" } },
         init_options = {
@@ -130,15 +179,14 @@ if vim.fn.executable("clangd") == 1 then
     vim.lsp.enable("clangd")
 end
 
-if vim.fn.executable("typos-lsp") == 1 then
-    vim.lsp.config(
-        "typos_lsp",
-        { init_options = { diagnosticSeverity = "Hint" } }
-    )
+if is_executable("typos-lsp") then
+    vim.lsp.config("typos_lsp", {
+        init_options = { diagnosticSeverity = "Hint" },
+    })
     vim.lsp.enable("typos_lsp")
 end
 
-if vim.fn.executable("csharp-ls") == 1 then
+if is_executable("csharp-ls") then
     vim.lsp.enable("csharp_ls")
     local status, csharpls_extended = pcall(require, "csharpls_extended")
     if status then
@@ -146,52 +194,82 @@ if vim.fn.executable("csharp-ls") == 1 then
     end
 end
 
-if vim.fn.executable("typescript-language-server") == 1 then
-    vim.lsp.config("ts_ls", { single_file_support = true })
-    vim.lsp.enable("ts_ls")
-end
-
-if vim.fn.executable("tsgo") == 1 then
-    vim.lsp.enable("tsgo")
-end
-
-if vim.fn.executable("deno") == 1 then
+if is_executable("deno") then
     vim.lsp.enable("denols")
 end
 
-if vim.fn.executable("vscode-eslint-language-server") == 1 then
-    vim.lsp.enable("eslint")
-end
-if vim.fn.executable("vscode-css-language-server") == 1 then
-    vim.lsp.enable("cssls")
-end
-if vim.fn.executable("vscode-html-language-server") == 1 then
-    vim.lsp.enable("html")
-end
-if vim.fn.executable("vscode-json-language-server") == 1 then
-    vim.lsp.enable("jsonls")
-end
-
-if vim.fn.executable("biome") == 1 then
-    vim.lsp.enable("biome")
-end
-
-if vim.fn.executable("tinymist") == 1 then
+if is_executable("tinymist") then
     vim.lsp.enable("tinymist")
 end
 
-if vim.fn.executable("gopls") == 1 then
+if is_executable("gopls") then
     vim.lsp.enable("gopls")
 end
 
-if vim.fn.executable("rust-analyzer") == 1 then
+if is_executable("rust-analyzer") then
     vim.lsp.enable("rust_analyzer")
 end
 
-if vim.fn.executable("oxlint") == 1 then
+if
+    is_executable(
+        { "node_modules/.bin/typescript-language-server" },
+        "typescript-language-server"
+    )
+then
+    vim.lsp.config("ts_ls", {
+        single_file_support = true,
+    })
+    vim.lsp.enable("ts_ls")
+end
+
+if is_executable({ "node_modules/.bin/tsgo" }, "tsgo") then
+    vim.lsp.enable("tsgo")
+end
+
+if
+    is_executable(
+        { "node_modules/.bin/vscode-eslint-language-server" },
+        "vscode-eslint-language-server"
+    )
+then
+    vim.lsp.enable("eslint")
+end
+
+if
+    is_executable(
+        { "node_modules/.bin/vscode-css-language-server" },
+        "vscode-css-language-server"
+    )
+then
+    vim.lsp.enable("cssls")
+end
+
+if
+    is_executable(
+        { "node_modules/.bin/vscode-html-language-server" },
+        "vscode-html-language-server"
+    )
+then
+    vim.lsp.enable("html")
+end
+
+if
+    is_executable(
+        { "node_modules/.bin/vscode-json-language-server" },
+        "vscode-json-language-server"
+    )
+then
+    vim.lsp.enable("jsonls")
+end
+
+if is_executable({ "node_modules/.bin/biome" }, "biome") then
+    vim.lsp.enable("biome")
+end
+
+if is_executable({ "node_modules/.bin/oxlint" }, "oxlint") then
     vim.lsp.enable("oxlint")
 end
 
-if vim.fn.executable("oxfmt") == 1 then
+if is_executable({ "node_modules/.bin/oxfmt" }, "oxfmt") then
     vim.lsp.enable("oxfmt")
 end
