@@ -26,7 +26,7 @@ set wildoptions=pum,tagfile
 syntax on
 let &background = $THEME_MODE
 set notermguicolors
-colorscheme wildcharm
+colorscheme memono
 
 " Plugin and indent for file types
 filetype plugin indent on
