@@ -231,7 +231,9 @@ Programming|[Language] Amber: A programming language compiled into Bash Script|h
 Programming|[Language] C3: The Ergonomic, Safe and Familiar Evolution of C|https://c3-lang.org
 Programming|[Language] Hare: A systems programming language designed to be simple, stable, and robust|https://harelang.org
 Programming|[Language] Odin: A general-purpose programming language with distinct typing built for high performance, modern systems and data-oriented programming|https://odin-lang.org
+Programming|[Language] Reason: Simple, fast & type safe code that leverages the JavaScript & OCaml ecosystems|https://reasonml.github.io
 Programming|[Language] Red: A next-generation programming language strongly inspired by Rebol, but with a broader field of usage thanks to its native-code compiler|https://red-lang.org
+Programming|[Language] ReScript: A strongly typed language that compiles to clean, efficient JavaScript|https://rescript-lang.org
 Programming|[Learning] 0DE5|https://0de5.net
 Programming|[Learning] 30 seconds of code: Coding articles to level up your development skills|https://30secondsofcode.org
 Programming|[Learning] Beej's Guides|https://beej.us/guide
