@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Author: Nam Nguyen <nam@namn.me>
+# Description: Secured Neovim to avoid storing progress data
+# License: MIT License
+# Reference: https://jrnl.sh/en/stable/privacy-and-security
+# Date Created: June 11, 2026
+# Date Modified: June 11, 2026 
+
+nvim -c 'set shada= noswapfile noundofile nobackup nowritebackup noshelltemp history=0 nomodeline secure' "${@}"
