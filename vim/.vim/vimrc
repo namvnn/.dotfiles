@@ -88,8 +88,12 @@ inoremap <C-W> <C-G>u<C-W>
 " Switch between C source and header file
 nnoremap <Leader>cc <Cmd>e %:p:s,.h$,.X123X,:s,.c$,.h,:s,.X123X$,.c,<CR>
 
-" Open file explorer
-nnoremap - :Ex<CR>
-
-" Manpage
+" Enable manpage
 runtime ftplugin/man.vim
+
+" Disable netrw
+let g:loaded_netrw = 1
+let g:loaded_netrwPlugin = 1
+
+" Enable editorconfig
+packadd! editorconfig
