@@ -5,14 +5,12 @@ set autoread
 set clipboard=unnamed,unnamedplus
 set colorcolumn=80
 set completeopt=fuzzy,menu,menuone,popup,noselect
-set cursorline
 set grepformat=%f:%l:%c:%m
 set grepprg=rg\ --vimgrep
 set hidden
 set hlsearch
 set incsearch
 set laststatus=2
-set makeprg=
 set noswapfile
 set ruler
 set scrolloff=8
@@ -22,6 +20,13 @@ set ttimeoutlen=50
 set wildmenu
 set wildoptions=pum,tagfile
 
+" Indentation
+set shiftwidth=4
+set expandtab
+set smarttab
+set softtabstop=4
+set tabstop=4
+
 " Colorscheme
 syntax on
 let &background = $THEME_MODE
@@ -30,13 +35,6 @@ colorscheme memono
 
 " Plugin and indent for file types
 filetype plugin indent on
-
-" Indentation
-set shiftwidth=4
-set expandtab
-set smarttab
-set softtabstop=4
-set tabstop=4
 
 " Move to window
 nnoremap <Leader>h <C-W>h
