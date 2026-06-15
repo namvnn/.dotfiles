@@ -23,8 +23,6 @@ hi! link Type Identifier
 hi! link CurSearch IncSearch
 hi! link CursorLineFold FoldColumn
 hi! link CursorLineSign FoldColumn
-hi! link LineNrAbove LineNr
-hi! link LineNrBelow LineNr
 hi! link MessageWindow PMenu
 hi! link PopupNotification Normal
 hi! link PreInsert NonText
@@ -39,6 +37,9 @@ if &background == 'dark'
     hi Constant        guifg=#ffffff guibg=NONE    guisp=NONE    gui=NONE         ctermfg=15   ctermbg=NONE cterm=NONE         term=NONE
     hi Identifier      guifg=#ffffff guibg=NONE    guisp=NONE    gui=bold         ctermfg=15   ctermbg=NONE cterm=bold         term=bold
     hi Normal          guifg=#ffffff guibg=#000000 guisp=NONE    gui=NONE         ctermfg=15   ctermbg=0    cterm=NONE         term=NONE
+    hi LineNrAbove     guifg=#585858 guibg=NONE    guisp=NONE    gui=NONE         ctermfg=240  ctermbg=NONE cterm=NONE         term=NONE
+    hi LineNr          guifg=#ffd700 guibg=NONE    guisp=NONE    gui=bold         ctermfg=220  ctermbg=NONE cterm=bold         term=bold
+    hi LineNrBelow     guifg=#585858 guibg=NONE    guisp=NONE    gui=NONE         ctermfg=240  ctermbg=NONE cterm=NONE         term=NONE
 
     " Wild Charm
     hi Added           guifg=#00af5f guibg=NONE    guisp=NONE    gui=NONE         ctermfg=35   ctermbg=NONE cterm=NONE         term=NONE
@@ -60,7 +61,6 @@ if &background == 'dark'
     hi Folded          guifg=#767676 guibg=#303030 guisp=NONE    gui=NONE         ctermfg=243  ctermbg=236  cterm=NONE         term=NONE
     hi Ignore          guifg=NONE    guibg=NONE    guisp=NONE    gui=NONE         ctermfg=NONE ctermbg=NONE cterm=NONE         term=NONE
     hi IncSearch       guifg=NONE    guibg=#5f431f guisp=NONE    gui=NONE         ctermfg=214  ctermbg=16   cterm=reverse      term=bold,reverse,underline
-    hi LineNr          guifg=#585858 guibg=NONE    guisp=NONE    gui=NONE         ctermfg=240  ctermbg=NONE cterm=NONE         term=NONE
     hi MatchParen      guifg=#ff00af guibg=NONE    guisp=NONE    gui=bold         ctermfg=199  ctermbg=NONE cterm=bold         term=bold,underline
     hi ModeMsg         guifg=NONE    guibg=NONE    guisp=NONE    gui=bold         ctermfg=NONE ctermbg=NONE cterm=bold         term=bold
     hi MoreMsg         guifg=#00d75f guibg=NONE    guisp=NONE    gui=NONE         ctermfg=41   ctermbg=NONE cterm=NONE         term=NONE
@@ -113,6 +113,9 @@ if &background == 'light'
     hi Constant        guifg=#000000 guibg=NONE    guisp=NONE    gui=NONE         ctermfg=0    ctermbg=NONE cterm=NONE         term=NONE
     hi Identifier      guifg=#000000 guibg=NONE    guisp=NONE    gui=bold         ctermfg=0    ctermbg=NONE cterm=bold         term=bold
     hi Normal          guifg=#000000 guibg=#ffffff guisp=NONE    gui=NONE         ctermfg=0    ctermbg=15   cterm=NONE         term=NONE
+    hi LineNrAbove     guifg=#a8a8a8 guibg=NONE    guisp=NONE    gui=NONE         ctermfg=248  ctermbg=NONE cterm=NONE         term=NONE
+    hi LineNr          guifg=#ff8700 guibg=NONE    guisp=NONE    gui=bold         ctermfg=208  ctermbg=NONE cterm=bold         term=bold
+    hi LineNrBelow     guifg=#a8a8a8 guibg=NONE    guisp=NONE    gui=NONE         ctermfg=248  ctermbg=NONE cterm=NONE         term=NONE
 
     " Wild Charm
     hi Added           guifg=#5faf5f guibg=NONE    guisp=NONE    gui=NONE         ctermfg=71   ctermbg=NONE cterm=NONE         term=NONE
@@ -134,7 +137,6 @@ if &background == 'light'
     hi Folded          guifg=#808080 guibg=#e4e4e4 guisp=NONE    gui=NONE         ctermfg=240  ctermbg=254  cterm=NONE         term=NONE
     hi Ignore          guifg=NONE    guibg=NONE    guisp=NONE    gui=NONE         ctermfg=NONE ctermbg=NONE cterm=NONE         term=NONE
     hi IncSearch       guifg=NONE    guibg=#fff0cf guisp=NONE    gui=NONE         ctermfg=172  ctermbg=231  cterm=reverse      term=bold,reverse,underline
-    hi LineNr          guifg=#a8a8a8 guibg=NONE    guisp=NONE    gui=NONE         ctermfg=248  ctermbg=NONE cterm=NONE         term=NONE
     hi MatchParen      guifg=#ff00af guibg=NONE    guisp=NONE    gui=bold         ctermfg=199  ctermbg=NONE cterm=bold         term=bold,underline
     hi ModeMsg         guifg=NONE    guibg=NONE    guisp=NONE    gui=bold         ctermfg=NONE ctermbg=NONE cterm=bold         term=bold
     hi MoreMsg         guifg=#008700 guibg=NONE    guisp=NONE    gui=NONE         ctermfg=28   ctermbg=NONE cterm=NONE         term=NONE
