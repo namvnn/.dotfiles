@@ -208,15 +208,6 @@ Library|Open Library|https://openlibrary.org
 Library|PDF Books Library|https://pdfbooksworld.com
 Library|Wikibooks|https://wikibooks.org
 Miscellaneous|[Shopping] Moonpig Gift Shop|https://moonpig.com
-Miscellaneous|[Tool] AeroSpace: An i3-like tiling window manager for macOS|https://github.com/nikitabobko/AeroSpace
-Miscellaneous|[Tool] AppCleaner: A small application which allows you to thoroughly uninstall unwanted apps|https://freemacsoft.net/appcleaner
-Miscellaneous|[Tool] Flameshot: Powerful, yet simple to use open-source screenshot software|https://flameshot.org
-Miscellaneous|[Tool] KeyboardCleanTool: A super simple little tool which blocks all Keyboard and TouchBar input|https://folivora.ai/keyboardcleantool
-Miscellaneous|[Tool] Maccy: Clipboard manager for macOS which does one job - keep your copy history at hand|https://maccy.app/
-Miscellaneous|[Tool] PlayPhrase.me: Site for cinema archaeologists|https://playphrase.me
-Miscellaneous|[Tool] PureMac: Free, open-source uninstaller and cleaner for macOS|https://github.com/momenbasel/PureMac
-Miscellaneous|[Tool] RustDesk: An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer|https://rustdesk.com
-Miscellaneous|[Tool] Syncthing: A continuous file synchronization program|https://syncthing.net
 Mobile Development|[Learning] How to Implement iOS Deep Linking Using Universal Links: Step-by-Step Deep Dive Guide — 2025|https://medium.com/@sonerkaraevli/how-to-implement-ios-deep-linking-using-universal-links-step-by-step-deep-dive-guide-2024-fe3882b3017c
 Network|[Guide] How to Send Emails Using Gmail SMTP with Cloudflare Email Routing?|https://dev.to/pierre/gmail-with-cloudflare-email-routing-4413
 Network|[Learning] Beej's Guide to Network Programming|https://beej.us/guide/bgnet
@@ -295,6 +286,17 @@ System Programming|[Learning] Writing an OS in Rust|https://os.phil-opp.com
 System Programming|[Reading] Putting the "You" in CPU|https://cpu.land
 System Programming|[Reading] Unix as IDE|https://blog.sanctum.geek.nz/series/unix-as-ide
 System Programming|[Reading] What Every Programmer Should Know About Memory|https://people.freebsd.org/~lstewart/articles/cpumemory.pdf
+Tool|AeroSpace: An i3-like tiling window manager for macOS|https://github.com/nikitabobko/AeroSpace
+Tool|AppCleaner: A small application which allows you to thoroughly uninstall unwanted apps|https://freemacsoft.net/appcleaner
+Tool|Flameshot: Powerful, yet simple to use open-source screenshot software|https://flameshot.org
+Tool|Irssi: A modular text mode chat client with IRC support built in|https://irssi.org
+Tool|KeyboardCleanTool: A super simple little tool which blocks all Keyboard and TouchBar input|https://folivora.ai/keyboardcleantool
+Tool|Maccy: Clipboard manager for macOS which does one job - keep your copy history at hand|https://maccy.app/
+Tool|PlayPhrase.me: Site for cinema archaeologists|https://playphrase.me
+Tool|PureMac: Free, open-source uninstaller and cleaner for macOS|https://github.com/momenbasel/PureMac
+Tool|RustDesk: An open-source remote desktop application designed for self-hosting, as an alternative to TeamViewer|https://rustdesk.com
+Tool|Syncthing: A continuous file synchronization program|https://syncthing.net
+Tool|WeeChat: The extensible chat client|https://weechat.org
 TypeScript|[Lib] ArkType: TypeScript's 1:1 validator, optimized from editor to runtime|https://arktype.io
 TypeScript|[Lib] Effect: An ecosystem of tools to build robust applications in TypeScript|https://effect.website
 TypeScript|[Lib] es-toolkit: A modern JavaScript utility library that's 2-3 times faster and up to 97% smaller — a major upgrade to lodash|https://es-toolkit.dev
@@ -362,6 +364,7 @@ Web Front End|[Lib] react-spring: A spring physics based React animation library
 Web Front End|[Lib] RxDB|https://rxdb.info
 Web Front End|[Lib] Servo: A web browser rendering engine written in Rust|https://servo.org
 Web Front End|[Lib] Valdi: A cross-platform UI framework that delivers native performance without sacrificing developer velocity|https://github.com/Snapchat/Valdi
+Web Front End|[Lib] validation-enhancer: The easiest, most lightweight validation system|https://gitlab.com/alistairldavidson/validation-enhancer
 Web Front End|[Lib] Vaul: Drawer component for React|https://vaul.emilkowal.ski
 Web Front End|[Lib] xyflow: Powerful open source libraries for building node-based UIs|https://xyflow.com
 Web Front End|[Reading] Component testing|https://storybook.js.org/blog/component-testing
