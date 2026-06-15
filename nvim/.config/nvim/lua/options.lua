@@ -18,7 +18,6 @@ vim.o.clipboard = "unnamed,unnamedplus"
 vim.o.colorcolumn = "80"
 vim.o.completeopt = "fuzzy,menu,menuone,popup,noselect"
 vim.o.copyindent = true
-vim.o.cursorline = true
 vim.o.foldlevel = 99
 vim.o.foldlevelstart = 99
 vim.o.grepformat = "%f:%l:%c:%m"
