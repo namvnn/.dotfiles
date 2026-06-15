@@ -173,7 +173,7 @@ if is_executable("clangd") then
     vim.lsp.config("clangd", {
         capabilities = { offsetEncoding = { "utf-16" } },
         init_options = {
-            fallbackFlags = { "-std=c++17" },
+            fallbackFlags = { "-std=c++23" },
         },
     })
     vim.lsp.enable("clangd")
