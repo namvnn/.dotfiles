@@ -42,12 +42,7 @@ vim.keymap.set("n", "<C-J>", ":cnext<CR>zz")
 vim.keymap.set("n", "<C-K>", ":cprev<CR>zz")
 
 -- Toggle spelling checker
-vim.keymap.set(
-    "",
-    "<F12>",
-    ":setlocal spell! spelllang=en_us<CR>",
-    { remap = true }
-)
+vim.keymap.set("", "<F12>", ":setlocal spell! spelllang=en_us<CR>", { remap = true })
 
 -- Replace currently selected text with black hole register without yanking it
 vim.keymap.set("v", "<Leader>p", '"_dP')
@@ -60,11 +55,7 @@ vim.keymap.set("v", "<Leader>d", '"_d')
 vim.keymap.set("i", "<C-C>", "<Esc>")
 
 -- Replace word under cursor
-vim.keymap.set(
-    "n",
-    "<Leader>s",
-    [[:%s/\<<C-R><C-W>\>/<C-R><C-W>/gI<Left><Left><Left>]]
-)
+vim.keymap.set("n", "<Leader>s", [[:%s/\<<C-R><C-W>\>/<C-R><C-W>/gI<Left><Left><Left>]])
 
 -- Make file executable
 vim.keymap.set("n", "<Leader>x", ":!chmod +x %<CR>", { silent = true })

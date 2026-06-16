@@ -23,10 +23,8 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
             -- HOVER
             if client:supports_method(ms.textDocument_documentHighlight) then
-                local hlgroup = vim.api.nvim_create_augroup(
-                    "nn_lsp_highlight_symbol",
-                    { clear = true }
-                )
+                local hlgroup =
+                    vim.api.nvim_create_augroup("nn_lsp_highlight_symbol", { clear = true })
 
                 vim.api.nvim_clear_autocmds({ buffer = bufnr, group = hlgroup })
 
@@ -92,26 +90,22 @@ if vim.fn.executable("lua-language-server") == 1 then
             end
 
             ---@diagnostic disable-next-line: param-type-mismatch
-            client.config.settings.Lua =
-                vim.tbl_deep_extend("force", client.config.settings.Lua, {
-                    runtime = {
-                        version = "LuaJIT",
-                        path = {
-                            "lua/?.lua",
-                            "lua/?/init.lua",
-                        },
+            client.config.settings.Lua = vim.tbl_deep_extend("force", client.config.settings.Lua, {
+                runtime = {
+                    version = "LuaJIT",
+                    path = {
+                        "lua/?.lua",
+                        "lua/?/init.lua",
                     },
-                    workspace = {
-                        checkThirdParty = false,
-                        library = vim.list_extend(
-                            vim.api.nvim_get_runtime_file("", true),
-                            {
-                                "${3rd}/luv/library",
-                                "${3rd}/busted/library",
-                            }
-                        ),
-                    },
-                })
+                },
+                workspace = {
+                    checkThirdParty = false,
+                    library = vim.list_extend(vim.api.nvim_get_runtime_file("", true), {
+                        "${3rd}/luv/library",
+                        "${3rd}/busted/library",
+                    }),
+                },
+            })
         end,
         settings = {
             Lua = {},
@@ -131,10 +125,7 @@ if vim.fn.executable("clangd") == 1 then
 end
 
 if vim.fn.executable("typos-lsp") == 1 then
-    vim.lsp.config(
-        "typos_lsp",
-        { init_options = { diagnosticSeverity = "Hint" } }
-    )
+    vim.lsp.config("typos_lsp", { init_options = { diagnosticSeverity = "Hint" } })
     vim.lsp.enable("typos_lsp")
 end
 

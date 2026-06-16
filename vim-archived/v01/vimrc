@@ -53,7 +53,7 @@ set backspace+=nostop
 set breakindent
 set clipboard+=unnamedplus,unnamed
 set cmdheight=1
-set colorcolumn=80
+set colorcolumn=100
 set completeopt=menu,menuone,noselect,noinsert
 set copyindent
 set cursorline

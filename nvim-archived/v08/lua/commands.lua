@@ -30,23 +30,14 @@ vim.api.nvim_create_user_command("Calc", function()
         local calc = load("return " .. (input or ""))()
         if calc then
             local row, col = unpack(vim.api.nvim_win_get_cursor(0))
-            vim.api.nvim_buf_set_text(
-                0,
-                row - 1,
-                col,
-                row - 1,
-                col,
-                { tostring(calc) }
-            )
+            vim.api.nvim_buf_set_text(0, row - 1, col, row - 1, col, { tostring(calc) })
         end
     end)
 end, { desc = "Calculator" })
 
 vim.api.nvim_create_user_command("GOpenCommit", function()
     local sha = vim.fn.expand("<cword>")
-    local remote_url = vim.trim(
-        vim.fn.system({ "git", "config", "--get", "remote.origin.url" })
-    )
+    local remote_url = vim.trim(vim.fn.system({ "git", "config", "--get", "remote.origin.url" }))
 
     local repo_url = ""
     local REMOTE_URL_PATTERNS = {
@@ -66,16 +57,12 @@ vim.api.nvim_create_user_command("GOpenCommit", function()
     end
 
     if repo_url == "" then
-        echo(
-            ("Failed to open commit %s. The URL is %s."):format(sha, repo_url),
-            true
-        )
+        echo(("Failed to open commit %s. The URL is %s."):format(sha, repo_url), true)
         return
     end
 
     local full_sha = vim.trim(vim.fn.system({ "git", "rev-parse", sha }))
-    local commit_path = string.find(repo_url:lower(), "bitbucket.org")
-            and "/commits/" .. full_sha
+    local commit_path = string.find(repo_url:lower(), "bitbucket.org") and "/commits/" .. full_sha
         or "/commit/" .. full_sha
 
     local commit_url = repo_url .. commit_path
@@ -117,13 +104,9 @@ end, { nargs = 1, desc = "Google" })
 vim.api.nvim_create_user_command("SendQf", function()
     local list = {}
     for _, line in ipairs(vim.api.nvim_buf_get_lines(0, 0, -1, false)) do
-        local filename, lnum, col, text =
-            line:match("^(.+)|(%d+) col (%d+)| (.+)$")
+        local filename, lnum, col, text = line:match("^(.+)|(%d+) col (%d+)| (.+)$")
         if filename and filename ~= "" then
-            table.insert(
-                list,
-                { filename = filename, lnum = lnum, col = col, text = text }
-            )
+            table.insert(list, { filename = filename, lnum = lnum, col = col, text = text })
         end
     end
 

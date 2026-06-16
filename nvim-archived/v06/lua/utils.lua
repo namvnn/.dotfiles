@@ -16,10 +16,7 @@ end
 --- if the group already exists `autocmd-groups`.
 --- @return integer # Autocommand id (number)
 function M.augroup(name, clear)
-    return vim.api.nvim_create_augroup(
-        "namnguyen_" .. name,
-        { clear = clear or true }
-    )
+    return vim.api.nvim_create_augroup("namnguyen_" .. name, { clear = clear or true })
 end
 
 --- Gets a string that defines a runner user command.

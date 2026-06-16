@@ -14,18 +14,11 @@ local function format_diagnostic_message(diagnostic)
 
     if not severity_label then
         require("utils.notify").warn(
-            string.format(
-                "Unknown diagnostic severity, %s.",
-                diagnostic.severity
-            )
+            string.format("Unknown diagnostic severity, %s.", diagnostic.severity)
         )
     end
 
-    return string.format(
-        "[%s] %s",
-        severity_label or "UNKNOWN",
-        diagnostic.message
-    )
+    return string.format("[%s] %s", severity_label or "UNKNOWN", diagnostic.message)
 end
 
 function M.on_attach()

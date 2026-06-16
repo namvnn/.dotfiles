@@ -7,7 +7,7 @@ vim.cmd("colorscheme wildcharm")
 
 vim.opt.breakindent = true
 vim.opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus"
-vim.opt.colorcolumn = "80"
+vim.opt.colorcolumn = "100"
 vim.opt.completeopt = "menu,menuone,popup,noselect,noinsert"
 vim.opt.copyindent = true
 vim.opt.cursorline = true

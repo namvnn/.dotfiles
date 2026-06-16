@@ -79,26 +79,22 @@ if vim.fn.executable("lua-language-server") == 1 then
             end
 
             ---@diagnostic disable-next-line: param-type-mismatch
-            client.config.settings.Lua =
-                vim.tbl_deep_extend("force", client.config.settings.Lua, {
-                    runtime = {
-                        version = "LuaJIT",
-                        path = {
-                            "lua/?.lua",
-                            "lua/?/init.lua",
-                        },
+            client.config.settings.Lua = vim.tbl_deep_extend("force", client.config.settings.Lua, {
+                runtime = {
+                    version = "LuaJIT",
+                    path = {
+                        "lua/?.lua",
+                        "lua/?/init.lua",
                     },
-                    workspace = {
-                        checkThirdParty = false,
-                        library = vim.list_extend(
-                            vim.api.nvim_get_runtime_file("", true),
-                            {
-                                "${3rd}/luv/library",
-                                "${3rd}/busted/library",
-                            }
-                        ),
-                    },
-                })
+                },
+                workspace = {
+                    checkThirdParty = false,
+                    library = vim.list_extend(vim.api.nvim_get_runtime_file("", true), {
+                        "${3rd}/luv/library",
+                        "${3rd}/busted/library",
+                    }),
+                },
+            })
         end,
         settings = {
             Lua = {},
@@ -108,18 +104,12 @@ if vim.fn.executable("lua-language-server") == 1 then
 end
 
 if vim.fn.executable("clangd") == 1 then
-    vim.lsp.config(
-        "clangd",
-        { capabilities = { offsetEncoding = { "utf-16" } } }
-    )
+    vim.lsp.config("clangd", { capabilities = { offsetEncoding = { "utf-16" } } })
     vim.lsp.enable("clangd")
 end
 
 if vim.fn.executable("typos-lsp") == 1 then
-    vim.lsp.config(
-        "typos_lsp",
-        { init_options = { diagnosticSeverity = "Hint" } }
-    )
+    vim.lsp.config("typos_lsp", { init_options = { diagnosticSeverity = "Hint" } })
     vim.lsp.enable("typos_lsp")
 end
 

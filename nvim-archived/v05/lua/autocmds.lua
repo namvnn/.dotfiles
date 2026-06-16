@@ -70,8 +70,7 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
         vim.api.nvim_buf_call(ev.buf, function()
             vim.cmd("NoMatchParen")
             vim.schedule(function()
-                vim.bo[ev.buf].syntax = vim.filetype.match({ buf = ev.buf })
-                    or ""
+                vim.bo[ev.buf].syntax = vim.filetype.match({ buf = ev.buf }) or ""
             end)
         end)
     end,

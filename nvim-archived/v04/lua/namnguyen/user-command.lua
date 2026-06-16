@@ -18,10 +18,7 @@ vim.api.nvim_create_user_command("LspCapabilities", function()
 
             table.sort(capabilities)
 
-            local msg = "# "
-                .. client.name
-                .. "\n"
-                .. table.concat(capabilities, "\n")
+            local msg = "# " .. client.name .. "\n" .. table.concat(capabilities, "\n")
             vim.notify(msg, vim.log.levels.TRACE)
         end
     end
@@ -45,10 +42,7 @@ vim.api.nvim_create_user_command("Template", function(opts)
     elseif template_name == "ts" then
         vim.cmd("read $HOME/.config/nvim/templates/TS.ts")
     else
-        vim.notify(
-            "No template for " .. template_name .. "!",
-            vim.log.levels.WARN
-        )
+        vim.notify("No template for " .. template_name .. "!", vim.log.levels.WARN)
     end
 end, { nargs = 1, desc = "Load a template" })
 
