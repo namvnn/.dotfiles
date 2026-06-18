@@ -6,7 +6,7 @@ Audio|[Tool] strudel: Web-based environment for live coding algorithmic patterns
 Audio|[Tool] Wavacity: A port of the Audacity audio editor to the web browser|https://wavacity.com
 Australia|Aussiecitizenshiptest.com|https://aussiecitizenshiptest.com
 Australia|Certified copies of original documents|https://justice.vic.gov.au/certifiedcopies
-Australia|Weather in Melbourne|https://www.australia.com/en/facts-and-planning/weather-in-australia/melbourne-weather.html
+Australia|Weather in Melbourne|https://australia.com/en/facts-and-planning/weather-in-australia/melbourne-weather
 Bash|[Learning] BashGuide|https://mywiki.wooledge.org
 Bash|[Tool] Bash Boilerplate|https://github.com/xwmx/bash-boilerplate
 Bash|[Tool] Bats: A TAP-compliant testing framework for Bash 3.2 or above|https://bats-core.readthedocs.io
@@ -92,13 +92,14 @@ Game Development|[Game] Mini Royale|https://miniroyale.io
 Game Development|[Learning] DOOM Open Source Release|https://github.com/id-Software/DOOM
 Game Development|[Learning] Game Engine Black Book DOOM|https://fabiensanglard.net/gebbdoom
 Game Development|[Learning] Handmade Hero|https://guide.handmadehero.org
+Game Development|[Lib] Ark: An archetype-based Entity Component System for Go|https://mlange-42.github.io/ark
+Game Development|[Lib] Flecs: A fast entity component system (ECS) for C & C++|https://flecs.dev/flecs
 Game Development|[Lib] Heaps.io: Heaps.io is a mature cross platform graphics engine designed for high performance games|https://heaps.io
 Game Development|[Lib] libGDX: libGDX is a cross-platform Java game development framework based on OpenGL (ES)|https://libgdx.com
 Game Development|[Lib] LÖVE: An *awesome* framework you can use to make 2D games in Lua|https://love2d.org
 Game Development|[Lib] macroquad: A simple and easy to use game library for Rust programming language|https://github.com/not-fl3/macroquad
 Game Development|[Lib] PlayCanvas: A web graphics creation platform|https://developer.playcanvas.com
 Game Development|[Lib] raylib: a simple and easy-to-use library to enjoy videogames programming|https://raylib.com
-Game Development|[Lib] SanderMertens/flecs: A fast entity component system (ECS) for C & C++|https://flecs.dev/flecs
 Game Development|[Lib] SDL: A cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D|https://libsdl.org
 Game Development|[Lib] SFML: SFML provides a simple interface to the various components of your PC, to ease the development of games and multimedia applications|https://sfml-dev.org
 Game Development|[Tool] A list of Game Development resources to make magic happen|https://github.com/ellisonleao/magictools
@@ -123,6 +124,7 @@ Go|[Lib] oops: Error handling library with context, assertion, stack trace and s
 Go|[Lib] ro: Reactive Programming paradigm for Go|https://ro.samber.dev
 Go|[Lib] Standard Go Project Layout|https://github.com/golang-standards/project-layout
 Go|[Lib] Ultimate Golang Makefile Template|https://github.com/crazywolf132/ultimate-gomake
+Go|[Reading] How does struct{} take zero bytes in Go|https://bud1m.com/blog/go-empty-struct
 Go|[Reading] The Anatomy of a Go Package. Structure, Imports, and Idioms|https://thecodinggopher.substack.com/p/the-anatomy-of-a-go-package-structure
 Go|[Reading] You probably don't need a DI framework|https://rednafi.com/go/di_frameworks_bleh
 Graphics|[Docs] docs.gl|https://docs.gl
