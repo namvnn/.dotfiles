@@ -17,6 +17,12 @@ C++|[Lib] FTXUI: A simple cross-platform C++ library for terminal based user int
 C++|[Lib] RxTerm: A C++ library for functional-reactive terminals. RxTerm is a lean alternative to ncurses for many applications|https://github.com/LoopPerfect/rxterm
 C++|[Lib] SMK: Simple multimedia kit - C++ WebAssembly|https://github.com/ArthurSonzogni/smk
 C++|[Reading] Understanding Smart Pointers in C++|https://thecodinggopher.substack.com/p/understanding-smart-pointers-in-c
+Clojure|[Lib] cli: Command line parser with good subcommand and help handling|https://github.com/lambdaisland/cli
+Clojure|[Lib] Reagent: Minimalistic React for ClojureScript|https://reagent-project.github.io
+Clojure|[Tool] Babashka: A native, fast starting Clojure interpreter for scripting|https://babashka.org
+Clojure|[Tool] Figwheel: Build your ClojureScript code, and hot load it as you are coding|https://figwheel.org
+Clojure|[Tool] Joker: A small interpreted dialect of Clojure written in Go, and a Clojure(Script) linter|https://joker-lang.org
+Clojure|[Tool] shadow-cljs: Compile your ClojureScript code with a focus on simplicity and ease of use|https://github.com/thheller/shadow-cljs
 CSS|[Learning] Every Layout|https://every-layout.dev
 CSS|[Learning] The Height Enigma|https://joshwcomeau.com/css/height-enigma
 CSS|[Reading] CSS Wrapped 2025|https://chrome.dev/css-wrapped-2025
@@ -95,6 +101,7 @@ Game Development|[Learning] Handmade Hero|https://guide.handmadehero.org
 Game Development|[Lib] Ark: An archetype-based Entity Component System for Go|https://mlange-42.github.io/ark
 Game Development|[Lib] Flecs: A fast entity component system (ECS) for C & C++|https://flecs.dev/flecs
 Game Development|[Lib] Heaps.io: Heaps.io is a mature cross platform graphics engine designed for high performance games|https://heaps.io
+Game Development|[Lib] jMonkeyEngine: A 3D game engine for adventurous Java developers|https://jmonkeyengine.org
 Game Development|[Lib] libGDX: libGDX is a cross-platform Java game development framework based on OpenGL (ES)|https://libgdx.com
 Game Development|[Lib] LÖVE: An *awesome* framework you can use to make 2D games in Lua|https://love2d.org
 Game Development|[Lib] macroquad: A simple and easy to use game library for Rust programming language|https://github.com/not-fl3/macroquad
@@ -146,6 +153,7 @@ Graphics|[Tool] MagicaVoxel: A free lightweight GPU-based voxel art editor and i
 Graphics|[Tool] RawTherapee: A free, cross-platform raw image processing program|https://rawtherapee.com
 Graphics|[Tool] Synfig: A free and open-source vector-based 2D animation software|https://synfig.org
 Graphics|[Tool] The Book of Shaders Editor|http://editor.thebookofshaders.com
+Haskell|[Lib] brick: A declarative Unix terminal UI library|https://github.com/jtdaugherty/brick
 Health|Australian PFAS Chemicals Map|https://pfas.australianmap.net
 Health|Eczema|https://my.clevelandclinic.org/health/diseases/9998-eczema
 Home|How to Read Laundry Symbols|https://tide.com/en-us/how-to-wash-clothes/how-to-do-laundry/how-to-read-laundry-symbols
