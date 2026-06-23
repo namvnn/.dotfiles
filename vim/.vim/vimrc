@@ -1,5 +1,7 @@
 let mapleader = ' '
 
+filetype plugin indent on
+
 set autoindent
 set autoread
 set clipboard=unnamed,unnamedplus
@@ -18,6 +20,7 @@ set ruler
 set scrolloff=8
 set signcolumn=yes
 set smartcase
+set textwidth=100
 set ttimeout
 set ttimeoutlen=50
 set wildmenu
@@ -35,9 +38,6 @@ syntax on
 let &background = $THEME_MODE
 set notermguicolors
 colorscheme memono
-
-" Plugin and indent for file types
-filetype plugin indent on
 
 " Move to window
 nnoremap <Leader>h <C-W>h
