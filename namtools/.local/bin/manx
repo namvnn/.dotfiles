@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Author: Nam Nguyen <nam@namn.me>
+# Author: Nam Nguyen <nam.vnngu@gmail.com>
 # Description: Create symbolic links for man pages of pixi tools.
 # License: MIT License
 # Date Created: November 09, 2025

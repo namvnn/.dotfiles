@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-# Author: Nam Nguyen <nam@namn.me>
+# Author: Nam Nguyen <nam.vnngu@gmail.com>
 # Description: Duckduckgo anything
 # License: MIT License
 # Date Created: June 27, 2025
-# Date Modified: February 13, 2026
+# Date Modified: June 23, 2026
 
 escaped=$(printf '%s' "$*" | jq -sRr @uri)
 opena "https://www.duckduckgo.com/?q=$escaped"

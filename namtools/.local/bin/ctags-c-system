@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-# Author: Nam Nguyen <nam@namn.me>
+# Author: Nam Nguyen <nam.vnngu@gmail.com>
 # Description: Generate a tags file (~/.tags/c-system) on system header files
 # License: MIT License
 # Date Created: January 25, 2026
-# Date Modified: February 13, 2026
+# Date Modified: June 23, 2026
 
 tags_dir="${HOME}/.tags"
 
