@@ -102,7 +102,11 @@ local function is_executable(paths, default)
         end
     end
 
-    return vim.fn.executable(default) == 1
+    if default and vim.fn.executable(default) == 1 then
+        return true
+    end
+
+    return false
 end
 
 vim.lsp.config("*", {
