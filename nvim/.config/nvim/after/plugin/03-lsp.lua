@@ -23,10 +23,8 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
             -- HOVER
             if client:supports_method(ms.textDocument_documentHighlight) then
-                local hlgroup = vim.api.nvim_create_augroup(
-                    "nn_lsp_highlight_symbol",
-                    { clear = true }
-                )
+                local hlgroup =
+                    vim.api.nvim_create_augroup("nn_lsp_highlight_symbol", { clear = true })
 
                 vim.api.nvim_clear_autocmds({ buffer = bufnr, group = hlgroup })
 
@@ -72,60 +70,46 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 -- Reference: https://github.com/stevearc/conform.nvim/blob/619363c30309d29ffa631e67c8183f2a72caa373/lua/conform/util.lua#L16
-local function is_executable(cmdOrPaths, default)
-    local cmd = type(cmdOrPaths) == "string" and cmdOrPaths or nil
-    if cmd and vim.fn.executable(cmd) == 1 then
-        return true
-    end
+local function is_executable(paths, default)
+    for _, path in ipairs(paths) do
+        local normpath = vim.fs.normalize(path)
+        local is_absolute = vim.startswith(normpath, "/")
 
-    local paths = type(cmdOrPaths) == "table" and cmdOrPaths or nil
-    if paths then
-        for _, path in ipairs(paths) do
-            local normpath = vim.fs.normalize(path)
-            local is_absolute = vim.startswith(normpath, "/")
+        if is_absolute and vim.fn.executable(normpath) == 1 then
+            return true
+        end
 
-            if is_absolute and vim.fn.executable(normpath) == 1 then
+        local idx = normpath:find("/", 1, true)
+        local dir, subpath
+
+        if idx then
+            dir = normpath:sub(1, idx - 1)
+            subpath = normpath:sub(idx)
+        else
+            -- This is a bare relative-path executable
+            dir = normpath
+            subpath = ""
+        end
+
+        local results =
+            vim.fs.find(dir, { upward = true, path = vim.fn.getcwd(), limit = math.huge })
+        for _, result in ipairs(results) do
+            local fullpath = result .. subpath
+
+            if vim.fn.executable(fullpath) == 1 then
                 return true
-            end
-
-            local idx = normpath:find("/", 1, true)
-            local dir, subpath
-
-            if idx then
-                dir = normpath:sub(1, idx - 1)
-                subpath = normpath:sub(idx)
-            else
-                -- This is a bare relative-path executable
-                dir = normpath
-                subpath = ""
-            end
-
-            local results = vim.fs.find(
-                dir,
-                { upward = true, path = vim.fn.getcwd(), limit = math.huge }
-            )
-            for _, result in ipairs(results) do
-                local fullpath = result .. subpath
-
-                if vim.fn.executable(fullpath) == 1 then
-                    return true
-                end
             end
         end
     end
 
-    if default and vim.fn.executable(default) == 1 then
-        return true
-    end
-
-    return false
+    return vim.fn.executable(default) == 1
 end
 
 vim.lsp.config("*", {
     capabilities = vim.lsp.protocol.make_client_capabilities(),
 })
 
-if is_executable("lua-language-server") then
+if is_executable({}, "lua-language-server") then
     vim.lsp.config("lua_ls", {
         on_init = function(client)
             if client.workspace_folders then
@@ -141,26 +125,22 @@ if is_executable("lua-language-server") then
                 end
             end
 
-            client.config.settings.Lua =
-                vim.tbl_deep_extend("force", client.config.settings.Lua, {
-                    runtime = {
-                        version = "LuaJIT",
-                        path = {
-                            "lua/?.lua",
-                            "lua/?/init.lua",
-                        },
+            client.config.settings.Lua = vim.tbl_deep_extend("force", client.config.settings.Lua, {
+                runtime = {
+                    version = "LuaJIT",
+                    path = {
+                        "lua/?.lua",
+                        "lua/?/init.lua",
                     },
-                    workspace = {
-                        checkThirdParty = false,
-                        library = vim.list_extend(
-                            vim.api.nvim_get_runtime_file("", true),
-                            {
-                                "${3rd}/luv/library",
-                                "${3rd}/busted/library",
-                            }
-                        ),
-                    },
-                })
+                },
+                workspace = {
+                    checkThirdParty = false,
+                    library = vim.list_extend(vim.api.nvim_get_runtime_file("", true), {
+                        "${3rd}/luv/library",
+                        "${3rd}/busted/library",
+                    }),
+                },
+            })
         end,
         settings = {
             Lua = {},
@@ -169,7 +149,7 @@ if is_executable("lua-language-server") then
     vim.lsp.enable("lua_ls")
 end
 
-if is_executable("clangd") then
+if is_executable({}, "clangd") then
     vim.lsp.config("clangd", {
         capabilities = { offsetEncoding = { "utf-16" } },
         init_options = {
@@ -179,14 +159,14 @@ if is_executable("clangd") then
     vim.lsp.enable("clangd")
 end
 
-if is_executable("typos-lsp") then
+if is_executable({}, "typos-lsp") then
     vim.lsp.config("typos_lsp", {
         init_options = { diagnosticSeverity = "Hint" },
     })
     vim.lsp.enable("typos_lsp")
 end
 
-if is_executable("csharp-ls") then
+if is_executable({}, "csharp-ls") then
     vim.lsp.enable("csharp_ls")
     local status, csharpls_extended = pcall(require, "csharpls_extended")
     if status then
@@ -194,36 +174,35 @@ if is_executable("csharp-ls") then
     end
 end
 
-if is_executable("deno") then
+if is_executable({}, "deno") then
     vim.lsp.enable("denols")
 end
 
-if is_executable("tinymist") then
+if is_executable({}, "tinymist") then
     vim.lsp.enable("tinymist")
 end
 
-if is_executable("gopls") then
+if is_executable({}, "gopls") then
     vim.lsp.enable("gopls")
 end
 
-if is_executable("rust-analyzer") then
+if is_executable({}, "rust-analyzer") then
     vim.lsp.enable("rust_analyzer")
 end
 
-if
-    is_executable(
-        { "node_modules/.bin/typescript-language-server" },
-        "typescript-language-server"
-    )
+if is_executable({}, "clojure-lsp") then
+    vim.lsp.enable("clojure_lsp")
+end
+
+if is_executable({ "node_modules/.bin/tsgo" }) then
+    vim.lsp.enable("tsgo")
+elseif
+    is_executable({ "node_modules/.bin/typescript-language-server" }, "typescript-language-server")
 then
     vim.lsp.config("ts_ls", {
         single_file_support = true,
     })
     vim.lsp.enable("ts_ls")
-end
-
-if is_executable({ "node_modules/.bin/tsgo" }, "tsgo") then
-    vim.lsp.enable("tsgo")
 end
 
 if
@@ -236,10 +215,7 @@ then
 end
 
 if
-    is_executable(
-        { "node_modules/.bin/vscode-css-language-server" },
-        "vscode-css-language-server"
-    )
+    is_executable({ "node_modules/.bin/vscode-css-language-server" }, "vscode-css-language-server")
 then
     vim.lsp.enable("cssls")
 end
