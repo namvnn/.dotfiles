@@ -27,11 +27,7 @@ vim.keymap.set("v", ">", ">gv")
 vim.keymap.set("v", "<Leader>p", '"_dP')
 
 -- Replace word under cursor
-vim.keymap.set(
-    "n",
-    "<Leader>s",
-    [[:%s/\<<C-R><C-W>\>/<C-R><C-W>/gI<Left><Left><Left>]]
-)
+vim.keymap.set("n", "<Leader>s", [[:%s/\<<C-R><C-W>\>/<C-R><C-W>/gI<Left><Left><Left>]])
 
 -- Create or edit file
 vim.keymap.set("n", "<Leader>e", ":e <C-R>=expand('%:p:h') . '/'<CR>")
@@ -54,9 +50,4 @@ vim.keymap.set("n", "<Leader>gq", function()
 end)
 
 -- Toggle spelling checker
-vim.keymap.set(
-    "",
-    "<F12>",
-    "<Cmd>setlocal spell! spelllang=en_us<CR>",
-    { remap = true }
-)
+vim.keymap.set("", "<F12>", "<Cmd>setlocal spell! spelllang=en_us<CR>", { remap = true })
