@@ -19,7 +19,7 @@ set tabstop=4
 
 set breakindent
 set clipboard=unnamed,unnamedplus
-set colorcolumn=100
+set colorcolumn=80
 set completeopt=fuzzy,menu,menuone,popup,noselect
 set copyindent
 set cursorline
@@ -179,14 +179,14 @@ augroup END
 augroup markdown_ft
     autocmd!
     autocmd FileType markdown setlocal wrap
-    autocmd FileType markdown setlocal textwidth=100
+    autocmd FileType markdown setlocal textwidth=80
     autocmd FileType markdown let b:dispatch = "mdp '%'"
     autocmd FileType markdown let b:start    = "mdp '%'"
 augroup END
 
 augroup typst_ft
     autocmd!
-    autocmd FileType typst setlocal textwidth=100
+    autocmd FileType typst setlocal textwidth=80
 augroup END
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

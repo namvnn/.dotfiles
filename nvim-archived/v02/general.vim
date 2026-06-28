@@ -45,7 +45,7 @@ set showmode
 set cmdheight=2
 set updatetime=50
 set shortmess+=c
-set colorcolumn=100
+set colorcolumn=80
 set scrolloff=8
 set cursorline
 set formatoptions+=r

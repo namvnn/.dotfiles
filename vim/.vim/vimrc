@@ -5,7 +5,7 @@ filetype plugin indent on
 set autoindent
 set autoread
 set clipboard=unnamed,unnamedplus
-set colorcolumn=100
+set colorcolumn=80
 set completeopt=fuzzy,menu,menuone,popup,noselect
 set grepformat=%f:%l:%c:%m
 set grepprg=rg\ --vimgrep
@@ -20,7 +20,7 @@ set ruler
 set scrolloff=8
 set signcolumn=yes
 set smartcase
-set textwidth=100
+set textwidth=80
 set ttimeout
 set ttimeoutlen=50
 set wildmenu

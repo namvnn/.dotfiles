@@ -15,7 +15,7 @@ vim.o.tabstop = 4
 
 vim.o.breakindent = true
 vim.o.clipboard = "unnamed,unnamedplus"
-vim.o.colorcolumn = "100"
+vim.o.colorcolumn = "80"
 vim.o.completeopt = "fuzzy,menu,menuone,popup,noselect"
 vim.o.copyindent = true
 vim.o.foldlevel = 99
@@ -32,7 +32,7 @@ vim.o.signcolumn = "yes"
 vim.o.smartcase = true
 vim.o.smoothscroll = true
 vim.o.swapfile = false
-vim.o.textwidth = 100
+vim.o.textwidth = 80
 vim.o.virtualedit = "block"
 vim.o.winborder = "single"
 vim.o.wrap = false
