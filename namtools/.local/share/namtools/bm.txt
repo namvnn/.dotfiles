@@ -1,4 +1,5 @@
 AI|[Reading] The Bitter Lesson|http://incompleteideas.net/IncIdeas/BitterLesson.html
+AI|[Tool] llamafile: Distribute and run LLMs with a single file|https://github.com/mozilla-ai/llamafile
 Audio|[Tool] Ambiphone: Ambient music + sounds for work, study and relaxation|https://ambiph.one
 Audio|[Tool] Audacity: A free and open-source digital audio editor and recording application software|https://audacityteam.org
 Audio|[Tool] Bosca Ceoil Blue: A simple and beginner-friendly app for making music|https://yurisizov.itch.io/boscaceoil-blue
@@ -23,6 +24,7 @@ Clojure|[Tool] Babashka: A native, fast starting Clojure interpreter for scripti
 Clojure|[Tool] Figwheel: Build your ClojureScript code, and hot load it as you are coding|https://figwheel.org
 Clojure|[Tool] Joker: A small interpreted dialect of Clojure written in Go, and a Clojure(Script) linter|https://joker-lang.org
 Clojure|[Tool] shadow-cljs: Compile your ClojureScript code with a focus on simplicity and ease of use|https://github.com/thheller/shadow-cljs
+Clojure|[Tool] Squint: A light-weight dialect of ClojureScript with a compiler and standard library|https://github.com/squint-cljs/squint
 CSS|[Learning] Every Layout|https://every-layout.dev
 CSS|[Learning] The Height Enigma|https://joshwcomeau.com/css/height-enigma
 CSS|[Reading] CSS Wrapped 2025|https://chrome.dev/css-wrapped-2025
@@ -124,6 +126,7 @@ Go|[Learning] Practical Go Lessons|https://practical-go-lessons.com
 Go|[Lib] asciigraph: Go package to make lightweight ASCII line graph ╭┈╯ in command line apps with no other dependencies|https://pkg.go.dev/github.com/guptarohit/asciigraph
 Go|[Lib] do: A dependency injection toolkit|https://do.samber.dev
 Go|[Lib] Folio: A modern PDF library|https://github.com/carlos7ags/folio
+Go|[Lib] Fx: A dependency injection system for Go|https://uber-go.github.io/fx
 Go|[Lib] gpdf: A pure Go, zero-dependency PDF generation library|https://github.com/gpdf-dev/gpdf
 Go|[Lib] lo: A Lodash-style Go library|https://lo.samber.dev
 Go|[Lib] mo: Monads and popular FP abstractions|https://pkg.go.dev/github.com/samber/mo
