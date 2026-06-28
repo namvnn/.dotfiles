@@ -38,7 +38,8 @@ local function install_plugins(plugin_urls, plugin_root)
 
     for _, plugin_url in pairs(plugin_urls) do
         local plugin_name = extract_plugin_name(plugin_url)
-        local plugin_path = vim.fn.expand(("%s/%s"):format(plugin_root, plugin_name))
+        local plugin_path =
+            vim.fn.expand(("%s/%s"):format(plugin_root, plugin_name))
 
         if vim.fn.isdirectory(plugin_path) == 0 then
             utils.echo(("Installing %s..."):format(plugin_name))
@@ -99,9 +100,15 @@ local function sync_plugins(next_plugin_urls, plugin_root)
     if not vim.tbl_isempty(removed_plugin_path_by_name) then
         local plugin_names = vim.tbl_keys(removed_plugin_path_by_name)
         local plugin_paths = vim.tbl_values(removed_plugin_path_by_name)
-        utils.echo(("Removing %s..."):format(vim.fn.join(plugin_names, "...\nRemoving ")))
+        utils.echo(
+            ("Removing %s..."):format(
+                vim.fn.join(plugin_names, "...\nRemoving ")
+            )
+        )
         vim.fn.system(vim.list_extend({ "rm", "-rf" }, plugin_paths))
-        utils.echo(("Removed %s!"):format(vim.fn.join(plugin_names, "!\nRemoved ")))
+        utils.echo(
+            ("Removed %s!"):format(vim.fn.join(plugin_names, "!\nRemoved "))
+        )
     end
 
     local added_plugin_urls = {}

@@ -23,8 +23,10 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
             -- HOVER
             if client:supports_method(ms.textDocument_documentHighlight) then
-                local hlgroup =
-                    vim.api.nvim_create_augroup("nn_lsp_highlight_symbol", { clear = true })
+                local hlgroup = vim.api.nvim_create_augroup(
+                    "nn_lsp_highlight_symbol",
+                    { clear = true }
+                )
 
                 vim.api.nvim_clear_autocmds({ buffer = bufnr, group = hlgroup })
 
@@ -91,8 +93,10 @@ local function is_executable(paths, default)
             subpath = ""
         end
 
-        local results =
-            vim.fs.find(dir, { upward = true, path = vim.fn.getcwd(), limit = math.huge })
+        local results = vim.fs.find(
+            dir,
+            { upward = true, path = vim.fn.getcwd(), limit = math.huge }
+        )
         for _, result in ipairs(results) do
             local fullpath = result .. subpath
 
@@ -129,22 +133,26 @@ if is_executable({}, "lua-language-server") then
                 end
             end
 
-            client.config.settings.Lua = vim.tbl_deep_extend("force", client.config.settings.Lua, {
-                runtime = {
-                    version = "LuaJIT",
-                    path = {
-                        "lua/?.lua",
-                        "lua/?/init.lua",
+            client.config.settings.Lua =
+                vim.tbl_deep_extend("force", client.config.settings.Lua, {
+                    runtime = {
+                        version = "LuaJIT",
+                        path = {
+                            "lua/?.lua",
+                            "lua/?/init.lua",
+                        },
                     },
-                },
-                workspace = {
-                    checkThirdParty = false,
-                    library = vim.list_extend(vim.api.nvim_get_runtime_file("", true), {
-                        "${3rd}/luv/library",
-                        "${3rd}/busted/library",
-                    }),
-                },
-            })
+                    workspace = {
+                        checkThirdParty = false,
+                        library = vim.list_extend(
+                            vim.api.nvim_get_runtime_file("", true),
+                            {
+                                "${3rd}/luv/library",
+                                "${3rd}/busted/library",
+                            }
+                        ),
+                    },
+                })
         end,
         settings = {
             Lua = {},
@@ -201,7 +209,10 @@ end
 if is_executable({ "node_modules/.bin/tsgo" }) then
     vim.lsp.enable("tsgo")
 elseif
-    is_executable({ "node_modules/.bin/typescript-language-server" }, "typescript-language-server")
+    is_executable(
+        { "node_modules/.bin/typescript-language-server" },
+        "typescript-language-server"
+    )
 then
     vim.lsp.config("ts_ls", {
         single_file_support = true,
@@ -219,7 +230,10 @@ then
 end
 
 if
-    is_executable({ "node_modules/.bin/vscode-css-language-server" }, "vscode-css-language-server")
+    is_executable(
+        { "node_modules/.bin/vscode-css-language-server" },
+        "vscode-css-language-server"
+    )
 then
     vim.lsp.enable("cssls")
 end

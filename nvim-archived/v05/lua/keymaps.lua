@@ -64,7 +64,12 @@ vim.keymap.set("n", "<Leader>J", ":lnext<CR>zz")
 vim.keymap.set("n", "<Leader>K", ":lprev<CR>zz")
 
 -- Toggle spelling checker
-vim.keymap.set("", "<F12>", ":setlocal spell! spelllang=en_us<CR>", { remap = true })
+vim.keymap.set(
+    "",
+    "<F12>",
+    ":setlocal spell! spelllang=en_us<CR>",
+    { remap = true }
+)
 
 -- Replace currently selected text with default register without yanking it
 vim.keymap.set("x", "<Leader>p", '"_dP')
@@ -77,7 +82,11 @@ vim.keymap.set("v", "<Leader>d", '"_d')
 vim.keymap.set("i", "<C-C>", "<Esc>")
 
 -- Replace
-vim.keymap.set("n", "<Leader>s", [[:%s/\<<C-R><C-W>\>/<C-R><C-W>/gI<Left><Left><Left>]])
+vim.keymap.set(
+    "n",
+    "<Leader>s",
+    [[:%s/\<<C-R><C-W>\>/<C-R><C-W>/gI<Left><Left><Left>]]
+)
 
 -- Make file executable
 vim.keymap.set("n", "<Leader>x", ":!chmod +x %<CR>", { silent = true })

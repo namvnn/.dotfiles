@@ -21,11 +21,13 @@ require("conform").setup({
             return { "prettier" }
         end,
         javascript = function(bufnr)
-            return vim.fs.root(bufnr, { "biome.json", "biome.jsonc" }) and { "biome" }
+            return vim.fs.root(bufnr, { "biome.json", "biome.jsonc" })
+                    and { "biome" }
                 or { "prettier" }
         end,
         javascriptreact = function(bufnr)
-            return vim.fs.root(bufnr, { "biome.json", "biome.jsonc" }) and { "biome" }
+            return vim.fs.root(bufnr, { "biome.json", "biome.jsonc" })
+                    and { "biome" }
                 or { "prettier" }
         end,
         cs = { "csharpier" },

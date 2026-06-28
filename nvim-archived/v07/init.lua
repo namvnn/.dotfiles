@@ -48,7 +48,11 @@ vim.keymap.set("n", "<C-K>", ":cprev<CR>zz")
 vim.keymap.set("v", "<Leader>p", '"_dP')
 
 -- Replace word under cursor
-vim.keymap.set("n", "<Leader>s", [[:%s/\<<C-R><C-W>\>/<C-R><C-W>/gI<Left><Left><Left>]])
+vim.keymap.set(
+    "n",
+    "<Leader>s",
+    [[:%s/\<<C-R><C-W>\>/<C-R><C-W>/gI<Left><Left><Left>]]
+)
 
 -- Create or edit file
 vim.keymap.set("n", "<Leader>e", ":e <C-R>=expand('%:p:h') . '/'<CR>")
@@ -80,7 +84,10 @@ vim.keymap.set(
 --------------------------------------------------------------------------------
 
 local function augroup(name, clear)
-    return vim.api.nvim_create_augroup("namnguyen_" .. name, { clear = clear or true })
+    return vim.api.nvim_create_augroup(
+        "namnguyen_" .. name,
+        { clear = clear or true }
+    )
 end
 
 -- Resize splits if window got resized
@@ -111,7 +118,9 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
     callback = function()
         local dir = vim.fn.expand("<afile>:p:h")
         if dir:match("^/") and vim.fn.isdirectory(dir) == 0 then
-            local input = vim.fn.input(("'%s' does not exist. Create? [y/N] "):format(dir))
+            local input = vim.fn.input(
+                ("'%s' does not exist. Create? [y/N] "):format(dir)
+            )
             if input:lower():match("^(y)?(ye)?(yes)?$") then
                 vim.fn.mkdir(dir, "p")
             end

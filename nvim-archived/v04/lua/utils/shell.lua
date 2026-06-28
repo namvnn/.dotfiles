@@ -40,7 +40,10 @@ end
 --- @param command string
 --- @return string
 function M.prepend_cd(command)
-    return "cd " .. vim.fn.shellescape(vim.fn.expand("%:p:h")) .. " && " .. command
+    return "cd "
+        .. vim.fn.shellescape(vim.fn.expand("%:p:h"))
+        .. " && "
+        .. command
 end
 
 return M

@@ -32,7 +32,15 @@ end
 ---
 --- @param text string
 function M.log(text)
-    print(string.format("[%s][%s-%s] %s", os.clock(), __FUNC__(), __LINE__(), dump(text)))
+    print(
+        string.format(
+            "[%s][%s-%s] %s",
+            os.clock(),
+            __FUNC__(),
+            __LINE__(),
+            dump(text)
+        )
+    )
 end
 
 return M

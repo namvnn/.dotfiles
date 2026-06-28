@@ -5,7 +5,10 @@ return {
         opts = {
             servers = {
                 denols = {
-                    root_dir = require("lspconfig").util.root_pattern("deno.json", "deno.jsonc"),
+                    root_dir = require("lspconfig").util.root_pattern(
+                        "deno.json",
+                        "deno.jsonc"
+                    ),
                 },
                 ts_ls = {
                     single_file_support = true,
