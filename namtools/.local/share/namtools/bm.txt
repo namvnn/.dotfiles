@@ -14,6 +14,8 @@ Bash|[Tool] Bats: A TAP-compliant testing framework for Bash 3.2 or above|https:
 Biomedicine|National Center for Biotechnology Information|https://ncbi.nlm.nih.gov
 Biomedicine|PubMed Central|https://pmc.ncbi.nlm.nih.gov
 Biomedicine|PubMed|https://pubmed.ncbi.nlm.nih.gov
+C++|[Learning] C++ Core Guidelines|https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines
+C++|[Learning] getcracked: The quant interview is its own beast|https://getcracked.io
 C++|[Lib] FTXUI: A simple cross-platform C++ library for terminal based user interfaces|https://arthursonzogni.github.io/FTXUI
 C++|[Lib] RxTerm: A C++ library for functional-reactive terminals. RxTerm is a lean alternative to ncurses for many applications|https://github.com/LoopPerfect/rxterm
 C++|[Lib] SMK: Simple multimedia kit - C++ WebAssembly|https://github.com/ArthurSonzogni/smk
@@ -44,7 +46,8 @@ C|[Lib] zpl: pushing the boundaries of simplicity|https://github.com/zpl-c
 C|[Reading] Awesome C|https://github.com/oz123/awesome-c
 C|[Reading] MallocInternals|https://sourceware.org/glibc/wiki/MallocInternals
 C|[Reading] The C programming language|https://c-language.org
-C|[Tool] clib: Package manager for the C programming language|https://github.com/clibs/clib
+C|[Tool] clib: A package manager for the C programming language|https://github.com/clibs/clib
+C|[Tool] Spack: A flexible package manager that supports multiple versions, configurations, platforms, and compilers|https://spack.io
 Data Structure and Algorithm|[Algorithm] A Beginner's Journey into the World of Algorithms|https://artofcode.org/algorithms-101
 Data Structure and Algorithm|[Algorithm] Even–odd rule|https://en.wikipedia.org/wiki/Even-odd_rule
 Data Structure and Algorithm|[Algorithm] Floyd's Cycle detection algorithm|https://cs.stackexchange.com/a/45540
@@ -105,6 +108,7 @@ Game Development|[Lib] Flecs: A fast entity component system (ECS) for C & C++|h
 Game Development|[Lib] Heaps.io: Heaps.io is a mature cross platform graphics engine designed for high performance games|https://heaps.io
 Game Development|[Lib] jMonkeyEngine: A 3D game engine for adventurous Java developers|https://jmonkeyengine.org
 Game Development|[Lib] libGDX: libGDX is a cross-platform Java game development framework based on OpenGL (ES)|https://libgdx.com
+Game Development|[Lib] libtcod: A collection of tools and algorithms for developing traditional roguelikes|https://github.com/libtcod/libtcod
 Game Development|[Lib] LÖVE: An *awesome* framework you can use to make 2D games in Lua|https://love2d.org
 Game Development|[Lib] macroquad: A simple and easy to use game library for Rust programming language|https://github.com/not-fl3/macroquad
 Game Development|[Lib] PlayCanvas: A web graphics creation platform|https://developer.playcanvas.com
@@ -361,6 +365,7 @@ Web Front End|[Learning] Atomic Design|https://bradfrost.com/blog/post/atomic-we
 Web Front End|[Learning] Fine-Grained Reactivity Fundamentals Series' Articles|https://dev.to/ryansolid/series/13735
 Web Front End|[Learning] web.dev|https://web.dev
 Web Front End|[Lib] Anime.js: JavaScript animation engine|https://animejs.com
+Web Front End|[Lib] Blueprint: A React-based UI toolkit for building complex data-dense interfaces for desktop applications|https://blueprintjs.com
 Web Front End|[Lib] Dioxus: The Rust framework for building fullstack web, desktop, and mobile apps|https://dioxuslabs.com
 Web Front End|[Lib] elm: A delightful language for reliable web applications|https://elm-lang.org
 Web Front End|[Lib] Extension.js: Build browser extensions for Chrome, Edge, and Firefox with one modern workflow|https://extension.js.org
@@ -374,11 +379,12 @@ Web Front End|[Lib] oxichrome: Write type-safe browser extensions with proc macr
 Web Front End|[Lib] Pretext: Fast, accurate & comprehensive text measurement & layout|https://pretextjs.net
 Web Front End|[Lib] react-admin: The best developer experience, lets you focus on business needs, and build delightful user interfaces|https://marmelab.com/react-admin
 Web Front End|[Lib] react-spring: A spring physics based React animation library|https://react-spring.dev
-Web Front End|[Lib] RxDB|https://rxdb.info
+Web Front End|[Lib] RxDB: A NoSQL database for JavaScript that runs directly in your app|https://rxdb.info
 Web Front End|[Lib] Servo: A web browser rendering engine written in Rust|https://servo.org
 Web Front End|[Lib] Valdi: A cross-platform UI framework that delivers native performance without sacrificing developer velocity|https://github.com/Snapchat/Valdi
 Web Front End|[Lib] validation-enhancer: The easiest, most lightweight validation system|https://gitlab.com/alistairldavidson/validation-enhancer
 Web Front End|[Lib] Vaul: Drawer component for React|https://vaul.emilkowal.ski
+Web Front End|[Lib] WXT: Next-gen Web Extension Framework|https://wxt.dev
 Web Front End|[Lib] xyflow: Powerful open source libraries for building node-based UIs|https://xyflow.com
 Web Front End|[Reading] Component testing|https://storybook.js.org/blog/component-testing
 Web Front End|[Reading] How to useMemo and useCallback: you can remove most of them|https://developerway.com/posts/how-to-use-memo-use-callback
