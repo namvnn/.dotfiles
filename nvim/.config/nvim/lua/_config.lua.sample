@@ -27,5 +27,8 @@ return {
         java = {
             enabled = false,
         },
+        mssql = {
+            enabled = false,
+        },
     },
 }

@@ -1,4 +1,4 @@
-local plugins = {
+local specs = {
     "https://github.com/junegunn/fzf",
     "https://github.com/stevearc/oil.nvim",
     "https://github.com/tommcdo/vim-lion",
@@ -35,26 +35,24 @@ local optional = {
     java = {
         "https://github.com/nvim-java/nvim-java",
     },
+    mssql = {
+        "https://github.com/NicholasMata/sqlserver.nvim",
+    },
 }
 
 local config_ok, config = pcall(require, "_config")
-local function apply_optional_plugins(name, group)
-    local plugin = config.plugins[name]
-    if not plugin or not plugin.enabled then
-        return
-    end
-
-    vim.list_extend(plugins, group)
-
-    for gkey, gvalue in pairs(plugin.gvars or {}) do
-        vim.g[gkey] = gvalue
-    end
-end
 
 if config_ok and config.plugins then
-    for name, group in pairs(optional) do
-        apply_optional_plugins(name, group)
+    for name, plugins in pairs(optional) do
+        local cfg = config.plugins[name]
+        if cfg and cfg.enabled then
+            vim.list_extend(specs, plugins)
+
+            for gkey, gvalue in pairs(cfg.gvars or {}) do
+                vim.g[gkey] = gvalue
+            end
+        end
     end
 end
 
-vim.pack.add(plugins)
+vim.pack.add(specs)
