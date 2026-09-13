@@ -447,6 +447,7 @@ Web|[Learning] A Friendly Introduction to SVG|https://joshwcomeau.com/svg/friend
 Web|[Learning] Atomic Design|https://bradfrost.com/blog/post/atomic-web-design
 Web|[Learning] Fine-Grained Reactivity Fundamentals Series' Articles|https://dev.to/ryansolid/series/13735
 Web|[Learning] web.dev|https://web.dev
+Web|[Lib] Alpine.js: Your new, lightweight, JavaScript framework|https://alpinejs.dev
 Web|[Lib] Anime.js: JavaScript animation engine|https://animejs.com
 Web|[Lib] Blueprint: A React-based UI toolkit for building complex data-dense interfaces for desktop applications|https://blueprintjs.com
 Web|[Lib] Extension.js: Build browser extensions for Chrome, Edge, and Firefox with one modern workflow|https://extension.js.org
@@ -460,6 +461,7 @@ Web|[Lib] Valdi: A cross-platform UI framework that delivers native performance 
 Web|[Lib] Vaul: Drawer component for React|https://vaul.emilkowal.ski
 Web|[Lib] WXT: Next-gen Web Extension Framework|https://wxt.dev
 Web|[Lib] xyflow: Powerful open source libraries for building node-based UIs|https://xyflow.com
+Web|[Lib]: Datastar: The hypermedia framework|https://data-star.dev
 Web|[Reading] Component testing|https://storybook.js.org/blog/component-testing
 Web|[Reading] Debugging WebSocket Hibernation with Cloudflare Durable Objects (and What I Learned)|https://thomasgauvin.com/writing/how-cloudflare-durable-objects-websocket-hibernation-works
 Web|[Reading] How to useMemo and useCallback: you can remove most of them|https://developerway.com/posts/how-to-use-memo-use-callback
