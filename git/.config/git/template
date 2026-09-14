@@ -10,6 +10,8 @@
 # <description>: a short description of the changes made
 # [optional body]: detailed information about the changes
 # [optional trailer(s)]: additional metadata about the commit
+#
+# Reverts, merges, and other special commits can be formatted freely.
 # 
 # Reference: https://scopedcommits.com
 # -----------------------------------------------------------------------------
