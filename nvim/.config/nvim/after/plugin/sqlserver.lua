@@ -5,5 +5,5 @@ if not ok then
 end
 
 sqlserver.setup({
-    keymap_prefix = "<leader>m",
+    keymap_prefix = "<LocalLeader>m",
 })
