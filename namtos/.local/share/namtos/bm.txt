@@ -44,6 +44,7 @@ Clojure|[Lib] malli: High-performance data-driven schemas|https://github.com/met
 Clojure|[Lib] next.jdbc: A modern low-level Clojure wrapper for JDBC-based access to databases|https://github.com/seancorfield/next-jdbc
 Clojure|[Lib] Pedestal: A sturdy and reliable base for services, APIs, and applications|https://pedestal.io
 Clojure|[Lib] Plotje: Composable plotting|https://scicloj.github.io/plotje
+Clojure|[Lib] Reagami: A minimal zero-deps Reagent-like in Squint and ClojureScript|https://github.com/borkdude/reagami
 Clojure|[Lib] Reagent: Minimalistic React for ClojureScript|https://reagent-project.github.io
 Clojure|[Lib] reitit: A fast data-driven router|https://github.com/metosin/reitit
 Clojure|[Lib] Ring: A Clojure web applications library inspired by Python's WSGI and Ruby's Rack|https://github.com/ring-clojure/ring
@@ -86,6 +87,7 @@ C|[Reading] One year of C|https://floooh.github.io/2018/06/02/one-year-of-c
 C|[Reading] The C programming language|https://c-language.org
 C|[Tool] clib: A package manager for the C programming language|https://github.com/clibs/clib
 C|[Tool] Spack: A flexible package manager that supports multiple versions, configurations, platforms, and compilers|https://spack.io
+Data Science|[Tool] VisiData: A terminal interface for exploring and arranging tabular data|https://visidata.org
 Data Structure and Algorithm|[Algorithm] A Beginner's Journey into the World of Algorithms|https://artofcode.org/algorithms-101
 Data Structure and Algorithm|[Algorithm] Even–odd rule|https://en.wikipedia.org/wiki/Even-odd_rule
 Data Structure and Algorithm|[Algorithm] Floyd's Cycle detection algorithm|https://cs.stackexchange.com/a/45540
@@ -110,6 +112,7 @@ Data Structure and Algorithm|[Problems] Project Euler|https://projecteuler.net
 Database|[Learning] Let's Build a Simple Database|https://cstack.github.io/db_tutorial
 Database|[Lib] Honker: Durable queues, streams, pub/sub, and time-trigger scheduling — inside your SQLite file|https://honker.dev
 Database|[Lib] PocketBase: Open Source realtime backend in 1 file|https://pocketbase.io
+Embedded|[Tool] Wokwi: World's most advanced ESP32 simulator|https://wokwi.com
 English|"only a few" vs. "(very) few"|https://ell.stackexchange.com/questions/280182/only-a-few-vs-very-few
 English|Cambridge Dictionary|https://dictionary.cambridge.org
 English|Come|https://dictionary.cambridge.org/grammar/british-grammar/arrive
@@ -299,6 +302,7 @@ Programming|[Learning] Build your own X|https://github.com/codecrafters-io/build
 Programming|[Learning] Challenging projects every programmer should try|https://austinhenley.com/blog/challengingprojects.html
 Programming|[Learning] Cursed fire or #define black magic|https://haqr.eu/strange/cursed-fire
 Programming|[Learning] Devhints: Rico's cheatsheets|https://devhints.io
+Programming|[Learning] Functional options for friendly APIs|https://dave.cheney.net/2014/10/17/functional-options-for-friendly-apis
 Programming|[Learning] Project Based Learning|https://github.com/practical-tutorials/project-based-learning
 Programming|[Learning] Rosetta Code: A programming chrestomathy site|https://rosettacode.org
 Programming|[Learning] Software Patterns Lexicon: Design Patterns, Architectures & Idioms|https://softwarepatternslexicon.com
