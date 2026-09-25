@@ -32,6 +32,7 @@
 "conda:typos-lsp" = "latest"
 "conda:universal-ctags" = "latest"
 "conda:vim" = "latest"
+"conda:visidata" = "latest"
 "core:deno" = "latest"
 "core:go" = "latest"
 "core:java" = "latest"
