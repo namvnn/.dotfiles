@@ -12,6 +12,10 @@ if [[ -z "${env}" || -z "${phone}" ]]; then
     exit 1
 fi
 
+if [[ "${phone}" != +61* ]]; then
+    phone="+61${phone:1}"
+fi
+
 case "${env}" in
     dev)
         account_name="${DEV_AZURE_STORAGE_ACCOUNT}"
