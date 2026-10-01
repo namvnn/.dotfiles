@@ -11,7 +11,24 @@ if dotnet_ok then
             },
         },
     })
-    dotnet.setup()
+    dotnet.setup({
+        test_runner = {
+            icons = {
+                passed = "✓",
+                skipped = "○",
+                failed = "✗",
+                success = "✔",
+                reload = "↻",
+                test = "▶",
+                sln = "◆",
+                project = "◇",
+                dir = "▸",
+                package = "■",
+                class = "●",
+                build_failed = "!",
+            },
+        },
+    })
 end
 
 local conform_ok, conform = pcall(require, "conform")
