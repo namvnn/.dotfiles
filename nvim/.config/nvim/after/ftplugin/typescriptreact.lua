@@ -1,42 +1,80 @@
 local lsp_servers = {
     {
         name = "denols",
-        executables = {
+        bins = {
             "deno",
         },
     },
     {
         name = "ts_ls",
-        root = "package.json",
-        executables = {
-            "node_modules/.bin/typescript-language-server",
-            "typescript-language-server",
-        },
+        root = { "package.json" },
+        bins = function()
+            local tsc = "node_modules/.bin/tsc"
+            if vim.fn.executable(tsc) == 0 then
+                return nil
+            end
+
+            local version = vim.version.parse(vim.fn.system({
+                tsc,
+                "--version",
+            }))
+            if version == nil or version.major >= 7 then
+                return nil
+            end
+
+            return {
+                "node_modules/.bin/typescript-language-server",
+                "typescript-language-server",
+            }
+        end,
+    },
+    {
+        name = "tsc",
+        root = { "package.json" },
+        bins = function()
+            local tsc = "node_modules/.bin/tsc"
+            if vim.fn.executable(tsc) == 0 then
+                return nil
+            end
+
+            local version = vim.version.parse(vim.fn.system({
+                tsc,
+                "--version",
+            }))
+            if version == nil or version.major < 7 then
+                return nil
+            end
+
+            return {
+                "node_modules/.bin/tsc",
+                "tsc",
+            }
+        end,
     },
     {
         name = "eslint",
-        executables = {
+        bins = {
             "node_modules/.bin/vscode-eslint-language-server",
             "vscode-eslint-language-server",
         },
     },
     {
         name = "biome",
-        executables = {
+        bins = {
             "node_modules/.bin/biome",
             "biome",
         },
     },
     {
         name = "oxlint",
-        executables = {
+        bins = {
             "node_modules/.bin/oxlint",
             "oxlint",
         },
     },
     {
         name = "oxfmt",
-        executables = {
+        bins = {
             "node_modules/.bin/oxfmt",
             "oxfmt",
         },
@@ -45,11 +83,18 @@ local lsp_servers = {
 for _, server in ipairs(lsp_servers) do
     local ok = server.root and vim.fs.root(0, server.root) ~= nil or true
 
+    local bins = type(server.bins) == "function" and server.bins()
+        or server.bins
     ok = ok
-        and vim.iter(server.executables):any(function(exe)
-            return vim.fn.executable(exe) == 1
-        end)
+            and bins
+            and vim.iter(bins):any(function(bin)
+                return vim.fn.executable(bin) == 1
+            end)
+        or false
 
+    if ok and server.config then
+        vim.lsp.config(server.name, server.config)
+    end
     if ok then
         vim.lsp.enable(server.name)
     end
