@@ -158,6 +158,7 @@ Game Development|[Lib] PlayCanvas: A web graphics creation platform|https://deve
 Game Development|[Lib] raylib: a simple and easy-to-use library to enjoy videogames programming|https://raylib.com
 Game Development|[Lib] SDL: A cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D|https://libsdl.org
 Game Development|[Lib] SFML: SFML provides a simple interface to the various components of your PC, to ease the development of games and multimedia applications|https://sfml-dev.org
+Game Development|[Study] An experimental Minecraft Server in Clojure|https://github.com/Nozistance/collider
 Game Development|[Tool] A list of Game Development resources to make magic happen|https://github.com/ellisonleao/magictools
 Git|[Guide] Scoped Commits: A commit format focused on what matters|https://scopedcommits.com
 Git|[Learning] Pro Git|https://git-scm.com/book
@@ -268,6 +269,9 @@ Library|Library Genesis|https://libgen.is
 Library|Open Library|https://openlibrary.org
 Library|PDF Books Library|https://pdfbooksworld.com
 Library|Wikibooks|https://wikibooks.org
+Lua|[Docs] [C/C++] A Lua C API Cheat Sheet|https://codingwiththomas.com/blog/a-lua-c-api-cheat-sheet
+Lua|[Docs] Lua C Manual Pages|https://ligurio.github.io/lua-c-manual-pages
+Lua|[Learning] Lua - C Integration|https://eezytutorials.com/lua/lua-c-integration.php
 Lua|[Tool] Lux: A package manager for Lua|https://lux.lumen-labs.org
 Miscellaneous|[Shopping] Moonpig Gift Shop|https://moonpig.com
 Miscellaneous|[Utility] Useful Links|https://start.me/p/L1rEYQ/osint4all
@@ -276,8 +280,10 @@ Network|[Guide] How to Send Emails Using Gmail SMTP with Cloudflare Email Routin
 Network|[Learning] Beej's Guide to Network Programming|https://beej.us/guide/bgnet
 Network|[Learning] Beej's Guide to Networking Concepts|https://beej.us/guide/bgnet0
 Network|[Learning] HTTP Made Really Easy|https://jmarshall.com/easy/http
+Network|[Tool] aria2: A lightweight multi-protocol & multi-source command-line download utility|https://aria2.github.io
 OCaml|[Lib] Daniel Bünzli's Libraries|https://erratique.ch/software
 OCaml|[Lib] Ocsigen: A complete framework for developing Web and mobile apps using cutting edge techniques|https://ocsigen.org
+Photography|[Tool] Photons to Photos: Your trusted source for independent sensor data|https://photonstophotos.net
 Programmer|Dmitry V. Sokolov|https://github.com/ssloy
 Programmer|Fabrice Bellard|https://bellard.org
 Programmer|Matt Godbolt|https://xania.org
@@ -325,9 +331,12 @@ Programming|[Tool] Flow Control: A programmer's text editor|https://flow-control
 Programming|[Tool] Fresh: A terminal text editor you can just use|https://sinelaw.github.io/fresh
 Programming|[Tool] Globster|https://globster.xyz
 Programming|[Tool] Helix: A post-modern text editor|https://helix-editor.com
+Programming|[Tool] in-1: Instant dev tools for your current shell|https://in-1.cc
 Programming|[Tool] Micro: A modern and intuitive terminal-based text editor|https://micro-editor.github.io
+Programming|[Tool] mise: dev tools, env vars, task runner|https://mise.en.dev
 Programming|[Tool] Neovim: A hyperextensible Vim-based text editor|https://neovim.io
 Programming|[Tool] paste: A no-datastore, client-side paste service|https://topaz.github.io/paste
+Programming|[Tool] prefix.dev: Building blazing fast software package management software|https://prefix.dev
 Programming|[Tool] Vim: A highly configurable text editor built to make creating and changing any kind of text very efficient|https://www.vim.org
 Programming|[Tool] Wandbox: A multi-language online compiler|https://wandbox.org
 Programming|[Tool] Zstandard: Fast real-time compression algorithm|https://facebook.github.io/zstd
@@ -436,9 +445,9 @@ TypeScript/JavaScript|[Reading] Why would anyone need JavaScript generator funct
 TypeScript/JavaScript|[Tool] pkgroll: Zero-config package bundler|https://github.com/privatenumber/pkgroll
 TypeScript/JavaScript|[Tool] tsdown: The elegant bundler for libraries powered by Rolldown|https://tsdown.dev
 TypeScript/JavaScript|[Tool] tsup: The simplest and fastest way to bundle your TypeScript libraries|https://tsup.egoist.dev
-Video|[Learning] ffmprovisr: Making FFmpeg Easier|https://amiaopensource.github.io/ffmprovisr
-Video|[Tool] DaVinci Resolve: The world's only solution that combines editing, color correction, visual effects, motion graphics and audio post production all in one software tool|https://blackmagicdesign.com/products/davinciresolve
-Video|[Tool] Motion Canvas: A library for creating animated videos using the Canvas API|https://motioncanvas.io
+Videography|[Learning] ffmprovisr: Making FFmpeg Easier|https://amiaopensource.github.io/ffmprovisr
+Videography|[Tool] DaVinci Resolve: The world's only solution that combines editing, color correction, visual effects, motion graphics and audio post production all in one software tool|https://blackmagicdesign.com/products/davinciresolve
+Videography|[Tool] Motion Canvas: A library for creating animated videos using the Canvas API|https://motioncanvas.io
 Vim/Neovim|[Learning] Vim Cheat Sheet|https://vim.rtorr.com
 Vim/Neovim|[Reading] Load launch.json debug configs even for JS based languages|https://reddit.com/r/neovim/s/p5tYkzKJdi
 Vim/Neovim|[Reading] Remote Neovim for Dummies|https://kraust.github.io/posts/remote-neovim-for-dummies
