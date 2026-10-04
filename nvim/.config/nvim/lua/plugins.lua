@@ -1,13 +1,13 @@
 local specs = {
-    "https://github.com/junegunn/fzf",
-    "https://github.com/stevearc/oil.nvim",
-    "https://github.com/tommcdo/vim-lion",
-    "https://github.com/tpope/vim-dispatch",
-    "https://github.com/tpope/vim-fugitive",
-    "https://github.com/tpope/vim-projectionist",
-}
-
-local optional = {
+    base = {
+        "https://github.com/junegunn/fzf",
+        "https://github.com/luochen1990/rainbow",
+        "https://github.com/stevearc/oil.nvim",
+        "https://github.com/tommcdo/vim-lion",
+        "https://github.com/tpope/vim-dispatch",
+        "https://github.com/tpope/vim-fugitive",
+        "https://github.com/tpope/vim-projectionist",
+    },
     lsp = {
         "https://github.com/neovim/nvim-lspconfig",
         "https://github.com/j-hui/fidget.nvim",
@@ -40,13 +40,14 @@ local optional = {
     },
 }
 
+local packspecs = {}
 local config_ok, config = pcall(require, "_config")
 
 if config_ok and config.plugins then
-    for name, plugins in pairs(optional) do
+    for name, spec in pairs(specs) do
         local cfg = config.plugins[name]
-        if cfg and cfg.enabled then
-            vim.list_extend(specs, plugins)
+        if name == "base" or (cfg and cfg.enabled) then
+            vim.list_extend(packspecs, spec)
 
             for gkey, gvalue in pairs(cfg.gvars or {}) do
                 vim.g[gkey] = gvalue
@@ -55,4 +56,4 @@ if config_ok and config.plugins then
     end
 end
 
-vim.pack.add(specs)
+vim.pack.add(packspecs)

@@ -1,5 +1,18 @@
 return {
     plugins = {
+        base = {
+            gvars = {
+                rainbow_active = 1,
+                rainbow_conf = {
+                    ctermfgs = {
+                        "blue",
+                        "green",
+                        "cyan",
+                        "yellow",
+                    },
+                },
+            },
+        },
         lsp = {
             enabled = false,
         },
