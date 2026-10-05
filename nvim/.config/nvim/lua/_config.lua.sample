@@ -7,8 +7,8 @@ return {
                     ctermfgs = {
                         "blue",
                         "green",
+                        "red",
                         "cyan",
-                        "yellow",
                     },
                 },
             },
