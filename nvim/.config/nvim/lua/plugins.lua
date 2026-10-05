@@ -37,6 +37,7 @@ local specs = {
     },
     mssql = {
         "https://github.com/NicholasMata/sqlserver.nvim",
+        "https://github.com/folke/snacks.nvim",
     },
 }
 
