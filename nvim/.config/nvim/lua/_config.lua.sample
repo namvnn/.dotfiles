@@ -1,47 +1,31 @@
 return {
     plugins = {
-        base = {
-            gvars = {
-                rainbow_active = 1,
-                rainbow_conf = {
-                    ctermfgs = {
-                        "blue",
-                        "green",
-                        "red",
-                        "cyan",
-                    },
-                },
+        fzf = true,
+        oil = true,
+        lion = true,
+        dispatch = true,
+        fugitive = true,
+        projectionist = true,
+        rainbow = true,
+        lspconfig = false,
+        fidget = false,
+        conform = false,
+        dap = false,
+        dadbob = false,
+        dadbodui = false,
+        mssql = false,
+        mssqlpicker = false,
+        conjure = {
+            enabled = false,
+            init = {
+                conjure = function()
+                    vim.g["conjure#filetypes"] = { "clojure" }
+                end,
             },
         },
-        lsp = {
-            enabled = false,
-        },
-        format = {
-            enabled = false,
-        },
-        debug = {
-            enabled = false,
-        },
-        database = {
-            enabled = false,
-        },
-        repl = {
-            enabled = false,
-            gvars = {
-                ["conjure#filetypes"] = { "clojure" },
-            },
-        },
-        clojure = {
-            enabled = false,
-        },
-        csharp = {
-            enabled = false,
-        },
-        java = {
-            enabled = false,
-        },
-        mssql = {
-            enabled = false,
-        },
+        fireplace = false,
+        salve = false,
+        dotnet = false,
+        java = false,
     },
 }
