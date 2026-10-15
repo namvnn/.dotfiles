@@ -1,4 +1,10 @@
+config-version = 2
+
+after-startup-command = []
+
 start-at-login = true
+
+auto-reload-config = true
 
 enable-normalization-flatten-containers = true
 enable-normalization-opposite-orientation-for-nested-containers = true
@@ -13,16 +19,20 @@ on-focus-changed = ['move-mouse window-lazy-center']
 
 automatically-unhide-macos-hidden-apps = true
 
-[key-mapping]
-    preset = 'qwerty'
+persistent-workspaces = []
 
-[gaps]
-    inner.horizontal = 0
-    inner.vertical = 0
-    outer.left = 0
-    outer.bottom = 0
-    outer.top = 0
-    outer.right = 0
+on-mode-changed = []
+
+focus-follows-mouse.enabled = false
+
+key-mapping.preset = 'qwerty'
+
+gaps.inner.horizontal = 0
+gaps.inner.vertical   = 0
+gaps.outer.left       = 0
+gaps.outer.bottom     = 0
+gaps.outer.top        = 0
+gaps.outer.right      = 0
 
 [mode.main.binding]
     alt-slash = 'layout tiles horizontal vertical'
