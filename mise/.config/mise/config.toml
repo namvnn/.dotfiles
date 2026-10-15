@@ -51,3 +51,6 @@
 "npm:wrangler" = "latest"
 "vfox:jdx/vfox-clojure" = "latest"
 "vfox:namvnn/vfox-mole" = "latest"
+
+[settings.self_update]
+auto = true
