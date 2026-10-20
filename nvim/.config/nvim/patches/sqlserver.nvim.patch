@@ -1,0 +1,651 @@
+diff --git a/doc/sqlserver.txt b/doc/sqlserver.txt
+new file mode 100644
+index 0000000..4c027ef
+--- /dev/null
++++ b/doc/sqlserver.txt
+@@ -0,0 +1,544 @@
++*sqlserver.txt*  SQL Server workspace for Neovim
++
++==============================================================================
++CONTENTS                                                   *sqlserver-contents*
++
++    1. Usage ................................................ |sqlserver-usage|
++    2. Workspace layout ..................................... |sqlserver-layout|
++    3. SQL buffer workflow .................................. |sqlserver-buffer|
++    4. Result view workflow ................................. |sqlserver-results|
++    5. Activity view ........................................ |sqlserver-activity|
++    6. Connection information ............................... |sqlserver-connection-info|
++    7. Language features .................................... |sqlserver-lsp|
++    8. Object workflow ...................................... |sqlserver-objects|
++    9. Object Explorer ...................................... |sqlserver-object-explorer|
++   10. Command reference .................................... |sqlserver-commands|
++
++==============================================================================
++1. USAGE                                                      *sqlserver-usage*
++
++`sqlserver.nvim` commands use the form `:SQLServer <command>`. When
++`keymap_prefix` is configured, the mappings below are added after that prefix.
++Command completion includes only actions valid for the current workspace
++state.
++
++In the mapping tables below, `<keymap_prefix>` stands for the configured
++prefix. Mappings that use it are omitted when no prefix is configured.
++
++==============================================================================
++2. WORKSPACE LAYOUT                                          *sqlserver-layout*
++
++The workspace consists of the following parts:
++
++    1  Query buffer      Editable `sql` buffer that owns its connection,
++                         active execution, and retained result history.
++    2  Workspace winbar  Neovim's built-in per-window bar showing the
++                         connected server, database, and current state.
++    3  Result view       Reusable window displaying one `sqlserver-result`
++                         buffer at a time.
++    4  Result winbar     Identifies the source query and the active execution
++                         and result-set positions.
++    5  Column header     Real first buffer row; a non-focusable sticky copy
++                         remains visible when this row scrolls away.
++
++A buffer owns text and plugin state; a window displays a buffer. Query and
++result buffers remain tied together even when either buffer is hidden or shown
++in a different window. One query execution can produce several result sets,
++and each result set has its own result buffer. A retained sequence of those
++executions is the query buffer's result history.
++
++==============================================================================
++3. SQL BUFFER WORKFLOW                                       *sqlserver-buffer*
++
++Mode    Mapping              Command            Behavior ~
++Normal  `<keymap_prefix>n`     `NewQuery`           Open a new SQL query buffer
++Normal  `<keymap_prefix>d`     `NewDefaultQuery`    Open a query using the
++                                                  `default` connection profile
++Normal  `<keymap_prefix>e`     `EditConnections`    Edit connection profiles
++Normal  `<keymap_prefix>c`     `Connect`            Connect the current query
++                                                  buffer
++Normal  `<keymap_prefix>R`     `Reconnect`          Retry the query buffer's
++                                                  previous connection
++Normal  `<keymap_prefix>q`     `Disconnect`         Disconnect the current
++                                                  query buffer
++Normal  `<keymap_prefix>s`     `SwitchDatabase`     Change database on the
++                                                  connected server
++Normal  `<keymap_prefix>x`     `ExecuteQuery`       Execute the statement under
++                                                  the cursor
++Visual  `<keymap_prefix>x`     `ExecuteQuery`       Execute the selected text
++Normal  `<keymap_prefix>X`     `ExecuteBuffer`      Execute the complete buffer
++Normal  `<keymap_prefix>l`     `CancelOperation`    Cancel the active query or
++                                                  object script
++Normal  `<keymap_prefix>v`     `ShowResults`        Reopen the active retained
++                                                  execution
++Normal  `<keymap_prefix>f`     `Find`               Build a query for a
++                                                  selected database object
++Normal  `<keymap_prefix>o`     `ObjectDefinition`   Open a selected database
++                                                  object's definition
++Normal  `<keymap_prefix>b`     `ObjectExplorer`     Browse database objects in
++                                                  a hierarchical Snacks
++                                                  sidebar
++Normal  `<keymap_prefix>r`     `RefreshCache`       Refresh object and
++                                                  IntelliSense metadata
++Normal  `<keymap_prefix>a`     `Activity`           Toggle workspace activity
++Normal  `<keymap_prefix>i`     `ConnectionInfo`     Show connection and server
++                                                  information
++
++If a disconnected query is executed, the plugin attempts to use the connection
++profile named `default`. Current-statement parsing is delegated to SQL Tools
++Service.
++
++The workspace winbar and activity stream show background phases such as
++`Starting SQL Tools Service`, `Connecting`, `Loading database objects`,
++`Executing query`, `Loading query results`, and `Rendering query results`.
++Interactive prompts and object pickers do not start a timer; timing begins
++only when backend work starts. Generated buffers are displayed after their
++contents are ready, so the current window remains unchanged when preparation
++fails.
++
++==============================================================================
++4. RESULT VIEW WORKFLOW                                     *sqlserver-results*
++
++Every SQL source buffer retains its own recent successful executions in
++memory. Each execution can contain one or more `sqlserver-result` buffers,
++displayed in a reusable results window. Unless noted otherwise, these mappings
++run from a result buffer.
++
++Column headers use colored Nerd Font icons to identify text, number, boolean,
++temporal, JSON, UUID, binary, and unknown SQL type families. These icons are
++display-only: column names, copied values, and exported data remain
++unchanged. Nullable columns add a compact `ˀ` marker beside the type icon.
++Disable or customize them with `results.column_icons`. When spell checking is
++enabled, result values remain checked while the column header is excluded.
++
++Mode    Mapping              Command            Behavior ~
++Normal  `h` / `l`              -                  Move to the previous or next
++                                                  cell, wrapping between
++                                                  columns
++Normal  `j` / `k`              -                  Move within the same column
++                                                  on the next or previous row
++Normal  `]r`                   `NextResult`         Show the next result set in
++                                                  the execution
++Normal  `[r`                   `PreviousResult`     Show the previous result set
++                                                  in the execution
++Normal  `<keymap_prefix>n`     `NextExecution`      Show the next retained
++                                                  execution
++Normal  `<keymap_prefix>p`     `PreviousExecution`  Show the previous retained
++                                                  execution
++N, V    `]c`                   -                  Move to the next result
++                                                  column
++N, V    `[c`                   -                  Move to the previous result
++                                                  column
++Normal  `K`                    -                  Inspect the current column's
++                                                  SQL type and metadata
++Normal  `yic`                  `CopyResultCell`     Yank the complete value
++                                                  under the cursor
++Normal  `<keymap_prefix>d`     `RemoveResult`       Remove the current result
++                                                  after confirmation
++Normal  `<keymap_prefix>s`     `ExportQueryResults` Export the complete result
++                                                  set
++Visual  `<keymap_prefix>s`     `ExportQueryResults` Export the selected rows and
++                                                  columns
++Visual  `<keymap_prefix>y`     -                  Copy the selected cells as a
++                                                  rich HTML table
++Normal  `vic`                  -                  Select the current cell's
++                                                  rendered contents
++Normal  -                      `CopyResultCell`     Copy the complete value
++                                                  under the cursor
++
++                                                       *sqlserver-cell-navigation*
++Normal-mode cell motions accept Vim counts, keep the current column while
++moving between rows, and skip the rendered header divider. Vertical movement
++stops at the header or final data row; horizontal movement wraps to match `[c`
++and `]c`. Visual-mode `h`, `j`, `k`, and `l` retain native text selection; use
++Visual `[c` and `]c` to jump between columns while selecting cells. Arrow keys
++retain native character and line movement. Set `results.cell_navigation =
++false` to leave Normal-mode `h`, `j`, `k`, and `l` unmapped.
++
++The default `true` value is equivalent to `{ wrap = true }`; use
++`results.cell_navigation = { wrap = false }` to stop `h`, `l`, `[c`, and `]c`
++at the first and last columns instead.
++
++                                                               *sqlserver-yic*
++`yic` reads from the result model, so it preserves complete multiline values
++even when the displayed cell is truncated. It follows normal Vim register
++selection: use `"+yic` for the system clipboard, `"*yic` for the primary
++selection, or a prefix such as `"ayic` for a named register. Plain `yic` uses
++the unnamed register and follows the user's 'clipboard' option.
++
++                                                               *sqlserver-vic*
++In contrast, `vic` selects only the rendered text, without column padding or
++separators; an empty cell selects its first padding space because Visual mode
++cannot represent a zero-width selection. The result buffer remains read-only,
++so `vic` is for selection, not editing.
++
++                                                  *SqlServerResultCurrentCell*
++Set `results.highlight_current_cell = true` to highlight the current semantic
++cell, including header cells. The opt-in highlight is hidden during Visual
++mode so it does not obscure the selected range. It includes the padding beside
++each cell while leaving the vertical separators unhighlighted. By default,
++`SqlServerResultCurrentCell` links to `Search`; customize it through the
++normal Neovim highlight API: >lua
++    vim.api.nvim_set_hl(0, "SqlServerResultCurrentCell", { link = "CursorColumn" })
++<
++For a more subdued highlight, link it to `CursorColumn`. Some color schemes
++give `CursorColumn` and `CursorLine` the same background, which makes that
++combination indistinguishable while result row highlighting is enabled.
++Result windows disable Neovim's 'list' option so alignment padding does not
++appear as trailing-whitespace markers; other windows retain their own setting.
++
++------------------------------------------------------------------------------
++Result history                                         *sqlserver-result-history*
++
++Executing again activates a new execution without deleting older result
++buffers. `results.history_limit` controls how many executions are retained for
++each source buffer. Deleting the source buffer discards its complete history.
++
++------------------------------------------------------------------------------
++Result winbar                                           *sqlserver-result-winbar*
++
++The result winbar identifies the source SQL buffer and shows the current
++execution, result-set position, row count, and elapsed time reported by SQL
++Tools Service. For example, `query.sql  42 rows  38 ms` appears on the left,
++while `Execution 2/4  Result 1/2` stays anchored on the right. A limited
++result uses `100 of 10,000 rows` to distinguish displayed rows from the
++complete row count. The time belongs to the SQL batch that produced the
++result, so results from the same batch show the same time.
++
++------------------------------------------------------------------------------
++Removing results                                       *sqlserver-result-remove*
++
++Removing a result selects the nearest remaining result. Removing the final
++result in an execution removes that execution; removing the final retained
++result also closes the results view.
++
++------------------------------------------------------------------------------
++Columns and sticky header                              *sqlserver-result-columns*
++
++Column inspection displays compact types such as `varchar(100) NULL` or
++`decimal(12, 2) NOT NULL`, plus source-object metadata when SQL Tools Service
++provides it. The sticky header keeps column names visible while scrolling and
++can be disabled with `results.sticky_header = false`.
++
++------------------------------------------------------------------------------
++Copying and exporting                                   *sqlserver-result-export*
++
++Copy and export actions use complete underlying cell values rather than
++display-width-truncated text. Rich HTML clipboard copy includes the selected
++headings and uses native macOS and Windows facilities; Linux requires
++`wl-copy` or `xclip`.
++
++CSV, JSON, and XML exports open as modified, unsaved buffers. Edit them if
++needed and use Neovim's normal |:write| command to save them. Binary Excel
++`.xlsx` exports ask for a destination and write directly. Visual exports use
++the rectangular range covered by the selection; linewise selections include
++every column. Result mappings that use `keymap_prefix` are omitted when no
++prefix is configured. Export progress covers SQL Tools Service serialization
++and buffer preparation; successful text exports rely on the opened buffer and
++do not produce an additional notification.
++
++------------------------------------------------------------------------------
++Limits and value fidelity                               *sqlserver-result-limits*
++
++When the configured row limit is reached, the buffer reports how many rows are
++shown. Cell-width truncation affects only the rendered table. Database `NULL`
++remains distinct from the string `"NULL"`, and Unicode, decimal, datetime,
++binary, and invariant-culture values are preserved when SQL Tools Service
++provides them.
++
++------------------------------------------------------------------------------
++SQL errors and batches                                  *sqlserver-result-errors*
++
++Successful result sets are retained when another batch raises an error. Empty
++result slots from failed batches are omitted, but surviving buffer names
++retain their execution ordinal; if the first batch fails and the second
++succeeds, the buffer is named `results 2.sqlresult`. Every SQL Server error
++also produces a Neovim error notification.
++
++Statements without a `GO` separator execute as one SQL Server batch. A
++batch-terminating error may prevent later statements from running. Use `GO`
++to run later statements as independent batches; the plugin does not silently
++split T-SQL because that would change variable, transaction, temporary-table,
++and other batch semantics.
++
++------------------------------------------------------------------------------
++Cancellation and cleanup                                *sqlserver-cancellation*
++
++An intentional cancellation remains in progress until SQL Tools Service
++reports completion, after which the connected buffer can execute again. A
++query timeout also requests server-side cancellation but leaves the workspace
++disconnected because execution state cannot be confirmed. Use `Reconnect`
++before running another query.
++
++Connection, authentication, TLS, unreachable-server, timeout, and service
++failures have distinct secret-safe messages. Detailed redacted diagnostics are
++retained in activity history. Deleting a SQL buffer disposes its connection;
++leaving Neovim stops plugin-owned SQL Tools Service clients.
++
++==============================================================================
++5. ACTIVITY VIEW                                           *sqlserver-activity*
++
++Mode    Mapping   Command   Behavior ~
++Normal  `q`         -         Close the activity view
++
++The Activity view contains chronological plugin operations, progress, SQL
++messages, warnings, and errors. Connection metadata is kept in its own view
++so the activity stream remains focused on what is happening.
++
++A mixed query outcome uses a warning state while each underlying SQL error
++remains an error; an error-only execution uses the failed state. Each activity
++row includes its source, such as `Object Explorer · ApplicationDb › Tables ›
++dbo.Person › Columns · Loading` or `Query · Query completed`, so concurrent
++asynchronous work remains distinguishable. Object Explorer activity uses tree
++breadcrumbs while the winbar deliberately keeps the compact `Loading database
++object` status.
++
++==============================================================================
++6. CONNECTION INFORMATION                            *sqlserver-connection-info*
++
++Run `:SQLServer ConnectionInfo` from a connected SQL buffer to open a
++reusable, read-only view of the current connection and the server metadata
++reported by SQL Tools Service.
++
++Mode    Mapping   Command   Description ~
++Normal  `r`         -         Refresh the view from the latest workspace
++                            connection state
++Normal  `q`         -         Close the connection information view
++Normal  `?`         -         Show the connection information mappings
++
++The view includes the resolved username, server, database, SQL Server session
++ID, SQL Tools Service connection ID, supported-version status, server version,
++edition, engine information, and available host details. It never displays a
++password, access token, or connection string. Non-applicable server fields are
++omitted, empty values render as `—`, and a visible view updates when
++connection state changes.
++
++==============================================================================
++7. LANGUAGE FEATURES                                            *sqlserver-lsp*
++
++SQL Tools Service attaches through Neovim's standard LSP client, so existing
++completion, diagnostics, hover, signature-help, definition, and formatting
++integrations continue to work. Neovim identifies the client as `mssql_ls` in
++LSP status and health output. For example: >lua
++
++    vim.keymap.set("n", "K", vim.lsp.buf.hover)
++    vim.keymap.set("n", "gd", vim.lsp.buf.definition)
++    vim.keymap.set("i", "<C-s>", vim.lsp.buf.signature_help)
++    vim.keymap.set("n", "<leader>f", function()
++      vim.lsp.buf.format({ async = true })
++    end)
++<
++Schema-aware results become available after connection and IntelliSense
++readiness. `:SQLServer RefreshCache` rebuilds both object and IntelliSense
++metadata for the current connection.
++
++==============================================================================
++8. OBJECT WORKFLOW                                          *sqlserver-objects*
++
++The object picker searches a snapshot of tables, views, stored procedures,
++scalar functions, and table-valued functions in the connected database. Its
++actions are invoked from the SQL buffer and are listed in the SQL buffer
++workflow table (|sqlserver-buffer|).
++
++Generated table and view queries execute immediately by default. Procedure
++calls are inserted but never executed automatically because they may have side
++effects. Definitions use `CREATE` scripting and open in dedicated editable SQL
++buffers named `<schema>.<object>.sql`. If that name is already open, choose to
++use the existing visible or hidden buffer, or create a numbered buffer such as
++`dbo.Person (2).sql`. A deleted buffer is generated again without a collision
++prompt. Individual-node refresh and generic `ALTER`/`DROP` actions are outside
++the 1.0 scope.
++
++When `snacks.nvim` is installed with its picker enabled,
++`:SQLServer ObjectExplorer` opens a persistent, lazily loaded sidebar for the
++current connection. See |sqlserver-object-explorer| for its hierarchy,
++mappings, search and cancellation behavior, contextual actions, supported
++scope, and configuration.
++
++==============================================================================
++9. OBJECT EXPLORER                                  *sqlserver-object-explorer*
++
++Object Explorer currently presents the hierarchy returned by SQL Tools Service
++in a persistent Snacks sidebar. It belongs to the current SQL buffer's
++connection and preserves service-defined folders, ordering, and object
++relationships instead of flattening them into a plugin-specific structure.
++
++------------------------------------------------------------------------------
++Requirements and opening                              *sqlserver-explorer-open*
++
++Object Explorer requires snacks.nvim (https://github.com/folke/snacks.nvim)
++with its picker enabled. Snacks remains optional for every other
++sqlserver.nvim workflow.
++
++Connect a SQL buffer, then run: >vim
++    :SQLServer ObjectExplorer
++<
++With `keymap_prefix = "<leader>s"`, the default mapping is `<leader>sb`.
++Opening Object Explorer again for the same SQL buffer focuses the existing
++sidebar.
++
++------------------------------------------------------------------------------
++Hierarchy and loading                              *sqlserver-explorer-loading*
++
++The initial tree contains the root and the children SQL Tools Service returns
++for it. Expanding a node requests its children lazily. This keeps startup fast
++and avoids requesting an entire large database before it is needed.
++
++Loaded nodes remain cached for the lifetime of the explorer session. A node
++that SQL Tools Service reports as expandable keeps its disclosure marker until
++its first expansion. If the service returns no children, the marker is
++removed.
++
++Every server-backed expansion participates in the shared workspace activity
++lifecycle. Slow loads, failures, cancellation, disconnection, and workspace
++disposal are therefore handled consistently with other asynchronous plugin
++operations. Activity entries include the full hierarchy, such as
++`Object Explorer · TestDbB › Tables › dbo.Car › Columns · Loaded`, while the
++workspace winbar uses a shorter status.
++
++------------------------------------------------------------------------------
++Mappings                                         *sqlserver-explorer-mappings*
++
++Press `?` in Normal mode to open Snacks' built-in mapping help.
++
++Mode    Mapping  Command                Description ~
++Normal  `<CR>`    Snacks `confirm`         Build a runnable query for an
++                                         object, or toggle a structural node
++Normal  `K`       `object_actions`         Open contextual actions for the
++                                         selected object
++Normal  `c`       `object_cancel_search`   Cancel an active full-tree search
++                                         load
++Normal  `l`       `object_toggle`          Expand or collapse a node, lazily
++                                         loading details
++Normal  `h`       `object_collapse`        Collapse the current node or its
++                                         parent
++Normal  `L`       `object_expand_all`      Expand the complete tree, loading
++                                         details as needed
++Normal  `H`       `object_collapse_all`    Return to the compact root outline
++Normal  `d`       `object_definition`      Open the selected object's
++                                         editable definition
++Normal  `r`       `object_refresh`         Refresh the complete metadata
++                                         snapshot and redraw the tree
++Normal  `q`       Snacks `cancel`          Close Object Explorer
++
++------------------------------------------------------------------------------
++Searching                                         *sqlserver-explorer-search*
++
++Typing in the picker searches every currently loaded node, including nodes
++hidden below collapsed branches. The filtered tree preserves service order and
++shows only matching nodes and the ancestors needed to locate them.
++
++If unopened nodes remain, every search begins with a selectable
++`Search all objects…` row. When no loaded node matches,
++`No matching loaded objects` appears beneath it. Selecting Search All
++traverses the remaining hierarchy through the normal asynchronous lifecycle,
++caches the loaded nodes, and reruns the current search. Progress remains
++visible in the explorer.
++
++Press `c` in Normal mode to cancel Search All. Cancellation is cooperative:
++the active SQL Tools Service expansion finishes, then traversal of the
++remaining nodes stops. Nodes already loaded remain cached. Once the complete
++hierarchy is cached, a search with no match displays `No matching objects`.
++
++------------------------------------------------------------------------------
++Object actions                                    *sqlserver-explorer-actions*
++
++Press `K` on an object to open a compact Snacks action menu beside the current
++tree row. Tables and views offer "Select rows", procedures offer "Create
++execution script", and functions offer "Create query script". Every supported
++object also offers "Show definition", "Copy name", "Copy qualified name", and
++"Refresh details". `<CR>` remains the fast default query or execution-script
++action.
++
++Generated table and view queries execute immediately by default. Procedure
++scripts are inserted but never executed automatically because they may have
++side effects. Definitions open in dedicated editable SQL buffers. Existing
++definition-buffer collisions use the same focus-or-create workflow as
++`:SQLServer ObjectDefinition`.
++
++------------------------------------------------------------------------------
++Supported scope                                    *sqlserver-explorer-scope*
++
++Object Explorer deliberately covers query and object-scripting workflows
++rather than SQL Server administration. Actionable objects are tables, views,
++stored procedures, scalar-valued functions, and table-valued functions. Their
++folder placement and ordering come from SQL Tools Service.
++
++Expandable objects display every child returned by the service. With the
++pinned release, tables can expose Columns, Keys, Constraints, Indexes,
++Statistics, and Triggers. Available children vary by object type, server
++capabilities, and permissions. Empty child collections are treated as valid,
++and unknown future child types remain visible with a generic icon. When SQL
++Tools Service supplies a node subtype, status, or error, the explorer appends
++that information as a muted annotation; nodes with service errors use the
++standard diagnostic-error highlight. These annotations are searchable.
++
++Object scripting participates in the same cancellable lifecycle as queries.
++Use `<keymap_prefix>l`, `:SQLServer CancelOperation`, or `sqlserver.cancel()`
++while a script is being generated. Cancellation is sent to SQL Tools Service,
++and scripting plan and progress notifications update the existing operation.
++
++The current Object Explorer does not show server-administration branches such
++as Security, Storage, Service Broker, or SQL Server Agent.
++
++------------------------------------------------------------------------------
++Configuration                                      *sqlserver-explorer-config*
++
++Pass Snacks picker options through `ui.object_explorer`. For example, to put
++the sidebar on the right: >lua
++    require("sqlserver").setup({
++      ui = {
++        object_explorer = {
++          layout = { preset = "right", preview = false },
++        },
++      },
++    })
++<
++Object Explorer requests use `timeouts.object_explorer`, which defaults to
++10,000 milliseconds. Set it to `false` to wait indefinitely. See
++docs/configuration.md for the complete option reference.
++
++==============================================================================
++10. COMMAND REFERENCE                                       *sqlserver-commands*
++
++                                                                  *:SQLServer*
++:SQLServer {command}    Run a plugin command. Completion lists only actions
++                        valid for the current workspace state.
++
++Command              Purpose ~
++`Activity`             Toggle workspace activity
++`ConnectionInfo`       Show connection and server information
++`Connect`              Connect the current query buffer
++`Reconnect`            Retry the query buffer's previous connection
++`Disconnect`           Disconnect the current query buffer
++`ExecuteQuery`         Execute the statement under the cursor or selected text
++`ExecuteBuffer`        Execute the complete buffer
++`CancelOperation`      Cancel the active query or object script
++`CancelQuery`          Compatibility alias for `CancelOperation`
++`NewQuery`             Open a query buffer
++`NewDefaultQuery`      Open a query using the `default` profile
++`SwitchDatabase`       Change database on the current server
++`Find`                 Build a runnable query for a database object
++`ObjectDefinition`     Script a database object's definition
++`ObjectExplorer`       Browse the current database in a hierarchical Snacks
++                       sidebar
++`RefreshCache`         Refresh metadata and IntelliSense caches
++`EditConnections`      Edit connection profiles
++`ExportQueryResults`   Export the current result set
++`ShowResults`          Focus or reopen the current SQL buffer's active
++                       execution
++`NextResult`           Display the next result set
++`PreviousResult`       Display the previous result set
++`NextExecution`        Display the next retained execution
++`PreviousExecution`    Display the previous retained execution
++`RemoveResult`         Remove the current result set and any execution it
++                       leaves empty
++`CopyResultCell`       Copy the complete value under the cursor from a result
++                       set
++`BackupDatabase`       Insert a database backup command
++`RestoreDatabase`      Insert a database restore command
++
++See docs/configuration.md for setup options and UI customization, and
++docs/public-api.md for UI-independent automation.
++
++ vim:tw=78:ts=8:ft=help:norl:
+diff --git a/lua/sqlserver/objects/ui/picker.lua b/lua/sqlserver/objects/ui/picker.lua
+index d9cab09..b2493b3 100644
+--- a/lua/sqlserver/objects/ui/picker.lua
++++ b/lua/sqlserver/objects/ui/picker.lua
+@@ -93,7 +93,14 @@ local get_session_async = function(client, connection_options)
+     error("SQL Tools Service could not start object exploration: " .. request_err.message, 0)
+   end
+   local response, err = wait_for_notification_async(client, "objectexplorer/sessioncreated", object_explorer_timeout)
+-  if response and response.rootNode and response.rootNode.objectType == "Server" then
++  local database_name = connection_options.DatabaseName
++  if
++    response
++    and response.rootNode
++    and response.rootNode.objectType == "Server"
++    and type(database_name) == "string"
++    and database_name ~= ""
++  then
+     -- If we connect to a system database then the root node will be the server.
+     -- So we need to set a target path to navigate to first so that we only search the database we connect to
+     response.target_path = response.rootNode.nodePath
+@@ -221,12 +228,19 @@ local get_object_cache_async = function(lsp_client, connection_options, cancella
+   utils.safe_assert(session and session.sessionId)
+ 
+   local session_id = session.sessionId
++  if session.rootNode.objectType == "Server" and not session.target_path then
++    -- A server-level connection has no single database to cache. Crawling every
++    -- database fails the connection when one of them is offline or inaccessible.
++    lsp_client:request("objectexplorer/closesession", { sessionId = session_id }, function() end)
++    return {}
++  end
+   local root_path = session.rootNode.nodePath
+   local cache = {}
+   local expand_count = 0
+   local co = coroutine.running()
+   local expand_complete
+   local finished = false
++  local last_progress = vim.uv.now()
+ 
+   local clean_up_and_return = function(return_value, err)
+     if finished then
+@@ -273,6 +287,7 @@ local get_object_cache_async = function(lsp_client, connection_options, cancella
+     if expand_result and expand_result.sessionId and expand_result.sessionId ~= session_id then
+       return
+     end
++    last_progress = vim.uv.now()
+     if notification_err then
+       clean_up_and_return(nil, "SQL Tools Service could not expand database objects: " .. notification_err.message)
+       return
+@@ -328,12 +343,21 @@ local get_object_cache_async = function(lsp_client, connection_options, cancella
+ 
+   utils.register_lsp_handler(lsp_client, "objectexplorer/expandCompleted", expand_complete)
+ 
++  -- The timeout bounds the wait for progress, not the whole crawl: large
++  -- databases expand many nodes and may legitimately take longer in total.
+   if object_explorer_timeout then
+-    vim.defer_fn(function()
+-      if not finished then
++    local function check_progress()
++      if finished then
++        return
++      end
++      local idle = vim.uv.now() - last_progress
++      if idle >= object_explorer_timeout then
+         clean_up_and_return(nil, "SQL Server object refresh timed out")
++      else
++        vim.defer_fn(check_progress, object_explorer_timeout - idle)
+       end
+-    end, object_explorer_timeout)
++    end
++    vim.defer_fn(check_progress, object_explorer_timeout)
+   end
+ 
+   expand(session.rootNode.nodePath)
+diff --git a/lua/sqlserver/ui/status.lua b/lua/sqlserver/ui/status.lua
+index 158f2e9..fc69aee 100644
+--- a/lua/sqlserver/ui/status.lua
++++ b/lua/sqlserver/ui/status.lua
+@@ -80,7 +80,13 @@ local function render_identity(connection, fields, max_width)
+     while index <= #fields do
+       local field = fields[index]
+       local value = field == "server" and server or values[field]
+-      if field == "username" and fields[index + 1] == "server" and value ~= nil and value ~= "" then
++      if
++        field == "username"
++        and fields[index + 1] == "server"
++        and value ~= nil
++        and value ~= ""
++        and value ~= vim.NIL
++      then
+         local next_server = server
+         if next_server ~= nil and next_server ~= "" then
+           parts[#parts + 1] = value .. "@" .. next_server
+@@ -90,7 +96,7 @@ local function render_identity(connection, fields, max_width)
+           index = index + 1
+         end
+       else
+-        if value ~= nil and value ~= "" then
++        if value ~= nil and value ~= "" and value ~= vim.NIL then
+           parts[#parts + 1] = value
+         end
+         index = index + 1
