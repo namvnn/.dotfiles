@@ -25,6 +25,10 @@ case "${env}" in
         account_name="${UAT_AZURE_STORAGE_ACCOUNT}"
         account_key="${UAT_AZURE_STORAGE_ACCESS_KEY}"
         ;;
+    prod)
+        account_name="${PROD_AZURE_STORAGE_ACCOUNT}"
+        account_key="${PROD_AZURE_STORAGE_ACCESS_KEY}"
+        ;;
     *)
         echo "Error: unknown environment '${env}'" >&2
         usage
@@ -37,29 +41,42 @@ if [[ -z "${account_name}" || -z "${account_key}" ]]; then
     exit 1
 fi
 
-tmp_file=$(mktemp)
-echo "Created a temp file '${tmp_file}'..."
-trap "rm -f '${tmp_file}'; echo \"Removed the temp file '${tmp_file}'\"" EXIT
+if [[ "${env}" == *prod ]]; then
+    echo "Querying the table..."
+    otp="$(az storage entity query \
+        --account-name "${account_name}" \
+        --account-key "${account_key}" \
+        --table-name 'OTPVerification' \
+        --filter "Address eq '${phone}'" \
+        --select 'Address' 'CreatedAt' 'Token' \
+        --query 'sort_by(items, &CreatedAt)[-1].Token' \
+        --output 'tsv')"
+else
+    tmp_file=$(mktemp)
+    echo "Created a temp file '${tmp_file}'..."
+    trap "rm -f '${tmp_file}'; echo \"Removed the temp file '${tmp_file}'\"" EXIT
 
-container="sms"
-blob_name="${phone}/sms.json"
+    container="sms"
+    blob_name="${phone}/sms.json"
 
-echo "Downloading '${blob_name}' into '${tmp_file}'..."
-az storage blob download \
-    --no-progress \
-    --account-name "${account_name}" \
-    --account-key "${account_key}" \
-    --container-name "${container}" \
-    --name "${blob_name}" \
-    --file "${tmp_file}" \
-    --output none
-if [[ "$?" != '0' ]]; then
-    exit 1
+    echo "Downloading '${blob_name}' into '${tmp_file}'..."
+    az storage blob download \
+        --no-progress \
+        --account-name "${account_name}" \
+        --account-key "${account_key}" \
+        --container-name "${container}" \
+        --name "${blob_name}" \
+        --file "${tmp_file}" \
+        --output none
+    if [[ "$?" != '0' ]]; then
+        exit 1
+    fi
+
+    otp="$(
+        sed -n 's/.*code is[:]* \([0-9][0-9]*\).*/\1/p' "${tmp_file}" |
+        head -n 1
+    )"
 fi
 
-otp="$(
-    sed -n 's/.*OTP is: \([0-9][0-9]*\).*/\1/p' "${tmp_file}" |
-    head -n 1
-)"
 printf '%s' "${otp}" | pbcopy
 echo "Copied OTP ${otp} to clipboard!"
