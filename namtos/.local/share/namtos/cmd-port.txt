@@ -1,0 +1,1 @@
+port clean up temporary files used to build installed ports: sudo port clean --all installed
