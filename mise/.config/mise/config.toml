@@ -49,5 +49,8 @@
 "vfox:jdx/vfox-clojure" = "latest"
 "vfox:namvnn/vfox-mole" = "latest"
 
+[settings]
+idiomatic_version_file_enable_tools = ["node"]
+
 [settings.self_update]
 auto = true
