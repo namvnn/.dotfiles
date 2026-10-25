@@ -18,14 +18,18 @@ export MANPATH="${HOME}/.local/share/manx:"
 export NAMTOOLS_DATA_DIR="${HOME}/.local/share/namtos"
 
 # mise
-export MISE_CONFIG_DIR="${HOME}/.config/mise"
-export MISE_CACHE_DIR="${HOME}/.local/share/mise/cache"
-export MISE_STATE_DIR="${HOME}/.local/share/mise/state"
-export MISE_DATA_DIR="${HOME}/.local/share/mise/data"
-eval "$(mise activate zsh)"
+if command -v mise >/dev/null 2>&1; then
+    export MISE_CONFIG_DIR="${HOME}/.config/mise"
+    export MISE_CACHE_DIR="${HOME}/.local/share/mise/cache"
+    export MISE_STATE_DIR="${HOME}/.local/share/mise/state"
+    export MISE_DATA_DIR="${HOME}/.local/share/mise/data"
+    eval "$(mise activate bash)"
+fi
 
 # fzf
-source <(fzf --zsh)
+if command -v mise >/dev/null 2>&1; then
+    source <(fzf --bash)
+fi
 
 # go
 export GOPATH="${HOME}/.go"
