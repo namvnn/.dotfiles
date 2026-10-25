@@ -51,6 +51,4 @@
 
 [settings]
 idiomatic_version_file_enable_tools = ["node"]
-
-[settings.self_update]
-auto = true
+self_update = { auto = true }
