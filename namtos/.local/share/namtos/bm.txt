@@ -53,6 +53,7 @@ Clojure|[Lib] Reagent: Minimalistic React for ClojureScript|https://reagent-proj
 Clojure|[Lib] reitit: A fast data-driven router|https://github.com/metosin/reitit
 Clojure|[Lib] Ring: A Clojure web applications library inspired by Python's WSGI and Ruby's Rack|https://github.com/ring-clojure/ring
 Clojure|[Lib] rj9a: An enhanced version of jetty adapter for ring|https://github.com/sunng87/ring-jetty9-adapter
+Clojure|[Talk] Transcripts of Clojure-related talks|https://github.com/matthiasn/talk-transcripts
 Clojure|[Tool] Babashka: A native, fast starting Clojure interpreter for scripting|https://babashka.org
 Clojure|[Tool] Figwheel: Build your ClojureScript code, and hot load it as you are coding|https://figwheel.org
 Clojure|[Tool] Glojure: A Clojure interpreter hosted on Go, with extensible interop support|https://github.com/glojurelang/glojure
@@ -74,7 +75,9 @@ CSS|[Tool] CSS Spring Easing Generator|https://kvin.me/css-springs
 C|[Docs] The Open Group Standard Base Specifications|https://pubs.opengroup.org/onlinepubs
 C|[Learning] Beej's Guide to C Programming - Library Reference|https://beej.us/guide/bgclr
 C|[Learning] Beej's Guide to C Programming|https://beej.us/guide/bgc
+C|[Learning] Making a CLAP audio plugin|https://nakst.gitlab.io/tutorial/clap-part-1.html
 C|[Learning] Making a simple HTTP webserver in C|https://bruinsslot.jp/post/simple-http-webserver-in-c
+C|[Learning] Writing a toy UI library|https://nakst.gitlab.io/tutorial/ui-part-1.html
 C|[Lib] cJSON: Ultralightweight JSON parser in ANSI C|https://github.com/DaveGamble/cJSON
 C|[Lib] facil.io: A C micro-framework for web applications|https://facil.io
 C|[Lib] lwan: A high-performance & scalable web server in C|https://lwan.ws
@@ -91,6 +94,7 @@ C|[Reading] MallocInternals|https://sourceware.org/glibc/wiki/MallocInternals
 C|[Reading] One year of C|https://floooh.github.io/2018/06/02/one-year-of-c
 C|[Reading] The C programming language|https://c-language.org
 C|[Tool] clib: A package manager for the C programming language|https://github.com/clibs/clib
+C|[Tool] gf: A GDB Frontend|https://github.com/nakst/gf
 C|[Tool] Spack: A flexible package manager that supports multiple versions, configurations, platforms, and compilers|https://spack.io
 Data Science|[Tool] VisiData: A terminal interface for exploring and arranging tabular data|https://visidata.org
 Data Structure and Algorithm|[Algorithm] A Beginner's Journey into the World of Algorithms|https://artofcode.org/algorithms-101
@@ -382,6 +386,8 @@ Security|[Learning] Web Security Academy, PortSwigger|https://portswigger.net/we
 Security|[Learning] Web Security Basics|https://github.com/vasanthk/web-security-basics
 Security|[Reading] OWASP Top 10:2025|https://owasp.org/Top10/2025
 System Design|Atoms, molecules, organisms|https://swizec.com/blog/atoms-molecules-organisms
+System Design|Event Modeling - Building Simple Systems in the World of Natural Language Programming - Cameron Barre|https://youtu.be/YKFxDDtfJVI
+System Design|Event Modeling|https://eventmodeling.org
 System Design|Polylith|https://polylith.gitbook.io/polylith
 System Design|The Laws of Software Evolution|https://swizec.com/blog/the-laws-of-software-evolution
 System Design|The System Design Primer|https://github.com/donnemartin/system-design-primer
