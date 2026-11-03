@@ -1,0 +1,7 @@
+[tools]
+"aqua:junegunn/fzf" = "latest"
+"aqua:tmux/tmux-builds" = "latest"
+"core:java" = "latest"
+"github:babashka/babashka" = "latest"
+"vfox:jdx/vfox-clojure" = "latest"
+
