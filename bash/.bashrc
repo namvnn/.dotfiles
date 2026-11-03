@@ -1,8 +1,3 @@
-# profiles
-if [[ -f "${HOME}/.bash_profile" ]]; then
-    source "${HOME}/.bash_profile"
-fi
-
 # prompt 
 PS1='\u \w\n$ '
 
