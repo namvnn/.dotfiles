@@ -4,31 +4,32 @@
 # Description: Create or switch to a tmux session
 # License: MIT License
 # Date Created: Jun 16, 2022
-# Date Modified: June 23, 2026
+# Date Modified: November 04, 2026
 
-if [[ "$#" -eq "1" ]]; then
-    start_dir="$1"
+if [[ "${#}" -eq "1" ]]; then
+    directory="${1}"
 else
-    start_dir=$(find -L "$HOME/Documents" "$HOME/repos" -mindepth 1 -maxdepth 5 -type d 2>/dev/null | fzf)
+    directory=$(find -L "${HOME}/Documents" "${HOME}/Development" -mindepth 1 -maxdepth 5 -type d 2>/dev/null | fzf)
 fi
 
-if [[ -z "$start_dir" ]]; then
-    exit 0
+if [[ ! -d "${directory}" ]]; then
+    echo "${directory}: No such directory"
+    exit 1
 fi
 
-session_name=$(basename "$start_dir" | tr . _)
+session_name=$(basename "${directory}" | tr . _)
 
-if tmux has-session -t "$session_name" 2>/dev/null; then
-    if [[ -z "$TMUX" ]]; then
-        tmux attach-session -t "$session_name"
+if tmux has-session -t "${session_name}" 2>/dev/null; then
+    if [[ -z "${TMUX}" ]]; then
+        tmux attach-session -t "${session_name}"
     else
-        tmux switch-client -t "$session_name"
+        tmux switch-client -t "${session_name}"
     fi
 else
-    if [[ -z "$TMUX" ]]; then
-        tmux new-session -s "$session_name" -c "$start_dir"
+    if [[ -z "${TMUX}" ]]; then
+        tmux new-session -s "${session_name}" -c "${directory}"
     else
-        tmux new-session -ds "$session_name" -c "$start_dir"
-        tmux switch-client -t "$session_name"
+        tmux new-session -ds "${session_name}" -c "${directory}"
+        tmux switch-client -t "${session_name}"
     fi
 fi
