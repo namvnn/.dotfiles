@@ -178,3 +178,7 @@ let g:loaded_netrwPlugin = 1
 
 " Open fzf
 nnoremap <C-P> <Cmd>FZF<CR>
+
+" Gutentags
+let g:gutentags_enabled = 0
+let g:gutentags_define_advanced_commands = 1
