@@ -1,4 +1,5 @@
 [tools]
+"aqua:BurntSushi/ripgrep" = "latest"
 "aqua:junegunn/fzf" = "latest"
 "aqua:tmux/tmux-builds" = "latest"
 "core:java" = "latest"
