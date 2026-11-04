@@ -1,4 +1,4 @@
-local specs = {
+local plugin_specs = {
     -- Base
     {
         name = "fzf",
@@ -109,28 +109,28 @@ local specs = {
     },
 }
 
-local packspecs = {}
+local pack_specs = {}
 local config_ok, config = pcall(require, "_config")
 
 if config_ok and config.plugins then
-    for _, spec in ipairs(specs) do
-        local plugin = config.plugins[spec.name]
+    for _, plugin_spec in ipairs(plugin_specs) do
+        local plugin_config = config.plugins[plugin_spec.name]
         if
-            plugin == true
-            or (type(plugin) == "table" and plugin.enabled == true)
+            plugin_config == true
+            or (type(plugin_config) == "table" and plugin_config.enabled == true)
         then
-            table.insert(packspecs, {
-                name = spec.name,
-                src = spec.src,
+            table.insert(pack_specs, {
+                name = plugin_spec.name,
+                src = plugin_spec.src,
             })
-            if type(spec.init) == "function" then
-                spec.init()
+            if type(plugin_spec.init) == "function" then
+                plugin_spec.init()
             end
-            if type(plugin) == "table" and type(plugin.init) == "function" then
-                plugin.init()
+            if type(plugin_config) == "table" and type(plugin_config.init) == "function" then
+                plugin_config.init()
             end
         end
     end
 end
 
-vim.pack.add(packspecs)
+vim.pack.add(pack_specs)
