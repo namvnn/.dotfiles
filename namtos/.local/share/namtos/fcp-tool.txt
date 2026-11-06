@@ -1,0 +1,49 @@
+aspire: A code-first orchestration and observability layer for distributed applications
+babashka: A native, fast starting Clojure interpreter for scripting
+chafa: command-line utility that converts image data into graphics formats or ANSI/Unicode character art suitable for display in a terminal
+clang-format: A tool to format C/C++/... code according to a set of rules and heuristics
+clojure:
+cmake: A tool to manage building of source code
+colima:
+croc:
+docker-cli:
+faker:
+fzf:
+go:
+gopls:
+grex:
+htop:
+hurl: A command-line tool that runs and tests HTTP requests with plain text
+hyperfine:
+java:
+joker:
+jq:
+lua-language-server: A language server that offers Lua language support
+mole:
+neovim:
+node:
+pandoc:
+pixi:
+pkgconf:
+prettier:
+ripgrep: A line-oriented search tool that recursively searches directories for a regex pattern while respecting your gitignore
+ruff:
+rust:
+serve:
+shellcheck:
+stow:
+stylua: A Lua code formatter
+tinymist: An integrated language service for Typst 
+tlrc:
+tmux-builds:
+ttyd:
+typescript-language-server:
+typos-lsp:
+typst:
+universal-ctags:
+uv:
+vim:
+visidata:
+vscode-langservers-extracted:
+watchexec:
+wrangler:
