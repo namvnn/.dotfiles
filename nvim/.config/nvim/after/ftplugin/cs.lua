@@ -1,37 +1,56 @@
-local dotnet_ok, dotnet = pcall(require, "easy-dotnet")
-if dotnet_ok then
-    vim.lsp.config("easy_dotnet", {
-        settings = {
-            ["csharp|inlay_hints"] = {
-                csharp_enable_inlay_hints_for_implicit_object_creation = false,
-                csharp_enable_inlay_hints_for_implicit_variable_types = false,
+local function once()
+    if vim.g.nn_ftplugin_cs == 1 then
+        return
+    end
+
+    vim.g.nn_ftplugin_cs = 1
+
+    local dotnet_ok, dotnet = pcall(require, "easy-dotnet")
+    if dotnet_ok then
+        vim.lsp.config("easy_dotnet", {
+            settings = {
+                ["csharp|inlay_hints"] = {
+                    csharp_enable_inlay_hints_for_implicit_object_creation = false,
+                    csharp_enable_inlay_hints_for_implicit_variable_types = false,
+                },
+                ["csharp|code_lens"] = {
+                    dotnet_enable_references_code_lens = false,
+                },
             },
-            ["csharp|code_lens"] = {
-                dotnet_enable_references_code_lens = false,
+        })
+        dotnet.setup({
+            test_runner = {
+                icons = {
+                    passed = "✓",
+                    skipped = "○",
+                    failed = "✗",
+                    success = "✔",
+                    reload = "↻",
+                    test = "▶",
+                    sln = "◆",
+                    project = "◇",
+                    dir = "▸",
+                    package = "■",
+                    class = "●",
+                    build_failed = "!",
+                },
             },
-        },
-    })
-    dotnet.setup({
-        test_runner = {
-            icons = {
-                passed = "✓",
-                skipped = "○",
-                failed = "✗",
-                success = "✔",
-                reload = "↻",
-                test = "▶",
-                sln = "◆",
-                project = "◇",
-                dir = "▸",
-                package = "■",
-                class = "●",
-                build_failed = "!",
-            },
-        },
-    })
+        })
+    end
+
+    local conform_ok, conform = pcall(require, "conform")
+    if conform_ok then
+        conform.formatters_by_ft.cs = { "csharpier" }
+    end
 end
 
-local conform_ok, conform = pcall(require, "conform")
-if conform_ok then
-    conform.formatters_by_ft.cs = { "csharpier" }
+local function always()
+    if vim.b.nn_ftplugin_cs == 1 then
+        return
+    end
+
+    vim.b.nn_ftplugin_cs = 1
 end
+
+once()
+always()

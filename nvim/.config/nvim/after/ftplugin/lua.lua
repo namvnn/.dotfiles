@@ -1,42 +1,61 @@
-if vim.fn.executable("lua-language-server") then
-    vim.lsp.config("lua_ls", {
-        on_init = function(client)
-            if client.workspace_folders then
-                local path = client.workspace_folders[1].name
-                if
-                    path ~= vim.fn.stdpath("config")
-                    and (
-                        vim.uv.fs_stat(path .. "/.luarc.json")
-                        or vim.uv.fs_stat(path .. "/.luarc.jsonc")
-                    )
-                then
-                    return
+local function once()
+    if vim.g.nn_ftplugin_lua == 1 then
+        return
+    end
+
+    vim.g.nn_ftplugin_lua = 1
+
+    if vim.fn.executable("lua-language-server") then
+        vim.lsp.config("lua_ls", {
+            on_init = function(client)
+                if client.workspace_folders then
+                    local path = client.workspace_folders[1].name
+                    if
+                        path ~= vim.fn.stdpath("config")
+                        and (
+                            vim.uv.fs_stat(path .. "/.luarc.json")
+                            or vim.uv.fs_stat(path .. "/.luarc.jsonc")
+                        )
+                    then
+                        return
+                    end
                 end
-            end
 
-            client.config.settings.Lua =
-                vim.tbl_deep_extend("force", client.config.settings.Lua, {
-                    runtime = {
-                        version = "LuaJIT",
-                        path = {
-                            "lua/?.lua",
-                            "lua/?/init.lua",
+                client.config.settings.Lua =
+                    vim.tbl_deep_extend("force", client.config.settings.Lua, {
+                        runtime = {
+                            version = "LuaJIT",
+                            path = {
+                                "lua/?.lua",
+                                "lua/?/init.lua",
+                            },
                         },
-                    },
-                    workspace = {
-                        checkThirdParty = false,
-                        library = vim.api.nvim_get_runtime_file("", true),
-                    },
-                })
-        end,
-        settings = {
-            Lua = {},
-        },
-    })
-    vim.lsp.enable("lua_ls")
+                        workspace = {
+                            checkThirdParty = false,
+                            library = vim.api.nvim_get_runtime_file("", true),
+                        },
+                    })
+            end,
+            settings = {
+                Lua = {},
+            },
+        })
+        vim.lsp.enable("lua_ls")
+    end
+
+    local conform_ok, conform = pcall(require, "conform")
+    if conform_ok then
+        conform.formatters_by_ft.lua = { "stylua" }
+    end
 end
 
-local conform_ok, conform = pcall(require, "conform")
-if conform_ok then
-    conform.formatters_by_ft.lua = { "stylua" }
+local function always()
+    if vim.b.nn_ftplugin_lua == 1 then
+        return
+    end
+
+    vim.b.nn_ftplugin_lua = 1
 end
+
+once()
+always()

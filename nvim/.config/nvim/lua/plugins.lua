@@ -117,7 +117,10 @@ if config_ok and config.plugins then
         local plugin_config = config.plugins[plugin_spec.name]
         if
             plugin_config == true
-            or (type(plugin_config) == "table" and plugin_config.enabled == true)
+            or (
+                type(plugin_config) == "table"
+                and plugin_config.enabled == true
+            )
         then
             table.insert(pack_specs, {
                 name = plugin_spec.name,
@@ -126,7 +129,10 @@ if config_ok and config.plugins then
             if type(plugin_spec.init) == "function" then
                 plugin_spec.init()
             end
-            if type(plugin_config) == "table" and type(plugin_config.init) == "function" then
+            if
+                type(plugin_config) == "table"
+                and type(plugin_config.init) == "function"
+            then
                 plugin_config.init()
             end
         end
