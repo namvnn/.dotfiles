@@ -1,4 +1,5 @@
 AI|[Reading] The Bitter Lesson|http://incompleteideas.net/IncIdeas/BitterLesson.html
+AI|[Tool] Detect AI-generated images|https://sightengine.com/detect-ai-generated-images
 AI|[Tool] llamafile: Distribute and run LLMs with a single file|https://github.com/mozilla-ai/llamafile
 AI|[Tool] Your AI-Free Content Deserves a Badge|https://notbyai.fyi
 Assembly|flat assembler: An assembler for x86 architecture processors|https://flatassembler.net
@@ -57,6 +58,7 @@ Clojure|[Talk] Transcripts of Clojure-related talks|https://github.com/matthiasn
 Clojure|[Tool] Babashka: A native, fast starting Clojure interpreter for scripting|https://babashka.org
 Clojure|[Tool] Figwheel: Build your ClojureScript code, and hot load it as you are coding|https://figwheel.org
 Clojure|[Tool] Glojure: A Clojure interpreter hosted on Go, with extensible interop support|https://github.com/glojurelang/glojure
+Clojure|[Tool] jank: Native Clojure, Hand-crafted compiler, Unprecedented C++ interop|
 Clojure|[Tool] Joker: A small interpreted dialect of Clojure written in Go, and a Clojure(Script) linter|https://joker-lang.org
 Clojure|[Tool] Jolt: A self-hosted Clojure implementation that runs on a portable Scheme layer|https://jolt-lang.net
 Clojure|[Tool] let-go: A Clojure dialect with a bytecode compiler and stack VM|https://github.com/nooga/let-go
@@ -293,6 +295,7 @@ Network|[Tool] aria2: A lightweight multi-protocol & multi-source command-line d
 OCaml|[Lib] Daniel Bünzli's Libraries|https://erratique.ch/software
 OCaml|[Lib] Ocsigen: A complete framework for developing Web and mobile apps using cutting edge techniques|https://ocsigen.org
 Photography|[Tool] Photons to Photos: Your trusted source for independent sensor data|https://photonstophotos.net
+Photography|[Tool] TinEye: Reverse Image Search|https://tineye.com
 Programmer|Dmitry V. Sokolov|https://github.com/ssloy
 Programmer|Fabrice Bellard|https://bellard.org
 Programmer|Matt Godbolt|https://xania.org
@@ -459,6 +462,7 @@ TypeScript/JavaScript|[Tool] tsdown: The elegant bundler for libraries powered b
 TypeScript/JavaScript|[Tool] tsup: The simplest and fastest way to bundle your TypeScript libraries|https://tsup.egoist.dev
 Videography|[Learning] ffmprovisr: Making FFmpeg Easier|https://amiaopensource.github.io/ffmprovisr
 Videography|[Tool] DaVinci Resolve: The world's only solution that combines editing, color correction, visual effects, motion graphics and audio post production all in one software tool|https://blackmagicdesign.com/products/davinciresolve
+Videography|[Tool] Kdenlive: KDE Non-Linear Video Editor|https://kdenlive.org
 Videography|[Tool] Motion Canvas: A library for creating animated videos using the Canvas API|https://motioncanvas.io
 Vim/Neovim|[Learning] Vim Cheat Sheet|https://vim.rtorr.com
 Vim/Neovim|[Reading] Load launch.json debug configs even for JS based languages|https://reddit.com/r/neovim/s/p5tYkzKJdi
