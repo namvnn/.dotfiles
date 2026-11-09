@@ -142,6 +142,11 @@ augroup cpp_ft
     autocmd FileType cpp let b:start    = 'c++ -std=c++23 -o %:p:r % && %:p:r'
 augroup END
 
+augroup clojure_ft
+    autocmd!
+    autocmd FileType clojure if executable('cljfmt') | setlocal formatprg=cljfmt\ fix\ - | endif
+augroup END
+
 augroup python_ft
     autocmd!
     autocmd FileType python if executable('ruff') | setlocal formatprg=ruff\ format\ - | endif
