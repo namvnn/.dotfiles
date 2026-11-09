@@ -1,6 +1,7 @@
 aspire: A code-first orchestration and observability layer for distributed applications
 babashka: A native, fast starting Clojure interpreter for scripting
 chafa: A command-line utility that converts image data into graphics formats or ANSI/Unicode character art suitable for display in a terminal
+cljfmt: A Clojure code formatter
 cmake: A command-line tool to manage building of source code
 colima: A command-line tool that manages container runtimes on macOS (and Linux) with minimal setup
 croc: A command-line tool that easily and securely sends things from one computer to another
@@ -33,7 +34,6 @@ typos-lsp: A low false-positive source code spell checking language server
 typst: A markup-based typesetting system that is powerful and easy to learn.
 universal-ctags: A maintained ctags implementation
 uv: An extremely fast Python package installer and resolver
-vim: A greatly improved version of the good old UNIX editor Vi
 visidata: A terminal interface for exploring and arranging tabular data
 vscode-langservers-extracted: HTML/CSS/JSON language servers extracted from vscode.
 watchexec: A command-line tool that executes commands in response to file modifications
