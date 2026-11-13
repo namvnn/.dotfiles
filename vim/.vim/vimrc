@@ -22,6 +22,7 @@ set autoread
 set clipboard=unnamed,unnamedplus
 set colorcolumn=80
 set completeopt=fuzzy,menu,menuone,popup,noselect
+set cursorline
 set grepformat=%f:%l:%c:%m
 set grepprg=rg\ --vimgrep
 set hidden
