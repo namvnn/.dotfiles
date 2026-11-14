@@ -77,8 +77,11 @@ CSS|[Tool] CSS Spring Easing Generator|https://kvin.me/css-springs
 C|[Docs] The Open Group Standard Base Specifications|https://pubs.opengroup.org/onlinepubs
 C|[Learning] Beej's Guide to C Programming - Library Reference|https://beej.us/guide/bgclr
 C|[Learning] Beej's Guide to C Programming|https://beej.us/guide/bgc
+C|[Learning] Build Your Own Text Editor|https://viewsourcecode.org/snaptoken/kilo
 C|[Learning] Making a CLAP audio plugin|https://nakst.gitlab.io/tutorial/clap-part-1.html
 C|[Learning] Making a simple HTTP webserver in C|https://bruinsslot.jp/post/simple-http-webserver-in-c
+C|[Learning] Memory Allocators 101 - Write a simple memory allocator|https://arjunsreedharan.org/post/148675821737/memory-allocators-101-write-a-simple-memory
+C|[Learning] Write a Shell in C|https://brennan.io/2015/01/16/write-a-shell-in-c
 C|[Learning] Writing a toy UI library|https://nakst.gitlab.io/tutorial/ui-part-1.html
 C|[Lib] cJSON: Ultralightweight JSON parser in ANSI C|https://github.com/DaveGamble/cJSON
 C|[Lib] facil.io: A C micro-framework for web applications|https://facil.io
@@ -90,6 +93,7 @@ C|[Lib] single_file_libs: List of single-file C/C++ libraries|https://github.com
 C|[Lib] sokol: Minimal cross-platform standalone C headers|https://github.com/floooh/sokol
 C|[Lib] stb: single-file public domain (or MIT licensed) libraries|https://github.com/nothings/stb
 C|[Lib] vaqt: High-precision date/time|https://github.com/nalgeon/vaqt
+C|[Lib] yyjson: A high performance JSON library written in ANSI C|https://github.com/ibireme/yyjson
 C|[Lib] zpl: A collection of single-file header-only libraries|https://github.com/zpl-c
 C|[Reading] Awesome C|https://github.com/oz123/awesome-c
 C|[Reading] MallocInternals|https://sourceware.org/glibc/wiki/MallocInternals
@@ -352,6 +356,9 @@ Programming|[Tool] prefix.dev: Building blazing fast software package management
 Programming|[Tool] Vim: A highly configurable text editor built to make creating and changing any kind of text very efficient|https://www.vim.org
 Programming|[Tool] Wandbox: A multi-language online compiler|https://wandbox.org
 Programming|[Tool] Zstandard: Fast real-time compression algorithm|https://facebook.github.io/zstd
+Prolog|[Book] Programming in Prolog: Using The Iso Standard|https://amazon.com.au/dp/3540006788
+Prolog|[Book] Sterling: The Art Of Prolog Advanced Programming Techniques|https://amazon.com.au/dp/0262192500
+Prolog|[Learning] The Power of Prolog|https://metalevel.at/prolog
 Research|How to Read an Academic Article|https://organizationsandmarkets.com/2010/08/31/how-to-read-an-academic-article
 Reverse Engineering|[Tool] Ghidra: A software reverse engineering (SRE) framework created and maintained by the National Security Agency Research Directorate|https://github.com/NationalSecurityAgency/ghidra
 Reverse Engineering|[Tool] ImHex: A Hex Editor, a tool to display, decode and analyze binary data to reverse engineer their format, extract information or patch values in them|https://imhex.werwolv.net
