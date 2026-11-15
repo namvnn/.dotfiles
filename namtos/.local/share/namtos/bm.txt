@@ -373,6 +373,8 @@ Rust|[Learning] Rust Embedded Drivers (RED)|https://red.implrust.com
 Rust|[Learning] Rust Language Cheat Sheet|https://cheats.rs
 Rust|[Learning] Rust Practise Questions|https://rust-unofficial.github.io/rust-practise-questions
 Rust|[Learning] Rust 🦀 and WebAssembly 🕸|https://rustwasm.github.io/docs/book
+Rust|[Lib] Actix Web: A powerful, pragmatic, and extremely fast web framework|https://github.com/actix/actix-web
+Rust|[Lib] axum: An HTTP routing and request-handling library that focuses on ergonomics and modularity|https://github.com/tokio-rs/axum
 Rust|[Lib] Blessed.rs: Very commonly used crates that everyone should know about|https://blessed.rs
 Rust|[Lib] cuda-oxide: A custom rustc backend for compiling GPU kernels in pure Rust|https://github.com/NVlabs/cuda-oxide
 Rust|[Lib] Dioxus: The Rust framework for building fullstack web, desktop and mobile apps|https://dioxuslabs.com
@@ -381,9 +383,11 @@ Rust|[Lib] egui: An easy-to-use immediate mode GUI in Rust that runs on both web
 Rust|[Lib] iced: A cross-platform GUI library for Rust focused on simplicity and type-safety|https://iced.rs
 Rust|[Lib] Leptos: A cutting-edge Rust framework for the modern web|https://dioxuslabs.com
 Rust|[Lib] Lib.rs: A catalog of programs and libraries written in the Rust programming language|https://lib.rs
+Rust|[Lib] miniserve: A CLI tool to serve files and dirs over HTTP|https://github.com/svenstaro/miniserve
 Rust|[Lib] oxichrome: Write type-safe browser extensions with proc macros and Leptos entirely in Rust|https://oxichrome.dev
 Rust|[Lib] Polars: A blazingly fast DataFrame library for manipulating structured data|https://docs.pola.rs
 Rust|[Lib] Polars: Extremely fast Query Engine for DataFrames|https://pola.rs
+Rust|[Lib] Rocket: An async web framework for Rust with a focus on usability, security, extensibility, and speed|https://github.com/rwf2/Rocket/tree/v0.5.2
 Rust|[Lib] Servo: A web browser rendering engine written in Rust|https://servo.org
 Rust|[Lib] Tauri: Create small, fast, secure, cross-platform applications|https://tauri.app
 Rust|[Lib] Xilem: A high-level architecture for writing GUI apps in Rust|https://github.com/linebender/xilem
