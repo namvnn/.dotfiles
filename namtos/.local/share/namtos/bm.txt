@@ -21,51 +21,44 @@ Biomedicine|PubMed Central|https://pmc.ncbi.nlm.nih.gov
 Biomedicine|PubMed|https://pubmed.ncbi.nlm.nih.gov
 C++|[Learning] C++ Core Guidelines|https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines
 C++|[Learning] getcracked: The quant interview is its own beast|https://getcracked.io
-C++|[Lib] FTXUI: A simple cross-platform C++ library for terminal based user interfaces|https://arthursonzogni.github.io/FTXUI
-C++|[Lib] RxTerm: A C++ library for functional-reactive terminals. RxTerm is a lean alternative to ncurses for many applications|https://github.com/LoopPerfect/rxterm
-C++|[Lib] SMK: Simple multimedia kit - C++ WebAssembly|https://github.com/ArthurSonzogni/smk
+C++|[Lib] ftxui: A simple cross-platform C++ library for terminal based user interfaces|https://arthursonzogni.github.io/FTXUI
+C++|[Lib] rxterm: A C++ library for functional-reactive terminals. RxTerm is a lean alternative to ncurses for many applications|https://github.com/LoopPerfect/rxterm
+C++|[Lib] smk: Simple multimedia kit - C++ WebAssembly|https://github.com/ArthurSonzogni/smk
 C++|[Podcast] CppCast: The first podcast by C++ developers for C++ developers|https://cppcast.com
 C++|[Reading] C++ Stories|https://cppstories.com
 C++|[Reading] ISO C++ Blog|https://isocpp.org/blog
 C++|[Reading] Simplify C++: Write clean and maintainable C++|https://arne-mertz.de
 C++|[Reading] Understanding Smart Pointers in C++|https://thecodinggopher.substack.com/p/understanding-smart-pointers-in-c
 C++|[Tool] Coliru: C++ online compiler|https://coliru.stacked-crooked.com
+Clojure|[Docs] ClojureStar: Discover, compare and try out dialects from the Clojure family of languages|https://clojure.cc
 Clojure|[Docs] Dewey: Index of Clojure libraries available on GitHub|https://github.com/phronmophobic/dewey
-Clojure|[Docs] seqfind: A Clojure(Script) code explorer designed to help the community learn by example|https://seqfind.com
+Clojure|[Docs] The Clojure Toolbox: A categorised directory of libraries and tools|https://www.clojure-toolbox.com
 Clojure|[Learning] Clojure for the Brave and True|https://braveclojure.com/clojure-for-the-brave-and-true
 Clojure|[Learning] Clojure-doc: A community-driven documentation site for Clojure|https://clojure-doc.org
 Clojure|[Learning] Elements of Clojure|https://elementsofclojure.com
 Clojure|[Learning] Practicalli: Online books, articles and live coding videos for software engineering, with a focus on Clojure|https://practical.li
-Clojure|[Lib] Biff: A full-stack web framework|https://biffweb.com
-Clojure|[Lib] Buddy: Security library|https://github.com/funcool/buddy
+Clojure|[Learning] Transcripts of Clojure-related talks|https://github.com/matthiasn/talk-transcripts
+Clojure|[Lib] biff: A full-stack web framework|https://biffweb.com
+Clojure|[Lib] buddy: Security library|https://github.com/funcool/buddy
 Clojure|[Lib] cli: Command line parser with good subcommand and help handling|https://github.com/lambdaisland/cli
-Clojure|[Lib] CLJ Commons: A community-led project to build up the supporting infrastructure around Clojure|https://clj-commons.org
+Clojure|[Lib] clj-commons: A community-led project to build up the supporting infrastructure around Clojure|https://clj-commons.org
 Clojure|[Lib] cljfx: Declarative, functional and extensible wrapper of JavaFX inspired by react and re-frame|https://github.com/cljfx
-Clojure|[Lib] Component: Managed lifecycle of stateful objects|https://github.com/stuartsierra/component
-Clojure|[Lib] Duct: A server-side framework|https://duct-framework.org
-Clojure|[Lib] Honey SQL: Turn Clojure data structures into SQL|https://github.com/seancorfield/honeysql
-Clojure|[Lib] Kit: A lightweight, modular framework for scalable web development|https://kit-clj.github.io
+Clojure|[Lib] component: Managed lifecycle of stateful objects|https://github.com/stuartsierra/component
+Clojure|[Lib] duct: A server-side framework|https://duct-framework.org
+Clojure|[Lib] honeysql: Turn Clojure data structures into SQL|https://github.com/seancorfield/honeysql
+Clojure|[Lib] kit: A lightweight, modular framework for scalable web development|https://kit-clj.github.io
 Clojure|[Lib] malli: High-performance data-driven schemas|https://github.com/metosin/malli
 Clojure|[Lib] next.jdbc: A modern low-level Clojure wrapper for JDBC-based access to databases|https://github.com/seancorfield/next-jdbc
-Clojure|[Lib] Pedestal: A sturdy and reliable base for services, APIs, and applications|https://pedestal.io
-Clojure|[Lib] Plotje: Composable plotting|https://scicloj.github.io/plotje
-Clojure|[Lib] Reagami: A minimal zero-deps Reagent-like in Squint and ClojureScript|https://github.com/borkdude/reagami
-Clojure|[Lib] Reagent: Minimalistic React for ClojureScript|https://reagent-project.github.io
+Clojure|[Lib] pedestal: A sturdy and reliable base for services, APIs, and applications|https://pedestal.io
+Clojure|[Lib] plotje: Composable plotting|https://scicloj.github.io/plotje
+Clojure|[Lib] reagami: A minimal zero-deps Reagent-like in Squint and ClojureScript|https://github.com/borkdude/reagami
+Clojure|[Lib] reagent: Minimalistic React for ClojureScript|https://reagent-project.github.io
 Clojure|[Lib] reitit: A fast data-driven router|https://github.com/metosin/reitit
-Clojure|[Lib] Ring: A Clojure web applications library inspired by Python's WSGI and Ruby's Rack|https://github.com/ring-clojure/ring
+Clojure|[Lib] ring: A Clojure web applications library inspired by Python's WSGI and Ruby's Rack|https://github.com/ring-clojure/ring
 Clojure|[Lib] rj9a: An enhanced version of jetty adapter for ring|https://github.com/sunng87/ring-jetty9-adapter
-Clojure|[Talk] Transcripts of Clojure-related talks|https://github.com/matthiasn/talk-transcripts
-Clojure|[Tool] Babashka: A native, fast starting Clojure interpreter for scripting|https://babashka.org
-Clojure|[Tool] Figwheel: Build your ClojureScript code, and hot load it as you are coding|https://figwheel.org
-Clojure|[Tool] Glojure: A Clojure interpreter hosted on Go, with extensible interop support|https://github.com/glojurelang/glojure
-Clojure|[Tool] jank: Native Clojure, Hand-crafted compiler, Unprecedented C++ interop|
-Clojure|[Tool] Joker: A small interpreted dialect of Clojure written in Go, and a Clojure(Script) linter|https://joker-lang.org
-Clojure|[Tool] Jolt: A self-hosted Clojure implementation that runs on a portable Scheme layer|https://jolt-lang.net
-Clojure|[Tool] let-go: A Clojure dialect with a bytecode compiler and stack VM|https://github.com/nooga/let-go
+Clojure|[Tool] figwheel: Build your ClojureScript code, and hot load it as you are coding|https://figwheel.org
 Clojure|[Tool] shadow-cljs: Compile your ClojureScript code with a focus on simplicity and ease of use|https://github.com/thheller/shadow-cljs
-Clojure|[Tool] Squint: A light-weight dialect of ClojureScript with a compiler and standard library|https://github.com/squint-cljs/squint
-Clojure|[Tool] The Clojure Toolbox: A categorised directory of libraries and tools|https://www.clojure-toolbox.com
-Common Lisp|[Lib] The Barium Toolkit: An X Window System toolkit for Common|https://tomscii.sig7.se/barium
+Common Lisp|[Lib] barium: An X Window System toolkit for Common|https://tomscii.sig7.se/barium
 Common Lisp|[Tool] Coalton: An efficient, statically typed functional programming language that supercharges Common Lisp|https://coalton-lang.github.io
 Common Lisp|[Tool] ICL: Interactive Common Lisp, An Enhanced REPL|https://github.com/atgreen/icl
 CSS|[Learning] Every Layout|https://every-layout.dev
@@ -125,8 +118,8 @@ Data Structure and Algorithm|[Problems] LeetCode|https://leetcode.com
 Data Structure and Algorithm|[Problems] NeetCode|https://neetcode.io
 Data Structure and Algorithm|[Problems] Project Euler|https://projecteuler.net
 Database|[Learning] Let's Build a Simple Database|https://cstack.github.io/db_tutorial
-Database|[Lib] Honker: Durable queues, streams, pub/sub, and time-trigger scheduling — inside your SQLite file|https://honker.dev
-Database|[Lib] PocketBase: Open Source realtime backend in 1 file|https://pocketbase.io
+Database|[Lib] honker: Durable queues, streams, pub/sub, and time-trigger scheduling — inside your SQLite file|https://honker.dev
+Database|[Lib] pocketbase: Open Source realtime backend in 1 file|https://pocketbase.io
 Embedded|[Tool] Wokwi: World's most advanced ESP32 simulator|https://wokwi.com
 English|"only a few" vs. "(very) few"|https://ell.stackexchange.com/questions/280182/only-a-few-vs-very-few
 English|Cambridge Dictionary|https://dictionary.cambridge.org
@@ -160,19 +153,19 @@ Game Development|[Game] Mini Royale|https://miniroyale.io
 Game Development|[Learning] DOOM Open Source Release|https://github.com/id-Software/DOOM
 Game Development|[Learning] Game Engine Black Book DOOM|https://fabiensanglard.net/gebbdoom
 Game Development|[Learning] Handmade Hero|https://guide.handmadehero.org
-Game Development|[Lib] Ark: An archetype-based Entity Component System for Go|https://mlange-42.github.io/ark
-Game Development|[Lib] Ebitengine: A dead simple 2D game engine for Go|https://ebitengine.org
-Game Development|[Lib] Flecs: A fast entity component system (ECS) for C & C++|https://flecs.dev/flecs
-Game Development|[Lib] Heaps.io: Heaps.io is a mature cross platform graphics engine designed for high performance games|https://heaps.io
+Game Development|[Lib] ark: An archetype-based Entity Component System for Go|https://mlange-42.github.io/ark
+Game Development|[Lib] ebitengine: A dead simple 2D game engine for Go|https://ebitengine.org
+Game Development|[Lib] flecs: A fast entity component system (ECS) for C & C++|https://flecs.dev/flecs
+Game Development|[Lib] heaps.io: Heaps.io is a mature cross platform graphics engine designed for high performance games|https://heaps.io
 Game Development|[Lib] jMonkeyEngine: A 3D game engine for adventurous Java developers|https://jmonkeyengine.org
 Game Development|[Lib] libGDX: libGDX is a cross-platform Java game development framework based on OpenGL (ES)|https://libgdx.com
 Game Development|[Lib] libtcod: A collection of tools and algorithms for developing traditional roguelikes|https://github.com/libtcod/libtcod
-Game Development|[Lib] LÖVE: An *awesome* framework you can use to make 2D games in Lua|https://love2d.org
+Game Development|[Lib] löve: An awesome framework you can use to make 2D games in Lua|https://love2d.org
 Game Development|[Lib] macroquad: A simple and easy to use game library for Rust programming language|https://github.com/not-fl3/macroquad
-Game Development|[Lib] PlayCanvas: A web graphics creation platform|https://developer.playcanvas.com
+Game Development|[Lib] playcanvas: A web graphics creation platform|https://developer.playcanvas.com
 Game Development|[Lib] raylib: a simple and easy-to-use library to enjoy videogames programming|https://raylib.com
-Game Development|[Lib] SDL: A cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D|https://libsdl.org
-Game Development|[Lib] SFML: SFML provides a simple interface to the various components of your PC, to ease the development of games and multimedia applications|https://sfml-dev.org
+Game Development|[Lib] sdl: A cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D|https://libsdl.org
+Game Development|[Lib] sfml: SFML provides a simple interface to the various components of your PC, to ease the development of games and multimedia applications|https://sfml-dev.org
 Game Development|[Study] An experimental Minecraft Server in Clojure|https://github.com/Nozistance/collider
 Game Development|[Tool] A list of Game Development resources to make magic happen|https://github.com/ellisonleao/magictools
 Git|[Guide] Scoped Commits: A commit format focused on what matters|https://scopedcommits.com
@@ -183,7 +176,7 @@ Git|[Reading] Git rebase --onto an overview|https://womanonrails.com/git-rebase-
 Git|[Reading] How do I fetch all Git branches?|https://stackoverflow.com/a/10312587
 Git|[Reading] Stop Using Conventional Commits|https://sumnerevans.com/posts/software-engineering/stop-using-conventional-commits
 Git|[Snippet] Script to remove a range of commits from all branches in a given remote|https://gist.github.com/pfrenssen/1010a92ffa3e2abfdaec
-Gleam|[Lib] Lustre: Create HTML templates, single page applications, Web Components, and real-time server components|https://lustre.hexdocs.pm
+Gleam|[Lib] lustre: Create HTML templates, single page applications, Web Components, and real-time server components|https://lustre.hexdocs.pm
 Go|[Fun] Pure Go minimal Doom implementation|https://github.com/AndreRenaud/Gore
 Go|[Learning] 100 Go Mistakes and How to Avoid Them|https://100go.co
 Go|[Learning] Gist of Go: Concurrency|https://antonz.org/go-concurrency
@@ -191,21 +184,21 @@ Go|[Learning] Go Scheduler|https://nghiant3223.github.io/2025/04/15/go-scheduler
 Go|[Learning] Practical Go Lessons|https://practical-go-lessons.com
 Go|[Lib] asciigraph: Go package to make lightweight ASCII line graph ╭┈╯ in command line apps with no other dependencies|https://pkg.go.dev/github.com/guptarohit/asciigraph
 Go|[Lib] chi: A lightweight, idiomatic and composable router for building Go HTTP services|https://go-chi.io
-Go|[Lib] Chroma: A general purpose syntax highlighter in pure Go|https://github.com/alecthomas/chroma
-Go|[Lib] Cobra: A library for creating powerful modern CLI applications|https://cobra.dev
+Go|[Lib] chroma: A general purpose syntax highlighter in pure Go|https://github.com/alecthomas/chroma
+Go|[Lib] cobra: A library for creating powerful modern CLI applications|https://cobra.dev
 Go|[Lib] do: A dependency injection toolkit|https://do.samber.dev
-Go|[Lib] Folio: A modern PDF library|https://github.com/carlos7ags/folio
-Go|[Lib] Fx: A dependency injection system for Go|https://uber-go.github.io/fx
+Go|[Lib] folio: A modern PDF library|https://github.com/carlos7ags/folio
+Go|[Lib] fx: A dependency injection system for Go|https://uber-go.github.io/fx
 Go|[Lib] gpdf: A pure Go, zero-dependency PDF generation library|https://github.com/gpdf-dev/gpdf
-Go|[Lib] Kong: A command-line parser|https://github.com/alecthomas/kong
+Go|[Lib] kong: A command-line parser|https://github.com/alecthomas/kong
 Go|[Lib] lo: A Lodash-style Go library|https://lo.samber.dev
 Go|[Lib] mo: Monads and popular FP abstractions|https://pkg.go.dev/github.com/samber/mo
 Go|[Lib] oops: Error handling library with context, assertion, stack trace and source fragments|https://pkg.go.dev/github.com/samber/oops
 Go|[Lib] ro: Reactive Programming paradigm for Go|https://ro.samber.dev
-Go|[Lib] Standard Go Project Layout|https://github.com/golang-standards/project-layout
-Go|[Lib] Ultimate Golang Makefile Template|https://github.com/crazywolf132/ultimate-gomake
+Go|[Lib] project-layout: Standard Go Project Layout|https://github.com/golang-standards/project-layout
+Go|[Lib] ultimate Golang Makefile Template|https://github.com/crazywolf132/ultimate-gomake
 Go|[Lib] urfave/cli: A eclarative, simple, fast, and fun package for building command line tools|https://cli.urfave.org
-Go|[Lib] Wails: Build beautiful cross-platform applications|https://wails.io
+Go|[Lib] wails: Build beautiful cross-platform applications|https://wails.io
 Go|[Reading] Goroutines in Go: A Practical Guide to Concurrency|https://getstream.io/blog/goroutines-go-concurrency-guide
 Go|[Reading] How does struct{} take zero bytes in Go|https://bud1m.com/blog/go-empty-struct
 Go|[Reading] The Anatomy of a Go Package. Structure, Imports, and Idioms|https://thecodinggopher.substack.com/p/the-anatomy-of-a-go-package-structure
@@ -224,7 +217,7 @@ Graphics|[Learning] TinyKABOOM: KABOOM! in 180 lines of bare C++|https://github.
 Graphics|[Learning] TinyRayCaster: Old-school FPS in a weekend in 486 lines of C++|https://github.com/ssloy/tinyraycaster
 Graphics|[Learning] TinyRayTracer: Understandable RayTracing in 256 lines of bare C++|https://github.com/ssloy/tinyraytracer
 Graphics|[Learning] TinyRenderer: Software rendering in 500 lines of bare C++|https://haqr.eu/tinyrenderer
-Graphics|[Lib] TypeGPU: A modular and open-ended toolkit for WebGPU|https://docs.swmansion.com/TypeGPU
+Graphics|[Lib] typegpu: A modular and open-ended toolkit for WebGPU|https://docs.swmansion.com/TypeGPU
 Graphics|[Platform] Shadertoy|https://shadertoy.com
 Graphics|[Tool] Blender: A free and open-source 3D computer graphics software|https://blender.org
 Graphics|[Tool] GIMP: A free and open-source image editor|https://gimp.org
@@ -242,8 +235,8 @@ Home|Ben Adams Furniture Studio|https://benadams.studio
 Home|Home Clearance|https://homeclearance.com.au
 Home|How to Read Laundry Symbols|https://tide.com/en-us/how-to-wash-clothes/how-to-do-laundry/how-to-read-laundry-symbols
 Home|The Free Repair Guide|https://ifixit.com
-Java|[Lib] Micronaut: A modern, JVM-based, full-stack framework|https://micronaut.io
-Java|[Lib] Quarkus: Supersonic Subatomic Java|https://quarkus.io
+Java|[Lib] micronaut: A modern, JVM-based, full-stack framework|https://micronaut.io
+Java|[Lib] quarkus: Supersonic Subatomic Java|https://quarkus.io
 Java|[Reading] Java 21 Virtual Threads (Project Loom) vs. Reactive Programming: A Practical Guide for Modern Developers|https://archive.md/x71uq
 Java|[Reading] Java 21 Virtual Threads - Dude, Where's My Lock?|https://netflixtechblog.com/java-21-virtual-threads-dude-wheres-my-lock-3052540e231d
 Java|[Reading] Virtual Threads|https://docs.oracle.com/en/java/javase/21/core/virtual-threads.html
@@ -296,8 +289,8 @@ Network|[Learning] Beej's Guide to Network Programming|https://beej.us/guide/bgn
 Network|[Learning] Beej's Guide to Networking Concepts|https://beej.us/guide/bgnet0
 Network|[Learning] HTTP Made Really Easy|https://jmarshall.com/easy/http
 Network|[Tool] aria2: A lightweight multi-protocol & multi-source command-line download utility|https://aria2.github.io
-OCaml|[Lib] Daniel Bünzli's Libraries|https://erratique.ch/software
-OCaml|[Lib] Ocsigen: A complete framework for developing Web and mobile apps using cutting edge techniques|https://ocsigen.org
+OCaml|[Lib] erratique.ch/software: Daniel Bünzli's Software|https://erratique.ch/software
+OCaml|[Lib] ocsigen: A complete framework for developing Web and mobile apps using cutting edge techniques|https://ocsigen.org
 Photography|[Tool] Photons to Photos: Your trusted source for independent sensor data|https://photonstophotos.net
 Photography|[Tool] TinEye: Reverse Image Search|https://tineye.com
 Programmer|Dmitry V. Sokolov|https://github.com/ssloy
@@ -373,24 +366,24 @@ Rust|[Learning] Rust Embedded Drivers (RED)|https://red.implrust.com
 Rust|[Learning] Rust Language Cheat Sheet|https://cheats.rs
 Rust|[Learning] Rust Practise Questions|https://rust-unofficial.github.io/rust-practise-questions
 Rust|[Learning] Rust 🦀 and WebAssembly 🕸|https://rustwasm.github.io/docs/book
-Rust|[Lib] Actix Web: A powerful, pragmatic, and extremely fast web framework|https://github.com/actix/actix-web
+Rust|[Lib] actix-web: A powerful, pragmatic, and extremely fast web framework|https://github.com/actix/actix-web
 Rust|[Lib] axum: An HTTP routing and request-handling library that focuses on ergonomics and modularity|https://github.com/tokio-rs/axum
-Rust|[Lib] Blessed.rs: Very commonly used crates that everyone should know about|https://blessed.rs
+Rust|[Lib] blessed: Very commonly used crates that everyone should know about|https://blessed.rs
 Rust|[Lib] cuda-oxide: A custom rustc backend for compiling GPU kernels in pure Rust|https://github.com/NVlabs/cuda-oxide
-Rust|[Lib] Dioxus: The Rust framework for building fullstack web, desktop and mobile apps|https://dioxuslabs.com
-Rust|[Lib] Druid: A data-first Rust-native GUI design toolkit|https://github.com/linebender/druid
+Rust|[Lib] dioxus: The Rust framework for building fullstack web, desktop and mobile apps|https://dioxuslabs.com
+Rust|[Lib] druid: A data-first Rust-native GUI design toolkit|https://github.com/linebender/druid
 Rust|[Lib] egui: An easy-to-use immediate mode GUI in Rust that runs on both web and native|https://egui.rs
 Rust|[Lib] iced: A cross-platform GUI library for Rust focused on simplicity and type-safety|https://iced.rs
-Rust|[Lib] Leptos: A cutting-edge Rust framework for the modern web|https://dioxuslabs.com
-Rust|[Lib] Lib.rs: A catalog of programs and libraries written in the Rust programming language|https://lib.rs
+Rust|[Lib] leptos: A cutting-edge Rust framework for the modern web|https://dioxuslabs.com
+Rust|[Lib] lib.rs: A catalog of programs and libraries written in the Rust programming language|https://lib.rs
 Rust|[Lib] miniserve: A CLI tool to serve files and dirs over HTTP|https://github.com/svenstaro/miniserve
 Rust|[Lib] oxichrome: Write type-safe browser extensions with proc macros and Leptos entirely in Rust|https://oxichrome.dev
-Rust|[Lib] Polars: A blazingly fast DataFrame library for manipulating structured data|https://docs.pola.rs
-Rust|[Lib] Polars: Extremely fast Query Engine for DataFrames|https://pola.rs
-Rust|[Lib] Rocket: An async web framework for Rust with a focus on usability, security, extensibility, and speed|https://github.com/rwf2/Rocket/tree/v0.5.2
-Rust|[Lib] Servo: A web browser rendering engine written in Rust|https://servo.org
-Rust|[Lib] Tauri: Create small, fast, secure, cross-platform applications|https://tauri.app
-Rust|[Lib] Xilem: A high-level architecture for writing GUI apps in Rust|https://github.com/linebender/xilem
+Rust|[Lib] polars: A blazingly fast DataFrame library for manipulating structured data|https://docs.pola.rs
+Rust|[Lib] polars: Extremely fast Query Engine for DataFrames|https://pola.rs
+Rust|[Lib] rocket: An async web framework for Rust with a focus on usability, security, extensibility, and speed|https://github.com/rwf2/Rocket/tree/v0.5.2
+Rust|[Lib] servo: A web browser rendering engine written in Rust|https://servo.org
+Rust|[Lib] tauri: Create small, fast, secure, cross-platform applications|https://tauri.app
+Rust|[Lib] xilem: A high-level architecture for writing GUI apps in Rust|https://github.com/linebender/xilem
 Rust|[Reading] Generating 1 Million PDFs in 10 Minutes|https://ersteiger.com/posts/rendering-one-million-pdfs
 Rust|[Reading] Master hexagonal architecture in Rust|https://howtocodeit.com/articles/master-hexagonal-architecture-rust
 Rust|[Tool] bacon: A background code checker|https://dystroy.org/bacon
@@ -437,28 +430,28 @@ TypeScript/JavaScript|[Learning] The 16-Line Pattern That Eliminates Dependency 
 TypeScript/JavaScript|[Learning] TypeScript Deep Dive|https://basarat.gitbook.io/typescript
 TypeScript/JavaScript|[Learning] What the heck is the event loop anyway? - Philip Roberts|https://youtu.be/8aGhZQkoFbQ
 TypeScript/JavaScript|[Learning] You Don't Need Lodash Underscore|https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore
-TypeScript/JavaScript|[Lib] ArkType: TypeScript's 1:1 validator, optimized from editor to runtime|https://arktype.io
+TypeScript/JavaScript|[Lib] arktype: TypeScript's 1:1 validator, optimized from editor to runtime|https://arktype.io
 TypeScript/JavaScript|[Lib] chokidar: Minimal and efficient cross-platform file watching library|https://github.com/paulmillr/chokidar
-TypeScript/JavaScript|[Lib] Effect: An ecosystem of tools to build robust applications in TypeScript|https://effect.website
+TypeScript/JavaScript|[Lib] effect: An ecosystem of tools to build robust applications in TypeScript|https://effect.website
 TypeScript/JavaScript|[Lib] es-toolkit: A modern JavaScript utility library that's 2-3 times faster and up to 97% smaller — a major upgrade to lodash|https://es-toolkit.dev
 TypeScript/JavaScript|[Lib] fp-ts: Functional programming in TypeScript|https://gcanti.github.io/fp-ts
-TypeScript/JavaScript|[Lib] Hono: A fast, lightweight web application framework, built on Web Standards|https://hono.dev
-TypeScript/JavaScript|[Lib] Legend-State: An extremely fast signal-based state library with fine-grained reactivity and a powerful sync system|https://legendapp.com/open-source/state
-TypeScript/JavaScript|[Lib] LZMA-JS: A JavaScript implementation of the Lempel-Ziv-Markov (LZMA) chain compression algorithm|https://github.com/LZMA-JS/LZMA-JS
+TypeScript/JavaScript|[Lib] hono: A fast, lightweight web application framework, built on Web Standards|https://hono.dev
+TypeScript/JavaScript|[Lib] legend-state: An extremely fast signal-based state library with fine-grained reactivity and a powerful sync system|https://legendapp.com/open-source/state
+TypeScript/JavaScript|[Lib] lzma-js: A JavaScript implementation of the Lempel-Ziv-Markov (LZMA) chain compression algorithm|https://github.com/LZMA-JS/LZMA-JS
 TypeScript/JavaScript|[Lib] neverthrow: Type-safe errors for TypeScript|https://github.com/supermacro/neverthrow
 TypeScript/JavaScript|[Lib] radashi: The modern, community-first TypeScript toolkit with all of the fast, readable, and minimal utility functions|https://radashi.js.org
-TypeScript/JavaScript|[Lib] Remeda: Fully written in TypeScript for powerful, type-safe, and functional utilities|https://remedajs.com
-TypeScript/JavaScript|[Lib] RxDB: A NoSQL database for JavaScript that runs directly in your app|https://rxdb.info
-TypeScript/JavaScript|[Lib] RxJS: Reactive Extensions Library for JavaScript|https://rxjs.dev
-TypeScript/JavaScript|[Lib] TinyBase: A reactive in-memory data store with persistence and synchronization for local-first|https://tinybase.org
+TypeScript/JavaScript|[Lib] remeda: Fully written in TypeScript for powerful, type-safe, and functional utilities|https://remedajs.com
+TypeScript/JavaScript|[Lib] rxdb: A NoSQL database for JavaScript that runs directly in your app|https://rxdb.info
+TypeScript/JavaScript|[Lib] rxjs: Reactive Extensions Library for JavaScript|https://rxjs.dev
+TypeScript/JavaScript|[Lib] tinyBase: A reactive in-memory data store with persistence and synchronization for local-first|https://tinybase.org
 TypeScript/JavaScript|[Lib] ts-essentials: All essential TypeScript types in one place 🤙|https://github.com/ts-essentials/ts-essentials
 TypeScript/JavaScript|[Lib] ts-pattern: The exhaustive Pattern Matching library for TypeScript, with smart type inference|https://github.com/gvergnaud/ts-pattern
 TypeScript/JavaScript|[Lib] ts-toolbelt: TypeScript's largest type utility library|https://github.com/millsp/ts-toolbelt
 TypeScript/JavaScript|[Lib] type-fest: A collection of essential TypeScript types|https://github.com/sindresorhus/type-fest
 TypeScript/JavaScript|[Lib] utility-types: Collection of utility types, complementing TypeScript built-in mapped types and aliases (think "lodash" for static types)|https://github.com/piotrwitek/utility-types
-TypeScript/JavaScript|[Lib] Valibot: The modular and type safe schema library for validating structural data|https://valibot.dev
+TypeScript/JavaScript|[Lib] valibot: The modular and type safe schema library for validating structural data|https://valibot.dev
 TypeScript/JavaScript|[Lib] validation-enhancer: The easiest, most lightweight validation system|https://gitlab.com/alistairldavidson/validation-enhancer
-TypeScript/JavaScript|[Lib] Zod: TypeScript-first schema validation with static type inference|https://zod.dev
+TypeScript/JavaScript|[Lib] zod: TypeScript-first schema validation with static type inference|https://zod.dev
 TypeScript/JavaScript|[Reading] An interesting kind of JavaScript memory leak|https://blog.meteor.com/an-interesting-kind-of-javascript-memory-leak-8b47d2e7f156
 TypeScript/JavaScript|[Reading] Jest: Finding the cause of a memory leak in Jest tests|https://making.close.com/posts/finding-the-cause-of-a-memory-leak-in-jest
 TypeScript/JavaScript|[Reading] Jest: Jest leaks memory from required modules with closures over imports|https://github.com/jestjs/jest/issues/6814
@@ -490,21 +483,21 @@ Web|[Learning] A Friendly Introduction to SVG|https://joshwcomeau.com/svg/friend
 Web|[Learning] Atomic Design|https://bradfrost.com/blog/post/atomic-web-design
 Web|[Learning] Fine-Grained Reactivity Fundamentals Series' Articles|https://dev.to/ryansolid/series/13735
 Web|[Learning] web.dev|https://web.dev
-Web|[Lib] Alpine.js: Your new, lightweight, JavaScript framework|https://alpinejs.dev
-Web|[Lib] Anime.js: JavaScript animation engine|https://animejs.com
-Web|[Lib] Blueprint: A React-based UI toolkit for building complex data-dense interfaces for desktop applications|https://blueprintjs.com
-Web|[Lib] Extension.js: Build browser extensions for Chrome, Edge, and Firefox with one modern workflow|https://extension.js.org
-Web|[Lib] GSAP: A wildly robust JavaScript animation library built for professionals|https://gsap.com
-Web|[Lib] Motion: A production-grade animation library for the web|https://motion.dev
+Web|[Lib] alpine.js: Your new, lightweight, JavaScript framework|https://alpinejs.dev
+Web|[Lib] anime.js: JavaScript animation engine|https://animejs.com
+Web|[Lib] blueprint: A React-based UI toolkit for building complex data-dense interfaces for desktop applications|https://blueprintjs.com
+Web|[Lib] extension.js: Build browser extensions for Chrome, Edge, and Firefox with one modern workflow|https://extension.js.org
+Web|[Lib] gsap: A wildly robust JavaScript animation library built for professionals|https://gsap.com
+Web|[Lib] motion: A production-grade animation library for the web|https://motion.dev
 Web|[Lib] nuqs: Type-safe search params state manager for React|https://nuqs.dev
-Web|[Lib] Pretext: Fast, accurate & comprehensive text measurement & layout|https://pretextjs.net
+Web|[Lib] pretext: Fast, accurate & comprehensive text measurement & layout|https://pretextjs.net
 Web|[Lib] react-admin: The best developer experience, lets you focus on business needs, and build delightful user interfaces|https://marmelab.com/react-admin
 Web|[Lib] react-spring: A spring physics based React animation library|https://react-spring.dev
-Web|[Lib] Valdi: A cross-platform UI framework that delivers native performance without sacrificing developer velocity|https://github.com/Snapchat/Valdi
-Web|[Lib] Vaul: Drawer component for React|https://vaul.emilkowal.ski
-Web|[Lib] WXT: Next-gen Web Extension Framework|https://wxt.dev
+Web|[Lib] valdi: A cross-platform UI framework that delivers native performance without sacrificing developer velocity|https://github.com/Snapchat/Valdi
+Web|[Lib] vaul: Drawer component for React|https://vaul.emilkowal.ski
+Web|[Lib] wxt: Next-gen Web Extension Framework|https://wxt.dev
 Web|[Lib] xyflow: Powerful open source libraries for building node-based UIs|https://xyflow.com
-Web|[Lib]: Datastar: The hypermedia framework|https://data-star.dev
+Web|[Lib] datastar: The hypermedia framework|https://data-star.dev
 Web|[Reading] Component testing|https://storybook.js.org/blog/component-testing
 Web|[Reading] Debugging WebSocket Hibernation with Cloudflare Durable Objects (and What I Learned)|https://thomasgauvin.com/writing/how-cloudflare-durable-objects-websocket-hibernation-works
 Web|[Reading] How to useMemo and useCallback: you can remove most of them|https://developerway.com/posts/how-to-use-memo-use-callback
@@ -533,6 +526,6 @@ Writing|[Tool] Vale: An open-source, command-line tool that brings your editoria
 Zig|[Learning] Learning Zig|https://openmymind.net/learning_zig
 Zig|[Learning] Ziglings: Learn the ⚡Zig programming language by fixing tiny broken programs|https://codeberg.org/ziglings/exercises
 Zig|[Lib] httpz: An HTTP/1.1 server for Zig|https://github.com/karlseguin/http.zig
-Zig|[Lib] Jetzig: An MIT licensed web framework written in Zig|https://jetzig.dev
-Zig|[Lib] Zap: A blazingly fast backends in Zig|https://github.com/zigzap/zap
+Zig|[Lib] jetzig: An MIT licensed web framework written in Zig|https://jetzig.dev
+Zig|[Lib] zap: A blazingly fast backends in Zig|https://github.com/zigzap/zap
 Zig|[Reading] Learning Zig's Build System using raylib|https://tung.github.io/posts/learning-zigs-build-system-using-raylib
