@@ -194,8 +194,8 @@ Go|[Lib] kong: A command-line parser|https://github.com/alecthomas/kong
 Go|[Lib] lo: A Lodash-style Go library|https://lo.samber.dev
 Go|[Lib] mo: Monads and popular FP abstractions|https://pkg.go.dev/github.com/samber/mo
 Go|[Lib] oops: Error handling library with context, assertion, stack trace and source fragments|https://pkg.go.dev/github.com/samber/oops
-Go|[Lib] ro: Reactive Programming paradigm for Go|https://ro.samber.dev
 Go|[Lib] project-layout: Standard Go Project Layout|https://github.com/golang-standards/project-layout
+Go|[Lib] ro: Reactive Programming paradigm for Go|https://ro.samber.dev
 Go|[Lib] ultimate Golang Makefile Template|https://github.com/crazywolf132/ultimate-gomake
 Go|[Lib] urfave/cli: A eclarative, simple, fast, and fun package for building command line tools|https://cli.urfave.org
 Go|[Lib] wails: Build beautiful cross-platform applications|https://wails.io
@@ -302,6 +302,7 @@ Programming|[Book] Crafting Interpreters|https://craftinginterpreters.com
 Programming|[Book] Freely available programming books|https://ebookfoundation.github.io/free-programming-books
 Programming|[Book] Structure and Interpretation of Computer Programs|https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_0/6515/sicp.zip/index.html
 Programming|[Book] The Architecture of Open Source Applications|https://aosabook.org
+Programming|[Guide] Command Line Interface Guidelines|https://clig.dev
 Programming|[Language] Amber: A programming language compiled into Bash Script|https://docs.amber-lang.com
 Programming|[Language] C3: The Ergonomic, Safe and Familiar Evolution of C|https://c3-lang.org
 Programming|[Language] Elm: A delightful language for reliable web applications|https://elm-lang.org
@@ -486,6 +487,7 @@ Web|[Learning] web.dev|https://web.dev
 Web|[Lib] alpine.js: Your new, lightweight, JavaScript framework|https://alpinejs.dev
 Web|[Lib] anime.js: JavaScript animation engine|https://animejs.com
 Web|[Lib] blueprint: A React-based UI toolkit for building complex data-dense interfaces for desktop applications|https://blueprintjs.com
+Web|[Lib] datastar: The hypermedia framework|https://data-star.dev
 Web|[Lib] extension.js: Build browser extensions for Chrome, Edge, and Firefox with one modern workflow|https://extension.js.org
 Web|[Lib] gsap: A wildly robust JavaScript animation library built for professionals|https://gsap.com
 Web|[Lib] motion: A production-grade animation library for the web|https://motion.dev
@@ -497,7 +499,6 @@ Web|[Lib] valdi: A cross-platform UI framework that delivers native performance 
 Web|[Lib] vaul: Drawer component for React|https://vaul.emilkowal.ski
 Web|[Lib] wxt: Next-gen Web Extension Framework|https://wxt.dev
 Web|[Lib] xyflow: Powerful open source libraries for building node-based UIs|https://xyflow.com
-Web|[Lib] datastar: The hypermedia framework|https://data-star.dev
 Web|[Reading] Component testing|https://storybook.js.org/blog/component-testing
 Web|[Reading] Debugging WebSocket Hibernation with Cloudflare Durable Objects (and What I Learned)|https://thomasgauvin.com/writing/how-cloudflare-durable-objects-websocket-hibernation-works
 Web|[Reading] How to useMemo and useCallback: you can remove most of them|https://developerway.com/posts/how-to-use-memo-use-callback
@@ -519,6 +520,8 @@ Writing|[Docs] Island.js: Vite & MDX powered static site generator based on isla
 Writing|[Docs] Starlight: Everything you need to build a stellar documentation website|https://starlight.astro.build
 Writing|[Docs] VitePress: Markdown to Beautiful Docs in Minutes|https://vitepress.dev
 Writing|[Docs] Zine: Fast, Scalable, and Flexible Static Site Generator|https://zine-ssg.io
+Writing|[Guide] Google developer documentation style guide|https://developers.google.com/style
+Writing|[Guide] Microsoft Writing Style Guide|https://learn.microsoft.com/en-us/style-guide
 Writing|[Slide] presenterm: A markdown terminal slideshow tool|https://mfontanini.github.io/presenterm
 Writing|[Slide] Slides: Terminal based presentation tool|https://maaslalani.com/slides
 Writing|[Slide] Slidev: Presentation Slides for Developers|https://sli.dev
