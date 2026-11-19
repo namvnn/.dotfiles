@@ -1,4 +1,4 @@
 [tools]
-"core:java" = "latest"
-"github:babashka/babashka" = "latest"
-"vfox:jdx/vfox-clojure" = "latest"
+"babashka" = "latest"
+"clojure" = "latest"
+"java" = "latest"
