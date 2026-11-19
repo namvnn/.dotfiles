@@ -53,9 +53,12 @@ Clojure|[Lib] pedestal: A sturdy and reliable base for services, APIs, and appli
 Clojure|[Lib] plotje: Composable plotting|https://scicloj.github.io/plotje
 Clojure|[Lib] reagami: A minimal zero-deps Reagent-like in Squint and ClojureScript|https://github.com/borkdude/reagami
 Clojure|[Lib] reagent: Minimalistic React for ClojureScript|https://reagent-project.github.io
+Clojure|[Lib] re-frame: A ClojureScript framework for building user interfaces, leveraging React|https://day8.github.io/re-frame
+Clojure|[Lib] replicant: A data-driven rendering library for Clojure(Script) that renders hiccup to DOM or to strings|https://replicant.fun
 Clojure|[Lib] reitit: A fast data-driven router|https://github.com/metosin/reitit
 Clojure|[Lib] ring: A Clojure web applications library inspired by Python's WSGI and Ruby's Rack|https://github.com/ring-clojure/ring
 Clojure|[Lib] rj9a: An enhanced version of jetty adapter for ring|https://github.com/sunng87/ring-jetty9-adapter
+Clojure|[Lib] http-kit: A simple, high-performance event-driven HTTP client+server for Clojure|https://github.com/http-kit/http-kit
 Clojure|[Tool] figwheel: Build your ClojureScript code, and hot load it as you are coding|https://figwheel.org
 Clojure|[Tool] shadow-cljs: Compile your ClojureScript code with a focus on simplicity and ease of use|https://github.com/thheller/shadow-cljs
 Common Lisp|[Lib] barium: An X Window System toolkit for Common|https://tomscii.sig7.se/barium
