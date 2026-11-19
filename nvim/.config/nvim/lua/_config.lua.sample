@@ -16,12 +16,10 @@ return {
         mssql = false,
         mssqlpicker = false,
         conjure = {
-            enabled = false,
-            init = {
-                conjure = function()
-                    vim.g["conjure#filetypes"] = { "clojure" }
-                end,
-            },
+            enabled = true,
+            init = function()
+                vim.g["conjure#filetypes"] = { "clojure" }
+            end,
         },
         fireplace = false,
         salve = false,
